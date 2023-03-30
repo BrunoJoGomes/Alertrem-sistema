@@ -9,8 +9,8 @@ namespace sistemaAlertrem
 {
     class Conexao
     {
-        private static string connString = "Server=10.23.49.27;Port=3306;Database=db_alertrem;Uid=alertrem;Pwd=alertrem";
-
+        private static string connString = "Server=10.23.49.30; port=3306; uid=alertrem; pwd=alertrem; database=db_alertrem";
+        //private static string connString = "Server=127.0.0.1; port=3306; uid=alertrem; pwd=alertrem; database=db_alertrem";
         private static MySqlConnection conn = null;
 
         public static MySqlConnection obterConexao()
@@ -25,9 +25,9 @@ namespace sistemaAlertrem
             {
                 conn = null;
             }
-
             return conn;
         }
+
         public static void fecharConexao()
         {
             if (conn != null)
@@ -51,5 +51,4 @@ namespace sistemaAlertrem
             }
         }
     }
-
 }
