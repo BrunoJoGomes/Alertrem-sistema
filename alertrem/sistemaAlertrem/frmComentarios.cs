@@ -16,7 +16,7 @@ namespace sistemaAlertrem
         public frmComentarios()
         {
             InitializeComponent();
-            carregaDados(0);
+            carregaDados();
         }
 
         public frmComentarios(int user_id)
@@ -25,9 +25,9 @@ namespace sistemaAlertrem
             carregaDados(user_id);
         }
 
-        public void carregaDados(int id)
+        public void carregaDados(int id = 0)
         {
-            string commandString = id != 0 ? $"select * from tb_comentarios where codigo = {id}" : "select * from tb_comentarios";
+            string commandString = id != 0 ? $"select * from tb_comentarios where cod_usuario = {id}" : "select * from tb_comentarios";
 
             MySqlCommand comm = new MySqlCommand
             {
