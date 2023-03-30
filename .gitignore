@@ -1,5 +1,6 @@
-.vs\
-bin\
+.vs/
+bin/
+obj/
 .suo
 *.cache
 *.exe
