@@ -52,5 +52,32 @@ namespace sistemaAlertrem
         {
             pictboxImagemUsu.Image = null;
         }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private bool logado = false;
+
+       
+        
+
+        private void btnPesquisar_Click_1(object sender, EventArgs e)
+        {
+            FrmResultadoPesquisa abrir = new FrmResultadoPesquisa();
+            abrir.Show();
+            this.Hide();
+        }
     }
 }
