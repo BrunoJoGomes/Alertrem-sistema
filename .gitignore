@@ -1,3 +1,5 @@
-.vs
+.vs\
+bin\
 .suo
-.cache
+*.cache
+*.exe

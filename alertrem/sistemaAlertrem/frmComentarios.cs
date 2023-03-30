@@ -27,7 +27,7 @@ namespace sistemaAlertrem
 
         public void carregaDados(int id)
         {
-            string commandString = id != 0 ? $"select * from tb_comentarios where codigo = {id}" : "select * from tb_comentarios";
+            string commandString = id != 0 ? $"select * from tb_comentarios where cod_usuario = {id}" : "select * from tb_comentarios";
 
             MySqlCommand comm = new MySqlCommand
             {
