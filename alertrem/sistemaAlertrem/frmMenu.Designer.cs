@@ -33,7 +33,7 @@ namespace sistemaAlertrem
             this.gpbMenu = new System.Windows.Forms.GroupBox();
             this.lblFunc = new System.Windows.Forms.Label();
             this.pcbFunc = new System.Windows.Forms.PictureBox();
-            this.lblComentarios = new System.Windows.Forms.Label();
+            this.lblReclamacoes = new System.Windows.Forms.Label();
             this.pcbComentarios = new System.Windows.Forms.PictureBox();
             this.lblEstacoes = new System.Windows.Forms.Label();
             this.pcbEstacoes = new System.Windows.Forms.PictureBox();
@@ -52,12 +52,14 @@ namespace sistemaAlertrem
             this.btnVoltar = new System.Windows.Forms.Button();
             this.lblStatusBanco = new System.Windows.Forms.Label();
             this.lblStatusLinha = new System.Windows.Forms.Label();
+            this.pcbLogo = new System.Windows.Forms.PictureBox();
             this.gpbMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbFunc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbComentarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbEstacoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbUsuarios)).BeginInit();
             this.gpbCadastroUsuFunc.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // gpbMenu
@@ -65,7 +67,7 @@ namespace sistemaAlertrem
             this.gpbMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(200)))), ((int)(((byte)(120)))));
             this.gpbMenu.Controls.Add(this.lblFunc);
             this.gpbMenu.Controls.Add(this.pcbFunc);
-            this.gpbMenu.Controls.Add(this.lblComentarios);
+            this.gpbMenu.Controls.Add(this.lblReclamacoes);
             this.gpbMenu.Controls.Add(this.pcbComentarios);
             this.gpbMenu.Controls.Add(this.lblEstacoes);
             this.gpbMenu.Controls.Add(this.pcbEstacoes);
@@ -99,15 +101,15 @@ namespace sistemaAlertrem
             this.pcbFunc.TabIndex = 8;
             this.pcbFunc.TabStop = false;
             // 
-            // lblComentarios
+            // lblReclamacoes
             // 
-            this.lblComentarios.AutoSize = true;
-            this.lblComentarios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblComentarios.Location = new System.Drawing.Point(425, 96);
-            this.lblComentarios.Name = "lblComentarios";
-            this.lblComentarios.Size = new System.Drawing.Size(65, 13);
-            this.lblComentarios.TabIndex = 7;
-            this.lblComentarios.Text = "Comentários";
+            this.lblReclamacoes.AutoSize = true;
+            this.lblReclamacoes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblReclamacoes.Location = new System.Drawing.Point(425, 96);
+            this.lblReclamacoes.Name = "lblReclamacoes";
+            this.lblReclamacoes.Size = new System.Drawing.Size(72, 13);
+            this.lblReclamacoes.TabIndex = 7;
+            this.lblReclamacoes.Text = "Reclamações";
             // 
             // pcbComentarios
             // 
@@ -119,6 +121,7 @@ namespace sistemaAlertrem
             this.pcbComentarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pcbComentarios.TabIndex = 6;
             this.pcbComentarios.TabStop = false;
+            this.pcbComentarios.Click += new System.EventHandler(this.pcbComentarios_Click);
             // 
             // lblEstacoes
             // 
@@ -140,6 +143,7 @@ namespace sistemaAlertrem
             this.pcbEstacoes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pcbEstacoes.TabIndex = 4;
             this.pcbEstacoes.TabStop = false;
+            this.pcbEstacoes.Click += new System.EventHandler(this.pcbEstacoes_Click);
             // 
             // lblUsuarios
             // 
@@ -293,11 +297,22 @@ namespace sistemaAlertrem
             this.lblStatusLinha.Size = new System.Drawing.Size(0, 13);
             this.lblStatusLinha.TabIndex = 7;
             // 
+            // pcbLogo
+            // 
+            this.pcbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pcbLogo.Image")));
+            this.pcbLogo.Location = new System.Drawing.Point(700, 364);
+            this.pcbLogo.Name = "pcbLogo";
+            this.pcbLogo.Size = new System.Drawing.Size(100, 90);
+            this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbLogo.TabIndex = 8;
+            this.pcbLogo.TabStop = false;
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pcbLogo);
             this.Controls.Add(this.lblStatusLinha);
             this.Controls.Add(this.lblStatusBanco);
             this.Controls.Add(this.btnVoltar);
@@ -319,6 +334,7 @@ namespace sistemaAlertrem
             ((System.ComponentModel.ISupportInitialize)(this.pcbUsuarios)).EndInit();
             this.gpbCadastroUsuFunc.ResumeLayout(false);
             this.gpbCadastroUsuFunc.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,7 +344,7 @@ namespace sistemaAlertrem
         private System.Windows.Forms.GroupBox gpbMenu;
         private System.Windows.Forms.Label lblUsuarios;
         private System.Windows.Forms.PictureBox pcbUsuarios;
-        private System.Windows.Forms.Label lblComentarios;
+        private System.Windows.Forms.Label lblReclamacoes;
         private System.Windows.Forms.PictureBox pcbComentarios;
         private System.Windows.Forms.Label lblEstacoes;
         private System.Windows.Forms.PictureBox pcbEstacoes;
@@ -347,5 +363,6 @@ namespace sistemaAlertrem
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label lblStatusBanco;
         private System.Windows.Forms.Label lblStatusLinha;
+        private System.Windows.Forms.PictureBox pcbLogo;
     }
 }
