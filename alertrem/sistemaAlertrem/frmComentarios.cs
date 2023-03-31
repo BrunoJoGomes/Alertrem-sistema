@@ -27,7 +27,7 @@ namespace sistemaAlertrem
 
         public void carregaDados(int id = 0)
         {
-            string commandString = id != 0 ? $"select * from tb_comentarios where cod_usuario = {id}" : "select * from tb_comentarios";
+            string commandString = id != 0 ? $"select * from tb_comentarios where cod_usuario = {id}" : "select * from tb_reclamacoes";
 
             MySqlCommand comm = new MySqlCommand
             {
@@ -44,7 +44,7 @@ namespace sistemaAlertrem
 
             dgvComentarios.DataSource = tabela;
 
-            dgvComentarios.Columns["comentario"].Width = 300;
+            dgvComentarios.Columns["descricao"].Width = 300;
 
             DataGridViewButtonColumn btnExcluir = new DataGridViewButtonColumn();
             btnExcluir.Name = "Excluir";
@@ -71,7 +71,7 @@ namespace sistemaAlertrem
         {
             MySqlCommand comm = new MySqlCommand
             {
-                CommandText = $"delete from tb_comentarios where codigo = {id_comentario}",
+                CommandText = $"delete from tb_reclamacoes where codigo = {id_comentario}",
                 CommandType = CommandType.Text,
                 Connection = Conexao.obterConexao()
             };
