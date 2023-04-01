@@ -243,7 +243,6 @@ namespace sistemaAlertrem
             this.rbtnQuebradoBanheiro.Name = "rbtnQuebradoBanheiro";
             this.rbtnQuebradoBanheiro.Size = new System.Drawing.Size(72, 17);
             this.rbtnQuebradoBanheiro.TabIndex = 3;
-            this.rbtnQuebradoBanheiro.TabStop = true;
             this.rbtnQuebradoBanheiro.Text = "Quebrado";
             this.rbtnQuebradoBanheiro.UseVisualStyleBackColor = true;
             // 
@@ -254,7 +253,6 @@ namespace sistemaAlertrem
             this.rbtnFuncionandoBanheiro.Name = "rbtnFuncionandoBanheiro";
             this.rbtnFuncionandoBanheiro.Size = new System.Drawing.Size(87, 17);
             this.rbtnFuncionandoBanheiro.TabIndex = 2;
-            this.rbtnFuncionandoBanheiro.TabStop = true;
             this.rbtnFuncionandoBanheiro.Text = "Funcionando";
             this.rbtnFuncionandoBanheiro.UseVisualStyleBackColor = true;
             // 
@@ -265,13 +263,13 @@ namespace sistemaAlertrem
             this.rbtnManutencaoBanheiro.Name = "rbtnManutencaoBanheiro";
             this.rbtnManutencaoBanheiro.Size = new System.Drawing.Size(85, 17);
             this.rbtnManutencaoBanheiro.TabIndex = 1;
-            this.rbtnManutencaoBanheiro.TabStop = true;
             this.rbtnManutencaoBanheiro.Text = "Manutenção";
             this.rbtnManutencaoBanheiro.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemBanheiro
             // 
             this.rbtnNaoTemBanheiro.AutoSize = true;
+            this.rbtnNaoTemBanheiro.Checked = true;
             this.rbtnNaoTemBanheiro.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemBanheiro.Name = "rbtnNaoTemBanheiro";
             this.rbtnNaoTemBanheiro.Size = new System.Drawing.Size(69, 17);
@@ -329,6 +327,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemBanheiroAcessivel
             // 
             this.rbtnNaoTemBanheiroAcessivel.AutoSize = true;
+            this.rbtnNaoTemBanheiroAcessivel.Checked = true;
             this.rbtnNaoTemBanheiroAcessivel.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemBanheiroAcessivel.Name = "rbtnNaoTemBanheiroAcessivel";
             this.rbtnNaoTemBanheiroAcessivel.Size = new System.Drawing.Size(69, 17);
@@ -386,6 +385,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemElevador
             // 
             this.rbtnNaoTemElevador.AutoSize = true;
+            this.rbtnNaoTemElevador.Checked = true;
             this.rbtnNaoTemElevador.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemElevador.Name = "rbtnNaoTemElevador";
             this.rbtnNaoTemElevador.Size = new System.Drawing.Size(69, 17);
@@ -443,6 +443,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemAcessoElevador
             // 
             this.rbtnNaoTemAcessoElevador.AutoSize = true;
+            this.rbtnNaoTemAcessoElevador.Checked = true;
             this.rbtnNaoTemAcessoElevador.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemAcessoElevador.Name = "rbtnNaoTemAcessoElevador";
             this.rbtnNaoTemAcessoElevador.Size = new System.Drawing.Size(69, 17);
@@ -500,6 +501,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemTerminalInterurbano
             // 
             this.rbtnNaoTemTerminalInterurbano.AutoSize = true;
+            this.rbtnNaoTemTerminalInterurbano.Checked = true;
             this.rbtnNaoTemTerminalInterurbano.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemTerminalInterurbano.Name = "rbtnNaoTemTerminalInterurbano";
             this.rbtnNaoTemTerminalInterurbano.Size = new System.Drawing.Size(69, 17);
@@ -557,6 +559,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemTerminalUrbano
             // 
             this.rbtnNaoTemTerminalUrbano.AutoSize = true;
+            this.rbtnNaoTemTerminalUrbano.Checked = true;
             this.rbtnNaoTemTerminalUrbano.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemTerminalUrbano.Name = "rbtnNaoTemTerminalUrbano";
             this.rbtnNaoTemTerminalUrbano.Size = new System.Drawing.Size(69, 17);
@@ -614,6 +617,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemTransferenciaInterna
             // 
             this.rbtnNaoTemTransferenciaInterna.AutoSize = true;
+            this.rbtnNaoTemTransferenciaInterna.Checked = true;
             this.rbtnNaoTemTransferenciaInterna.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemTransferenciaInterna.Name = "rbtnNaoTemTransferenciaInterna";
             this.rbtnNaoTemTransferenciaInterna.Size = new System.Drawing.Size(69, 17);
@@ -671,6 +675,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemRampa
             // 
             this.rbtnNaoTemRampa.AutoSize = true;
+            this.rbtnNaoTemRampa.Checked = true;
             this.rbtnNaoTemRampa.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemRampa.Name = "rbtnNaoTemRampa";
             this.rbtnNaoTemRampa.Size = new System.Drawing.Size(69, 17);
@@ -728,6 +733,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemPisoTatil
             // 
             this.rbtnNaoTemPisoTatil.AutoSize = true;
+            this.rbtnNaoTemPisoTatil.Checked = true;
             this.rbtnNaoTemPisoTatil.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemPisoTatil.Name = "rbtnNaoTemPisoTatil";
             this.rbtnNaoTemPisoTatil.Size = new System.Drawing.Size(69, 17);
@@ -785,6 +791,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemTelefonePSurdos
             // 
             this.rbtnNaoTemTelefonePSurdos.AutoSize = true;
+            this.rbtnNaoTemTelefonePSurdos.Checked = true;
             this.rbtnNaoTemTelefonePSurdos.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemTelefonePSurdos.Name = "rbtnNaoTemTelefonePSurdos";
             this.rbtnNaoTemTelefonePSurdos.Size = new System.Drawing.Size(69, 17);
@@ -842,6 +849,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemCalcados
             // 
             this.rbtnNaoTemCalcados.AutoSize = true;
+            this.rbtnNaoTemCalcados.Checked = true;
             this.rbtnNaoTemCalcados.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemCalcados.Name = "rbtnNaoTemCalcados";
             this.rbtnNaoTemCalcados.Size = new System.Drawing.Size(69, 17);
@@ -899,6 +907,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemCaixaEletronico
             // 
             this.rbtnNaoTemCaixaEletronico.AutoSize = true;
+            this.rbtnNaoTemCaixaEletronico.Checked = true;
             this.rbtnNaoTemCaixaEletronico.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemCaixaEletronico.Name = "rbtnNaoTemCaixaEletronico";
             this.rbtnNaoTemCaixaEletronico.Size = new System.Drawing.Size(69, 17);
@@ -956,6 +965,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemEmporio
             // 
             this.rbtnNaoTemEmporio.AutoSize = true;
+            this.rbtnNaoTemEmporio.Checked = true;
             this.rbtnNaoTemEmporio.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemEmporio.Name = "rbtnNaoTemEmporio";
             this.rbtnNaoTemEmporio.Size = new System.Drawing.Size(69, 17);
@@ -1013,6 +1023,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemLanchonete
             // 
             this.rbtnNaoTemLanchonete.AutoSize = true;
+            this.rbtnNaoTemLanchonete.Checked = true;
             this.rbtnNaoTemLanchonete.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemLanchonete.Name = "rbtnNaoTemLanchonete";
             this.rbtnNaoTemLanchonete.Size = new System.Drawing.Size(69, 17);
@@ -1070,6 +1081,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemEscadasRolantes
             // 
             this.rbtnNaoTemEscadasRolantes.AutoSize = true;
+            this.rbtnNaoTemEscadasRolantes.Checked = true;
             this.rbtnNaoTemEscadasRolantes.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemEscadasRolantes.Name = "rbtnNaoTemEscadasRolantes";
             this.rbtnNaoTemEscadasRolantes.Size = new System.Drawing.Size(69, 17);
@@ -1127,6 +1139,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemTransposicaoPlataformas
             // 
             this.rbtnNaoTemTransposicaoPlataformas.AutoSize = true;
+            this.rbtnNaoTemTransposicaoPlataformas.Checked = true;
             this.rbtnNaoTemTransposicaoPlataformas.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemTransposicaoPlataformas.Name = "rbtnNaoTemTransposicaoPlataformas";
             this.rbtnNaoTemTransposicaoPlataformas.Size = new System.Drawing.Size(69, 17);
@@ -1184,6 +1197,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemAchadosPerdidos
             // 
             this.rbtnNaoTemAchadosPerdidos.AutoSize = true;
+            this.rbtnNaoTemAchadosPerdidos.Checked = true;
             this.rbtnNaoTemAchadosPerdidos.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemAchadosPerdidos.Name = "rbtnNaoTemAchadosPerdidos";
             this.rbtnNaoTemAchadosPerdidos.Size = new System.Drawing.Size(69, 17);
@@ -1241,6 +1255,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemRotaAcessivel
             // 
             this.rbtnNaoTemRotaAcessivel.AutoSize = true;
+            this.rbtnNaoTemRotaAcessivel.Checked = true;
             this.rbtnNaoTemRotaAcessivel.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemRotaAcessivel.Name = "rbtnNaoTemRotaAcessivel";
             this.rbtnNaoTemRotaAcessivel.Size = new System.Drawing.Size(69, 17);
@@ -1298,6 +1313,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemFarmacia
             // 
             this.rbtnNaoTemFarmacia.AutoSize = true;
+            this.rbtnNaoTemFarmacia.Checked = true;
             this.rbtnNaoTemFarmacia.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemFarmacia.Name = "rbtnNaoTemFarmacia";
             this.rbtnNaoTemFarmacia.Size = new System.Drawing.Size(69, 17);
@@ -1355,6 +1371,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemAcessorios
             // 
             this.rbtnNaoTemAcessorios.AutoSize = true;
+            this.rbtnNaoTemAcessorios.Checked = true;
             this.rbtnNaoTemAcessorios.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemAcessorios.Name = "rbtnNaoTemAcessorios";
             this.rbtnNaoTemAcessorios.Size = new System.Drawing.Size(69, 17);
@@ -1412,6 +1429,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemTransferenciaGratuita
             // 
             this.rbtnNaoTemTransferenciaGratuita.AutoSize = true;
+            this.rbtnNaoTemTransferenciaGratuita.Checked = true;
             this.rbtnNaoTemTransferenciaGratuita.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemTransferenciaGratuita.Name = "rbtnNaoTemTransferenciaGratuita";
             this.rbtnNaoTemTransferenciaGratuita.Size = new System.Drawing.Size(69, 17);
