@@ -35,11 +35,9 @@ namespace sistemaAlertrem
             this.lblPorcent = new System.Windows.Forms.Label();
             this.pgbLoading = new System.Windows.Forms.ProgressBar();
             this.lblLoading = new System.Windows.Forms.Label();
-            this.btnLoading = new System.Windows.Forms.Button();
             this.tmrTime = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gpbMenu = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pctIcone)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pctIcone
@@ -80,38 +78,27 @@ namespace sistemaAlertrem
             this.lblLoading.TabIndex = 3;
             this.lblLoading.Text = "Carregando...";
             // 
-            // btnLoading
-            // 
-            this.btnLoading.Font = new System.Drawing.Font("Museo 700", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoading.Location = new System.Drawing.Point(661, 399);
-            this.btnLoading.Name = "btnLoading";
-            this.btnLoading.Size = new System.Drawing.Size(127, 39);
-            this.btnLoading.TabIndex = 0;
-            this.btnLoading.Text = "Loading";
-            this.btnLoading.UseVisualStyleBackColor = true;
-            this.btnLoading.Click += new System.EventHandler(this.btnLoading_Click);
-            // 
             // tmrTime
             // 
             this.tmrTime.Enabled = true;
             this.tmrTime.Tick += new System.EventHandler(this.tmrTime_Tick);
             // 
-            // pictureBox1
+            // gpbMenu
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.LimeGreen;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, -4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(802, 58);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.gpbMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(200)))), ((int)(((byte)(120)))));
+            this.gpbMenu.Location = new System.Drawing.Point(-2, 1);
+            this.gpbMenu.Name = "gpbMenu";
+            this.gpbMenu.Size = new System.Drawing.Size(801, 56);
+            this.gpbMenu.TabIndex = 10;
+            this.gpbMenu.TabStop = false;
+            this.gpbMenu.Text = "Menu";
             // 
             // frmSplash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnLoading);
+            this.Controls.Add(this.gpbMenu);
             this.Controls.Add(this.lblLoading);
             this.Controls.Add(this.pgbLoading);
             this.Controls.Add(this.pctIcone);
@@ -119,7 +106,6 @@ namespace sistemaAlertrem
             this.Name = "frmSplash";
             this.Text = "frmSplash";
             ((System.ComponentModel.ISupportInitialize)(this.pctIcone)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,8 +117,7 @@ namespace sistemaAlertrem
         private System.Windows.Forms.Label lblPorcent;
         private System.Windows.Forms.ProgressBar pgbLoading;
         private System.Windows.Forms.Label lblLoading;
-        private System.Windows.Forms.Button btnLoading;
         private System.Windows.Forms.Timer tmrTime;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox gpbMenu;
     }
 }
