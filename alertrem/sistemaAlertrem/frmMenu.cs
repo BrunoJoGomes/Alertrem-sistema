@@ -95,7 +95,24 @@ namespace sistemaAlertrem
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            //frmLogin
+
+            frmLogin login = new frmLogin();
+            login.Show();
+            this.Hide();
+        }
+
+        private void pcbEstacoes_Click(object sender, EventArgs e)
+        {
+            frmEstacao1 estacao = new frmEstacao1();
+            estacao.Show();
+            this.Hide();
+        }
+
+        private void pcbComentarios_Click(object sender, EventArgs e)
+        {
+            frmComentarios reclamacoes = new frmComentarios();
+            reclamacoes.Show();
+            this.Hide();
         }
     }
 }

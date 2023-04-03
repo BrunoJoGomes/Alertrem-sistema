@@ -32,113 +32,113 @@ namespace sistemaAlertrem
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEstacao2));
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnVoltar1 = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblLocalizacao = new System.Windows.Forms.Label();
             this.gpbBanheiro = new System.Windows.Forms.GroupBox();
-            this.radioButton81 = new System.Windows.Forms.RadioButton();
-            this.radioButton82 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoBanheiro = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoBanheiro = new System.Windows.Forms.RadioButton();
             this.rbtnManutencaoBanheiro = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemBanheiro = new System.Windows.Forms.RadioButton();
             this.gbpBanheiroAcessivel = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoBanheiroAcessivel = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoBanheiroAcessivel = new System.Windows.Forms.RadioButton();
             this.rbtnManutencaoBanheiroAcessivel = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemBanheiroAcessivel = new System.Windows.Forms.RadioButton();
             this.gpbElevador = new System.Windows.Forms.GroupBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoElevador = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoElevador = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoElevador = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemElevador = new System.Windows.Forms.RadioButton();
             this.gpbAcessoElevador = new System.Windows.Forms.GroupBox();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoAcessoElevador = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoAcessoElevador = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoAcessoElevador = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemAcessoElevador = new System.Windows.Forms.RadioButton();
             this.gpbTerminalInterurbano = new System.Windows.Forms.GroupBox();
-            this.radioButton13 = new System.Windows.Forms.RadioButton();
-            this.radioButton14 = new System.Windows.Forms.RadioButton();
-            this.radioButton15 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoTerminalInterurbano = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoTerminalInterurbano = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoTerminalInterurbano = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemTerminalInterurbano = new System.Windows.Forms.RadioButton();
             this.gbpTerminalUrbano = new System.Windows.Forms.GroupBox();
-            this.radioButton17 = new System.Windows.Forms.RadioButton();
-            this.radioButton18 = new System.Windows.Forms.RadioButton();
-            this.radioButton19 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoTerminalUrbano = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoTerminalUrbano = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoTerminalUrbano = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemTerminalUrbano = new System.Windows.Forms.RadioButton();
             this.gpbTransferenciaInterna = new System.Windows.Forms.GroupBox();
-            this.radioButton21 = new System.Windows.Forms.RadioButton();
-            this.radioButton22 = new System.Windows.Forms.RadioButton();
-            this.radioButton23 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoTransferenciaInterna = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoTransferenciaInterna = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoTransferenciaInterna = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemTransferenciaInterna = new System.Windows.Forms.RadioButton();
             this.gpbRampa = new System.Windows.Forms.GroupBox();
-            this.radioButton25 = new System.Windows.Forms.RadioButton();
-            this.radioButton26 = new System.Windows.Forms.RadioButton();
-            this.radioButton27 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoRampa = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoRampa = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoRampa = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemRampa = new System.Windows.Forms.RadioButton();
             this.gpbPisoTatil = new System.Windows.Forms.GroupBox();
-            this.radioButton29 = new System.Windows.Forms.RadioButton();
-            this.radioButton30 = new System.Windows.Forms.RadioButton();
-            this.radioButton31 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoPisoTatil = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoPisoTatil = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoPisoTatil = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemPisoTatil = new System.Windows.Forms.RadioButton();
             this.gpbTelefonePSurdos = new System.Windows.Forms.GroupBox();
-            this.radioButton33 = new System.Windows.Forms.RadioButton();
-            this.radioButton34 = new System.Windows.Forms.RadioButton();
-            this.radioButton35 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoTelefonePSurdos = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoTelefonePSurdos = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoTelefonePSurdos = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemTelefonePSurdos = new System.Windows.Forms.RadioButton();
             this.gpbCalcados = new System.Windows.Forms.GroupBox();
-            this.radioButton37 = new System.Windows.Forms.RadioButton();
-            this.radioButton38 = new System.Windows.Forms.RadioButton();
-            this.radioButton39 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoCalcados = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoCalcados = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoCalcados = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemCalcados = new System.Windows.Forms.RadioButton();
             this.gpbCaixaEletronico = new System.Windows.Forms.GroupBox();
-            this.radioButton41 = new System.Windows.Forms.RadioButton();
-            this.radioButton42 = new System.Windows.Forms.RadioButton();
-            this.radioButton43 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoCaixaEletronico = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoCaixaEletronico = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoCaixaEletronico = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemCaixaEletronico = new System.Windows.Forms.RadioButton();
             this.gpbEmporio = new System.Windows.Forms.GroupBox();
-            this.radioButton45 = new System.Windows.Forms.RadioButton();
-            this.radioButton46 = new System.Windows.Forms.RadioButton();
-            this.radioButton47 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoEmporio = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoEmporio = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoEmporio = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemEmporio = new System.Windows.Forms.RadioButton();
             this.gpbLanchonete = new System.Windows.Forms.GroupBox();
-            this.radioButton49 = new System.Windows.Forms.RadioButton();
-            this.radioButton50 = new System.Windows.Forms.RadioButton();
-            this.radioButton51 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoLanchonete = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoLanchonete = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoLanchonete = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemLanchonete = new System.Windows.Forms.RadioButton();
             this.gpbEscadasRolantes = new System.Windows.Forms.GroupBox();
-            this.radioButton53 = new System.Windows.Forms.RadioButton();
-            this.radioButton54 = new System.Windows.Forms.RadioButton();
-            this.radioButton55 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoEscadasRolantes = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoEscadasRolantes = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoEscadasRolantes = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemEscadasRolantes = new System.Windows.Forms.RadioButton();
             this.gpbTransposicaoPlataformas = new System.Windows.Forms.GroupBox();
-            this.radioButton57 = new System.Windows.Forms.RadioButton();
-            this.radioButton58 = new System.Windows.Forms.RadioButton();
-            this.radioButton59 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoTransposicaoPlataforma = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoTransposicaoPlataforma = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoTransposicaoPlataforma = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemTransposicaoPlataformas = new System.Windows.Forms.RadioButton();
             this.gpbAchadosPerdidos = new System.Windows.Forms.GroupBox();
-            this.radioButton61 = new System.Windows.Forms.RadioButton();
-            this.radioButton62 = new System.Windows.Forms.RadioButton();
-            this.radioButton63 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoAchadosPerdidos = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoAchadosPerdidos = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoAchadosPerdidos = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemAchadosPerdidos = new System.Windows.Forms.RadioButton();
             this.gpbRotaAcessivel = new System.Windows.Forms.GroupBox();
-            this.radioButton65 = new System.Windows.Forms.RadioButton();
-            this.radioButton66 = new System.Windows.Forms.RadioButton();
-            this.radioButton67 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoRotaAcessivel = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoRotaAcessivel = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoRotaAcessivel = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemRotaAcessivel = new System.Windows.Forms.RadioButton();
             this.gpbFarmacia = new System.Windows.Forms.GroupBox();
-            this.radioButton69 = new System.Windows.Forms.RadioButton();
-            this.radioButton70 = new System.Windows.Forms.RadioButton();
-            this.radioButton71 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoFarmacia = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoFarmacia = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoFarmacia = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemFarmacia = new System.Windows.Forms.RadioButton();
             this.gpbAcessorios = new System.Windows.Forms.GroupBox();
-            this.radioButton73 = new System.Windows.Forms.RadioButton();
-            this.radioButton74 = new System.Windows.Forms.RadioButton();
-            this.radioButton75 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoAcessorios = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoAcessorios = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoAcessorios = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemAcessorios = new System.Windows.Forms.RadioButton();
             this.gpbTransferenciaGratuita = new System.Windows.Forms.GroupBox();
-            this.radioButton77 = new System.Windows.Forms.RadioButton();
-            this.radioButton78 = new System.Windows.Forms.RadioButton();
-            this.radioButton79 = new System.Windows.Forms.RadioButton();
+            this.rbtnQuebradoTransferenciaGratuita = new System.Windows.Forms.RadioButton();
+            this.rbtnFuncionandoTransferenciaGratuita = new System.Windows.Forms.RadioButton();
+            this.rbtnManutencaoTransferenciaGratuita = new System.Windows.Forms.RadioButton();
             this.rbtnNaoTemTransferenciaGratuita = new System.Windows.Forms.RadioButton();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtLocalizacao = new System.Windows.Forms.TextBox();
@@ -191,17 +191,17 @@ namespace sistemaAlertrem
             this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnExcluir.UseVisualStyleBackColor = true;
             // 
-            // btnVoltar1
+            // btnVoltar
             // 
-            this.btnVoltar1.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar1.Image")));
-            this.btnVoltar1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnVoltar1.Location = new System.Drawing.Point(901, 315);
-            this.btnVoltar1.Name = "btnVoltar1";
-            this.btnVoltar1.Size = new System.Drawing.Size(88, 76);
-            this.btnVoltar1.TabIndex = 11;
-            this.btnVoltar1.Text = "&Voltar";
-            this.btnVoltar1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnVoltar1.UseVisualStyleBackColor = true;
+            this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
+            this.btnVoltar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnVoltar.Location = new System.Drawing.Point(901, 315);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(88, 76);
+            this.btnVoltar.TabIndex = 11;
+            this.btnVoltar.Text = "&Voltar";
+            this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnVoltar.UseVisualStyleBackColor = true;
             // 
             // lblNome
             // 
@@ -225,8 +225,8 @@ namespace sistemaAlertrem
             // 
             // gpbBanheiro
             // 
-            this.gpbBanheiro.Controls.Add(this.radioButton81);
-            this.gpbBanheiro.Controls.Add(this.radioButton82);
+            this.gpbBanheiro.Controls.Add(this.rbtnQuebradoBanheiro);
+            this.gpbBanheiro.Controls.Add(this.rbtnFuncionandoBanheiro);
             this.gpbBanheiro.Controls.Add(this.rbtnManutencaoBanheiro);
             this.gpbBanheiro.Controls.Add(this.rbtnNaoTemBanheiro);
             this.gpbBanheiro.Location = new System.Drawing.Point(34, 165);
@@ -236,27 +236,25 @@ namespace sistemaAlertrem
             this.gpbBanheiro.TabStop = false;
             this.gpbBanheiro.Text = "Banheiro";
             // 
-            // radioButton81
+            // rbtnQuebradoBanheiro
             // 
-            this.radioButton81.AutoSize = true;
-            this.radioButton81.Location = new System.Drawing.Point(103, 39);
-            this.radioButton81.Name = "radioButton81";
-            this.radioButton81.Size = new System.Drawing.Size(72, 17);
-            this.radioButton81.TabIndex = 3;
-            this.radioButton81.TabStop = true;
-            this.radioButton81.Text = "Quebrado";
-            this.radioButton81.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoBanheiro.AutoSize = true;
+            this.rbtnQuebradoBanheiro.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoBanheiro.Name = "rbtnQuebradoBanheiro";
+            this.rbtnQuebradoBanheiro.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoBanheiro.TabIndex = 3;
+            this.rbtnQuebradoBanheiro.Text = "Quebrado";
+            this.rbtnQuebradoBanheiro.UseVisualStyleBackColor = true;
             // 
-            // radioButton82
+            // rbtnFuncionandoBanheiro
             // 
-            this.radioButton82.AutoSize = true;
-            this.radioButton82.Location = new System.Drawing.Point(103, 16);
-            this.radioButton82.Name = "radioButton82";
-            this.radioButton82.Size = new System.Drawing.Size(87, 17);
-            this.radioButton82.TabIndex = 2;
-            this.radioButton82.TabStop = true;
-            this.radioButton82.Text = "Funcionando";
-            this.radioButton82.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoBanheiro.AutoSize = true;
+            this.rbtnFuncionandoBanheiro.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoBanheiro.Name = "rbtnFuncionandoBanheiro";
+            this.rbtnFuncionandoBanheiro.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoBanheiro.TabIndex = 2;
+            this.rbtnFuncionandoBanheiro.Text = "Funcionando";
+            this.rbtnFuncionandoBanheiro.UseVisualStyleBackColor = true;
             // 
             // rbtnManutencaoBanheiro
             // 
@@ -265,13 +263,13 @@ namespace sistemaAlertrem
             this.rbtnManutencaoBanheiro.Name = "rbtnManutencaoBanheiro";
             this.rbtnManutencaoBanheiro.Size = new System.Drawing.Size(85, 17);
             this.rbtnManutencaoBanheiro.TabIndex = 1;
-            this.rbtnManutencaoBanheiro.TabStop = true;
             this.rbtnManutencaoBanheiro.Text = "Manutenção";
             this.rbtnManutencaoBanheiro.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemBanheiro
             // 
             this.rbtnNaoTemBanheiro.AutoSize = true;
+            this.rbtnNaoTemBanheiro.Checked = true;
             this.rbtnNaoTemBanheiro.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemBanheiro.Name = "rbtnNaoTemBanheiro";
             this.rbtnNaoTemBanheiro.Size = new System.Drawing.Size(69, 17);
@@ -282,8 +280,8 @@ namespace sistemaAlertrem
             // 
             // gbpBanheiroAcessivel
             // 
-            this.gbpBanheiroAcessivel.Controls.Add(this.radioButton1);
-            this.gbpBanheiroAcessivel.Controls.Add(this.radioButton2);
+            this.gbpBanheiroAcessivel.Controls.Add(this.rbtnQuebradoBanheiroAcessivel);
+            this.gbpBanheiroAcessivel.Controls.Add(this.rbtnFuncionandoBanheiroAcessivel);
             this.gbpBanheiroAcessivel.Controls.Add(this.rbtnManutencaoBanheiroAcessivel);
             this.gbpBanheiroAcessivel.Controls.Add(this.rbtnNaoTemBanheiroAcessivel);
             this.gbpBanheiroAcessivel.Location = new System.Drawing.Point(34, 240);
@@ -293,27 +291,27 @@ namespace sistemaAlertrem
             this.gbpBanheiroAcessivel.TabStop = false;
             this.gbpBanheiroAcessivel.Text = "Banheiro Acessível";
             // 
-            // radioButton1
+            // rbtnQuebradoBanheiroAcessivel
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(103, 39);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(72, 17);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Quebrado";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoBanheiroAcessivel.AutoSize = true;
+            this.rbtnQuebradoBanheiroAcessivel.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoBanheiroAcessivel.Name = "rbtnQuebradoBanheiroAcessivel";
+            this.rbtnQuebradoBanheiroAcessivel.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoBanheiroAcessivel.TabIndex = 3;
+            this.rbtnQuebradoBanheiroAcessivel.TabStop = true;
+            this.rbtnQuebradoBanheiroAcessivel.Text = "Quebrado";
+            this.rbtnQuebradoBanheiroAcessivel.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbtnFuncionandoBanheiroAcessivel
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(103, 16);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(87, 17);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Funcionando";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoBanheiroAcessivel.AutoSize = true;
+            this.rbtnFuncionandoBanheiroAcessivel.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoBanheiroAcessivel.Name = "rbtnFuncionandoBanheiroAcessivel";
+            this.rbtnFuncionandoBanheiroAcessivel.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoBanheiroAcessivel.TabIndex = 2;
+            this.rbtnFuncionandoBanheiroAcessivel.TabStop = true;
+            this.rbtnFuncionandoBanheiroAcessivel.Text = "Funcionando";
+            this.rbtnFuncionandoBanheiroAcessivel.UseVisualStyleBackColor = true;
             // 
             // rbtnManutencaoBanheiroAcessivel
             // 
@@ -329,6 +327,7 @@ namespace sistemaAlertrem
             // rbtnNaoTemBanheiroAcessivel
             // 
             this.rbtnNaoTemBanheiroAcessivel.AutoSize = true;
+            this.rbtnNaoTemBanheiroAcessivel.Checked = true;
             this.rbtnNaoTemBanheiroAcessivel.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemBanheiroAcessivel.Name = "rbtnNaoTemBanheiroAcessivel";
             this.rbtnNaoTemBanheiroAcessivel.Size = new System.Drawing.Size(69, 17);
@@ -339,9 +338,9 @@ namespace sistemaAlertrem
             // 
             // gpbElevador
             // 
-            this.gpbElevador.Controls.Add(this.radioButton5);
-            this.gpbElevador.Controls.Add(this.radioButton6);
-            this.gpbElevador.Controls.Add(this.radioButton7);
+            this.gpbElevador.Controls.Add(this.rbtnQuebradoElevador);
+            this.gpbElevador.Controls.Add(this.rbtnFuncionandoElevador);
+            this.gpbElevador.Controls.Add(this.rbtnManutencaoElevador);
             this.gpbElevador.Controls.Add(this.rbtnNaoTemElevador);
             this.gpbElevador.Location = new System.Drawing.Point(34, 315);
             this.gpbElevador.Name = "gpbElevador";
@@ -350,42 +349,43 @@ namespace sistemaAlertrem
             this.gpbElevador.TabStop = false;
             this.gpbElevador.Text = "Elevador";
             // 
-            // radioButton5
+            // rbtnQuebradoElevador
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(103, 39);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(72, 17);
-            this.radioButton5.TabIndex = 3;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Quebrado";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoElevador.AutoSize = true;
+            this.rbtnQuebradoElevador.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoElevador.Name = "rbtnQuebradoElevador";
+            this.rbtnQuebradoElevador.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoElevador.TabIndex = 3;
+            this.rbtnQuebradoElevador.TabStop = true;
+            this.rbtnQuebradoElevador.Text = "Quebrado";
+            this.rbtnQuebradoElevador.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rbtnFuncionandoElevador
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(103, 16);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(87, 17);
-            this.radioButton6.TabIndex = 2;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Funcionando";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoElevador.AutoSize = true;
+            this.rbtnFuncionandoElevador.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoElevador.Name = "rbtnFuncionandoElevador";
+            this.rbtnFuncionandoElevador.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoElevador.TabIndex = 2;
+            this.rbtnFuncionandoElevador.TabStop = true;
+            this.rbtnFuncionandoElevador.Text = "Funcionando";
+            this.rbtnFuncionandoElevador.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // rbtnManutencaoElevador
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(6, 42);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(85, 17);
-            this.radioButton7.TabIndex = 1;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Manutenção";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoElevador.AutoSize = true;
+            this.rbtnManutencaoElevador.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoElevador.Name = "rbtnManutencaoElevador";
+            this.rbtnManutencaoElevador.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoElevador.TabIndex = 1;
+            this.rbtnManutencaoElevador.TabStop = true;
+            this.rbtnManutencaoElevador.Text = "Manutenção";
+            this.rbtnManutencaoElevador.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemElevador
             // 
             this.rbtnNaoTemElevador.AutoSize = true;
+            this.rbtnNaoTemElevador.Checked = true;
             this.rbtnNaoTemElevador.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemElevador.Name = "rbtnNaoTemElevador";
             this.rbtnNaoTemElevador.Size = new System.Drawing.Size(69, 17);
@@ -396,9 +396,9 @@ namespace sistemaAlertrem
             // 
             // gpbAcessoElevador
             // 
-            this.gpbAcessoElevador.Controls.Add(this.radioButton9);
-            this.gpbAcessoElevador.Controls.Add(this.radioButton10);
-            this.gpbAcessoElevador.Controls.Add(this.radioButton11);
+            this.gpbAcessoElevador.Controls.Add(this.rbtnQuebradoAcessoElevador);
+            this.gpbAcessoElevador.Controls.Add(this.rbtnFuncionandoAcessoElevador);
+            this.gpbAcessoElevador.Controls.Add(this.rbtnManutencaoAcessoElevador);
             this.gpbAcessoElevador.Controls.Add(this.rbtnNaoTemAcessoElevador);
             this.gpbAcessoElevador.Location = new System.Drawing.Point(34, 390);
             this.gpbAcessoElevador.Name = "gpbAcessoElevador";
@@ -407,42 +407,43 @@ namespace sistemaAlertrem
             this.gpbAcessoElevador.TabStop = false;
             this.gpbAcessoElevador.Text = "Acesso ao Elevador";
             // 
-            // radioButton9
+            // rbtnQuebradoAcessoElevador
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(103, 39);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(72, 17);
-            this.radioButton9.TabIndex = 3;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "Quebrado";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoAcessoElevador.AutoSize = true;
+            this.rbtnQuebradoAcessoElevador.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoAcessoElevador.Name = "rbtnQuebradoAcessoElevador";
+            this.rbtnQuebradoAcessoElevador.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoAcessoElevador.TabIndex = 3;
+            this.rbtnQuebradoAcessoElevador.TabStop = true;
+            this.rbtnQuebradoAcessoElevador.Text = "Quebrado";
+            this.rbtnQuebradoAcessoElevador.UseVisualStyleBackColor = true;
             // 
-            // radioButton10
+            // rbtnFuncionandoAcessoElevador
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Location = new System.Drawing.Point(103, 16);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(87, 17);
-            this.radioButton10.TabIndex = 2;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "Funcionando";
-            this.radioButton10.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoAcessoElevador.AutoSize = true;
+            this.rbtnFuncionandoAcessoElevador.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoAcessoElevador.Name = "rbtnFuncionandoAcessoElevador";
+            this.rbtnFuncionandoAcessoElevador.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoAcessoElevador.TabIndex = 2;
+            this.rbtnFuncionandoAcessoElevador.TabStop = true;
+            this.rbtnFuncionandoAcessoElevador.Text = "Funcionando";
+            this.rbtnFuncionandoAcessoElevador.UseVisualStyleBackColor = true;
             // 
-            // radioButton11
+            // rbtnManutencaoAcessoElevador
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(6, 42);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(85, 17);
-            this.radioButton11.TabIndex = 1;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "Manutenção";
-            this.radioButton11.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoAcessoElevador.AutoSize = true;
+            this.rbtnManutencaoAcessoElevador.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoAcessoElevador.Name = "rbtnManutencaoAcessoElevador";
+            this.rbtnManutencaoAcessoElevador.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoAcessoElevador.TabIndex = 1;
+            this.rbtnManutencaoAcessoElevador.TabStop = true;
+            this.rbtnManutencaoAcessoElevador.Text = "Manutenção";
+            this.rbtnManutencaoAcessoElevador.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemAcessoElevador
             // 
             this.rbtnNaoTemAcessoElevador.AutoSize = true;
+            this.rbtnNaoTemAcessoElevador.Checked = true;
             this.rbtnNaoTemAcessoElevador.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemAcessoElevador.Name = "rbtnNaoTemAcessoElevador";
             this.rbtnNaoTemAcessoElevador.Size = new System.Drawing.Size(69, 17);
@@ -453,9 +454,9 @@ namespace sistemaAlertrem
             // 
             // gpbTerminalInterurbano
             // 
-            this.gpbTerminalInterurbano.Controls.Add(this.radioButton13);
-            this.gpbTerminalInterurbano.Controls.Add(this.radioButton14);
-            this.gpbTerminalInterurbano.Controls.Add(this.radioButton15);
+            this.gpbTerminalInterurbano.Controls.Add(this.rbtnQuebradoTerminalInterurbano);
+            this.gpbTerminalInterurbano.Controls.Add(this.rbtnFuncionandoTerminalInterurbano);
+            this.gpbTerminalInterurbano.Controls.Add(this.rbtnManutencaoTerminalInterurbano);
             this.gpbTerminalInterurbano.Controls.Add(this.rbtnNaoTemTerminalInterurbano);
             this.gpbTerminalInterurbano.Location = new System.Drawing.Point(34, 465);
             this.gpbTerminalInterurbano.Name = "gpbTerminalInterurbano";
@@ -464,42 +465,43 @@ namespace sistemaAlertrem
             this.gpbTerminalInterurbano.TabStop = false;
             this.gpbTerminalInterurbano.Text = "Terminal Interurbano";
             // 
-            // radioButton13
+            // rbtnQuebradoTerminalInterurbano
             // 
-            this.radioButton13.AutoSize = true;
-            this.radioButton13.Location = new System.Drawing.Point(103, 39);
-            this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(72, 17);
-            this.radioButton13.TabIndex = 3;
-            this.radioButton13.TabStop = true;
-            this.radioButton13.Text = "Quebrado";
-            this.radioButton13.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoTerminalInterurbano.AutoSize = true;
+            this.rbtnQuebradoTerminalInterurbano.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoTerminalInterurbano.Name = "rbtnQuebradoTerminalInterurbano";
+            this.rbtnQuebradoTerminalInterurbano.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoTerminalInterurbano.TabIndex = 3;
+            this.rbtnQuebradoTerminalInterurbano.TabStop = true;
+            this.rbtnQuebradoTerminalInterurbano.Text = "Quebrado";
+            this.rbtnQuebradoTerminalInterurbano.UseVisualStyleBackColor = true;
             // 
-            // radioButton14
+            // rbtnFuncionandoTerminalInterurbano
             // 
-            this.radioButton14.AutoSize = true;
-            this.radioButton14.Location = new System.Drawing.Point(103, 16);
-            this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(87, 17);
-            this.radioButton14.TabIndex = 2;
-            this.radioButton14.TabStop = true;
-            this.radioButton14.Text = "Funcionando";
-            this.radioButton14.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoTerminalInterurbano.AutoSize = true;
+            this.rbtnFuncionandoTerminalInterurbano.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoTerminalInterurbano.Name = "rbtnFuncionandoTerminalInterurbano";
+            this.rbtnFuncionandoTerminalInterurbano.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoTerminalInterurbano.TabIndex = 2;
+            this.rbtnFuncionandoTerminalInterurbano.TabStop = true;
+            this.rbtnFuncionandoTerminalInterurbano.Text = "Funcionando";
+            this.rbtnFuncionandoTerminalInterurbano.UseVisualStyleBackColor = true;
             // 
-            // radioButton15
+            // rbtnManutencaoTerminalInterurbano
             // 
-            this.radioButton15.AutoSize = true;
-            this.radioButton15.Location = new System.Drawing.Point(6, 42);
-            this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(85, 17);
-            this.radioButton15.TabIndex = 1;
-            this.radioButton15.TabStop = true;
-            this.radioButton15.Text = "Manutenção";
-            this.radioButton15.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoTerminalInterurbano.AutoSize = true;
+            this.rbtnManutencaoTerminalInterurbano.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoTerminalInterurbano.Name = "rbtnManutencaoTerminalInterurbano";
+            this.rbtnManutencaoTerminalInterurbano.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoTerminalInterurbano.TabIndex = 1;
+            this.rbtnManutencaoTerminalInterurbano.TabStop = true;
+            this.rbtnManutencaoTerminalInterurbano.Text = "Manutenção";
+            this.rbtnManutencaoTerminalInterurbano.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemTerminalInterurbano
             // 
             this.rbtnNaoTemTerminalInterurbano.AutoSize = true;
+            this.rbtnNaoTemTerminalInterurbano.Checked = true;
             this.rbtnNaoTemTerminalInterurbano.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemTerminalInterurbano.Name = "rbtnNaoTemTerminalInterurbano";
             this.rbtnNaoTemTerminalInterurbano.Size = new System.Drawing.Size(69, 17);
@@ -510,9 +512,9 @@ namespace sistemaAlertrem
             // 
             // gbpTerminalUrbano
             // 
-            this.gbpTerminalUrbano.Controls.Add(this.radioButton17);
-            this.gbpTerminalUrbano.Controls.Add(this.radioButton18);
-            this.gbpTerminalUrbano.Controls.Add(this.radioButton19);
+            this.gbpTerminalUrbano.Controls.Add(this.rbtnQuebradoTerminalUrbano);
+            this.gbpTerminalUrbano.Controls.Add(this.rbtnFuncionandoTerminalUrbano);
+            this.gbpTerminalUrbano.Controls.Add(this.rbtnManutencaoTerminalUrbano);
             this.gbpTerminalUrbano.Controls.Add(this.rbtnNaoTemTerminalUrbano);
             this.gbpTerminalUrbano.Location = new System.Drawing.Point(34, 540);
             this.gbpTerminalUrbano.Name = "gbpTerminalUrbano";
@@ -521,42 +523,43 @@ namespace sistemaAlertrem
             this.gbpTerminalUrbano.TabStop = false;
             this.gbpTerminalUrbano.Text = "Terminal Urbano";
             // 
-            // radioButton17
+            // rbtnQuebradoTerminalUrbano
             // 
-            this.radioButton17.AutoSize = true;
-            this.radioButton17.Location = new System.Drawing.Point(103, 39);
-            this.radioButton17.Name = "radioButton17";
-            this.radioButton17.Size = new System.Drawing.Size(72, 17);
-            this.radioButton17.TabIndex = 3;
-            this.radioButton17.TabStop = true;
-            this.radioButton17.Text = "Quebrado";
-            this.radioButton17.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoTerminalUrbano.AutoSize = true;
+            this.rbtnQuebradoTerminalUrbano.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoTerminalUrbano.Name = "rbtnQuebradoTerminalUrbano";
+            this.rbtnQuebradoTerminalUrbano.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoTerminalUrbano.TabIndex = 3;
+            this.rbtnQuebradoTerminalUrbano.TabStop = true;
+            this.rbtnQuebradoTerminalUrbano.Text = "Quebrado";
+            this.rbtnQuebradoTerminalUrbano.UseVisualStyleBackColor = true;
             // 
-            // radioButton18
+            // rbtnFuncionandoTerminalUrbano
             // 
-            this.radioButton18.AutoSize = true;
-            this.radioButton18.Location = new System.Drawing.Point(103, 16);
-            this.radioButton18.Name = "radioButton18";
-            this.radioButton18.Size = new System.Drawing.Size(87, 17);
-            this.radioButton18.TabIndex = 2;
-            this.radioButton18.TabStop = true;
-            this.radioButton18.Text = "Funcionando";
-            this.radioButton18.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoTerminalUrbano.AutoSize = true;
+            this.rbtnFuncionandoTerminalUrbano.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoTerminalUrbano.Name = "rbtnFuncionandoTerminalUrbano";
+            this.rbtnFuncionandoTerminalUrbano.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoTerminalUrbano.TabIndex = 2;
+            this.rbtnFuncionandoTerminalUrbano.TabStop = true;
+            this.rbtnFuncionandoTerminalUrbano.Text = "Funcionando";
+            this.rbtnFuncionandoTerminalUrbano.UseVisualStyleBackColor = true;
             // 
-            // radioButton19
+            // rbtnManutencaoTerminalUrbano
             // 
-            this.radioButton19.AutoSize = true;
-            this.radioButton19.Location = new System.Drawing.Point(6, 42);
-            this.radioButton19.Name = "radioButton19";
-            this.radioButton19.Size = new System.Drawing.Size(85, 17);
-            this.radioButton19.TabIndex = 1;
-            this.radioButton19.TabStop = true;
-            this.radioButton19.Text = "Manutenção";
-            this.radioButton19.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoTerminalUrbano.AutoSize = true;
+            this.rbtnManutencaoTerminalUrbano.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoTerminalUrbano.Name = "rbtnManutencaoTerminalUrbano";
+            this.rbtnManutencaoTerminalUrbano.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoTerminalUrbano.TabIndex = 1;
+            this.rbtnManutencaoTerminalUrbano.TabStop = true;
+            this.rbtnManutencaoTerminalUrbano.Text = "Manutenção";
+            this.rbtnManutencaoTerminalUrbano.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemTerminalUrbano
             // 
             this.rbtnNaoTemTerminalUrbano.AutoSize = true;
+            this.rbtnNaoTemTerminalUrbano.Checked = true;
             this.rbtnNaoTemTerminalUrbano.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemTerminalUrbano.Name = "rbtnNaoTemTerminalUrbano";
             this.rbtnNaoTemTerminalUrbano.Size = new System.Drawing.Size(69, 17);
@@ -567,9 +570,9 @@ namespace sistemaAlertrem
             // 
             // gpbTransferenciaInterna
             // 
-            this.gpbTransferenciaInterna.Controls.Add(this.radioButton21);
-            this.gpbTransferenciaInterna.Controls.Add(this.radioButton22);
-            this.gpbTransferenciaInterna.Controls.Add(this.radioButton23);
+            this.gpbTransferenciaInterna.Controls.Add(this.rbtnQuebradoTransferenciaInterna);
+            this.gpbTransferenciaInterna.Controls.Add(this.rbtnFuncionandoTransferenciaInterna);
+            this.gpbTransferenciaInterna.Controls.Add(this.rbtnManutencaoTransferenciaInterna);
             this.gpbTransferenciaInterna.Controls.Add(this.rbtnNaoTemTransferenciaInterna);
             this.gpbTransferenciaInterna.Location = new System.Drawing.Point(34, 615);
             this.gpbTransferenciaInterna.Name = "gpbTransferenciaInterna";
@@ -578,42 +581,43 @@ namespace sistemaAlertrem
             this.gpbTransferenciaInterna.TabStop = false;
             this.gpbTransferenciaInterna.Text = "Transferência Interna";
             // 
-            // radioButton21
+            // rbtnQuebradoTransferenciaInterna
             // 
-            this.radioButton21.AutoSize = true;
-            this.radioButton21.Location = new System.Drawing.Point(103, 39);
-            this.radioButton21.Name = "radioButton21";
-            this.radioButton21.Size = new System.Drawing.Size(72, 17);
-            this.radioButton21.TabIndex = 3;
-            this.radioButton21.TabStop = true;
-            this.radioButton21.Text = "Quebrado";
-            this.radioButton21.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoTransferenciaInterna.AutoSize = true;
+            this.rbtnQuebradoTransferenciaInterna.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoTransferenciaInterna.Name = "rbtnQuebradoTransferenciaInterna";
+            this.rbtnQuebradoTransferenciaInterna.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoTransferenciaInterna.TabIndex = 3;
+            this.rbtnQuebradoTransferenciaInterna.TabStop = true;
+            this.rbtnQuebradoTransferenciaInterna.Text = "Quebrado";
+            this.rbtnQuebradoTransferenciaInterna.UseVisualStyleBackColor = true;
             // 
-            // radioButton22
+            // rbtnFuncionandoTransferenciaInterna
             // 
-            this.radioButton22.AutoSize = true;
-            this.radioButton22.Location = new System.Drawing.Point(103, 16);
-            this.radioButton22.Name = "radioButton22";
-            this.radioButton22.Size = new System.Drawing.Size(87, 17);
-            this.radioButton22.TabIndex = 2;
-            this.radioButton22.TabStop = true;
-            this.radioButton22.Text = "Funcionando";
-            this.radioButton22.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoTransferenciaInterna.AutoSize = true;
+            this.rbtnFuncionandoTransferenciaInterna.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoTransferenciaInterna.Name = "rbtnFuncionandoTransferenciaInterna";
+            this.rbtnFuncionandoTransferenciaInterna.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoTransferenciaInterna.TabIndex = 2;
+            this.rbtnFuncionandoTransferenciaInterna.TabStop = true;
+            this.rbtnFuncionandoTransferenciaInterna.Text = "Funcionando";
+            this.rbtnFuncionandoTransferenciaInterna.UseVisualStyleBackColor = true;
             // 
-            // radioButton23
+            // rbtnManutencaoTransferenciaInterna
             // 
-            this.radioButton23.AutoSize = true;
-            this.radioButton23.Location = new System.Drawing.Point(6, 42);
-            this.radioButton23.Name = "radioButton23";
-            this.radioButton23.Size = new System.Drawing.Size(85, 17);
-            this.radioButton23.TabIndex = 1;
-            this.radioButton23.TabStop = true;
-            this.radioButton23.Text = "Manutenção";
-            this.radioButton23.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoTransferenciaInterna.AutoSize = true;
+            this.rbtnManutencaoTransferenciaInterna.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoTransferenciaInterna.Name = "rbtnManutencaoTransferenciaInterna";
+            this.rbtnManutencaoTransferenciaInterna.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoTransferenciaInterna.TabIndex = 1;
+            this.rbtnManutencaoTransferenciaInterna.TabStop = true;
+            this.rbtnManutencaoTransferenciaInterna.Text = "Manutenção";
+            this.rbtnManutencaoTransferenciaInterna.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemTransferenciaInterna
             // 
             this.rbtnNaoTemTransferenciaInterna.AutoSize = true;
+            this.rbtnNaoTemTransferenciaInterna.Checked = true;
             this.rbtnNaoTemTransferenciaInterna.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemTransferenciaInterna.Name = "rbtnNaoTemTransferenciaInterna";
             this.rbtnNaoTemTransferenciaInterna.Size = new System.Drawing.Size(69, 17);
@@ -624,9 +628,9 @@ namespace sistemaAlertrem
             // 
             // gpbRampa
             // 
-            this.gpbRampa.Controls.Add(this.radioButton25);
-            this.gpbRampa.Controls.Add(this.radioButton26);
-            this.gpbRampa.Controls.Add(this.radioButton27);
+            this.gpbRampa.Controls.Add(this.rbtnQuebradoRampa);
+            this.gpbRampa.Controls.Add(this.rbtnFuncionandoRampa);
+            this.gpbRampa.Controls.Add(this.rbtnManutencaoRampa);
             this.gpbRampa.Controls.Add(this.rbtnNaoTemRampa);
             this.gpbRampa.Location = new System.Drawing.Point(452, 619);
             this.gpbRampa.Name = "gpbRampa";
@@ -635,42 +639,43 @@ namespace sistemaAlertrem
             this.gpbRampa.TabStop = false;
             this.gpbRampa.Text = "Rampa";
             // 
-            // radioButton25
+            // rbtnQuebradoRampa
             // 
-            this.radioButton25.AutoSize = true;
-            this.radioButton25.Location = new System.Drawing.Point(103, 39);
-            this.radioButton25.Name = "radioButton25";
-            this.radioButton25.Size = new System.Drawing.Size(72, 17);
-            this.radioButton25.TabIndex = 3;
-            this.radioButton25.TabStop = true;
-            this.radioButton25.Text = "Quebrado";
-            this.radioButton25.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoRampa.AutoSize = true;
+            this.rbtnQuebradoRampa.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoRampa.Name = "rbtnQuebradoRampa";
+            this.rbtnQuebradoRampa.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoRampa.TabIndex = 3;
+            this.rbtnQuebradoRampa.TabStop = true;
+            this.rbtnQuebradoRampa.Text = "Quebrado";
+            this.rbtnQuebradoRampa.UseVisualStyleBackColor = true;
             // 
-            // radioButton26
+            // rbtnFuncionandoRampa
             // 
-            this.radioButton26.AutoSize = true;
-            this.radioButton26.Location = new System.Drawing.Point(103, 16);
-            this.radioButton26.Name = "radioButton26";
-            this.radioButton26.Size = new System.Drawing.Size(87, 17);
-            this.radioButton26.TabIndex = 2;
-            this.radioButton26.TabStop = true;
-            this.radioButton26.Text = "Funcionando";
-            this.radioButton26.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoRampa.AutoSize = true;
+            this.rbtnFuncionandoRampa.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoRampa.Name = "rbtnFuncionandoRampa";
+            this.rbtnFuncionandoRampa.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoRampa.TabIndex = 2;
+            this.rbtnFuncionandoRampa.TabStop = true;
+            this.rbtnFuncionandoRampa.Text = "Funcionando";
+            this.rbtnFuncionandoRampa.UseVisualStyleBackColor = true;
             // 
-            // radioButton27
+            // rbtnManutencaoRampa
             // 
-            this.radioButton27.AutoSize = true;
-            this.radioButton27.Location = new System.Drawing.Point(6, 42);
-            this.radioButton27.Name = "radioButton27";
-            this.radioButton27.Size = new System.Drawing.Size(85, 17);
-            this.radioButton27.TabIndex = 1;
-            this.radioButton27.TabStop = true;
-            this.radioButton27.Text = "Manutenção";
-            this.radioButton27.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoRampa.AutoSize = true;
+            this.rbtnManutencaoRampa.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoRampa.Name = "rbtnManutencaoRampa";
+            this.rbtnManutencaoRampa.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoRampa.TabIndex = 1;
+            this.rbtnManutencaoRampa.TabStop = true;
+            this.rbtnManutencaoRampa.Text = "Manutenção";
+            this.rbtnManutencaoRampa.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemRampa
             // 
             this.rbtnNaoTemRampa.AutoSize = true;
+            this.rbtnNaoTemRampa.Checked = true;
             this.rbtnNaoTemRampa.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemRampa.Name = "rbtnNaoTemRampa";
             this.rbtnNaoTemRampa.Size = new System.Drawing.Size(69, 17);
@@ -681,9 +686,9 @@ namespace sistemaAlertrem
             // 
             // gpbPisoTatil
             // 
-            this.gpbPisoTatil.Controls.Add(this.radioButton29);
-            this.gpbPisoTatil.Controls.Add(this.radioButton30);
-            this.gpbPisoTatil.Controls.Add(this.radioButton31);
+            this.gpbPisoTatil.Controls.Add(this.rbtnQuebradoPisoTatil);
+            this.gpbPisoTatil.Controls.Add(this.rbtnFuncionandoPisoTatil);
+            this.gpbPisoTatil.Controls.Add(this.rbtnManutencaoPisoTatil);
             this.gpbPisoTatil.Controls.Add(this.rbtnNaoTemPisoTatil);
             this.gpbPisoTatil.Location = new System.Drawing.Point(452, 544);
             this.gpbPisoTatil.Name = "gpbPisoTatil";
@@ -692,42 +697,43 @@ namespace sistemaAlertrem
             this.gpbPisoTatil.TabStop = false;
             this.gpbPisoTatil.Text = "Piso Tátil";
             // 
-            // radioButton29
+            // rbtnQuebradoPisoTatil
             // 
-            this.radioButton29.AutoSize = true;
-            this.radioButton29.Location = new System.Drawing.Point(103, 39);
-            this.radioButton29.Name = "radioButton29";
-            this.radioButton29.Size = new System.Drawing.Size(72, 17);
-            this.radioButton29.TabIndex = 3;
-            this.radioButton29.TabStop = true;
-            this.radioButton29.Text = "Quebrado";
-            this.radioButton29.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoPisoTatil.AutoSize = true;
+            this.rbtnQuebradoPisoTatil.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoPisoTatil.Name = "rbtnQuebradoPisoTatil";
+            this.rbtnQuebradoPisoTatil.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoPisoTatil.TabIndex = 3;
+            this.rbtnQuebradoPisoTatil.TabStop = true;
+            this.rbtnQuebradoPisoTatil.Text = "Quebrado";
+            this.rbtnQuebradoPisoTatil.UseVisualStyleBackColor = true;
             // 
-            // radioButton30
+            // rbtnFuncionandoPisoTatil
             // 
-            this.radioButton30.AutoSize = true;
-            this.radioButton30.Location = new System.Drawing.Point(103, 16);
-            this.radioButton30.Name = "radioButton30";
-            this.radioButton30.Size = new System.Drawing.Size(87, 17);
-            this.radioButton30.TabIndex = 2;
-            this.radioButton30.TabStop = true;
-            this.radioButton30.Text = "Funcionando";
-            this.radioButton30.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoPisoTatil.AutoSize = true;
+            this.rbtnFuncionandoPisoTatil.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoPisoTatil.Name = "rbtnFuncionandoPisoTatil";
+            this.rbtnFuncionandoPisoTatil.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoPisoTatil.TabIndex = 2;
+            this.rbtnFuncionandoPisoTatil.TabStop = true;
+            this.rbtnFuncionandoPisoTatil.Text = "Funcionando";
+            this.rbtnFuncionandoPisoTatil.UseVisualStyleBackColor = true;
             // 
-            // radioButton31
+            // rbtnManutencaoPisoTatil
             // 
-            this.radioButton31.AutoSize = true;
-            this.radioButton31.Location = new System.Drawing.Point(6, 42);
-            this.radioButton31.Name = "radioButton31";
-            this.radioButton31.Size = new System.Drawing.Size(85, 17);
-            this.radioButton31.TabIndex = 1;
-            this.radioButton31.TabStop = true;
-            this.radioButton31.Text = "Manutenção";
-            this.radioButton31.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoPisoTatil.AutoSize = true;
+            this.rbtnManutencaoPisoTatil.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoPisoTatil.Name = "rbtnManutencaoPisoTatil";
+            this.rbtnManutencaoPisoTatil.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoPisoTatil.TabIndex = 1;
+            this.rbtnManutencaoPisoTatil.TabStop = true;
+            this.rbtnManutencaoPisoTatil.Text = "Manutenção";
+            this.rbtnManutencaoPisoTatil.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemPisoTatil
             // 
             this.rbtnNaoTemPisoTatil.AutoSize = true;
+            this.rbtnNaoTemPisoTatil.Checked = true;
             this.rbtnNaoTemPisoTatil.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemPisoTatil.Name = "rbtnNaoTemPisoTatil";
             this.rbtnNaoTemPisoTatil.Size = new System.Drawing.Size(69, 17);
@@ -738,9 +744,9 @@ namespace sistemaAlertrem
             // 
             // gpbTelefonePSurdos
             // 
-            this.gpbTelefonePSurdos.Controls.Add(this.radioButton33);
-            this.gpbTelefonePSurdos.Controls.Add(this.radioButton34);
-            this.gpbTelefonePSurdos.Controls.Add(this.radioButton35);
+            this.gpbTelefonePSurdos.Controls.Add(this.rbtnQuebradoTelefonePSurdos);
+            this.gpbTelefonePSurdos.Controls.Add(this.rbtnFuncionandoTelefonePSurdos);
+            this.gpbTelefonePSurdos.Controls.Add(this.rbtnManutencaoTelefonePSurdos);
             this.gpbTelefonePSurdos.Controls.Add(this.rbtnNaoTemTelefonePSurdos);
             this.gpbTelefonePSurdos.Location = new System.Drawing.Point(243, 619);
             this.gpbTelefonePSurdos.Name = "gpbTelefonePSurdos";
@@ -749,42 +755,43 @@ namespace sistemaAlertrem
             this.gpbTelefonePSurdos.TabStop = false;
             this.gpbTelefonePSurdos.Text = "Telefone Para Surdos";
             // 
-            // radioButton33
+            // rbtnQuebradoTelefonePSurdos
             // 
-            this.radioButton33.AutoSize = true;
-            this.radioButton33.Location = new System.Drawing.Point(103, 39);
-            this.radioButton33.Name = "radioButton33";
-            this.radioButton33.Size = new System.Drawing.Size(72, 17);
-            this.radioButton33.TabIndex = 3;
-            this.radioButton33.TabStop = true;
-            this.radioButton33.Text = "Quebrado";
-            this.radioButton33.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoTelefonePSurdos.AutoSize = true;
+            this.rbtnQuebradoTelefonePSurdos.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoTelefonePSurdos.Name = "rbtnQuebradoTelefonePSurdos";
+            this.rbtnQuebradoTelefonePSurdos.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoTelefonePSurdos.TabIndex = 3;
+            this.rbtnQuebradoTelefonePSurdos.TabStop = true;
+            this.rbtnQuebradoTelefonePSurdos.Text = "Quebrado";
+            this.rbtnQuebradoTelefonePSurdos.UseVisualStyleBackColor = true;
             // 
-            // radioButton34
+            // rbtnFuncionandoTelefonePSurdos
             // 
-            this.radioButton34.AutoSize = true;
-            this.radioButton34.Location = new System.Drawing.Point(103, 16);
-            this.radioButton34.Name = "radioButton34";
-            this.radioButton34.Size = new System.Drawing.Size(87, 17);
-            this.radioButton34.TabIndex = 2;
-            this.radioButton34.TabStop = true;
-            this.radioButton34.Text = "Funcionando";
-            this.radioButton34.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoTelefonePSurdos.AutoSize = true;
+            this.rbtnFuncionandoTelefonePSurdos.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoTelefonePSurdos.Name = "rbtnFuncionandoTelefonePSurdos";
+            this.rbtnFuncionandoTelefonePSurdos.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoTelefonePSurdos.TabIndex = 2;
+            this.rbtnFuncionandoTelefonePSurdos.TabStop = true;
+            this.rbtnFuncionandoTelefonePSurdos.Text = "Funcionando";
+            this.rbtnFuncionandoTelefonePSurdos.UseVisualStyleBackColor = true;
             // 
-            // radioButton35
+            // rbtnManutencaoTelefonePSurdos
             // 
-            this.radioButton35.AutoSize = true;
-            this.radioButton35.Location = new System.Drawing.Point(6, 42);
-            this.radioButton35.Name = "radioButton35";
-            this.radioButton35.Size = new System.Drawing.Size(85, 17);
-            this.radioButton35.TabIndex = 1;
-            this.radioButton35.TabStop = true;
-            this.radioButton35.Text = "Manutenção";
-            this.radioButton35.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoTelefonePSurdos.AutoSize = true;
+            this.rbtnManutencaoTelefonePSurdos.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoTelefonePSurdos.Name = "rbtnManutencaoTelefonePSurdos";
+            this.rbtnManutencaoTelefonePSurdos.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoTelefonePSurdos.TabIndex = 1;
+            this.rbtnManutencaoTelefonePSurdos.TabStop = true;
+            this.rbtnManutencaoTelefonePSurdos.Text = "Manutenção";
+            this.rbtnManutencaoTelefonePSurdos.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemTelefonePSurdos
             // 
             this.rbtnNaoTemTelefonePSurdos.AutoSize = true;
+            this.rbtnNaoTemTelefonePSurdos.Checked = true;
             this.rbtnNaoTemTelefonePSurdos.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemTelefonePSurdos.Name = "rbtnNaoTemTelefonePSurdos";
             this.rbtnNaoTemTelefonePSurdos.Size = new System.Drawing.Size(69, 17);
@@ -795,9 +802,9 @@ namespace sistemaAlertrem
             // 
             // gpbCalcados
             // 
-            this.gpbCalcados.Controls.Add(this.radioButton37);
-            this.gpbCalcados.Controls.Add(this.radioButton38);
-            this.gpbCalcados.Controls.Add(this.radioButton39);
+            this.gpbCalcados.Controls.Add(this.rbtnQuebradoCalcados);
+            this.gpbCalcados.Controls.Add(this.rbtnFuncionandoCalcados);
+            this.gpbCalcados.Controls.Add(this.rbtnManutencaoCalcados);
             this.gpbCalcados.Controls.Add(this.rbtnNaoTemCalcados);
             this.gpbCalcados.Location = new System.Drawing.Point(243, 544);
             this.gpbCalcados.Name = "gpbCalcados";
@@ -806,42 +813,43 @@ namespace sistemaAlertrem
             this.gpbCalcados.TabStop = false;
             this.gpbCalcados.Text = "Calçados";
             // 
-            // radioButton37
+            // rbtnQuebradoCalcados
             // 
-            this.radioButton37.AutoSize = true;
-            this.radioButton37.Location = new System.Drawing.Point(103, 39);
-            this.radioButton37.Name = "radioButton37";
-            this.radioButton37.Size = new System.Drawing.Size(72, 17);
-            this.radioButton37.TabIndex = 3;
-            this.radioButton37.TabStop = true;
-            this.radioButton37.Text = "Quebrado";
-            this.radioButton37.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoCalcados.AutoSize = true;
+            this.rbtnQuebradoCalcados.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoCalcados.Name = "rbtnQuebradoCalcados";
+            this.rbtnQuebradoCalcados.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoCalcados.TabIndex = 3;
+            this.rbtnQuebradoCalcados.TabStop = true;
+            this.rbtnQuebradoCalcados.Text = "Quebrado";
+            this.rbtnQuebradoCalcados.UseVisualStyleBackColor = true;
             // 
-            // radioButton38
+            // rbtnFuncionandoCalcados
             // 
-            this.radioButton38.AutoSize = true;
-            this.radioButton38.Location = new System.Drawing.Point(103, 16);
-            this.radioButton38.Name = "radioButton38";
-            this.radioButton38.Size = new System.Drawing.Size(87, 17);
-            this.radioButton38.TabIndex = 2;
-            this.radioButton38.TabStop = true;
-            this.radioButton38.Text = "Funcionando";
-            this.radioButton38.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoCalcados.AutoSize = true;
+            this.rbtnFuncionandoCalcados.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoCalcados.Name = "rbtnFuncionandoCalcados";
+            this.rbtnFuncionandoCalcados.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoCalcados.TabIndex = 2;
+            this.rbtnFuncionandoCalcados.TabStop = true;
+            this.rbtnFuncionandoCalcados.Text = "Funcionando";
+            this.rbtnFuncionandoCalcados.UseVisualStyleBackColor = true;
             // 
-            // radioButton39
+            // rbtnManutencaoCalcados
             // 
-            this.radioButton39.AutoSize = true;
-            this.radioButton39.Location = new System.Drawing.Point(6, 42);
-            this.radioButton39.Name = "radioButton39";
-            this.radioButton39.Size = new System.Drawing.Size(85, 17);
-            this.radioButton39.TabIndex = 1;
-            this.radioButton39.TabStop = true;
-            this.radioButton39.Text = "Manutenção";
-            this.radioButton39.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoCalcados.AutoSize = true;
+            this.rbtnManutencaoCalcados.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoCalcados.Name = "rbtnManutencaoCalcados";
+            this.rbtnManutencaoCalcados.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoCalcados.TabIndex = 1;
+            this.rbtnManutencaoCalcados.TabStop = true;
+            this.rbtnManutencaoCalcados.Text = "Manutenção";
+            this.rbtnManutencaoCalcados.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemCalcados
             // 
             this.rbtnNaoTemCalcados.AutoSize = true;
+            this.rbtnNaoTemCalcados.Checked = true;
             this.rbtnNaoTemCalcados.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemCalcados.Name = "rbtnNaoTemCalcados";
             this.rbtnNaoTemCalcados.Size = new System.Drawing.Size(69, 17);
@@ -852,9 +860,9 @@ namespace sistemaAlertrem
             // 
             // gpbCaixaEletronico
             // 
-            this.gpbCaixaEletronico.Controls.Add(this.radioButton41);
-            this.gpbCaixaEletronico.Controls.Add(this.radioButton42);
-            this.gpbCaixaEletronico.Controls.Add(this.radioButton43);
+            this.gpbCaixaEletronico.Controls.Add(this.rbtnQuebradoCaixaEletronico);
+            this.gpbCaixaEletronico.Controls.Add(this.rbtnFuncionandoCaixaEletronico);
+            this.gpbCaixaEletronico.Controls.Add(this.rbtnManutencaoCaixaEletronico);
             this.gpbCaixaEletronico.Controls.Add(this.rbtnNaoTemCaixaEletronico);
             this.gpbCaixaEletronico.Location = new System.Drawing.Point(243, 469);
             this.gpbCaixaEletronico.Name = "gpbCaixaEletronico";
@@ -863,42 +871,43 @@ namespace sistemaAlertrem
             this.gpbCaixaEletronico.TabStop = false;
             this.gpbCaixaEletronico.Text = "Caixa Eletrônico";
             // 
-            // radioButton41
+            // rbtnQuebradoCaixaEletronico
             // 
-            this.radioButton41.AutoSize = true;
-            this.radioButton41.Location = new System.Drawing.Point(103, 39);
-            this.radioButton41.Name = "radioButton41";
-            this.radioButton41.Size = new System.Drawing.Size(72, 17);
-            this.radioButton41.TabIndex = 3;
-            this.radioButton41.TabStop = true;
-            this.radioButton41.Text = "Quebrado";
-            this.radioButton41.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoCaixaEletronico.AutoSize = true;
+            this.rbtnQuebradoCaixaEletronico.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoCaixaEletronico.Name = "rbtnQuebradoCaixaEletronico";
+            this.rbtnQuebradoCaixaEletronico.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoCaixaEletronico.TabIndex = 3;
+            this.rbtnQuebradoCaixaEletronico.TabStop = true;
+            this.rbtnQuebradoCaixaEletronico.Text = "Quebrado";
+            this.rbtnQuebradoCaixaEletronico.UseVisualStyleBackColor = true;
             // 
-            // radioButton42
+            // rbtnFuncionandoCaixaEletronico
             // 
-            this.radioButton42.AutoSize = true;
-            this.radioButton42.Location = new System.Drawing.Point(103, 16);
-            this.radioButton42.Name = "radioButton42";
-            this.radioButton42.Size = new System.Drawing.Size(87, 17);
-            this.radioButton42.TabIndex = 2;
-            this.radioButton42.TabStop = true;
-            this.radioButton42.Text = "Funcionando";
-            this.radioButton42.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoCaixaEletronico.AutoSize = true;
+            this.rbtnFuncionandoCaixaEletronico.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoCaixaEletronico.Name = "rbtnFuncionandoCaixaEletronico";
+            this.rbtnFuncionandoCaixaEletronico.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoCaixaEletronico.TabIndex = 2;
+            this.rbtnFuncionandoCaixaEletronico.TabStop = true;
+            this.rbtnFuncionandoCaixaEletronico.Text = "Funcionando";
+            this.rbtnFuncionandoCaixaEletronico.UseVisualStyleBackColor = true;
             // 
-            // radioButton43
+            // rbtnManutencaoCaixaEletronico
             // 
-            this.radioButton43.AutoSize = true;
-            this.radioButton43.Location = new System.Drawing.Point(6, 42);
-            this.radioButton43.Name = "radioButton43";
-            this.radioButton43.Size = new System.Drawing.Size(85, 17);
-            this.radioButton43.TabIndex = 1;
-            this.radioButton43.TabStop = true;
-            this.radioButton43.Text = "Manutenção";
-            this.radioButton43.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoCaixaEletronico.AutoSize = true;
+            this.rbtnManutencaoCaixaEletronico.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoCaixaEletronico.Name = "rbtnManutencaoCaixaEletronico";
+            this.rbtnManutencaoCaixaEletronico.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoCaixaEletronico.TabIndex = 1;
+            this.rbtnManutencaoCaixaEletronico.TabStop = true;
+            this.rbtnManutencaoCaixaEletronico.Text = "Manutenção";
+            this.rbtnManutencaoCaixaEletronico.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemCaixaEletronico
             // 
             this.rbtnNaoTemCaixaEletronico.AutoSize = true;
+            this.rbtnNaoTemCaixaEletronico.Checked = true;
             this.rbtnNaoTemCaixaEletronico.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemCaixaEletronico.Name = "rbtnNaoTemCaixaEletronico";
             this.rbtnNaoTemCaixaEletronico.Size = new System.Drawing.Size(69, 17);
@@ -909,9 +918,9 @@ namespace sistemaAlertrem
             // 
             // gpbEmporio
             // 
-            this.gpbEmporio.Controls.Add(this.radioButton45);
-            this.gpbEmporio.Controls.Add(this.radioButton46);
-            this.gpbEmporio.Controls.Add(this.radioButton47);
+            this.gpbEmporio.Controls.Add(this.rbtnQuebradoEmporio);
+            this.gpbEmporio.Controls.Add(this.rbtnFuncionandoEmporio);
+            this.gpbEmporio.Controls.Add(this.rbtnManutencaoEmporio);
             this.gpbEmporio.Controls.Add(this.rbtnNaoTemEmporio);
             this.gpbEmporio.Location = new System.Drawing.Point(243, 394);
             this.gpbEmporio.Name = "gpbEmporio";
@@ -920,42 +929,43 @@ namespace sistemaAlertrem
             this.gpbEmporio.TabStop = false;
             this.gpbEmporio.Text = "Empório";
             // 
-            // radioButton45
+            // rbtnQuebradoEmporio
             // 
-            this.radioButton45.AutoSize = true;
-            this.radioButton45.Location = new System.Drawing.Point(103, 39);
-            this.radioButton45.Name = "radioButton45";
-            this.radioButton45.Size = new System.Drawing.Size(72, 17);
-            this.radioButton45.TabIndex = 3;
-            this.radioButton45.TabStop = true;
-            this.radioButton45.Text = "Quebrado";
-            this.radioButton45.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoEmporio.AutoSize = true;
+            this.rbtnQuebradoEmporio.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoEmporio.Name = "rbtnQuebradoEmporio";
+            this.rbtnQuebradoEmporio.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoEmporio.TabIndex = 3;
+            this.rbtnQuebradoEmporio.TabStop = true;
+            this.rbtnQuebradoEmporio.Text = "Quebrado";
+            this.rbtnQuebradoEmporio.UseVisualStyleBackColor = true;
             // 
-            // radioButton46
+            // rbtnFuncionandoEmporio
             // 
-            this.radioButton46.AutoSize = true;
-            this.radioButton46.Location = new System.Drawing.Point(103, 16);
-            this.radioButton46.Name = "radioButton46";
-            this.radioButton46.Size = new System.Drawing.Size(87, 17);
-            this.radioButton46.TabIndex = 2;
-            this.radioButton46.TabStop = true;
-            this.radioButton46.Text = "Funcionando";
-            this.radioButton46.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoEmporio.AutoSize = true;
+            this.rbtnFuncionandoEmporio.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoEmporio.Name = "rbtnFuncionandoEmporio";
+            this.rbtnFuncionandoEmporio.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoEmporio.TabIndex = 2;
+            this.rbtnFuncionandoEmporio.TabStop = true;
+            this.rbtnFuncionandoEmporio.Text = "Funcionando";
+            this.rbtnFuncionandoEmporio.UseVisualStyleBackColor = true;
             // 
-            // radioButton47
+            // rbtnManutencaoEmporio
             // 
-            this.radioButton47.AutoSize = true;
-            this.radioButton47.Location = new System.Drawing.Point(6, 42);
-            this.radioButton47.Name = "radioButton47";
-            this.radioButton47.Size = new System.Drawing.Size(85, 17);
-            this.radioButton47.TabIndex = 1;
-            this.radioButton47.TabStop = true;
-            this.radioButton47.Text = "Manutenção";
-            this.radioButton47.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoEmporio.AutoSize = true;
+            this.rbtnManutencaoEmporio.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoEmporio.Name = "rbtnManutencaoEmporio";
+            this.rbtnManutencaoEmporio.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoEmporio.TabIndex = 1;
+            this.rbtnManutencaoEmporio.TabStop = true;
+            this.rbtnManutencaoEmporio.Text = "Manutenção";
+            this.rbtnManutencaoEmporio.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemEmporio
             // 
             this.rbtnNaoTemEmporio.AutoSize = true;
+            this.rbtnNaoTemEmporio.Checked = true;
             this.rbtnNaoTemEmporio.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemEmporio.Name = "rbtnNaoTemEmporio";
             this.rbtnNaoTemEmporio.Size = new System.Drawing.Size(69, 17);
@@ -966,9 +976,9 @@ namespace sistemaAlertrem
             // 
             // gpbLanchonete
             // 
-            this.gpbLanchonete.Controls.Add(this.radioButton49);
-            this.gpbLanchonete.Controls.Add(this.radioButton50);
-            this.gpbLanchonete.Controls.Add(this.radioButton51);
+            this.gpbLanchonete.Controls.Add(this.rbtnQuebradoLanchonete);
+            this.gpbLanchonete.Controls.Add(this.rbtnFuncionandoLanchonete);
+            this.gpbLanchonete.Controls.Add(this.rbtnManutencaoLanchonete);
             this.gpbLanchonete.Controls.Add(this.rbtnNaoTemLanchonete);
             this.gpbLanchonete.Location = new System.Drawing.Point(243, 319);
             this.gpbLanchonete.Name = "gpbLanchonete";
@@ -977,42 +987,43 @@ namespace sistemaAlertrem
             this.gpbLanchonete.TabStop = false;
             this.gpbLanchonete.Text = "Lanchonete";
             // 
-            // radioButton49
+            // rbtnQuebradoLanchonete
             // 
-            this.radioButton49.AutoSize = true;
-            this.radioButton49.Location = new System.Drawing.Point(103, 39);
-            this.radioButton49.Name = "radioButton49";
-            this.radioButton49.Size = new System.Drawing.Size(72, 17);
-            this.radioButton49.TabIndex = 3;
-            this.radioButton49.TabStop = true;
-            this.radioButton49.Text = "Quebrado";
-            this.radioButton49.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoLanchonete.AutoSize = true;
+            this.rbtnQuebradoLanchonete.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoLanchonete.Name = "rbtnQuebradoLanchonete";
+            this.rbtnQuebradoLanchonete.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoLanchonete.TabIndex = 3;
+            this.rbtnQuebradoLanchonete.TabStop = true;
+            this.rbtnQuebradoLanchonete.Text = "Quebrado";
+            this.rbtnQuebradoLanchonete.UseVisualStyleBackColor = true;
             // 
-            // radioButton50
+            // rbtnFuncionandoLanchonete
             // 
-            this.radioButton50.AutoSize = true;
-            this.radioButton50.Location = new System.Drawing.Point(103, 16);
-            this.radioButton50.Name = "radioButton50";
-            this.radioButton50.Size = new System.Drawing.Size(87, 17);
-            this.radioButton50.TabIndex = 2;
-            this.radioButton50.TabStop = true;
-            this.radioButton50.Text = "Funcionando";
-            this.radioButton50.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoLanchonete.AutoSize = true;
+            this.rbtnFuncionandoLanchonete.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoLanchonete.Name = "rbtnFuncionandoLanchonete";
+            this.rbtnFuncionandoLanchonete.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoLanchonete.TabIndex = 2;
+            this.rbtnFuncionandoLanchonete.TabStop = true;
+            this.rbtnFuncionandoLanchonete.Text = "Funcionando";
+            this.rbtnFuncionandoLanchonete.UseVisualStyleBackColor = true;
             // 
-            // radioButton51
+            // rbtnManutencaoLanchonete
             // 
-            this.radioButton51.AutoSize = true;
-            this.radioButton51.Location = new System.Drawing.Point(6, 42);
-            this.radioButton51.Name = "radioButton51";
-            this.radioButton51.Size = new System.Drawing.Size(85, 17);
-            this.radioButton51.TabIndex = 1;
-            this.radioButton51.TabStop = true;
-            this.radioButton51.Text = "Manutenção";
-            this.radioButton51.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoLanchonete.AutoSize = true;
+            this.rbtnManutencaoLanchonete.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoLanchonete.Name = "rbtnManutencaoLanchonete";
+            this.rbtnManutencaoLanchonete.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoLanchonete.TabIndex = 1;
+            this.rbtnManutencaoLanchonete.TabStop = true;
+            this.rbtnManutencaoLanchonete.Text = "Manutenção";
+            this.rbtnManutencaoLanchonete.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemLanchonete
             // 
             this.rbtnNaoTemLanchonete.AutoSize = true;
+            this.rbtnNaoTemLanchonete.Checked = true;
             this.rbtnNaoTemLanchonete.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemLanchonete.Name = "rbtnNaoTemLanchonete";
             this.rbtnNaoTemLanchonete.Size = new System.Drawing.Size(69, 17);
@@ -1023,9 +1034,9 @@ namespace sistemaAlertrem
             // 
             // gpbEscadasRolantes
             // 
-            this.gpbEscadasRolantes.Controls.Add(this.radioButton53);
-            this.gpbEscadasRolantes.Controls.Add(this.radioButton54);
-            this.gpbEscadasRolantes.Controls.Add(this.radioButton55);
+            this.gpbEscadasRolantes.Controls.Add(this.rbtnQuebradoEscadasRolantes);
+            this.gpbEscadasRolantes.Controls.Add(this.rbtnFuncionandoEscadasRolantes);
+            this.gpbEscadasRolantes.Controls.Add(this.rbtnManutencaoEscadasRolantes);
             this.gpbEscadasRolantes.Controls.Add(this.rbtnNaoTemEscadasRolantes);
             this.gpbEscadasRolantes.Location = new System.Drawing.Point(243, 244);
             this.gpbEscadasRolantes.Name = "gpbEscadasRolantes";
@@ -1034,42 +1045,43 @@ namespace sistemaAlertrem
             this.gpbEscadasRolantes.TabStop = false;
             this.gpbEscadasRolantes.Text = "Escadas Rolantes";
             // 
-            // radioButton53
+            // rbtnQuebradoEscadasRolantes
             // 
-            this.radioButton53.AutoSize = true;
-            this.radioButton53.Location = new System.Drawing.Point(103, 39);
-            this.radioButton53.Name = "radioButton53";
-            this.radioButton53.Size = new System.Drawing.Size(72, 17);
-            this.radioButton53.TabIndex = 3;
-            this.radioButton53.TabStop = true;
-            this.radioButton53.Text = "Quebrado";
-            this.radioButton53.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoEscadasRolantes.AutoSize = true;
+            this.rbtnQuebradoEscadasRolantes.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoEscadasRolantes.Name = "rbtnQuebradoEscadasRolantes";
+            this.rbtnQuebradoEscadasRolantes.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoEscadasRolantes.TabIndex = 3;
+            this.rbtnQuebradoEscadasRolantes.TabStop = true;
+            this.rbtnQuebradoEscadasRolantes.Text = "Quebrado";
+            this.rbtnQuebradoEscadasRolantes.UseVisualStyleBackColor = true;
             // 
-            // radioButton54
+            // rbtnFuncionandoEscadasRolantes
             // 
-            this.radioButton54.AutoSize = true;
-            this.radioButton54.Location = new System.Drawing.Point(103, 16);
-            this.radioButton54.Name = "radioButton54";
-            this.radioButton54.Size = new System.Drawing.Size(87, 17);
-            this.radioButton54.TabIndex = 2;
-            this.radioButton54.TabStop = true;
-            this.radioButton54.Text = "Funcionando";
-            this.radioButton54.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoEscadasRolantes.AutoSize = true;
+            this.rbtnFuncionandoEscadasRolantes.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoEscadasRolantes.Name = "rbtnFuncionandoEscadasRolantes";
+            this.rbtnFuncionandoEscadasRolantes.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoEscadasRolantes.TabIndex = 2;
+            this.rbtnFuncionandoEscadasRolantes.TabStop = true;
+            this.rbtnFuncionandoEscadasRolantes.Text = "Funcionando";
+            this.rbtnFuncionandoEscadasRolantes.UseVisualStyleBackColor = true;
             // 
-            // radioButton55
+            // rbtnManutencaoEscadasRolantes
             // 
-            this.radioButton55.AutoSize = true;
-            this.radioButton55.Location = new System.Drawing.Point(6, 42);
-            this.radioButton55.Name = "radioButton55";
-            this.radioButton55.Size = new System.Drawing.Size(85, 17);
-            this.radioButton55.TabIndex = 1;
-            this.radioButton55.TabStop = true;
-            this.radioButton55.Text = "Manutenção";
-            this.radioButton55.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoEscadasRolantes.AutoSize = true;
+            this.rbtnManutencaoEscadasRolantes.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoEscadasRolantes.Name = "rbtnManutencaoEscadasRolantes";
+            this.rbtnManutencaoEscadasRolantes.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoEscadasRolantes.TabIndex = 1;
+            this.rbtnManutencaoEscadasRolantes.TabStop = true;
+            this.rbtnManutencaoEscadasRolantes.Text = "Manutenção";
+            this.rbtnManutencaoEscadasRolantes.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemEscadasRolantes
             // 
             this.rbtnNaoTemEscadasRolantes.AutoSize = true;
+            this.rbtnNaoTemEscadasRolantes.Checked = true;
             this.rbtnNaoTemEscadasRolantes.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemEscadasRolantes.Name = "rbtnNaoTemEscadasRolantes";
             this.rbtnNaoTemEscadasRolantes.Size = new System.Drawing.Size(69, 17);
@@ -1080,9 +1092,9 @@ namespace sistemaAlertrem
             // 
             // gpbTransposicaoPlataformas
             // 
-            this.gpbTransposicaoPlataformas.Controls.Add(this.radioButton57);
-            this.gpbTransposicaoPlataformas.Controls.Add(this.radioButton58);
-            this.gpbTransposicaoPlataformas.Controls.Add(this.radioButton59);
+            this.gpbTransposicaoPlataformas.Controls.Add(this.rbtnQuebradoTransposicaoPlataforma);
+            this.gpbTransposicaoPlataformas.Controls.Add(this.rbtnFuncionandoTransposicaoPlataforma);
+            this.gpbTransposicaoPlataformas.Controls.Add(this.rbtnManutencaoTransposicaoPlataforma);
             this.gpbTransposicaoPlataformas.Controls.Add(this.rbtnNaoTemTransposicaoPlataformas);
             this.gpbTransposicaoPlataformas.Location = new System.Drawing.Point(243, 169);
             this.gpbTransposicaoPlataformas.Name = "gpbTransposicaoPlataformas";
@@ -1091,42 +1103,43 @@ namespace sistemaAlertrem
             this.gpbTransposicaoPlataformas.TabStop = false;
             this.gpbTransposicaoPlataformas.Text = "Tranposição Entre Plataformas";
             // 
-            // radioButton57
+            // rbtnQuebradoTransposicaoPlataforma
             // 
-            this.radioButton57.AutoSize = true;
-            this.radioButton57.Location = new System.Drawing.Point(103, 39);
-            this.radioButton57.Name = "radioButton57";
-            this.radioButton57.Size = new System.Drawing.Size(72, 17);
-            this.radioButton57.TabIndex = 3;
-            this.radioButton57.TabStop = true;
-            this.radioButton57.Text = "Quebrado";
-            this.radioButton57.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoTransposicaoPlataforma.AutoSize = true;
+            this.rbtnQuebradoTransposicaoPlataforma.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoTransposicaoPlataforma.Name = "rbtnQuebradoTransposicaoPlataforma";
+            this.rbtnQuebradoTransposicaoPlataforma.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoTransposicaoPlataforma.TabIndex = 3;
+            this.rbtnQuebradoTransposicaoPlataforma.TabStop = true;
+            this.rbtnQuebradoTransposicaoPlataforma.Text = "Quebrado";
+            this.rbtnQuebradoTransposicaoPlataforma.UseVisualStyleBackColor = true;
             // 
-            // radioButton58
+            // rbtnFuncionandoTransposicaoPlataforma
             // 
-            this.radioButton58.AutoSize = true;
-            this.radioButton58.Location = new System.Drawing.Point(103, 16);
-            this.radioButton58.Name = "radioButton58";
-            this.radioButton58.Size = new System.Drawing.Size(87, 17);
-            this.radioButton58.TabIndex = 2;
-            this.radioButton58.TabStop = true;
-            this.radioButton58.Text = "Funcionando";
-            this.radioButton58.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoTransposicaoPlataforma.AutoSize = true;
+            this.rbtnFuncionandoTransposicaoPlataforma.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoTransposicaoPlataforma.Name = "rbtnFuncionandoTransposicaoPlataforma";
+            this.rbtnFuncionandoTransposicaoPlataforma.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoTransposicaoPlataforma.TabIndex = 2;
+            this.rbtnFuncionandoTransposicaoPlataforma.TabStop = true;
+            this.rbtnFuncionandoTransposicaoPlataforma.Text = "Funcionando";
+            this.rbtnFuncionandoTransposicaoPlataforma.UseVisualStyleBackColor = true;
             // 
-            // radioButton59
+            // rbtnManutencaoTransposicaoPlataforma
             // 
-            this.radioButton59.AutoSize = true;
-            this.radioButton59.Location = new System.Drawing.Point(6, 42);
-            this.radioButton59.Name = "radioButton59";
-            this.radioButton59.Size = new System.Drawing.Size(85, 17);
-            this.radioButton59.TabIndex = 1;
-            this.radioButton59.TabStop = true;
-            this.radioButton59.Text = "Manutenção";
-            this.radioButton59.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoTransposicaoPlataforma.AutoSize = true;
+            this.rbtnManutencaoTransposicaoPlataforma.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoTransposicaoPlataforma.Name = "rbtnManutencaoTransposicaoPlataforma";
+            this.rbtnManutencaoTransposicaoPlataforma.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoTransposicaoPlataforma.TabIndex = 1;
+            this.rbtnManutencaoTransposicaoPlataforma.TabStop = true;
+            this.rbtnManutencaoTransposicaoPlataforma.Text = "Manutenção";
+            this.rbtnManutencaoTransposicaoPlataforma.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemTransposicaoPlataformas
             // 
             this.rbtnNaoTemTransposicaoPlataformas.AutoSize = true;
+            this.rbtnNaoTemTransposicaoPlataformas.Checked = true;
             this.rbtnNaoTemTransposicaoPlataformas.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemTransposicaoPlataformas.Name = "rbtnNaoTemTransposicaoPlataformas";
             this.rbtnNaoTemTransposicaoPlataformas.Size = new System.Drawing.Size(69, 17);
@@ -1137,9 +1150,9 @@ namespace sistemaAlertrem
             // 
             // gpbAchadosPerdidos
             // 
-            this.gpbAchadosPerdidos.Controls.Add(this.radioButton61);
-            this.gpbAchadosPerdidos.Controls.Add(this.radioButton62);
-            this.gpbAchadosPerdidos.Controls.Add(this.radioButton63);
+            this.gpbAchadosPerdidos.Controls.Add(this.rbtnQuebradoAchadosPerdidos);
+            this.gpbAchadosPerdidos.Controls.Add(this.rbtnFuncionandoAchadosPerdidos);
+            this.gpbAchadosPerdidos.Controls.Add(this.rbtnManutencaoAchadosPerdidos);
             this.gpbAchadosPerdidos.Controls.Add(this.rbtnNaoTemAchadosPerdidos);
             this.gpbAchadosPerdidos.Location = new System.Drawing.Point(452, 469);
             this.gpbAchadosPerdidos.Name = "gpbAchadosPerdidos";
@@ -1148,42 +1161,43 @@ namespace sistemaAlertrem
             this.gpbAchadosPerdidos.TabStop = false;
             this.gpbAchadosPerdidos.Text = "Achados E Perdidos";
             // 
-            // radioButton61
+            // rbtnQuebradoAchadosPerdidos
             // 
-            this.radioButton61.AutoSize = true;
-            this.radioButton61.Location = new System.Drawing.Point(103, 39);
-            this.radioButton61.Name = "radioButton61";
-            this.radioButton61.Size = new System.Drawing.Size(72, 17);
-            this.radioButton61.TabIndex = 3;
-            this.radioButton61.TabStop = true;
-            this.radioButton61.Text = "Quebrado";
-            this.radioButton61.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoAchadosPerdidos.AutoSize = true;
+            this.rbtnQuebradoAchadosPerdidos.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoAchadosPerdidos.Name = "rbtnQuebradoAchadosPerdidos";
+            this.rbtnQuebradoAchadosPerdidos.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoAchadosPerdidos.TabIndex = 3;
+            this.rbtnQuebradoAchadosPerdidos.TabStop = true;
+            this.rbtnQuebradoAchadosPerdidos.Text = "Quebrado";
+            this.rbtnQuebradoAchadosPerdidos.UseVisualStyleBackColor = true;
             // 
-            // radioButton62
+            // rbtnFuncionandoAchadosPerdidos
             // 
-            this.radioButton62.AutoSize = true;
-            this.radioButton62.Location = new System.Drawing.Point(103, 16);
-            this.radioButton62.Name = "radioButton62";
-            this.radioButton62.Size = new System.Drawing.Size(87, 17);
-            this.radioButton62.TabIndex = 2;
-            this.radioButton62.TabStop = true;
-            this.radioButton62.Text = "Funcionando";
-            this.radioButton62.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoAchadosPerdidos.AutoSize = true;
+            this.rbtnFuncionandoAchadosPerdidos.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoAchadosPerdidos.Name = "rbtnFuncionandoAchadosPerdidos";
+            this.rbtnFuncionandoAchadosPerdidos.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoAchadosPerdidos.TabIndex = 2;
+            this.rbtnFuncionandoAchadosPerdidos.TabStop = true;
+            this.rbtnFuncionandoAchadosPerdidos.Text = "Funcionando";
+            this.rbtnFuncionandoAchadosPerdidos.UseVisualStyleBackColor = true;
             // 
-            // radioButton63
+            // rbtnManutencaoAchadosPerdidos
             // 
-            this.radioButton63.AutoSize = true;
-            this.radioButton63.Location = new System.Drawing.Point(6, 42);
-            this.radioButton63.Name = "radioButton63";
-            this.radioButton63.Size = new System.Drawing.Size(85, 17);
-            this.radioButton63.TabIndex = 1;
-            this.radioButton63.TabStop = true;
-            this.radioButton63.Text = "Manutenção";
-            this.radioButton63.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoAchadosPerdidos.AutoSize = true;
+            this.rbtnManutencaoAchadosPerdidos.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoAchadosPerdidos.Name = "rbtnManutencaoAchadosPerdidos";
+            this.rbtnManutencaoAchadosPerdidos.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoAchadosPerdidos.TabIndex = 1;
+            this.rbtnManutencaoAchadosPerdidos.TabStop = true;
+            this.rbtnManutencaoAchadosPerdidos.Text = "Manutenção";
+            this.rbtnManutencaoAchadosPerdidos.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemAchadosPerdidos
             // 
             this.rbtnNaoTemAchadosPerdidos.AutoSize = true;
+            this.rbtnNaoTemAchadosPerdidos.Checked = true;
             this.rbtnNaoTemAchadosPerdidos.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemAchadosPerdidos.Name = "rbtnNaoTemAchadosPerdidos";
             this.rbtnNaoTemAchadosPerdidos.Size = new System.Drawing.Size(69, 17);
@@ -1194,9 +1208,9 @@ namespace sistemaAlertrem
             // 
             // gpbRotaAcessivel
             // 
-            this.gpbRotaAcessivel.Controls.Add(this.radioButton65);
-            this.gpbRotaAcessivel.Controls.Add(this.radioButton66);
-            this.gpbRotaAcessivel.Controls.Add(this.radioButton67);
+            this.gpbRotaAcessivel.Controls.Add(this.rbtnQuebradoRotaAcessivel);
+            this.gpbRotaAcessivel.Controls.Add(this.rbtnFuncionandoRotaAcessivel);
+            this.gpbRotaAcessivel.Controls.Add(this.rbtnManutencaoRotaAcessivel);
             this.gpbRotaAcessivel.Controls.Add(this.rbtnNaoTemRotaAcessivel);
             this.gpbRotaAcessivel.Location = new System.Drawing.Point(452, 394);
             this.gpbRotaAcessivel.Name = "gpbRotaAcessivel";
@@ -1205,42 +1219,43 @@ namespace sistemaAlertrem
             this.gpbRotaAcessivel.TabStop = false;
             this.gpbRotaAcessivel.Text = "Rota Acessível";
             // 
-            // radioButton65
+            // rbtnQuebradoRotaAcessivel
             // 
-            this.radioButton65.AutoSize = true;
-            this.radioButton65.Location = new System.Drawing.Point(103, 39);
-            this.radioButton65.Name = "radioButton65";
-            this.radioButton65.Size = new System.Drawing.Size(72, 17);
-            this.radioButton65.TabIndex = 3;
-            this.radioButton65.TabStop = true;
-            this.radioButton65.Text = "Quebrado";
-            this.radioButton65.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoRotaAcessivel.AutoSize = true;
+            this.rbtnQuebradoRotaAcessivel.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoRotaAcessivel.Name = "rbtnQuebradoRotaAcessivel";
+            this.rbtnQuebradoRotaAcessivel.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoRotaAcessivel.TabIndex = 3;
+            this.rbtnQuebradoRotaAcessivel.TabStop = true;
+            this.rbtnQuebradoRotaAcessivel.Text = "Quebrado";
+            this.rbtnQuebradoRotaAcessivel.UseVisualStyleBackColor = true;
             // 
-            // radioButton66
+            // rbtnFuncionandoRotaAcessivel
             // 
-            this.radioButton66.AutoSize = true;
-            this.radioButton66.Location = new System.Drawing.Point(103, 16);
-            this.radioButton66.Name = "radioButton66";
-            this.radioButton66.Size = new System.Drawing.Size(87, 17);
-            this.radioButton66.TabIndex = 2;
-            this.radioButton66.TabStop = true;
-            this.radioButton66.Text = "Funcionando";
-            this.radioButton66.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoRotaAcessivel.AutoSize = true;
+            this.rbtnFuncionandoRotaAcessivel.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoRotaAcessivel.Name = "rbtnFuncionandoRotaAcessivel";
+            this.rbtnFuncionandoRotaAcessivel.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoRotaAcessivel.TabIndex = 2;
+            this.rbtnFuncionandoRotaAcessivel.TabStop = true;
+            this.rbtnFuncionandoRotaAcessivel.Text = "Funcionando";
+            this.rbtnFuncionandoRotaAcessivel.UseVisualStyleBackColor = true;
             // 
-            // radioButton67
+            // rbtnManutencaoRotaAcessivel
             // 
-            this.radioButton67.AutoSize = true;
-            this.radioButton67.Location = new System.Drawing.Point(6, 42);
-            this.radioButton67.Name = "radioButton67";
-            this.radioButton67.Size = new System.Drawing.Size(85, 17);
-            this.radioButton67.TabIndex = 1;
-            this.radioButton67.TabStop = true;
-            this.radioButton67.Text = "Manutenção";
-            this.radioButton67.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoRotaAcessivel.AutoSize = true;
+            this.rbtnManutencaoRotaAcessivel.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoRotaAcessivel.Name = "rbtnManutencaoRotaAcessivel";
+            this.rbtnManutencaoRotaAcessivel.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoRotaAcessivel.TabIndex = 1;
+            this.rbtnManutencaoRotaAcessivel.TabStop = true;
+            this.rbtnManutencaoRotaAcessivel.Text = "Manutenção";
+            this.rbtnManutencaoRotaAcessivel.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemRotaAcessivel
             // 
             this.rbtnNaoTemRotaAcessivel.AutoSize = true;
+            this.rbtnNaoTemRotaAcessivel.Checked = true;
             this.rbtnNaoTemRotaAcessivel.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemRotaAcessivel.Name = "rbtnNaoTemRotaAcessivel";
             this.rbtnNaoTemRotaAcessivel.Size = new System.Drawing.Size(69, 17);
@@ -1251,9 +1266,9 @@ namespace sistemaAlertrem
             // 
             // gpbFarmacia
             // 
-            this.gpbFarmacia.Controls.Add(this.radioButton69);
-            this.gpbFarmacia.Controls.Add(this.radioButton70);
-            this.gpbFarmacia.Controls.Add(this.radioButton71);
+            this.gpbFarmacia.Controls.Add(this.rbtnQuebradoFarmacia);
+            this.gpbFarmacia.Controls.Add(this.rbtnFuncionandoFarmacia);
+            this.gpbFarmacia.Controls.Add(this.rbtnManutencaoFarmacia);
             this.gpbFarmacia.Controls.Add(this.rbtnNaoTemFarmacia);
             this.gpbFarmacia.Location = new System.Drawing.Point(452, 319);
             this.gpbFarmacia.Name = "gpbFarmacia";
@@ -1262,42 +1277,43 @@ namespace sistemaAlertrem
             this.gpbFarmacia.TabStop = false;
             this.gpbFarmacia.Text = "Farmácia";
             // 
-            // radioButton69
+            // rbtnQuebradoFarmacia
             // 
-            this.radioButton69.AutoSize = true;
-            this.radioButton69.Location = new System.Drawing.Point(103, 39);
-            this.radioButton69.Name = "radioButton69";
-            this.radioButton69.Size = new System.Drawing.Size(72, 17);
-            this.radioButton69.TabIndex = 3;
-            this.radioButton69.TabStop = true;
-            this.radioButton69.Text = "Quebrado";
-            this.radioButton69.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoFarmacia.AutoSize = true;
+            this.rbtnQuebradoFarmacia.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoFarmacia.Name = "rbtnQuebradoFarmacia";
+            this.rbtnQuebradoFarmacia.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoFarmacia.TabIndex = 3;
+            this.rbtnQuebradoFarmacia.TabStop = true;
+            this.rbtnQuebradoFarmacia.Text = "Quebrado";
+            this.rbtnQuebradoFarmacia.UseVisualStyleBackColor = true;
             // 
-            // radioButton70
+            // rbtnFuncionandoFarmacia
             // 
-            this.radioButton70.AutoSize = true;
-            this.radioButton70.Location = new System.Drawing.Point(103, 16);
-            this.radioButton70.Name = "radioButton70";
-            this.radioButton70.Size = new System.Drawing.Size(87, 17);
-            this.radioButton70.TabIndex = 2;
-            this.radioButton70.TabStop = true;
-            this.radioButton70.Text = "Funcionando";
-            this.radioButton70.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoFarmacia.AutoSize = true;
+            this.rbtnFuncionandoFarmacia.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoFarmacia.Name = "rbtnFuncionandoFarmacia";
+            this.rbtnFuncionandoFarmacia.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoFarmacia.TabIndex = 2;
+            this.rbtnFuncionandoFarmacia.TabStop = true;
+            this.rbtnFuncionandoFarmacia.Text = "Funcionando";
+            this.rbtnFuncionandoFarmacia.UseVisualStyleBackColor = true;
             // 
-            // radioButton71
+            // rbtnManutencaoFarmacia
             // 
-            this.radioButton71.AutoSize = true;
-            this.radioButton71.Location = new System.Drawing.Point(6, 42);
-            this.radioButton71.Name = "radioButton71";
-            this.radioButton71.Size = new System.Drawing.Size(85, 17);
-            this.radioButton71.TabIndex = 1;
-            this.radioButton71.TabStop = true;
-            this.radioButton71.Text = "Manutenção";
-            this.radioButton71.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoFarmacia.AutoSize = true;
+            this.rbtnManutencaoFarmacia.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoFarmacia.Name = "rbtnManutencaoFarmacia";
+            this.rbtnManutencaoFarmacia.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoFarmacia.TabIndex = 1;
+            this.rbtnManutencaoFarmacia.TabStop = true;
+            this.rbtnManutencaoFarmacia.Text = "Manutenção";
+            this.rbtnManutencaoFarmacia.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemFarmacia
             // 
             this.rbtnNaoTemFarmacia.AutoSize = true;
+            this.rbtnNaoTemFarmacia.Checked = true;
             this.rbtnNaoTemFarmacia.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemFarmacia.Name = "rbtnNaoTemFarmacia";
             this.rbtnNaoTemFarmacia.Size = new System.Drawing.Size(69, 17);
@@ -1308,9 +1324,9 @@ namespace sistemaAlertrem
             // 
             // gpbAcessorios
             // 
-            this.gpbAcessorios.Controls.Add(this.radioButton73);
-            this.gpbAcessorios.Controls.Add(this.radioButton74);
-            this.gpbAcessorios.Controls.Add(this.radioButton75);
+            this.gpbAcessorios.Controls.Add(this.rbtnQuebradoAcessorios);
+            this.gpbAcessorios.Controls.Add(this.rbtnFuncionandoAcessorios);
+            this.gpbAcessorios.Controls.Add(this.rbtnManutencaoAcessorios);
             this.gpbAcessorios.Controls.Add(this.rbtnNaoTemAcessorios);
             this.gpbAcessorios.Location = new System.Drawing.Point(452, 244);
             this.gpbAcessorios.Name = "gpbAcessorios";
@@ -1319,42 +1335,43 @@ namespace sistemaAlertrem
             this.gpbAcessorios.TabStop = false;
             this.gpbAcessorios.Text = "Acessórios";
             // 
-            // radioButton73
+            // rbtnQuebradoAcessorios
             // 
-            this.radioButton73.AutoSize = true;
-            this.radioButton73.Location = new System.Drawing.Point(103, 39);
-            this.radioButton73.Name = "radioButton73";
-            this.radioButton73.Size = new System.Drawing.Size(72, 17);
-            this.radioButton73.TabIndex = 3;
-            this.radioButton73.TabStop = true;
-            this.radioButton73.Text = "Quebrado";
-            this.radioButton73.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoAcessorios.AutoSize = true;
+            this.rbtnQuebradoAcessorios.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoAcessorios.Name = "rbtnQuebradoAcessorios";
+            this.rbtnQuebradoAcessorios.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoAcessorios.TabIndex = 3;
+            this.rbtnQuebradoAcessorios.TabStop = true;
+            this.rbtnQuebradoAcessorios.Text = "Quebrado";
+            this.rbtnQuebradoAcessorios.UseVisualStyleBackColor = true;
             // 
-            // radioButton74
+            // rbtnFuncionandoAcessorios
             // 
-            this.radioButton74.AutoSize = true;
-            this.radioButton74.Location = new System.Drawing.Point(103, 16);
-            this.radioButton74.Name = "radioButton74";
-            this.radioButton74.Size = new System.Drawing.Size(87, 17);
-            this.radioButton74.TabIndex = 2;
-            this.radioButton74.TabStop = true;
-            this.radioButton74.Text = "Funcionando";
-            this.radioButton74.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoAcessorios.AutoSize = true;
+            this.rbtnFuncionandoAcessorios.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoAcessorios.Name = "rbtnFuncionandoAcessorios";
+            this.rbtnFuncionandoAcessorios.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoAcessorios.TabIndex = 2;
+            this.rbtnFuncionandoAcessorios.TabStop = true;
+            this.rbtnFuncionandoAcessorios.Text = "Funcionando";
+            this.rbtnFuncionandoAcessorios.UseVisualStyleBackColor = true;
             // 
-            // radioButton75
+            // rbtnManutencaoAcessorios
             // 
-            this.radioButton75.AutoSize = true;
-            this.radioButton75.Location = new System.Drawing.Point(6, 42);
-            this.radioButton75.Name = "radioButton75";
-            this.radioButton75.Size = new System.Drawing.Size(85, 17);
-            this.radioButton75.TabIndex = 1;
-            this.radioButton75.TabStop = true;
-            this.radioButton75.Text = "Manutenção";
-            this.radioButton75.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoAcessorios.AutoSize = true;
+            this.rbtnManutencaoAcessorios.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoAcessorios.Name = "rbtnManutencaoAcessorios";
+            this.rbtnManutencaoAcessorios.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoAcessorios.TabIndex = 1;
+            this.rbtnManutencaoAcessorios.TabStop = true;
+            this.rbtnManutencaoAcessorios.Text = "Manutenção";
+            this.rbtnManutencaoAcessorios.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemAcessorios
             // 
             this.rbtnNaoTemAcessorios.AutoSize = true;
+            this.rbtnNaoTemAcessorios.Checked = true;
             this.rbtnNaoTemAcessorios.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemAcessorios.Name = "rbtnNaoTemAcessorios";
             this.rbtnNaoTemAcessorios.Size = new System.Drawing.Size(69, 17);
@@ -1365,9 +1382,9 @@ namespace sistemaAlertrem
             // 
             // gpbTransferenciaGratuita
             // 
-            this.gpbTransferenciaGratuita.Controls.Add(this.radioButton77);
-            this.gpbTransferenciaGratuita.Controls.Add(this.radioButton78);
-            this.gpbTransferenciaGratuita.Controls.Add(this.radioButton79);
+            this.gpbTransferenciaGratuita.Controls.Add(this.rbtnQuebradoTransferenciaGratuita);
+            this.gpbTransferenciaGratuita.Controls.Add(this.rbtnFuncionandoTransferenciaGratuita);
+            this.gpbTransferenciaGratuita.Controls.Add(this.rbtnManutencaoTransferenciaGratuita);
             this.gpbTransferenciaGratuita.Controls.Add(this.rbtnNaoTemTransferenciaGratuita);
             this.gpbTransferenciaGratuita.Location = new System.Drawing.Point(452, 169);
             this.gpbTransferenciaGratuita.Name = "gpbTransferenciaGratuita";
@@ -1376,42 +1393,43 @@ namespace sistemaAlertrem
             this.gpbTransferenciaGratuita.TabStop = false;
             this.gpbTransferenciaGratuita.Text = "Transferência Gratuita";
             // 
-            // radioButton77
+            // rbtnQuebradoTransferenciaGratuita
             // 
-            this.radioButton77.AutoSize = true;
-            this.radioButton77.Location = new System.Drawing.Point(103, 39);
-            this.radioButton77.Name = "radioButton77";
-            this.radioButton77.Size = new System.Drawing.Size(72, 17);
-            this.radioButton77.TabIndex = 3;
-            this.radioButton77.TabStop = true;
-            this.radioButton77.Text = "Quebrado";
-            this.radioButton77.UseVisualStyleBackColor = true;
+            this.rbtnQuebradoTransferenciaGratuita.AutoSize = true;
+            this.rbtnQuebradoTransferenciaGratuita.Location = new System.Drawing.Point(103, 39);
+            this.rbtnQuebradoTransferenciaGratuita.Name = "rbtnQuebradoTransferenciaGratuita";
+            this.rbtnQuebradoTransferenciaGratuita.Size = new System.Drawing.Size(72, 17);
+            this.rbtnQuebradoTransferenciaGratuita.TabIndex = 3;
+            this.rbtnQuebradoTransferenciaGratuita.TabStop = true;
+            this.rbtnQuebradoTransferenciaGratuita.Text = "Quebrado";
+            this.rbtnQuebradoTransferenciaGratuita.UseVisualStyleBackColor = true;
             // 
-            // radioButton78
+            // rbtnFuncionandoTransferenciaGratuita
             // 
-            this.radioButton78.AutoSize = true;
-            this.radioButton78.Location = new System.Drawing.Point(103, 16);
-            this.radioButton78.Name = "radioButton78";
-            this.radioButton78.Size = new System.Drawing.Size(87, 17);
-            this.radioButton78.TabIndex = 2;
-            this.radioButton78.TabStop = true;
-            this.radioButton78.Text = "Funcionando";
-            this.radioButton78.UseVisualStyleBackColor = true;
+            this.rbtnFuncionandoTransferenciaGratuita.AutoSize = true;
+            this.rbtnFuncionandoTransferenciaGratuita.Location = new System.Drawing.Point(103, 16);
+            this.rbtnFuncionandoTransferenciaGratuita.Name = "rbtnFuncionandoTransferenciaGratuita";
+            this.rbtnFuncionandoTransferenciaGratuita.Size = new System.Drawing.Size(87, 17);
+            this.rbtnFuncionandoTransferenciaGratuita.TabIndex = 2;
+            this.rbtnFuncionandoTransferenciaGratuita.TabStop = true;
+            this.rbtnFuncionandoTransferenciaGratuita.Text = "Funcionando";
+            this.rbtnFuncionandoTransferenciaGratuita.UseVisualStyleBackColor = true;
             // 
-            // radioButton79
+            // rbtnManutencaoTransferenciaGratuita
             // 
-            this.radioButton79.AutoSize = true;
-            this.radioButton79.Location = new System.Drawing.Point(6, 42);
-            this.radioButton79.Name = "radioButton79";
-            this.radioButton79.Size = new System.Drawing.Size(85, 17);
-            this.radioButton79.TabIndex = 1;
-            this.radioButton79.TabStop = true;
-            this.radioButton79.Text = "Manutenção";
-            this.radioButton79.UseVisualStyleBackColor = true;
+            this.rbtnManutencaoTransferenciaGratuita.AutoSize = true;
+            this.rbtnManutencaoTransferenciaGratuita.Location = new System.Drawing.Point(6, 42);
+            this.rbtnManutencaoTransferenciaGratuita.Name = "rbtnManutencaoTransferenciaGratuita";
+            this.rbtnManutencaoTransferenciaGratuita.Size = new System.Drawing.Size(85, 17);
+            this.rbtnManutencaoTransferenciaGratuita.TabIndex = 1;
+            this.rbtnManutencaoTransferenciaGratuita.TabStop = true;
+            this.rbtnManutencaoTransferenciaGratuita.Text = "Manutenção";
+            this.rbtnManutencaoTransferenciaGratuita.UseVisualStyleBackColor = true;
             // 
             // rbtnNaoTemTransferenciaGratuita
             // 
             this.rbtnNaoTemTransferenciaGratuita.AutoSize = true;
+            this.rbtnNaoTemTransferenciaGratuita.Checked = true;
             this.rbtnNaoTemTransferenciaGratuita.Location = new System.Drawing.Point(6, 19);
             this.rbtnNaoTemTransferenciaGratuita.Name = "rbtnNaoTemTransferenciaGratuita";
             this.rbtnNaoTemTransferenciaGratuita.Size = new System.Drawing.Size(69, 17);
@@ -1483,7 +1501,7 @@ namespace sistemaAlertrem
             this.Controls.Add(this.gpbBanheiro);
             this.Controls.Add(this.lblLocalizacao);
             this.Controls.Add(this.lblNome);
-            this.Controls.Add(this.btnVoltar1);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnAtualizar);
             this.Name = "frmEstacao2";
@@ -1539,113 +1557,113 @@ namespace sistemaAlertrem
 
         private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Button btnExcluir;
-        private System.Windows.Forms.Button btnVoltar1;
+        private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblLocalizacao;
         private System.Windows.Forms.GroupBox gpbBanheiro;
-        private System.Windows.Forms.RadioButton radioButton81;
-        private System.Windows.Forms.RadioButton radioButton82;
+        private System.Windows.Forms.RadioButton rbtnQuebradoBanheiro;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoBanheiro;
         private System.Windows.Forms.RadioButton rbtnManutencaoBanheiro;
         private System.Windows.Forms.RadioButton rbtnNaoTemBanheiro;
         private System.Windows.Forms.GroupBox gbpBanheiroAcessivel;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rbtnQuebradoBanheiroAcessivel;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoBanheiroAcessivel;
         private System.Windows.Forms.RadioButton rbtnManutencaoBanheiroAcessivel;
         private System.Windows.Forms.RadioButton rbtnNaoTemBanheiroAcessivel;
         private System.Windows.Forms.GroupBox gpbElevador;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton rbtnQuebradoElevador;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoElevador;
+        private System.Windows.Forms.RadioButton rbtnManutencaoElevador;
         private System.Windows.Forms.RadioButton rbtnNaoTemElevador;
         private System.Windows.Forms.GroupBox gpbAcessoElevador;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.RadioButton radioButton11;
+        private System.Windows.Forms.RadioButton rbtnQuebradoAcessoElevador;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoAcessoElevador;
+        private System.Windows.Forms.RadioButton rbtnManutencaoAcessoElevador;
         private System.Windows.Forms.RadioButton rbtnNaoTemAcessoElevador;
         private System.Windows.Forms.GroupBox gpbTerminalInterurbano;
-        private System.Windows.Forms.RadioButton radioButton13;
-        private System.Windows.Forms.RadioButton radioButton14;
-        private System.Windows.Forms.RadioButton radioButton15;
+        private System.Windows.Forms.RadioButton rbtnQuebradoTerminalInterurbano;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoTerminalInterurbano;
+        private System.Windows.Forms.RadioButton rbtnManutencaoTerminalInterurbano;
         private System.Windows.Forms.RadioButton rbtnNaoTemTerminalInterurbano;
         private System.Windows.Forms.GroupBox gbpTerminalUrbano;
-        private System.Windows.Forms.RadioButton radioButton17;
-        private System.Windows.Forms.RadioButton radioButton18;
-        private System.Windows.Forms.RadioButton radioButton19;
+        private System.Windows.Forms.RadioButton rbtnQuebradoTerminalUrbano;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoTerminalUrbano;
+        private System.Windows.Forms.RadioButton rbtnManutencaoTerminalUrbano;
         private System.Windows.Forms.RadioButton rbtnNaoTemTerminalUrbano;
         private System.Windows.Forms.GroupBox gpbTransferenciaInterna;
-        private System.Windows.Forms.RadioButton radioButton21;
-        private System.Windows.Forms.RadioButton radioButton22;
-        private System.Windows.Forms.RadioButton radioButton23;
+        private System.Windows.Forms.RadioButton rbtnQuebradoTransferenciaInterna;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoTransferenciaInterna;
+        private System.Windows.Forms.RadioButton rbtnManutencaoTransferenciaInterna;
         private System.Windows.Forms.RadioButton rbtnNaoTemTransferenciaInterna;
         private System.Windows.Forms.GroupBox gpbRampa;
-        private System.Windows.Forms.RadioButton radioButton25;
-        private System.Windows.Forms.RadioButton radioButton26;
-        private System.Windows.Forms.RadioButton radioButton27;
+        private System.Windows.Forms.RadioButton rbtnQuebradoRampa;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoRampa;
+        private System.Windows.Forms.RadioButton rbtnManutencaoRampa;
         private System.Windows.Forms.RadioButton rbtnNaoTemRampa;
         private System.Windows.Forms.GroupBox gpbPisoTatil;
-        private System.Windows.Forms.RadioButton radioButton29;
-        private System.Windows.Forms.RadioButton radioButton30;
-        private System.Windows.Forms.RadioButton radioButton31;
+        private System.Windows.Forms.RadioButton rbtnQuebradoPisoTatil;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoPisoTatil;
+        private System.Windows.Forms.RadioButton rbtnManutencaoPisoTatil;
         private System.Windows.Forms.RadioButton rbtnNaoTemPisoTatil;
         private System.Windows.Forms.GroupBox gpbTelefonePSurdos;
-        private System.Windows.Forms.RadioButton radioButton33;
-        private System.Windows.Forms.RadioButton radioButton34;
-        private System.Windows.Forms.RadioButton radioButton35;
+        private System.Windows.Forms.RadioButton rbtnQuebradoTelefonePSurdos;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoTelefonePSurdos;
+        private System.Windows.Forms.RadioButton rbtnManutencaoTelefonePSurdos;
         private System.Windows.Forms.RadioButton rbtnNaoTemTelefonePSurdos;
         private System.Windows.Forms.GroupBox gpbCalcados;
-        private System.Windows.Forms.RadioButton radioButton37;
-        private System.Windows.Forms.RadioButton radioButton38;
-        private System.Windows.Forms.RadioButton radioButton39;
+        private System.Windows.Forms.RadioButton rbtnQuebradoCalcados;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoCalcados;
+        private System.Windows.Forms.RadioButton rbtnManutencaoCalcados;
         private System.Windows.Forms.RadioButton rbtnNaoTemCalcados;
         private System.Windows.Forms.GroupBox gpbCaixaEletronico;
-        private System.Windows.Forms.RadioButton radioButton41;
-        private System.Windows.Forms.RadioButton radioButton42;
-        private System.Windows.Forms.RadioButton radioButton43;
+        private System.Windows.Forms.RadioButton rbtnQuebradoCaixaEletronico;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoCaixaEletronico;
+        private System.Windows.Forms.RadioButton rbtnManutencaoCaixaEletronico;
         private System.Windows.Forms.RadioButton rbtnNaoTemCaixaEletronico;
         private System.Windows.Forms.GroupBox gpbEmporio;
-        private System.Windows.Forms.RadioButton radioButton45;
-        private System.Windows.Forms.RadioButton radioButton46;
-        private System.Windows.Forms.RadioButton radioButton47;
+        private System.Windows.Forms.RadioButton rbtnQuebradoEmporio;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoEmporio;
+        private System.Windows.Forms.RadioButton rbtnManutencaoEmporio;
         private System.Windows.Forms.RadioButton rbtnNaoTemEmporio;
         private System.Windows.Forms.GroupBox gpbLanchonete;
-        private System.Windows.Forms.RadioButton radioButton49;
-        private System.Windows.Forms.RadioButton radioButton50;
-        private System.Windows.Forms.RadioButton radioButton51;
+        private System.Windows.Forms.RadioButton rbtnQuebradoLanchonete;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoLanchonete;
+        private System.Windows.Forms.RadioButton rbtnManutencaoLanchonete;
         private System.Windows.Forms.RadioButton rbtnNaoTemLanchonete;
         private System.Windows.Forms.GroupBox gpbEscadasRolantes;
-        private System.Windows.Forms.RadioButton radioButton53;
-        private System.Windows.Forms.RadioButton radioButton54;
-        private System.Windows.Forms.RadioButton radioButton55;
+        private System.Windows.Forms.RadioButton rbtnQuebradoEscadasRolantes;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoEscadasRolantes;
+        private System.Windows.Forms.RadioButton rbtnManutencaoEscadasRolantes;
         private System.Windows.Forms.RadioButton rbtnNaoTemEscadasRolantes;
         private System.Windows.Forms.GroupBox gpbTransposicaoPlataformas;
-        private System.Windows.Forms.RadioButton radioButton57;
-        private System.Windows.Forms.RadioButton radioButton58;
-        private System.Windows.Forms.RadioButton radioButton59;
+        private System.Windows.Forms.RadioButton rbtnQuebradoTransposicaoPlataforma;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoTransposicaoPlataforma;
+        private System.Windows.Forms.RadioButton rbtnManutencaoTransposicaoPlataforma;
         private System.Windows.Forms.RadioButton rbtnNaoTemTransposicaoPlataformas;
         private System.Windows.Forms.GroupBox gpbAchadosPerdidos;
-        private System.Windows.Forms.RadioButton radioButton61;
-        private System.Windows.Forms.RadioButton radioButton62;
-        private System.Windows.Forms.RadioButton radioButton63;
+        private System.Windows.Forms.RadioButton rbtnQuebradoAchadosPerdidos;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoAchadosPerdidos;
+        private System.Windows.Forms.RadioButton rbtnManutencaoAchadosPerdidos;
         private System.Windows.Forms.RadioButton rbtnNaoTemAchadosPerdidos;
         private System.Windows.Forms.GroupBox gpbRotaAcessivel;
-        private System.Windows.Forms.RadioButton radioButton65;
-        private System.Windows.Forms.RadioButton radioButton66;
-        private System.Windows.Forms.RadioButton radioButton67;
+        private System.Windows.Forms.RadioButton rbtnQuebradoRotaAcessivel;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoRotaAcessivel;
+        private System.Windows.Forms.RadioButton rbtnManutencaoRotaAcessivel;
         private System.Windows.Forms.RadioButton rbtnNaoTemRotaAcessivel;
         private System.Windows.Forms.GroupBox gpbFarmacia;
-        private System.Windows.Forms.RadioButton radioButton69;
-        private System.Windows.Forms.RadioButton radioButton70;
-        private System.Windows.Forms.RadioButton radioButton71;
+        private System.Windows.Forms.RadioButton rbtnQuebradoFarmacia;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoFarmacia;
+        private System.Windows.Forms.RadioButton rbtnManutencaoFarmacia;
         private System.Windows.Forms.RadioButton rbtnNaoTemFarmacia;
         private System.Windows.Forms.GroupBox gpbAcessorios;
-        private System.Windows.Forms.RadioButton radioButton73;
-        private System.Windows.Forms.RadioButton radioButton74;
-        private System.Windows.Forms.RadioButton radioButton75;
+        private System.Windows.Forms.RadioButton rbtnQuebradoAcessorios;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoAcessorios;
+        private System.Windows.Forms.RadioButton rbtnManutencaoAcessorios;
         private System.Windows.Forms.RadioButton rbtnNaoTemAcessorios;
         private System.Windows.Forms.GroupBox gpbTransferenciaGratuita;
-        private System.Windows.Forms.RadioButton radioButton77;
-        private System.Windows.Forms.RadioButton radioButton78;
-        private System.Windows.Forms.RadioButton radioButton79;
+        private System.Windows.Forms.RadioButton rbtnQuebradoTransferenciaGratuita;
+        private System.Windows.Forms.RadioButton rbtnFuncionandoTransferenciaGratuita;
+        private System.Windows.Forms.RadioButton rbtnManutencaoTransferenciaGratuita;
         private System.Windows.Forms.RadioButton rbtnNaoTemTransferenciaGratuita;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtLocalizacao;
