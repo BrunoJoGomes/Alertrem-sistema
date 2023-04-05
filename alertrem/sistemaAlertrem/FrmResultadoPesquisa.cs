@@ -16,109 +16,73 @@ namespace sistemaAlertrem
         public FrmResultadoPesquisa()
         {
             InitializeComponent();
+            //carregaDados();
         }
 
-        MySqlConnection conn = Conexao.obterConexao();
-        public MySqlCommand cmd = new MySqlCommand();
-
-        public DataTable dt = new DataTable();
-        public MySqlDataAdapter da = new MySqlDataAdapter();
-        public DataSet ds = new DataSet();
-
-
-        public void ExecutarConsulta(string sql)
+        public FrmResultadoPesquisa(string nome)
         {
-            try
+            InitializeComponent();
+            carregaDados(nome);
+        }
+
+        public void carregaDados(string nome)
+        {
+            string commandString = $"select * from tb_usuarios where nome like '%{nome}%'";
+
+            MySqlCommand comm = new MySqlCommand
             {
-                Conexao.obterConexao();
-                cmd.Connection = conn;
-                cmd.ExecuteNonQuery();
-                conn.Close();
-            }
-            catch 
-            {
-                throw;
-            }
-                  
+                CommandText = commandString,
+                CommandType = CommandType.Text,
+                Connection = Conexao.obterConexao()
+            };
+
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(comm);
+            DataTable tabela = new DataTable();
+            adapter.Fill(tabela);
+            Conexao.fecharConexao();
+
+            dataGrDados.DataSource = tabela;
+
+            //dataGrDados.Columns["descricao"].Width = 300;
+
+            DataGridViewButtonColumn btnExcluir = new DataGridViewButtonColumn();
+            btnExcluir.Name = "Excluir";
+            btnExcluir.HeaderText = "Excluir";
+            btnExcluir.Text = "Excluir";
+            btnExcluir.UseColumnTextForButtonValue = true;
+            dataGrDados.Columns.Add(btnExcluir);
+
+            // Impede que o usuário redimensione as colunas e linhas do DataGridView
+            dataGrDados.AllowUserToResizeColumns = false;
+            dataGrDados.AllowUserToResizeRows = false;
+
+            // Define o modo de ajuste da altura das linhas para exibir o conteúdo completo
+            dataGrDados.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+
+            // Define a propriedade de ajuste de altura das linhas para que o conteúdo completo seja exibido
+            dataGrDados.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+
+            // Faz com que o DataGridView ocupe 100% do espaço disponível
+            //dataGrDados.Dock = DockStyle.Fill;
         }
 
-
-        public DataTable GetRegistros(string MySql)
+        private void btnVoltarPesq_Click(object sender, EventArgs e)
         {
-            try
-            {
-                dt = new DataTable();
-                da = new MySqlDataAdapter(MySql, conn);
-                da.Fill(dt);
-                return dt;
-            }
-            catch
-            {
-                throw;
-            }
+            frmPesquisaUsuarios abrir = new frmPesquisaUsuarios();
+            abrir.Show();
+            this.Hide();
         }
 
-
-        class Conexao
+        private void dataGrDados_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            MySqlConnection conn = new MySqlConnection();
-            private static string connString = "Server=10.23.49.30; port=3306; uid=alertrem; pwd=alertrem;database=db_alertrem";
-            private static MySqlConnection con = null;
+            DataGridViewCell celula = dataGrDados.Rows[e.RowIndex].Cells[e.ColumnIndex];
+            //Console.WriteLine(celula.DataGridView[1, e.RowIndex].Value);
+            frmUsuarioEspe abrir = new frmUsuarioEspe(int.Parse( celula.DataGridView[1, e.RowIndex].Value.ToString() ));
+            abrir.ShowDialog();
 
-
-            public static MySqlConnection obterConexao()
-            {
-                con = new MySqlConnection(connString);
-                try
-                {
-                    con.Open();
-                }
-                catch (MySqlException)
-                {
-                    con = null;
-                }
-                return con;
-            }
-
-            public static void fecharConexao()
-            {
-                if (con != null)
-                {
-                    con.Close();
-                }
-            }
-        }
-        
-        
-
-        private void FrmResultadoPesquisa_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnLimpar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNome_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCadastrar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TbResultado_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGrDados_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            //Console.WriteLine($"{dataGrDados.SelectedRows[0]}");
+            //frmUsuarioEspe abrir = new frmUsuarioEspe(dataGrDados.Columns[e.ColumnIndex][e.RowIndex];
         }
     }
 }
