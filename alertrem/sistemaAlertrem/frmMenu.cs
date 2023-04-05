@@ -117,7 +117,7 @@ namespace sistemaAlertrem
 
         private void pcbUsuarios_Click(object sender, EventArgs e)
         {
-            usuarios usuarios = new usuarios();
+            frmPesquisaUsuarios usuarios = new frmPesquisaUsuarios();
             usuarios.Show();
             this.Hide();
         }
