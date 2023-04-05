@@ -80,8 +80,10 @@ namespace sistemaAlertrem
             // 
             // txtSenha
             // 
+            this.txtSenha.Font = new System.Drawing.Font("Wingdings", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.txtSenha.Location = new System.Drawing.Point(373, 300);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = 'l';
             this.txtSenha.Size = new System.Drawing.Size(163, 20);
             this.txtSenha.TabIndex = 5;
             // 
