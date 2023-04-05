@@ -8,76 +8,70 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using MySql.Data.MySqlClient;
 
 
 namespace sistemaAlertrem
 {
-    public partial class usuarios : Form
+    public partial class frmPesquisaUsuarios : Form
     {
-        public usuarios()
+        Dictionary<string, int> usuarios = new Dictionary<string, int>();
+        public frmPesquisaUsuarios()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictboxImagemUsu_Click(object sender, EventArgs e)
-        {
-            
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnVoltar_Click(object sender, EventArgs e)
         {
             frmMenu abrir = new frmMenu();
             abrir.Show();
             this.Hide();
         }
 
-        private void btnAdicionarfoto_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog BuscarIMG = new OpenFileDialog();
-            BuscarIMG.InitialDirectory = ("d:\\imagens\\");
-            BuscarIMG.FileName = "Imagem";
-            BuscarIMG.Title = "Procurar Imagem";
-            BuscarIMG.Filter = ("*jpg|*.jpg|*png|*.png|*bmp|*.bmp|*tif|*.tif");
-            BuscarIMG.ShowDialog();
-            pictboxImagemUsu.ImageLocation = (BuscarIMG.FileName);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            pictboxImagemUsu.Image = null;
-        }
-
-        private void btnPesquisar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private bool logado = false;
-
-       
-        
-
         private void btnPesquisar_Click_1(object sender, EventArgs e)
         {
-            FrmResultadoPesquisa abrir = new FrmResultadoPesquisa(textUsuario.Text);
-            abrir.Show();
-            this.Hide();
+            usuarios.Clear();
+            carregaDados(txtUsuario.Text);
+            //FrmResultadoPesquisa abrir = new FrmResultadoPesquisa(textUsuario.Text);
+            //abrir.Show();
+            //this.Hide();
+        }
+
+        public void carregaDados(string nome)
+        {
+            string commandString = $"select * from tb_usuarios where nome like '%{nome}%'";
+
+            MySqlCommand comm = new MySqlCommand
+            {
+                CommandText = commandString,
+                CommandType = CommandType.Text,
+                Connection = Conexao.obterConexao()
+            };
+
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(comm);
+            DataTable tabela = new DataTable();
+            adapter.Fill(tabela);
+
+            MySqlDataReader DR;
+            DR = comm.ExecuteReader();
+            ltbUsuarios.Items.Clear();
+            while (DR.Read())
+            {
+                ltbUsuarios.Items.Add(DR[1]);
+                usuarios.Add(DR[1].ToString(), int.Parse(DR[0].ToString() ));
+            }
+
+            Conexao.fecharConexao();
+
+            
+        }
+
+        private void ltbUsuarios_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int id = usuarios[ltbUsuarios.SelectedItem.ToString()];
+            frmUsuarioEspe abrir = new frmUsuarioEspe(id);
+            abrir.ShowDialog();
         }
     }
 }

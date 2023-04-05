@@ -31,13 +31,18 @@ namespace sistemaAlertrem
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUsuarioEspe));
             this.dgvcomentUsuEsp = new System.Windows.Forms.DataGridView();
-            this.btnEcluirContEsp = new System.Windows.Forms.Button();
             this.btnVoltarEspeci = new System.Windows.Forms.Button();
-            this.lblUsuarioESpe = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblalgumcoisa = new System.Windows.Forms.Label();
+            this.lblCampoNome = new System.Windows.Forms.Label();
+            this.gpbDadosUsuario = new System.Windows.Forms.GroupBox();
+            this.lblDataCadastro = new System.Windows.Forms.Label();
+            this.lblCampoDataCadastro = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblCampoEmail = new System.Windows.Forms.Label();
+            this.lblCPF = new System.Windows.Forms.Label();
+            this.lblCampoCPF = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvcomentUsuEsp)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.gpbDadosUsuario.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvcomentUsuEsp
@@ -48,17 +53,7 @@ namespace sistemaAlertrem
             this.dgvcomentUsuEsp.Name = "dgvcomentUsuEsp";
             this.dgvcomentUsuEsp.Size = new System.Drawing.Size(916, 288);
             this.dgvcomentUsuEsp.TabIndex = 0;
-            this.dgvcomentUsuEsp.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcomentUsuEsp_CellContentClick);
-            // 
-            // btnEcluirContEsp
-            // 
-            this.btnEcluirContEsp.BackColor = System.Drawing.SystemColors.Control;
-            this.btnEcluirContEsp.Image = ((System.Drawing.Image)(resources.GetObject("btnEcluirContEsp.Image")));
-            this.btnEcluirContEsp.Location = new System.Drawing.Point(54, 468);
-            this.btnEcluirContEsp.Name = "btnEcluirContEsp";
-            this.btnEcluirContEsp.Size = new System.Drawing.Size(96, 68);
-            this.btnEcluirContEsp.TabIndex = 1;
-            this.btnEcluirContEsp.UseVisualStyleBackColor = false;
+            this.dgvcomentUsuEsp.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcomentUsuEsp_CellClick);
             // 
             // btnVoltarEspeci
             // 
@@ -71,38 +66,94 @@ namespace sistemaAlertrem
             this.btnVoltarEspeci.UseVisualStyleBackColor = false;
             this.btnVoltarEspeci.Click += new System.EventHandler(this.btnVoltarEspeci_Click);
             // 
-            // lblUsuarioESpe
+            // lblCampoNome
             // 
-            this.lblUsuarioESpe.AutoSize = true;
-            this.lblUsuarioESpe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuarioESpe.Location = new System.Drawing.Point(87, 16);
-            this.lblUsuarioESpe.Name = "lblUsuarioESpe";
-            this.lblUsuarioESpe.Size = new System.Drawing.Size(51, 20);
-            this.lblUsuarioESpe.TabIndex = 3;
-            this.lblUsuarioESpe.Text = "Nome";
-            this.lblUsuarioESpe.Click += new System.EventHandler(this.lblUsuarioESpe_Click);
+            this.lblCampoNome.AutoSize = true;
+            this.lblCampoNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCampoNome.Location = new System.Drawing.Point(23, 22);
+            this.lblCampoNome.Name = "lblCampoNome";
+            this.lblCampoNome.Size = new System.Drawing.Size(60, 20);
+            this.lblCampoNome.TabIndex = 3;
+            this.lblCampoNome.Text = "Nome:";
             // 
-            // groupBox1
+            // gpbDadosUsuario
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Controls.Add(this.lblalgumcoisa);
-            this.groupBox1.Controls.Add(this.lblUsuarioESpe);
-            this.groupBox1.Location = new System.Drawing.Point(12, 18);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(916, 100);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.gpbDadosUsuario.BackColor = System.Drawing.SystemColors.Control;
+            this.gpbDadosUsuario.Controls.Add(this.lblDataCadastro);
+            this.gpbDadosUsuario.Controls.Add(this.lblCampoDataCadastro);
+            this.gpbDadosUsuario.Controls.Add(this.lblEmail);
+            this.gpbDadosUsuario.Controls.Add(this.lblCampoEmail);
+            this.gpbDadosUsuario.Controls.Add(this.lblCPF);
+            this.gpbDadosUsuario.Controls.Add(this.lblCampoCPF);
+            this.gpbDadosUsuario.Controls.Add(this.lblNome);
+            this.gpbDadosUsuario.Controls.Add(this.lblCampoNome);
+            this.gpbDadosUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbDadosUsuario.Location = new System.Drawing.Point(12, 18);
+            this.gpbDadosUsuario.Name = "gpbDadosUsuario";
+            this.gpbDadosUsuario.Size = new System.Drawing.Size(916, 100);
+            this.gpbDadosUsuario.TabIndex = 4;
+            this.gpbDadosUsuario.TabStop = false;
+            this.gpbDadosUsuario.Text = "Dados do usuário";
             // 
-            // lblalgumcoisa
+            // lblDataCadastro
             // 
-            this.lblalgumcoisa.AutoSize = true;
-            this.lblalgumcoisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblalgumcoisa.Location = new System.Drawing.Point(233, 16);
-            this.lblalgumcoisa.Name = "lblalgumcoisa";
-            this.lblalgumcoisa.Size = new System.Drawing.Size(51, 20);
-            this.lblalgumcoisa.TabIndex = 4;
-            this.lblalgumcoisa.Text = "label1";
+            this.lblDataCadastro.AutoSize = true;
+            this.lblDataCadastro.Location = new System.Drawing.Point(703, 66);
+            this.lblDataCadastro.Name = "lblDataCadastro";
+            this.lblDataCadastro.Size = new System.Drawing.Size(0, 20);
+            this.lblDataCadastro.TabIndex = 10;
+            // 
+            // lblCampoDataCadastro
+            // 
+            this.lblCampoDataCadastro.AutoSize = true;
+            this.lblCampoDataCadastro.Location = new System.Drawing.Point(542, 66);
+            this.lblCampoDataCadastro.Name = "lblCampoDataCadastro";
+            this.lblCampoDataCadastro.Size = new System.Drawing.Size(161, 20);
+            this.lblCampoDataCadastro.TabIndex = 9;
+            this.lblCampoDataCadastro.Text = "Data de Cadastro: ";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(83, 66);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(0, 20);
+            this.lblEmail.TabIndex = 8;
+            // 
+            // lblCampoEmail
+            // 
+            this.lblCampoEmail.AutoSize = true;
+            this.lblCampoEmail.Location = new System.Drawing.Point(20, 66);
+            this.lblCampoEmail.Name = "lblCampoEmail";
+            this.lblCampoEmail.Size = new System.Drawing.Size(63, 20);
+            this.lblCampoEmail.TabIndex = 7;
+            this.lblCampoEmail.Text = "Email: ";
+            // 
+            // lblCPF
+            // 
+            this.lblCPF.AutoSize = true;
+            this.lblCPF.Location = new System.Drawing.Point(356, 66);
+            this.lblCPF.Name = "lblCPF";
+            this.lblCPF.Size = new System.Drawing.Size(0, 20);
+            this.lblCPF.TabIndex = 6;
+            // 
+            // lblCampoCPF
+            // 
+            this.lblCampoCPF.AutoSize = true;
+            this.lblCampoCPF.Location = new System.Drawing.Point(308, 66);
+            this.lblCampoCPF.Name = "lblCampoCPF";
+            this.lblCampoCPF.Size = new System.Drawing.Size(48, 20);
+            this.lblCampoCPF.TabIndex = 5;
+            this.lblCampoCPF.Text = "CPF:";
+            // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(84, 22);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(0, 20);
+            this.lblNome.TabIndex = 4;
             // 
             // frmUsuarioEspe
             // 
@@ -110,15 +161,14 @@ namespace sistemaAlertrem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(940, 546);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gpbDadosUsuario);
             this.Controls.Add(this.btnVoltarEspeci);
-            this.Controls.Add(this.btnEcluirContEsp);
             this.Controls.Add(this.dgvcomentUsuEsp);
             this.Name = "frmUsuarioEspe";
             this.Text = "frmUsuarioEspe";
             ((System.ComponentModel.ISupportInitialize)(this.dgvcomentUsuEsp)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gpbDadosUsuario.ResumeLayout(false);
+            this.gpbDadosUsuario.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -126,10 +176,15 @@ namespace sistemaAlertrem
         #endregion
 
         private System.Windows.Forms.DataGridView dgvcomentUsuEsp;
-        private System.Windows.Forms.Button btnEcluirContEsp;
         private System.Windows.Forms.Button btnVoltarEspeci;
-        private System.Windows.Forms.Label lblUsuarioESpe;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lblalgumcoisa;
+        private System.Windows.Forms.Label lblCampoNome;
+        private System.Windows.Forms.GroupBox gpbDadosUsuario;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Label lblCPF;
+        private System.Windows.Forms.Label lblCampoCPF;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblCampoEmail;
+        private System.Windows.Forms.Label lblDataCadastro;
+        private System.Windows.Forms.Label lblCampoDataCadastro;
     }
 }

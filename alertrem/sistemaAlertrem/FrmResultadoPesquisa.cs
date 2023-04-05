@@ -69,14 +69,18 @@ namespace sistemaAlertrem
 
         private void btnVoltarPesq_Click(object sender, EventArgs e)
         {
-            usuarios abrir = new usuarios();
+            frmPesquisaUsuarios abrir = new frmPesquisaUsuarios();
             abrir.Show();
             this.Hide();
         }
 
         private void dataGrDados_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            Console.WriteLine($"{dataGrDados.Rows[e.RowIndex].Cells[e.ColumnIndex]}");//[e.RowIndex]
+            DataGridViewCell celula = dataGrDados.Rows[e.RowIndex].Cells[e.ColumnIndex];
+            //Console.WriteLine(celula.DataGridView[1, e.RowIndex].Value);
+            frmUsuarioEspe abrir = new frmUsuarioEspe(int.Parse( celula.DataGridView[1, e.RowIndex].Value.ToString() ));
+            abrir.ShowDialog();
+
             //Console.WriteLine($"{dataGrDados.SelectedRows[0]}");
             //frmUsuarioEspe abrir = new frmUsuarioEspe(dataGrDados.Columns[e.ColumnIndex][e.RowIndex];
         }

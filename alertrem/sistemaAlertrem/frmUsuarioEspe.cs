@@ -13,10 +13,10 @@ namespace sistemaAlertrem
 {
     public partial class frmUsuarioEspe : Form
     {
-        public frmUsuarioEspe(string nome)
+        public frmUsuarioEspe(int cod_usuario)
         {
             InitializeComponent();
-            carregaDados(nome);
+            carregaDados(cod_usuario);
         }
 
         public frmUsuarioEspe()
@@ -24,16 +24,38 @@ namespace sistemaAlertrem
             InitializeComponent();
         }
 
-
-
-        private void dgvcomentUsuEsp_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        public void carregaDados(int id)
         {
-
+            carregaGrid(id);
+            carregaLabesl(id);
         }
 
-        public void carregaDados(string nome, int id = 0)
+        private void btnVoltarEspeci_Click(object sender, EventArgs e)
         {
-            string commandString = id != 0 ? $"select * from tb_comentarios where cod_usuario = {id}" : "select * from tb_usuarios";
+            this.Close();
+        }
+
+        public void carregaLabesl(int id)
+        {
+            string commandString = $"select * from tb_usuarios where codigo = {id}";
+            MySqlCommand comm = new MySqlCommand
+            {
+                CommandText = commandString,
+                CommandType = CommandType.Text,
+                Connection = Conexao.obterConexao()
+            };
+            MySqlDataReader DR;
+            DR = comm.ExecuteReader();
+            DR.Read();
+            lblNome.Text = DR.GetString(1);
+            lblEmail.Text = DR.GetString(4);
+            lblCPF.Text = DR.GetString(5);
+            lblDataCadastro.Text = DR.GetString(7);
+        }
+
+        public void carregaGrid(int id)
+        {
+            string commandString = $"select * from tb_reclamacoes where cod_usu = {id}";
 
             MySqlCommand comm = new MySqlCommand
             {
@@ -46,11 +68,12 @@ namespace sistemaAlertrem
             MySqlDataAdapter adapter = new MySqlDataAdapter(comm);
             DataTable tabela = new DataTable();
             adapter.Fill(tabela);
+
             Conexao.fecharConexao();
 
             dgvcomentUsuEsp.DataSource = tabela;
 
-            //dataGrDados.Columns["descricao"].Width = 300;
+            dgvcomentUsuEsp.Columns["descricao"].Width = 300;
 
             DataGridViewButtonColumn btnExcluir = new DataGridViewButtonColumn();
             btnExcluir.Name = "Excluir";
@@ -69,20 +92,48 @@ namespace sistemaAlertrem
             // Define a propriedade de ajuste de altura das linhas para que o conteúdo completo seja exibido
             dgvcomentUsuEsp.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
 
-            // Faz com que o DataGridView ocupe 100% do espaço disponível
-            //dataGrDados.Dock = DockStyle.Fill;
         }
 
-        private void lblUsuarioESpe_Click(object sender, EventArgs e)
+        public void apagaRegistro(int id_comentario)
         {
+            MySqlCommand comm = new MySqlCommand
+            {
+                CommandText = $"delete from tb_reclamacoes where codigo = {id_comentario}",
+                CommandType = CommandType.Text,
+                Connection = Conexao.obterConexao()
+            };
+            int res = comm.ExecuteNonQuery();
+            if (res == 1)
+            {
+                MessageBox.Show("Registro Excluido com Sucesso!", "Mensagem do Sistema", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("Erro ao excluir o registro", "Mensagem do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
+            Conexao.fecharConexao();
         }
 
-        private void btnVoltarEspeci_Click(object sender, EventArgs e)
+        private void dgvcomentUsuEsp_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            FrmResultadoPesquisa abrir = new FrmResultadoPesquisa();
-            abrir.Show();
-            this.Hide();
+            if (e.ColumnIndex == dgvcomentUsuEsp.Columns["Excluir"].Index && e.RowIndex >= 0)
+            {
+                int codigo = (int)dgvcomentUsuEsp.Rows[e.RowIndex].Cells["codigo"].Value;
+
+                DialogResult confirma = MessageBox.Show($"Você quer mesmo apagar o comentário com id {codigo}?",
+                    "Confirmação de exclusão de registro",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning,
+                    MessageBoxDefaultButton.Button1);
+
+                if (confirma == DialogResult.Yes)
+                {
+                    apagaRegistro(codigo);
+                    dgvcomentUsuEsp.Rows.RemoveAt(e.RowIndex);
+                }
+
+            }
         }
     }
 }
