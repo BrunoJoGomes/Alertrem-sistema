@@ -75,7 +75,7 @@ namespace sistemaAlertrem
 
         private void btnPesquisar_Click_1(object sender, EventArgs e)
         {
-            FrmResultadoPesquisa abrir = new FrmResultadoPesquisa();
+            FrmResultadoPesquisa abrir = new FrmResultadoPesquisa(textUsuario.Text);
             abrir.Show();
             this.Hide();
         }

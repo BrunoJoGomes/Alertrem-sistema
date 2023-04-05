@@ -11,23 +11,29 @@ using MySql.Data.MySqlClient;
 
 namespace sistemaAlertrem
 {
-    public partial class FrmResultadoPesquisa : Form
+    public partial class frmUsuarioEspe : Form
     {
-        public FrmResultadoPesquisa()
-        {
-            InitializeComponent();
-            //carregaDados();
-        }
-
-        public FrmResultadoPesquisa(string nome)
+        public frmUsuarioEspe(string nome)
         {
             InitializeComponent();
             carregaDados(nome);
         }
 
-        public void carregaDados(string nome)
+        public frmUsuarioEspe()
         {
-            string commandString = $"select * from tb_usuarios where nome like '%{nome}%'";
+            InitializeComponent();
+        }
+
+
+
+        private void dgvcomentUsuEsp_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        public void carregaDados(string nome, int id = 0)
+        {
+            string commandString = id != 0 ? $"select * from tb_comentarios where cod_usuario = {id}" : "select * from tb_usuarios";
 
             MySqlCommand comm = new MySqlCommand
             {
@@ -42,7 +48,7 @@ namespace sistemaAlertrem
             adapter.Fill(tabela);
             Conexao.fecharConexao();
 
-            dataGrDados.DataSource = tabela;
+            dgvcomentUsuEsp.DataSource = tabela;
 
             //dataGrDados.Columns["descricao"].Width = 300;
 
@@ -51,34 +57,32 @@ namespace sistemaAlertrem
             btnExcluir.HeaderText = "Excluir";
             btnExcluir.Text = "Excluir";
             btnExcluir.UseColumnTextForButtonValue = true;
-            dataGrDados.Columns.Add(btnExcluir);
+            dgvcomentUsuEsp.Columns.Add(btnExcluir);
 
             // Impede que o usuário redimensione as colunas e linhas do DataGridView
-            dataGrDados.AllowUserToResizeColumns = false;
-            dataGrDados.AllowUserToResizeRows = false;
+            dgvcomentUsuEsp.AllowUserToResizeColumns = false;
+            dgvcomentUsuEsp.AllowUserToResizeRows = false;
 
             // Define o modo de ajuste da altura das linhas para exibir o conteúdo completo
-            dataGrDados.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dgvcomentUsuEsp.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 
             // Define a propriedade de ajuste de altura das linhas para que o conteúdo completo seja exibido
-            dataGrDados.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            dgvcomentUsuEsp.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
 
             // Faz com que o DataGridView ocupe 100% do espaço disponível
             //dataGrDados.Dock = DockStyle.Fill;
         }
 
-        private void btnVoltarPesq_Click(object sender, EventArgs e)
+        private void lblUsuarioESpe_Click(object sender, EventArgs e)
         {
-            usuarios abrir = new usuarios();
-            abrir.Show();
-            this.Hide();
+
         }
 
-        private void dataGrDados_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void btnVoltarEspeci_Click(object sender, EventArgs e)
         {
-            Console.WriteLine($"{dataGrDados.Rows[e.RowIndex].Cells[e.ColumnIndex]}");//[e.RowIndex]
-            //Console.WriteLine($"{dataGrDados.SelectedRows[0]}");
-            //frmUsuarioEspe abrir = new frmUsuarioEspe(dataGrDados.Columns[e.ColumnIndex][e.RowIndex];
+            FrmResultadoPesquisa abrir = new FrmResultadoPesquisa();
+            abrir.Show();
+            this.Hide();
         }
     }
 }

@@ -80,22 +80,27 @@ namespace sistemaAlertrem
             // btnAdicionarfoto
             // 
             this.btnAdicionarfoto.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.btnAdicionarfoto.Location = new System.Drawing.Point(519, 121);
+            this.btnAdicionarfoto.Image = ((System.Drawing.Image)(resources.GetObject("btnAdicionarfoto.Image")));
+            this.btnAdicionarfoto.Location = new System.Drawing.Point(509, 132);
             this.btnAdicionarfoto.Name = "btnAdicionarfoto";
-            this.btnAdicionarfoto.Size = new System.Drawing.Size(75, 41);
+            this.btnAdicionarfoto.Size = new System.Drawing.Size(86, 57);
             this.btnAdicionarfoto.TabIndex = 6;
-            this.btnAdicionarfoto.Text = "adicionar";
+            this.btnAdicionarfoto.Text = "Adicionar Foto";
+            this.btnAdicionarfoto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnAdicionarfoto.UseVisualStyleBackColor = false;
             this.btnAdicionarfoto.Click += new System.EventHandler(this.btnAdicionarfoto_Click);
             // 
             // btnExcuirfoto
             // 
             this.btnExcuirfoto.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.btnExcuirfoto.Location = new System.Drawing.Point(519, 192);
+            this.btnExcuirfoto.Image = ((System.Drawing.Image)(resources.GetObject("btnExcuirfoto.Image")));
+            this.btnExcuirfoto.Location = new System.Drawing.Point(509, 213);
             this.btnExcuirfoto.Name = "btnExcuirfoto";
-            this.btnExcuirfoto.Size = new System.Drawing.Size(75, 38);
+            this.btnExcuirfoto.Size = new System.Drawing.Size(86, 55);
             this.btnExcuirfoto.TabIndex = 7;
-            this.btnExcuirfoto.Text = "excluir";
+            this.btnExcuirfoto.Text = "Excluir Foto";
+            this.btnExcuirfoto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnExcuirfoto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnExcuirfoto.UseVisualStyleBackColor = false;
             this.btnExcuirfoto.Click += new System.EventHandler(this.button2_Click);
             // 
