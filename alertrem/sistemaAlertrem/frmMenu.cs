@@ -95,7 +95,6 @@ namespace sistemaAlertrem
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-
             frmLogin login = new frmLogin();
             login.Show();
             this.Hide();

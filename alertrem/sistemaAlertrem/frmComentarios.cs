@@ -44,7 +44,7 @@ namespace sistemaAlertrem
 
             dgvComentarios.DataSource = tabela;
 
-            dgvComentarios.Columns["descricao"].Width = 300;
+            //dgvComentarios.Columns["descricao"].Width = 300;
 
             DataGridViewButtonColumn btnExcluir = new DataGridViewButtonColumn();
             btnExcluir.Name = "Excluir";

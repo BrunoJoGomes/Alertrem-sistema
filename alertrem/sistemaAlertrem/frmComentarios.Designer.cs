@@ -31,8 +31,10 @@ namespace sistemaAlertrem
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmComentarios));
             this.dgvComentarios = new System.Windows.Forms.DataGridView();
             this.gpbComentarios = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvComentarios)).BeginInit();
             this.gpbComentarios.SuspendLayout();
             this.SuspendLayout();
@@ -41,7 +43,7 @@ namespace sistemaAlertrem
             // 
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Museo 700", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(10);
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -53,7 +55,7 @@ namespace sistemaAlertrem
             this.dgvComentarios.Name = "dgvComentarios";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Museo 700", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -67,6 +69,7 @@ namespace sistemaAlertrem
             // gpbComentarios
             // 
             this.gpbComentarios.Controls.Add(this.dgvComentarios);
+            this.gpbComentarios.Font = new System.Drawing.Font("Museo 700", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpbComentarios.Location = new System.Drawing.Point(12, 12);
             this.gpbComentarios.Name = "gpbComentarios";
             this.gpbComentarios.Size = new System.Drawing.Size(960, 387);
@@ -74,17 +77,29 @@ namespace sistemaAlertrem
             this.gpbComentarios.TabStop = false;
             this.gpbComentarios.Text = "Comentarios";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(545, 424);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // frmComentarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 491);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.gpbComentarios);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmComentarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Comentarios";
+            this.Text = "Alertrem";
             ((System.ComponentModel.ISupportInitialize)(this.dgvComentarios)).EndInit();
             this.gpbComentarios.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -95,5 +110,6 @@ namespace sistemaAlertrem
 
         private System.Windows.Forms.DataGridView dgvComentarios;
         private System.Windows.Forms.GroupBox gpbComentarios;
+        private System.Windows.Forms.Button button1;
     }
 }
