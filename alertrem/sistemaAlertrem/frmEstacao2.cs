@@ -124,6 +124,25 @@ namespace sistemaAlertrem
             txtCodigo.Text = DR.GetInt32(0).ToString();
             txtNome.Text = DR.GetString(1);
             txtLocalizacao.Text = DR.GetString(2);
+            //int i = 0;
+            //int a = 3;
+            //foreach (Control gpbBox in gpbCaracteristicas.Controls)
+            //{
+            //    foreach (RadioButton radio in gpbBox.Controls)
+            //    {
+            //        if (i < 23)
+            //        {
+            //            if (radio.Text == DR.GetString(a))
+            //            {
+            //                radio.Checked = true;
+            //            }
+            //        }
+            //        a++;
+            //    }
+            //}
+
+
+            Conexao.fecharConexao();
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

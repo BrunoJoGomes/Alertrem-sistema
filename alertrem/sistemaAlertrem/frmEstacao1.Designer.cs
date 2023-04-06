@@ -45,7 +45,7 @@ namespace sistemaAlertrem
             this.btnPesquisar.Location = new System.Drawing.Point(672, 79);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(102, 88);
-            this.btnPesquisar.TabIndex = 3;
+            this.btnPesquisar.TabIndex = 1;
             this.btnPesquisar.Text = "&Pesquisar";
             this.btnPesquisar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -59,7 +59,7 @@ namespace sistemaAlertrem
             this.btnAdicionar.Location = new System.Drawing.Point(672, 188);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(102, 81);
-            this.btnAdicionar.TabIndex = 4;
+            this.btnAdicionar.TabIndex = 2;
             this.btnAdicionar.Text = "&Adicionar";
             this.btnAdicionar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnAdicionar.UseVisualStyleBackColor = true;
@@ -72,7 +72,7 @@ namespace sistemaAlertrem
             this.btnVoltar2.Location = new System.Drawing.Point(672, 308);
             this.btnVoltar2.Name = "btnVoltar2";
             this.btnVoltar2.Size = new System.Drawing.Size(102, 81);
-            this.btnVoltar2.TabIndex = 5;
+            this.btnVoltar2.TabIndex = 3;
             this.btnVoltar2.Text = "&Voltar";
             this.btnVoltar2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnVoltar2.UseVisualStyleBackColor = true;
@@ -85,14 +85,14 @@ namespace sistemaAlertrem
             this.ltbEstacoes.Name = "ltbEstacoes";
             this.ltbEstacoes.Size = new System.Drawing.Size(464, 277);
             this.ltbEstacoes.TabIndex = 6;
-            this.ltbEstacoes.SelectedIndexChanged += new System.EventHandler(this.ltbEstacoes_SelectedIndexChanged);
+            this.ltbEstacoes.Click += new System.EventHandler(this.ltbEstacoes_Click);
             // 
             // txtPesquisa
             // 
             this.txtPesquisa.Location = new System.Drawing.Point(12, 95);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(273, 20);
-            this.txtPesquisa.TabIndex = 7;
+            this.txtPesquisa.TabIndex = 0;
             // 
             // lblPesquisa
             // 

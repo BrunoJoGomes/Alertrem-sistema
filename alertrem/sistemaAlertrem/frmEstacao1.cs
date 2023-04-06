@@ -18,29 +18,6 @@ namespace sistemaAlertrem
             InitializeComponent();
             CarregaDados();
         }
-        private void btnAdicionar_Click(object sender, EventArgs e)
-        {
-            frmEstacao2 OutroFrm = new frmEstacao2();
-            OutroFrm.ShowDialog();
-        }
-
-        private void ptb1_Click(object sender, EventArgs e)
-        {
-            frmEstacao2 OutroFrm = new frmEstacao2();
-            OutroFrm.ShowDialog();
-        }
-
-        private void ptb2_Click(object sender, EventArgs e)
-        {
-            frmEstacao2 OutroFrm = new frmEstacao2();
-            OutroFrm.ShowDialog();
-        }
-
-        private void ptb3_Click(object sender, EventArgs e)
-        {
-            frmEstacao2 OutroFrm = new frmEstacao2();
-            OutroFrm.ShowDialog();
-        }
 
         private void btnVoltar2_Click(object sender, EventArgs e)
         {
@@ -62,24 +39,42 @@ namespace sistemaAlertrem
             {
                 ltbEstacoes.Items.Add(DR[0]);
             }
+            Conexao.fecharConexao();
+            
 
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            CarregaDados();
+            if(txtPesquisa.Text != "")
+            {
+                string nome = txtPesquisa.Text;
+                CarregaDados(nome);
+
+            }
+            else
+            {
+                MessageBox.Show("Por favor, insira um nome a ser pesquisado", "Mensagem do sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtPesquisa.Focus();
+            }
         }
 
-        public void PesquisarEstacao(string nome)
+
+        private void ltbEstacoes_Click(object sender, EventArgs e)
         {
+
+            string nome = ltbEstacoes.SelectedItem.ToString();
             frmEstacao2 estacao = new frmEstacao2(nome);
-
+            estacao.Show();
+            this.Hide();
 
         }
 
-        private void ltbEstacoes_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            //ltbEstacoes.SelectedItem.
+            frmEstacao2 estacao = new frmEstacao2();
+            estacao.Show();
+            this.Hide();
         }
     }
 }

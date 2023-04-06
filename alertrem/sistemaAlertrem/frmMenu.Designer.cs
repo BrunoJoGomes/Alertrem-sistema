@@ -165,6 +165,7 @@ namespace sistemaAlertrem
             this.pcbUsuarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pcbUsuarios.TabIndex = 2;
             this.pcbUsuarios.TabStop = false;
+            this.pcbUsuarios.Click += new System.EventHandler(this.pcbUsuarios_Click);
             // 
             // lblBanco
             // 

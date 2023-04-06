@@ -114,5 +114,12 @@ namespace sistemaAlertrem
             reclamacoes.Show();
             this.Hide();
         }
+
+        private void pcbUsuarios_Click(object sender, EventArgs e)
+        {
+            frmPesquisaUsuarios usuarios = new frmPesquisaUsuarios();
+            usuarios.Show();
+            this.Hide();
+        }
     }
 }
