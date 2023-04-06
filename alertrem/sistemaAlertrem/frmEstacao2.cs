@@ -16,12 +16,15 @@ namespace sistemaAlertrem
         public frmEstacao2()
         {
             InitializeComponent();
+            btnAtualizar.Enabled = false;
+            btnExcluir.Enabled = false;
         }
 
         public frmEstacao2(string nome)
         {
             InitializeComponent();
             carregaDados(nome);
+            btnCadastro.Enabled = false;
         }
 
         private void btnCadastro_Click(object sender, EventArgs e)
@@ -130,12 +133,9 @@ namespace sistemaAlertrem
             //{
             //    foreach (RadioButton radio in gpbBox.Controls)
             //    {
-            //        if (i < 23)
+            //        if (radio.Text == DR.GetString(a))
             //        {
-            //            if (radio.Text == DR.GetString(a))
-            //            {
-            //                radio.Checked = true;
-            //            }
+            //            radio.Checked = true;
             //        }
             //        a++;
             //    }
