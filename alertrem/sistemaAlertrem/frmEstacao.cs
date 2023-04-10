@@ -190,7 +190,9 @@ namespace sistemaAlertrem
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frmMenu abrir = new frmMenu();
+            abrir.Show();
+            this.Hide();
         }
 
         private void cbbEstacao_SelectedValueChanged(object sender, EventArgs e)
