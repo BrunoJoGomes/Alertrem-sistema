@@ -88,18 +88,6 @@
     <Compile Include="frmEstacao.Designer.cs">
       <DependentUpon>frmEstacao.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEstacao1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEstacao1.Designer.cs">
-      <DependentUpon>frmEstacao1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEstacao2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEstacao2.Designer.cs">
-      <DependentUpon>frmEstacao2.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,12 +146,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEstacao.resx">
       <DependentUpon>frmEstacao.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEstacao1.resx">
-      <DependentUpon>frmEstacao1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEstacao2.resx">
-      <DependentUpon>frmEstacao2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
