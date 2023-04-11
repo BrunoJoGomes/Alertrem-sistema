@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using Bcrypt = BCrypt.Net.BCrypt;
 
 namespace sistemaAlertrem
 {
@@ -19,13 +21,40 @@ namespace sistemaAlertrem
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
+            string usuario = txtUsuario.Text;
+            string senha = txtSenha.Text;
+            if (!txtUsuario.Text.Equals("") && !txtSenha.Text.Equals(""))
             {
-                string usuario, senha;
+                pesquisaUsuario(usuario, senha);
+            }
+            else
+            {
+                MessageBox.Show("Insira dados válidos!",
+                   "Aviso do sistema",
+                   MessageBoxButtons.OK,
+                   MessageBoxIcon.Error,
+                   MessageBoxDefaultButton.Button1);
 
-                usuario = txtUsuario.Text;
-                senha = txtSenha.Text;
+                txtUsuario.Clear();
+                txtSenha.Clear();
+                txtUsuario.Focus();
+            }
+        }
 
-                if (usuario.Equals("alertrem") && senha.Equals("alertrem"))
+        public void pesquisaUsuario(string usuario, string senha)
+        {
+            MySqlCommand comm = new MySqlCommand
+            {
+                CommandText = $"select * from tb_funcionarios where usuario like '{usuario}'",
+                CommandType = CommandType.Text,
+                Connection = Conexao.obterConexao()
+            };
+            MySqlDataReader DR = comm.ExecuteReader();
+            DR.Read();
+
+            if (DR.HasRows)
+            {
+                if (DR.GetString(4) == Bcrypt.HashPassword(senha, DR.GetString(3) ))
                 {
                     frmMenu abrir = new frmMenu();
                     abrir.Show();
@@ -34,18 +63,31 @@ namespace sistemaAlertrem
                 else
                 {
                     MessageBox.Show("Usuário ou senha inválidos!",
-                        "Aviso do sistema",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error,
-                        MessageBoxDefaultButton.Button1);
+                    "Aviso do sistema",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1);
 
-                    txtUsuario.Text = "";
+                    txtUsuario.Clear();
                     txtSenha.Clear();
                     txtUsuario.Focus();
                 }
             }
-        }
+            else
+            {
+                MessageBox.Show("Usuário não existe no banco!",
+                    "Aviso do sistema",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1);
 
+                txtUsuario.Clear();
+                txtSenha.Clear();
+                txtUsuario.Focus();
+            }
+
+            Conexao.fecharConexao();
+        }
         private void btnSair_Click(object sender, EventArgs e)
         {
             {
