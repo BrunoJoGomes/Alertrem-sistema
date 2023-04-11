@@ -44,7 +44,7 @@ namespace sistemaAlertrem
             // pctIcone
             // 
             this.pctIcone.Image = ((System.Drawing.Image)(resources.GetObject("pctIcone.Image")));
-            this.pctIcone.Location = new System.Drawing.Point(281, 64);
+            this.pctIcone.Location = new System.Drawing.Point(272, 81);
             this.pctIcone.Name = "pctIcone";
             this.pctIcone.Size = new System.Drawing.Size(255, 193);
             this.pctIcone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -55,7 +55,7 @@ namespace sistemaAlertrem
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Museo 700", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(278, 270);
+            this.lblUsuario.Location = new System.Drawing.Point(272, 286);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(88, 23);
             this.lblUsuario.TabIndex = 2;
@@ -65,7 +65,7 @@ namespace sistemaAlertrem
             // 
             this.lblSenha.AutoSize = true;
             this.lblSenha.Font = new System.Drawing.Font("Museo 700", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(279, 297);
+            this.lblSenha.Location = new System.Drawing.Point(274, 314);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(72, 23);
             this.lblSenha.TabIndex = 3;
@@ -73,7 +73,7 @@ namespace sistemaAlertrem
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(373, 272);
+            this.txtUsuario.Location = new System.Drawing.Point(364, 289);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(163, 20);
             this.txtUsuario.TabIndex = 4;
@@ -81,7 +81,7 @@ namespace sistemaAlertrem
             // txtSenha
             // 
             this.txtSenha.Font = new System.Drawing.Font("Wingdings", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.txtSenha.Location = new System.Drawing.Point(373, 300);
+            this.txtSenha.Location = new System.Drawing.Point(364, 319);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = 'l';
             this.txtSenha.Size = new System.Drawing.Size(163, 20);
@@ -90,7 +90,7 @@ namespace sistemaAlertrem
             // btnEntrar
             // 
             this.btnEntrar.Font = new System.Drawing.Font("Museo 700", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrar.Location = new System.Drawing.Point(283, 339);
+            this.btnEntrar.Location = new System.Drawing.Point(272, 358);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(105, 41);
             this.btnEntrar.TabIndex = 7;
@@ -101,7 +101,7 @@ namespace sistemaAlertrem
             // btnSair
             // 
             this.btnSair.Font = new System.Drawing.Font("Museo 700", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(431, 339);
+            this.btnSair.Location = new System.Drawing.Point(422, 358);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(105, 41);
             this.btnSair.TabIndex = 8;

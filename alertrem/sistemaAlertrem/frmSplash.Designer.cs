@@ -104,10 +104,11 @@ namespace sistemaAlertrem
             this.Controls.Add(this.pctIcone);
             this.Controls.Add(this.lblPorcent);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmSplash";
+            this.Text = "Alertrem";
             ((System.ComponentModel.ISupportInitialize)(this.pctIcone)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

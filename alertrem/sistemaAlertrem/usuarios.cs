@@ -21,13 +21,6 @@ namespace sistemaAlertrem
             InitializeComponent();
         }
 
-        private void btnVoltar_Click(object sender, EventArgs e)
-        {
-            frmMenu abrir = new frmMenu();
-            abrir.Show();
-            this.Hide();
-        }
-
         private void btnPesquisar_Click_1(object sender, EventArgs e)
         {
             usuarios.Clear();
@@ -72,6 +65,13 @@ namespace sistemaAlertrem
             int id = usuarios[ltbUsuarios.SelectedItem.ToString()];
             frmUsuarioEspe abrir = new frmUsuarioEspe(id);
             abrir.ShowDialog();
+        }
+
+        private void btnVoltar2_Click(object sender, EventArgs e)
+        {
+            frmMenu abrir = new frmMenu();
+            abrir.Show();
+            this.Hide();
         }
     }
 }

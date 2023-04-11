@@ -1,7 +1,7 @@
 ﻿
 namespace sistemaAlertrem
 {
-    partial class FrmResultadoPesquisa
+    partial class frmFuncionarios
     {
         /// <summary>
         /// Required designer variable.
@@ -29,65 +29,68 @@ namespace sistemaAlertrem
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmResultadoPesquisa));
-            this.dataGrDados = new System.Windows.Forms.DataGridView();
-            this.gpbMenu = new System.Windows.Forms.GroupBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFuncionarios));
+            this.dgvFuncionarios = new System.Windows.Forms.DataGridView();
             this.btnVoltar2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrDados)).BeginInit();
+            this.gpbMenu = new System.Windows.Forms.GroupBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGrDados
+            // dgvFuncionarios
             // 
-            this.dataGrDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGrDados.Location = new System.Drawing.Point(12, 103);
-            this.dataGrDados.Name = "dataGrDados";
-            this.dataGrDados.Size = new System.Drawing.Size(688, 389);
-            this.dataGrDados.TabIndex = 1;
-            this.dataGrDados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrDados_CellClick);
-            // 
-            // gpbMenu
-            // 
-            this.gpbMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(200)))), ((int)(((byte)(120)))));
-            this.gpbMenu.Location = new System.Drawing.Point(-6, -1);
-            this.gpbMenu.Name = "gpbMenu";
-            this.gpbMenu.Size = new System.Drawing.Size(820, 56);
-            this.gpbMenu.TabIndex = 10;
-            this.gpbMenu.TabStop = false;
-            this.gpbMenu.Text = "Menu";
+            this.dgvFuncionarios.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvFuncionarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFuncionarios.Location = new System.Drawing.Point(67, 76);
+            this.dgvFuncionarios.Name = "dgvFuncionarios";
+            this.dgvFuncionarios.Size = new System.Drawing.Size(516, 328);
+            this.dgvFuncionarios.TabIndex = 0;
             // 
             // btnVoltar2
             // 
+            this.btnVoltar2.Font = new System.Drawing.Font("Museo 700", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar2.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar2.Image")));
             this.btnVoltar2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnVoltar2.Location = new System.Drawing.Point(726, 411);
+            this.btnVoltar2.Location = new System.Drawing.Point(648, 323);
             this.btnVoltar2.Name = "btnVoltar2";
             this.btnVoltar2.Size = new System.Drawing.Size(102, 81);
-            this.btnVoltar2.TabIndex = 11;
+            this.btnVoltar2.TabIndex = 1;
             this.btnVoltar2.Text = "&Voltar";
             this.btnVoltar2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnVoltar2.UseVisualStyleBackColor = true;
             this.btnVoltar2.Click += new System.EventHandler(this.btnVoltar2_Click);
             // 
-            // FrmResultadoPesquisa
+            // gpbMenu
+            // 
+            this.gpbMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(200)))), ((int)(((byte)(120)))));
+            this.gpbMenu.Location = new System.Drawing.Point(-5, 0);
+            this.gpbMenu.Name = "gpbMenu";
+            this.gpbMenu.Size = new System.Drawing.Size(809, 56);
+            this.gpbMenu.TabIndex = 10;
+            this.gpbMenu.TabStop = false;
+            this.gpbMenu.Text = "Menu";
+            // 
+            // frmFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(840, 504);
-            this.Controls.Add(this.btnVoltar2);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.gpbMenu);
-            this.Controls.Add(this.dataGrDados);
+            this.Controls.Add(this.btnVoltar2);
+            this.Controls.Add(this.dgvFuncionarios);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmResultadoPesquisa";
+            this.Name = "frmFuncionarios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alertrem";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrDados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGrDados;
-        private System.Windows.Forms.GroupBox gpbMenu;
+
+        private System.Windows.Forms.DataGridView dgvFuncionarios;
         private System.Windows.Forms.Button btnVoltar2;
+        private System.Windows.Forms.GroupBox gpbMenu;
     }
 }

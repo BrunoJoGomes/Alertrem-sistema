@@ -17,13 +17,6 @@ namespace sistemaAlertrem
             InitializeComponent();
         }
 
-        private void btnLoading_Click(object sender, EventArgs e)
-        {
-            pgbLoading.Value = pgbLoading.Value + 10;
-            lblPorcent.Text = pgbLoading.Value.ToString() + " %";
-            lblLoading.Visible = true;
-        }
-
         private void tmrTime_Tick(object sender, EventArgs e)
         {
             if (pgbLoading.Value < 100)
