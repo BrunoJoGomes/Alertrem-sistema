@@ -102,7 +102,7 @@ namespace sistemaAlertrem
 
         private void pcbEstacoes_Click(object sender, EventArgs e)
         {
-            frmEstacao1 estacao = new frmEstacao1();
+            frmEstacao estacao = new frmEstacao();
             estacao.Show();
             this.Hide();
         }

@@ -64,11 +64,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCadastrarCaracteristica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastrarCaracteristica.Designer.cs">
+      <DependentUpon>frmCadastrarCaracteristica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastrarEstacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastrarEstacao.Designer.cs">
+      <DependentUpon>frmCadastrarEstacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmComentarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmComentarios.Designer.cs">
       <DependentUpon>frmComentarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstacao.Designer.cs">
+      <DependentUpon>frmEstacao.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEstacao1.cs">
       <SubType>Form</SubType>
@@ -135,8 +153,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastrarCaracteristica.resx">
+      <DependentUpon>frmCadastrarCaracteristica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastrarEstacao.resx">
+      <DependentUpon>frmCadastrarEstacao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmComentarios.resx">
       <DependentUpon>frmComentarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstacao.resx">
+      <DependentUpon>frmEstacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEstacao1.resx">
       <DependentUpon>frmEstacao1.cs</DependentUpon>

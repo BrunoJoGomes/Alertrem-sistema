@@ -16,12 +16,15 @@ namespace sistemaAlertrem
         public frmEstacao2()
         {
             InitializeComponent();
+            btnAtualizar.Enabled = false;
+            btnExcluir.Enabled = false;
         }
 
         public frmEstacao2(string nome)
         {
             InitializeComponent();
             carregaDados(nome);
+            btnCadastro.Enabled = false;
         }
 
         private void btnCadastro_Click(object sender, EventArgs e)
@@ -40,55 +43,55 @@ namespace sistemaAlertrem
                     comm.CommandType = CommandType.Text;
 
                     //string[] valores = new string[21];
-                    Dictionary<string, string> valores = new Dictionary<string, string>();
-                    int i = 0;
-                    foreach (Control gpbBox in gpbCaracteristicas.Controls)
-                    {
-                        foreach (RadioButton radio in gpbBox.Controls)
-                        {
-                            if (i < 23)
-                            {
-                                if (radio.Checked)
-                                {
-                                    valores.Add(gpbBox.Name, radio.Text);
-                                    //valores[i]  = radio.Text;
-                                    //i++;
-                                    //Console.WriteLine($"{gpbBox.Name} = {radio.Checked}");
-                                }
-                            }
-                        }
-                    }
+                    //Dictionary<string, string> valores = new Dictionary<string, string>();
+                    //int i = 0;
+                    //foreach (Control gpbBox in gpbCaracteristicas.Controls)
+                    //{
+                    //    foreach (RadioButton radio in gpbBox.Controls)
+                    //    {
+                    //        if (i < 23)
+                    //        {
+                    //            if (radio.Checked)
+                    //            {
+                    //                valores.Add(gpbBox.Name, radio.Text);
+                    //                //valores[i]  = radio.Text;
+                    //                //i++;
+                    //                //Console.WriteLine($"{gpbBox.Name} = {radio.Checked}");
+                    //            }
+                    //        }
+                    //    }
+                    //}
                     //foreach (string x in valores)
                     //{
-                    Console.WriteLine(valores);
+                    //Console.WriteLine(valores);
                     //}
 
-                    comm.Parameters.Clear();
-                    comm.Parameters.Add("@nome", MySqlDbType.VarChar, 50).Value = txtNome.Text;
-                    comm.Parameters.Add("@localizacao", MySqlDbType.VarChar, 50).Value = txtLocalizacao.Text;
-                    comm.Parameters.Add("@banheiro", MySqlDbType.VarChar, 50).Value = valores["gpbBanheiro"];
-                    comm.Parameters.Add("@elevador", MySqlDbType.VarChar, 50).Value = valores["gpbElevador"];
-                    comm.Parameters.Add("@terminal_interurbano", MySqlDbType.VarChar, 60).Value = valores["gpbTerminalInterurbano"];
-                    comm.Parameters.Add("@terminal_urbano", MySqlDbType.VarChar, 256).Value = valores["gpbTerminalUrbano"];
-                    comm.Parameters.Add("@transferencia_interna", MySqlDbType.VarChar, 256).Value = valores["gpbTransferenciaInterna"];
-                    comm.Parameters.Add("@bicicletario", MySqlDbType.VarChar, 256).Value = valores["gpbBicicletario"];
-                    comm.Parameters.Add("@banheiro_acessivel", MySqlDbType.VarChar, 256).Value = valores["gpbBanheiroAcessivel"];
-                    comm.Parameters.Add("@estacao_acessivel", MySqlDbType.VarChar, 256).Value = valores["gpbEstacaoAcessivel"];
-                    comm.Parameters.Add("@rampa", MySqlDbType.VarChar, 256).Value = valores["gpbRampa"];
-                    comm.Parameters.Add("@transposicao_plataformas", MySqlDbType.VarChar, 256).Value = valores["gpbTransposicaoPlataformas"];
-                    comm.Parameters.Add("@escadas_rolantes", MySqlDbType.VarChar, 256).Value = valores["gpbEscadasRolantes"];
-                    comm.Parameters.Add("@acesso_elevador", MySqlDbType.VarChar, 256).Value = valores["gpbAcessoElevador"];
-                    comm.Parameters.Add("@lanchonete", MySqlDbType.VarChar, 256).Value = valores["gpbLanchonete"];
-                    comm.Parameters.Add("@emporio", MySqlDbType.VarChar, 256).Value = valores["gpbEmporio"];
-                    comm.Parameters.Add("@caixa_eletronico", MySqlDbType.VarChar, 256).Value = valores["gpbCaixaEletronico"];
-                    comm.Parameters.Add("@calcados", MySqlDbType.VarChar, 256).Value = valores["gpbCalcados"];
-                    comm.Parameters.Add("@telefone_p_surdos", MySqlDbType.VarChar, 256).Value = valores["gpbTelefonePSurdos"];
-                    comm.Parameters.Add("@piso_tatil", MySqlDbType.VarChar, 256).Value = valores["gpbPisoTatil"];
-                    comm.Parameters.Add("@transferencia_gratuita", MySqlDbType.VarChar, 256).Value = valores["gpbTransferenciaGratuita"];
-                    comm.Parameters.Add("@acessorios", MySqlDbType.VarChar, 256).Value = valores["gpbAcessorios"];
-                    comm.Parameters.Add("@farmacia", MySqlDbType.VarChar, 256).Value = valores["gpbFarmacia"];
-                    comm.Parameters.Add("@rota_acessivel", MySqlDbType.VarChar, 256).Value = valores["gpbRotaAcessivel"];
-                    comm.Parameters.Add("@achados_perdidos", MySqlDbType.VarChar, 256).Value = valores["gpbAchadosPerdidos"];
+                    //comm.Parameters.Clear();
+                    //comm.Parameters.Add("@nome", MySqlDbType.VarChar, 50).Value = txtNome.Text;
+                    //comm.Parameters.Add("@localizacao", MySqlDbType.VarChar, 50).Value = txtLocalizacao.Text;
+                    //comm.Parameters.Add("@banheiro", MySqlDbType.VarChar, 50).Value = valores["gpbBanheiro"];
+                    //comm.Parameters.Add("@elevador", MySqlDbType.VarChar, 50).Value = valores["gpbElevador"];
+                    //comm.Parameters.Add("@terminal_interurbano", MySqlDbType.VarChar, 60).Value = valores["gpbTerminalInterurbano"];
+                    //comm.Parameters.Add("@terminal_urbano", MySqlDbType.VarChar, 256).Value = valores["gpbTerminalUrbano"];
+                    //comm.Parameters.Add("@transferencia_interna", MySqlDbType.VarChar, 256).Value = valores["gpbTransferenciaInterna"];
+                    //comm.Parameters.Add("@bicicletario", MySqlDbType.VarChar, 256).Value = valores["gpbBicicletario"];
+                    //comm.Parameters.Add("@banheiro_acessivel", MySqlDbType.VarChar, 256).Value = valores["gpbBanheiroAcessivel"];
+                    //comm.Parameters.Add("@estacao_acessivel", MySqlDbType.VarChar, 256).Value = valores["gpbEstacaoAcessivel"];
+                    //comm.Parameters.Add("@rampa", MySqlDbType.VarChar, 256).Value = valores["gpbRampa"];
+                    //comm.Parameters.Add("@transposicao_plataformas", MySqlDbType.VarChar, 256).Value = valores["gpbTransposicaoPlataformas"];
+                    //comm.Parameters.Add("@escadas_rolantes", MySqlDbType.VarChar, 256).Value = valores["gpbEscadasRolantes"];
+                    //comm.Parameters.Add("@acesso_elevador", MySqlDbType.VarChar, 256).Value = valores["gpbAcessoElevador"];
+                    //comm.Parameters.Add("@lanchonete", MySqlDbType.VarChar, 256).Value = valores["gpbLanchonete"];
+                    //comm.Parameters.Add("@emporio", MySqlDbType.VarChar, 256).Value = valores["gpbEmporio"];
+                    //comm.Parameters.Add("@caixa_eletronico", MySqlDbType.VarChar, 256).Value = valores["gpbCaixaEletronico"];
+                    //comm.Parameters.Add("@calcados", MySqlDbType.VarChar, 256).Value = valores["gpbCalcados"];
+                    //comm.Parameters.Add("@telefone_p_surdos", MySqlDbType.VarChar, 256).Value = valores["gpbTelefonePSurdos"];
+                    //comm.Parameters.Add("@piso_tatil", MySqlDbType.VarChar, 256).Value = valores["gpbPisoTatil"];
+                    //comm.Parameters.Add("@transferencia_gratuita", MySqlDbType.VarChar, 256).Value = valores["gpbTransferenciaGratuita"];
+                    //comm.Parameters.Add("@acessorios", MySqlDbType.VarChar, 256).Value = valores["gpbAcessorios"];
+                    //comm.Parameters.Add("@farmacia", MySqlDbType.VarChar, 256).Value = valores["gpbFarmacia"];
+                    //comm.Parameters.Add("@rota_acessivel", MySqlDbType.VarChar, 256).Value = valores["gpbRotaAcessivel"];
+                    //comm.Parameters.Add("@achados_perdidos", MySqlDbType.VarChar, 256).Value = valores["gpbAchadosPerdidos"];
 
                     comm.Connection = Conexao.obterConexao();
                     int res = comm.ExecuteNonQuery();
@@ -130,12 +133,9 @@ namespace sistemaAlertrem
             //{
             //    foreach (RadioButton radio in gpbBox.Controls)
             //    {
-            //        if (i < 23)
+            //        if (radio.Text == DR.GetString(a))
             //        {
-            //            if (radio.Text == DR.GetString(a))
-            //            {
-            //                radio.Checked = true;
-            //            }
+            //            radio.Checked = true;
             //        }
             //        a++;
             //    }
