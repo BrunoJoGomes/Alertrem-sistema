@@ -67,13 +67,6 @@ namespace sistemaAlertrem
             //dataGrDados.Dock = DockStyle.Fill;
         }
 
-        private void btnVoltarPesq_Click(object sender, EventArgs e)
-        {
-            frmPesquisaUsuarios abrir = new frmPesquisaUsuarios();
-            abrir.Show();
-            this.Hide();
-        }
-
         private void dataGrDados_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewCell celula = dataGrDados.Rows[e.RowIndex].Cells[e.ColumnIndex];
@@ -83,6 +76,13 @@ namespace sistemaAlertrem
 
             //Console.WriteLine($"{dataGrDados.SelectedRows[0]}");
             //frmUsuarioEspe abrir = new frmUsuarioEspe(dataGrDados.Columns[e.ColumnIndex][e.RowIndex];
+        }
+
+        private void btnVoltar2_Click(object sender, EventArgs e)
+        {
+            frmPesquisaUsuarios abrir = new frmPesquisaUsuarios();
+            abrir.Show();
+            this.Hide();
         }
     }
 }

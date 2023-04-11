@@ -107,5 +107,12 @@ namespace sistemaAlertrem
 
             }
         }
+
+        private void btnVoltar2_Click(object sender, EventArgs e)
+        {
+            frmMenu menu = new frmMenu();
+            menu.Show();
+            this.Hide();
+        }
     }
 }

@@ -32,7 +32,9 @@ namespace sistemaAlertrem
 
         private void btnVoltarEspeci_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frmMenu abrir = new frmMenu();
+            abrir.Show();
+            this.Hide();
         }
 
         public void carregaLabesl(int id)
@@ -134,6 +136,12 @@ namespace sistemaAlertrem
                 }
 
             }
+        }
+
+        private void btnVoltar2_Click(object sender, EventArgs e)
+        {
+            FrmResultadoPesquisa abrir = new FrmResultadoPesquisa();
+            this.Hide();
         }
     }
 }

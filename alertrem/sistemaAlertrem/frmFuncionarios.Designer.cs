@@ -50,7 +50,7 @@ namespace sistemaAlertrem
             this.btnVoltar2.Font = new System.Drawing.Font("Museo 700", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar2.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar2.Image")));
             this.btnVoltar2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnVoltar2.Location = new System.Drawing.Point(646, 202);
+            this.btnVoltar2.Location = new System.Drawing.Point(648, 323);
             this.btnVoltar2.Name = "btnVoltar2";
             this.btnVoltar2.Size = new System.Drawing.Size(102, 81);
             this.btnVoltar2.TabIndex = 1;
