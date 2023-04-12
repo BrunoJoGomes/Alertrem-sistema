@@ -41,14 +41,6 @@ namespace sistemaAlertrem
             this.pcbUsuarios = new System.Windows.Forms.PictureBox();
             this.lblBanco = new System.Windows.Forms.Label();
             this.lblLinha = new System.Windows.Forms.Label();
-            this.gpbCadastroUsuFunc = new System.Windows.Forms.GroupBox();
-            this.btnCadastrar = new System.Windows.Forms.Button();
-            this.txtSenha = new System.Windows.Forms.TextBox();
-            this.lblSenhaUsu = new System.Windows.Forms.Label();
-            this.txtUsu = new System.Windows.Forms.TextBox();
-            this.lblUsuario = new System.Windows.Forms.Label();
-            this.txtNomeFunc = new System.Windows.Forms.TextBox();
-            this.lblNomeFunc = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.lblStatusBanco = new System.Windows.Forms.Label();
             this.lblStatusLinha = new System.Windows.Forms.Label();
@@ -58,7 +50,6 @@ namespace sistemaAlertrem
             ((System.ComponentModel.ISupportInitialize)(this.pcbComentarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbEstacoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbUsuarios)).BeginInit();
-            this.gpbCadastroUsuFunc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,9 +64,9 @@ namespace sistemaAlertrem
             this.gpbMenu.Controls.Add(this.pcbEstacoes);
             this.gpbMenu.Controls.Add(this.lblUsuarios);
             this.gpbMenu.Controls.Add(this.pcbUsuarios);
-            this.gpbMenu.Location = new System.Drawing.Point(-1, 0);
+            this.gpbMenu.Location = new System.Drawing.Point(-5, 104);
             this.gpbMenu.Name = "gpbMenu";
-            this.gpbMenu.Size = new System.Drawing.Size(801, 121);
+            this.gpbMenu.Size = new System.Drawing.Size(816, 254);
             this.gpbMenu.TabIndex = 1;
             this.gpbMenu.TabStop = false;
             this.gpbMenu.Text = "Menu";
@@ -84,7 +75,7 @@ namespace sistemaAlertrem
             // 
             this.lblFunc.AutoSize = true;
             this.lblFunc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblFunc.Location = new System.Drawing.Point(562, 96);
+            this.lblFunc.Location = new System.Drawing.Point(476, 223);
             this.lblFunc.Name = "lblFunc";
             this.lblFunc.Size = new System.Drawing.Size(67, 13);
             this.lblFunc.TabIndex = 9;
@@ -94,18 +85,19 @@ namespace sistemaAlertrem
             // 
             this.pcbFunc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbFunc.Image = ((System.Drawing.Image)(resources.GetObject("pcbFunc.Image")));
-            this.pcbFunc.Location = new System.Drawing.Point(554, 12);
+            this.pcbFunc.Location = new System.Drawing.Point(417, 139);
             this.pcbFunc.Name = "pcbFunc";
-            this.pcbFunc.Size = new System.Drawing.Size(83, 81);
-            this.pcbFunc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbFunc.Size = new System.Drawing.Size(185, 81);
+            this.pcbFunc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbFunc.TabIndex = 8;
             this.pcbFunc.TabStop = false;
+            this.pcbFunc.Click += new System.EventHandler(this.pcbFunc_Click);
             // 
             // lblReclamacoes
             // 
             this.lblReclamacoes.AutoSize = true;
             this.lblReclamacoes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblReclamacoes.Location = new System.Drawing.Point(425, 96);
+            this.lblReclamacoes.Location = new System.Drawing.Point(285, 223);
             this.lblReclamacoes.Name = "lblReclamacoes";
             this.lblReclamacoes.Size = new System.Drawing.Size(72, 13);
             this.lblReclamacoes.TabIndex = 7;
@@ -115,9 +107,9 @@ namespace sistemaAlertrem
             // 
             this.pcbComentarios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbComentarios.Image = ((System.Drawing.Image)(resources.GetObject("pcbComentarios.Image")));
-            this.pcbComentarios.Location = new System.Drawing.Point(416, 12);
+            this.pcbComentarios.Location = new System.Drawing.Point(225, 139);
             this.pcbComentarios.Name = "pcbComentarios";
-            this.pcbComentarios.Size = new System.Drawing.Size(83, 81);
+            this.pcbComentarios.Size = new System.Drawing.Size(185, 81);
             this.pcbComentarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pcbComentarios.TabIndex = 6;
             this.pcbComentarios.TabStop = false;
@@ -127,7 +119,7 @@ namespace sistemaAlertrem
             // 
             this.lblEstacoes.AutoSize = true;
             this.lblEstacoes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblEstacoes.Location = new System.Drawing.Point(294, 96);
+            this.lblEstacoes.Location = new System.Drawing.Point(484, 102);
             this.lblEstacoes.Name = "lblEstacoes";
             this.lblEstacoes.Size = new System.Drawing.Size(51, 13);
             this.lblEstacoes.TabIndex = 5;
@@ -137,9 +129,9 @@ namespace sistemaAlertrem
             // 
             this.pcbEstacoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbEstacoes.Image = ((System.Drawing.Image)(resources.GetObject("pcbEstacoes.Image")));
-            this.pcbEstacoes.Location = new System.Drawing.Point(278, 12);
+            this.pcbEstacoes.Location = new System.Drawing.Point(417, 18);
             this.pcbEstacoes.Name = "pcbEstacoes";
-            this.pcbEstacoes.Size = new System.Drawing.Size(83, 81);
+            this.pcbEstacoes.Size = new System.Drawing.Size(185, 81);
             this.pcbEstacoes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pcbEstacoes.TabIndex = 4;
             this.pcbEstacoes.TabStop = false;
@@ -149,7 +141,7 @@ namespace sistemaAlertrem
             // 
             this.lblUsuarios.AutoSize = true;
             this.lblUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblUsuarios.Location = new System.Drawing.Point(162, 96);
+            this.lblUsuarios.Location = new System.Drawing.Point(293, 102);
             this.lblUsuarios.Name = "lblUsuarios";
             this.lblUsuarios.Size = new System.Drawing.Size(48, 13);
             this.lblUsuarios.TabIndex = 3;
@@ -159,9 +151,9 @@ namespace sistemaAlertrem
             // 
             this.pcbUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("pcbUsuarios.Image")));
-            this.pcbUsuarios.Location = new System.Drawing.Point(145, 12);
+            this.pcbUsuarios.Location = new System.Drawing.Point(225, 18);
             this.pcbUsuarios.Name = "pcbUsuarios";
-            this.pcbUsuarios.Size = new System.Drawing.Size(83, 81);
+            this.pcbUsuarios.Size = new System.Drawing.Size(185, 81);
             this.pcbUsuarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pcbUsuarios.TabIndex = 2;
             this.pcbUsuarios.TabStop = false;
@@ -170,7 +162,7 @@ namespace sistemaAlertrem
             // lblBanco
             // 
             this.lblBanco.AutoSize = true;
-            this.lblBanco.Location = new System.Drawing.Point(550, 206);
+            this.lblBanco.Location = new System.Drawing.Point(50, 50);
             this.lblBanco.Name = "lblBanco";
             this.lblBanco.Size = new System.Drawing.Size(88, 13);
             this.lblBanco.TabIndex = 2;
@@ -179,95 +171,11 @@ namespace sistemaAlertrem
             // lblLinha
             // 
             this.lblLinha.AutoSize = true;
-            this.lblLinha.Location = new System.Drawing.Point(550, 244);
+            this.lblLinha.Location = new System.Drawing.Point(550, 50);
             this.lblLinha.Name = "lblLinha";
             this.lblLinha.Size = new System.Drawing.Size(80, 13);
             this.lblLinha.TabIndex = 4;
             this.lblLinha.Text = "Status da linha:";
-            // 
-            // gpbCadastroUsuFunc
-            // 
-            this.gpbCadastroUsuFunc.Controls.Add(this.btnCadastrar);
-            this.gpbCadastroUsuFunc.Controls.Add(this.txtSenha);
-            this.gpbCadastroUsuFunc.Controls.Add(this.lblSenhaUsu);
-            this.gpbCadastroUsuFunc.Controls.Add(this.txtUsu);
-            this.gpbCadastroUsuFunc.Controls.Add(this.lblUsuario);
-            this.gpbCadastroUsuFunc.Controls.Add(this.txtNomeFunc);
-            this.gpbCadastroUsuFunc.Controls.Add(this.lblNomeFunc);
-            this.gpbCadastroUsuFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbCadastroUsuFunc.Location = new System.Drawing.Point(11, 160);
-            this.gpbCadastroUsuFunc.Name = "gpbCadastroUsuFunc";
-            this.gpbCadastroUsuFunc.Size = new System.Drawing.Size(467, 160);
-            this.gpbCadastroUsuFunc.TabIndex = 0;
-            this.gpbCadastroUsuFunc.TabStop = false;
-            this.gpbCadastroUsuFunc.Text = "Cadastro de Funcionários";
-            // 
-            // btnCadastrar
-            // 
-            this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
-            this.btnCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.Image")));
-            this.btnCadastrar.Location = new System.Drawing.Point(352, 103);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(109, 36);
-            this.btnCadastrar.TabIndex = 4;
-            this.btnCadastrar.Text = "Cadastar";
-            this.btnCadastrar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnCadastrar.UseVisualStyleBackColor = false;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.Font = new System.Drawing.Font("Wingdings", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.txtSenha.Location = new System.Drawing.Point(89, 113);
-            this.txtSenha.MaxLength = 100;
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.PasswordChar = 'l';
-            this.txtSenha.Size = new System.Drawing.Size(173, 25);
-            this.txtSenha.TabIndex = 3;
-            // 
-            // lblSenhaUsu
-            // 
-            this.lblSenhaUsu.AutoSize = true;
-            this.lblSenhaUsu.Location = new System.Drawing.Point(14, 116);
-            this.lblSenhaUsu.Name = "lblSenhaUsu";
-            this.lblSenhaUsu.Size = new System.Drawing.Size(60, 20);
-            this.lblSenhaUsu.TabIndex = 4;
-            this.lblSenhaUsu.Text = "Senha:";
-            // 
-            // txtUsu
-            // 
-            this.txtUsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsu.Location = new System.Drawing.Point(89, 70);
-            this.txtUsu.MaxLength = 50;
-            this.txtUsu.Name = "txtUsu";
-            this.txtUsu.Size = new System.Drawing.Size(213, 26);
-            this.txtUsu.TabIndex = 2;
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(14, 77);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(68, 20);
-            this.lblUsuario.TabIndex = 2;
-            this.lblUsuario.Text = "Usuário:";
-            // 
-            // txtNomeFunc
-            // 
-            this.txtNomeFunc.Location = new System.Drawing.Point(89, 31);
-            this.txtNomeFunc.MaxLength = 50;
-            this.txtNomeFunc.Name = "txtNomeFunc";
-            this.txtNomeFunc.Size = new System.Drawing.Size(372, 26);
-            this.txtNomeFunc.TabIndex = 1;
-            // 
-            // lblNomeFunc
-            // 
-            this.lblNomeFunc.AutoSize = true;
-            this.lblNomeFunc.Location = new System.Drawing.Point(14, 37);
-            this.lblNomeFunc.Name = "lblNomeFunc";
-            this.lblNomeFunc.Size = new System.Drawing.Size(55, 20);
-            this.lblNomeFunc.TabIndex = 0;
-            this.lblNomeFunc.Text = "Nome:";
             // 
             // btnVoltar
             // 
@@ -285,7 +193,7 @@ namespace sistemaAlertrem
             // lblStatusBanco
             // 
             this.lblStatusBanco.AutoSize = true;
-            this.lblStatusBanco.Location = new System.Drawing.Point(645, 206);
+            this.lblStatusBanco.Location = new System.Drawing.Point(145, 50);
             this.lblStatusBanco.Name = "lblStatusBanco";
             this.lblStatusBanco.Size = new System.Drawing.Size(0, 13);
             this.lblStatusBanco.TabIndex = 6;
@@ -293,7 +201,7 @@ namespace sistemaAlertrem
             // lblStatusLinha
             // 
             this.lblStatusLinha.AutoSize = true;
-            this.lblStatusLinha.Location = new System.Drawing.Point(637, 244);
+            this.lblStatusLinha.Location = new System.Drawing.Point(637, 50);
             this.lblStatusLinha.Name = "lblStatusLinha";
             this.lblStatusLinha.Size = new System.Drawing.Size(0, 13);
             this.lblStatusLinha.TabIndex = 7;
@@ -317,7 +225,6 @@ namespace sistemaAlertrem
             this.Controls.Add(this.lblStatusLinha);
             this.Controls.Add(this.lblStatusBanco);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.gpbCadastroUsuFunc);
             this.Controls.Add(this.lblLinha);
             this.Controls.Add(this.lblBanco);
             this.Controls.Add(this.gpbMenu);
@@ -326,15 +233,13 @@ namespace sistemaAlertrem
             this.MaximizeBox = false;
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmMenu";
+            this.Text = "Menu";
             this.gpbMenu.ResumeLayout(false);
             this.gpbMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbFunc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbComentarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbEstacoes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbUsuarios)).EndInit();
-            this.gpbCadastroUsuFunc.ResumeLayout(false);
-            this.gpbCadastroUsuFunc.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -353,15 +258,7 @@ namespace sistemaAlertrem
         private System.Windows.Forms.Label lblLinha;
         private System.Windows.Forms.Label lblFunc;
         private System.Windows.Forms.PictureBox pcbFunc;
-        private System.Windows.Forms.GroupBox gpbCadastroUsuFunc;
-        private System.Windows.Forms.Label lblUsuario;
-        private System.Windows.Forms.TextBox txtNomeFunc;
-        private System.Windows.Forms.Label lblNomeFunc;
-        private System.Windows.Forms.Label lblSenhaUsu;
-        private System.Windows.Forms.TextBox txtUsu;
-        private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label lblStatusBanco;
         private System.Windows.Forms.Label lblStatusLinha;
         private System.Windows.Forms.PictureBox pcbLogo;
