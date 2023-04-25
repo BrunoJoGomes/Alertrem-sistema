@@ -36,7 +36,6 @@ namespace sistemaAlertrem
             this.pgbLoading = new System.Windows.Forms.ProgressBar();
             this.lblLoading = new System.Windows.Forms.Label();
             this.tmrTime = new System.Windows.Forms.Timer(this.components);
-            this.gpbMenu = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pctIcone)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,22 +82,11 @@ namespace sistemaAlertrem
             this.tmrTime.Enabled = true;
             this.tmrTime.Tick += new System.EventHandler(this.tmrTime_Tick);
             // 
-            // gpbMenu
-            // 
-            this.gpbMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(200)))), ((int)(((byte)(120)))));
-            this.gpbMenu.Location = new System.Drawing.Point(-2, 1);
-            this.gpbMenu.Name = "gpbMenu";
-            this.gpbMenu.Size = new System.Drawing.Size(801, 56);
-            this.gpbMenu.TabIndex = 10;
-            this.gpbMenu.TabStop = false;
-            this.gpbMenu.Text = "Menu";
-            // 
             // frmSplash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.gpbMenu);
             this.Controls.Add(this.lblLoading);
             this.Controls.Add(this.pgbLoading);
             this.Controls.Add(this.pctIcone);
@@ -122,6 +110,5 @@ namespace sistemaAlertrem
         private System.Windows.Forms.ProgressBar pgbLoading;
         private System.Windows.Forms.Label lblLoading;
         private System.Windows.Forms.Timer tmrTime;
-        private System.Windows.Forms.GroupBox gpbMenu;
     }
 }

@@ -17,6 +17,7 @@ namespace sistemaAlertrem
         {
             InitializeComponent();
             carregaDados();
+            txtPesquisa.Focus();
         }
 
         private void btnVoltar2_Click(object sender, EventArgs e)
@@ -96,6 +97,7 @@ namespace sistemaAlertrem
             Conexao.fecharConexao();
 
             dgvFuncionarios.DataSource = tabela;
+            txtPesquisa.Focus();
         }
 
         private void dgvFuncionarios_CellContentClick(object sender, DataGridViewCellEventArgs e)

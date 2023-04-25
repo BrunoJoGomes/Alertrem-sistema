@@ -29,6 +29,7 @@ namespace sistemaAlertrem
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEstacao));
             this.gpbPesquisaEstacao = new System.Windows.Forms.GroupBox();
             this.cbbEstacao = new System.Windows.Forms.ComboBox();
             this.txtLocalizacao = new System.Windows.Forms.TextBox();
@@ -73,7 +74,7 @@ namespace sistemaAlertrem
             this.cbbEstacao.Location = new System.Drawing.Point(26, 42);
             this.cbbEstacao.Name = "cbbEstacao";
             this.cbbEstacao.Size = new System.Drawing.Size(452, 26);
-            this.cbbEstacao.TabIndex = 9;
+            this.cbbEstacao.TabIndex = 1;
             this.cbbEstacao.Text = "Selecione";
             this.cbbEstacao.SelectedValueChanged += new System.EventHandler(this.cbbEstacao_SelectedValueChanged);
             // 
@@ -84,7 +85,7 @@ namespace sistemaAlertrem
             this.txtLocalizacao.Multiline = true;
             this.txtLocalizacao.Name = "txtLocalizacao";
             this.txtLocalizacao.Size = new System.Drawing.Size(345, 71);
-            this.txtLocalizacao.TabIndex = 8;
+            this.txtLocalizacao.TabIndex = 4;
             // 
             // txtNome
             // 
@@ -92,7 +93,7 @@ namespace sistemaAlertrem
             this.txtNome.Location = new System.Drawing.Point(96, 151);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(382, 24);
-            this.txtNome.TabIndex = 7;
+            this.txtNome.TabIndex = 3;
             // 
             // txtCodigo
             // 
@@ -101,7 +102,7 @@ namespace sistemaAlertrem
             this.txtCodigo.Location = new System.Drawing.Point(96, 103);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(382, 24);
-            this.txtCodigo.TabIndex = 6;
+            this.txtCodigo.TabIndex = 2;
             // 
             // lblLocalizacao
             // 
@@ -135,7 +136,7 @@ namespace sistemaAlertrem
             this.btnSalvar.Location = new System.Drawing.Point(579, 198);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(113, 43);
-            this.btnSalvar.TabIndex = 2;
+            this.btnSalvar.TabIndex = 7;
             this.btnSalvar.Text = "&Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -145,7 +146,7 @@ namespace sistemaAlertrem
             this.btnDeletar.Location = new System.Drawing.Point(579, 130);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(113, 43);
-            this.btnDeletar.TabIndex = 1;
+            this.btnDeletar.TabIndex = 6;
             this.btnDeletar.Text = "&Deletar";
             this.btnDeletar.UseVisualStyleBackColor = true;
             this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
@@ -155,7 +156,7 @@ namespace sistemaAlertrem
             this.btnEditar.Location = new System.Drawing.Point(579, 62);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(113, 43);
-            this.btnEditar.TabIndex = 0;
+            this.btnEditar.TabIndex = 5;
             this.btnEditar.Text = "&Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
@@ -166,7 +167,7 @@ namespace sistemaAlertrem
             this.btnEstacao.Location = new System.Drawing.Point(12, 322);
             this.btnEstacao.Name = "btnEstacao";
             this.btnEstacao.Size = new System.Drawing.Size(213, 36);
-            this.btnEstacao.TabIndex = 0;
+            this.btnEstacao.TabIndex = 8;
             this.btnEstacao.Text = "Cadastrar Estação";
             this.btnEstacao.UseVisualStyleBackColor = true;
             this.btnEstacao.Click += new System.EventHandler(this.btnEstacao_Click);
@@ -177,7 +178,7 @@ namespace sistemaAlertrem
             this.btnCaracteristica.Location = new System.Drawing.Point(295, 322);
             this.btnCaracteristica.Name = "btnCaracteristica";
             this.btnCaracteristica.Size = new System.Drawing.Size(253, 36);
-            this.btnCaracteristica.TabIndex = 1;
+            this.btnCaracteristica.TabIndex = 9;
             this.btnCaracteristica.Text = "Cadastrar Características";
             this.btnCaracteristica.UseVisualStyleBackColor = true;
             this.btnCaracteristica.Click += new System.EventHandler(this.btnCaracteristica_Click);
@@ -185,11 +186,11 @@ namespace sistemaAlertrem
             // btnSair
             // 
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
             this.btnSair.Location = new System.Drawing.Point(625, 322);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(166, 36);
-            this.btnSair.TabIndex = 2;
-            this.btnSair.Text = "Voltar";
+            this.btnSair.TabIndex = 10;
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
@@ -203,8 +204,8 @@ namespace sistemaAlertrem
             this.Controls.Add(this.btnEstacao);
             this.Controls.Add(this.gpbPesquisaEstacao);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "frmEstacao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estação";

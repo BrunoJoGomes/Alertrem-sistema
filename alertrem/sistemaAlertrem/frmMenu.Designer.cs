@@ -99,9 +99,9 @@ namespace sistemaAlertrem
             this.lblReclamacoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblReclamacoes.Location = new System.Drawing.Point(285, 223);
             this.lblReclamacoes.Name = "lblReclamacoes";
-            this.lblReclamacoes.Size = new System.Drawing.Size(72, 13);
+            this.lblReclamacoes.Size = new System.Drawing.Size(65, 13);
             this.lblReclamacoes.TabIndex = 7;
-            this.lblReclamacoes.Text = "Reclamações";
+            this.lblReclamacoes.Text = "Comentários";
             // 
             // pcbComentarios
             // 

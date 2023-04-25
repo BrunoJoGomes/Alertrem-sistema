@@ -50,15 +50,19 @@ namespace sistemaAlertrem
             if (res == 1)
             {
                 MessageBox.Show("Usuário cadastrado com sucesso!", "Mensagem do sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtNomeFunc.Focus();
             }
             else
             {
                 MessageBox.Show("Erro ao cadastrar usuário", "Mensagem do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNomeFunc.Focus();
             }
             Conexao.fecharConexao();
             txtNomeFunc.Clear();
             txtUsu.Clear();
             txtSenha.Clear();
+            
+         
 
 
 
@@ -81,10 +85,11 @@ namespace sistemaAlertrem
                     MessageBoxIcon.Error,
                     MessageBoxDefaultButton.Button1);
                 }
-               
+                
+                
 
             }
-
+            txtNomeFunc.Focus();
         }
     }
 }

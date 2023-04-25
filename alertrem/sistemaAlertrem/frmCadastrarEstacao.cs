@@ -107,5 +107,21 @@ namespace sistemaAlertrem
         {
             this.Close();
         }
+
+        private void txtNome_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtLocalizacao.Focus();
+            }
+        }
+
+        private void txtLocalizacao_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnCadastrar.Focus();
+            }
+        }
     }
 }

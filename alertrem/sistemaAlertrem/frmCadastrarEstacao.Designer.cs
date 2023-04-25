@@ -29,6 +29,7 @@ namespace sistemaAlertrem
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastrarEstacao));
             this.gpbEstacao = new System.Windows.Forms.GroupBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtLocalizacao = new System.Windows.Forms.TextBox();
@@ -66,6 +67,7 @@ namespace sistemaAlertrem
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(395, 29);
             this.txtNome.TabIndex = 1;
+            this.txtNome.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNome_KeyDown);
             // 
             // txtLocalizacao
             // 
@@ -74,13 +76,14 @@ namespace sistemaAlertrem
             this.txtLocalizacao.Name = "txtLocalizacao";
             this.txtLocalizacao.Size = new System.Drawing.Size(574, 62);
             this.txtLocalizacao.TabIndex = 2;
+            this.txtLocalizacao.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLocalizacao_KeyDown);
             // 
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(95, 47);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(101, 29);
-            this.txtCodigo.TabIndex = 9;
+            this.txtCodigo.TabIndex = 0;
             this.txtCodigo.TabStop = false;
             // 
             // lblNome
@@ -115,7 +118,7 @@ namespace sistemaAlertrem
             this.btnCadastrar.Location = new System.Drawing.Point(570, 187);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(142, 40);
-            this.btnCadastrar.TabIndex = 3;
+            this.btnCadastrar.TabIndex = 4;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
@@ -125,7 +128,7 @@ namespace sistemaAlertrem
             this.btnLimpar.Location = new System.Drawing.Point(396, 187);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(142, 40);
-            this.btnLimpar.TabIndex = 4;
+            this.btnLimpar.TabIndex = 3;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
@@ -133,11 +136,11 @@ namespace sistemaAlertrem
             // btnVoltar
             // 
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
             this.btnVoltar.Location = new System.Drawing.Point(593, 279);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(142, 40);
             this.btnVoltar.TabIndex = 5;
-            this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
@@ -149,11 +152,12 @@ namespace sistemaAlertrem
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.gpbEstacao);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmCadastrarEstacao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmCadastrarEstacao";
+            this.Text = "Cadastrar estaçao";
             this.gpbEstacao.ResumeLayout(false);
             this.gpbEstacao.PerformLayout();
             this.ResumeLayout(false);
