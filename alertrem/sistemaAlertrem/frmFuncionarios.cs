@@ -29,7 +29,7 @@ namespace sistemaAlertrem
 
         public void carregaDados()
         {
-            string commandString = "select * from tb_funcionarios";
+            string commandString = "select codigo as 'Código', nome as 'Nome', usuario as 'Usuário', data_hora as 'Data e hora de criação' from tb_funcionarios";
 
             MySqlCommand comm = new MySqlCommand
             {
@@ -85,19 +85,26 @@ namespace sistemaAlertrem
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            MySqlCommand comm = new MySqlCommand();
-            comm.CommandText = $"select * from tb_funcionarios where nome like '%{txtPesquisa.Text}%'";
-            comm.CommandType = CommandType.Text;
+            if (txtPesquisa.Text == "")
+            {
+                MessageBox.Show("Escreva algo na caixa de texto para ser pesquisado.", "Aviso do sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+                {
+                MySqlCommand comm = new MySqlCommand();
+                comm.CommandText = $"select codigo as 'Código', nome as 'Nome', usuario as 'Usuário', data_hora as 'Data e hora de criação' from tb_funcionarios where nome like '%{txtPesquisa.Text}%'";
+                comm.CommandType = CommandType.Text;
 
-            comm.Connection = Conexao.obterConexao();
+                comm.Connection = Conexao.obterConexao();
 
-            MySqlDataAdapter adapter = new MySqlDataAdapter(comm);
-            DataTable tabela = new DataTable();
-            adapter.Fill(tabela);
-            Conexao.fecharConexao();
+                MySqlDataAdapter adapter = new MySqlDataAdapter(comm);
+                DataTable tabela = new DataTable();
+                adapter.Fill(tabela);
+                Conexao.fecharConexao();
 
-            dgvFuncionarios.DataSource = tabela;
-            txtPesquisa.Focus();
+                dgvFuncionarios.DataSource = tabela;
+                txtPesquisa.Focus();
+            }
         }
 
         private void dgvFuncionarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -141,11 +148,11 @@ namespace sistemaAlertrem
             int res = comm.ExecuteNonQuery();
             if (res == 1)
             {
-                MessageBox.Show("Registro Excluido com Sucesso!", "Mensagem do Sistema", MessageBoxButtons.OK);
+                MessageBox.Show("Registro Excluido com Sucesso!", "Aviso do sistema", MessageBoxButtons.OK);
             }
             else
             {
-                MessageBox.Show("Erro ao excluir o registro", "Mensagem do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao excluir o registro", "Aviso do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             Conexao.fecharConexao();
@@ -163,11 +170,11 @@ namespace sistemaAlertrem
             int res = comm.ExecuteNonQuery();
             if (res == 1)
             {
-                MessageBox.Show("Registro atualizado com Sucesso!", "Mensagem do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Registro atualizado com Sucesso!", "Aviso do sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("Erro ao atualizar registro", "Mensagem do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao atualizar registro", "Aviso do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             Conexao.fecharConexao();
