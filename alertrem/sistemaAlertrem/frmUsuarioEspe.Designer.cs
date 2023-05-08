@@ -53,7 +53,7 @@ namespace sistemaAlertrem
             this.dgvcomentUsuEsp.Location = new System.Drawing.Point(12, 218);
             this.dgvcomentUsuEsp.Name = "dgvcomentUsuEsp";
             this.dgvcomentUsuEsp.Size = new System.Drawing.Size(916, 237);
-            this.dgvcomentUsuEsp.TabIndex = 0;
+            this.dgvcomentUsuEsp.TabIndex = 1;
             this.dgvcomentUsuEsp.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcomentUsuEsp_CellClick);
             // 
             // lblCampoNome
@@ -81,7 +81,7 @@ namespace sistemaAlertrem
             this.gpbDadosUsuario.Location = new System.Drawing.Point(12, 97);
             this.gpbDadosUsuario.Name = "gpbDadosUsuario";
             this.gpbDadosUsuario.Size = new System.Drawing.Size(916, 100);
-            this.gpbDadosUsuario.TabIndex = 4;
+            this.gpbDadosUsuario.TabIndex = 0;
             this.gpbDadosUsuario.TabStop = false;
             this.gpbDadosUsuario.Text = "Dados do usuário";
             // 
@@ -153,7 +153,7 @@ namespace sistemaAlertrem
             this.btnVoltar2.Location = new System.Drawing.Point(826, 461);
             this.btnVoltar2.Name = "btnVoltar2";
             this.btnVoltar2.Size = new System.Drawing.Size(102, 81);
-            this.btnVoltar2.TabIndex = 6;
+            this.btnVoltar2.TabIndex = 2;
             this.btnVoltar2.Text = "&Voltar";
             this.btnVoltar2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnVoltar2.UseVisualStyleBackColor = true;
@@ -179,9 +179,12 @@ namespace sistemaAlertrem
             this.Controls.Add(this.btnVoltar2);
             this.Controls.Add(this.gpbDadosUsuario);
             this.Controls.Add(this.dgvcomentUsuEsp);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmUsuarioEspe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmUsuarioEspe";
+            this.Text = "Usuários";
             ((System.ComponentModel.ISupportInitialize)(this.dgvcomentUsuEsp)).EndInit();
             this.gpbDadosUsuario.ResumeLayout(false);
             this.gpbDadosUsuario.PerformLayout();

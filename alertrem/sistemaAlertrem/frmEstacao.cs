@@ -18,6 +18,7 @@ namespace sistemaAlertrem
             InitializeComponent();
             carregaComboEstacao();
             desabilitaCampos();
+            btnDeletar.Enabled = false;
         }
 
         public MySqlDataReader select(string campo, string tabela, string where = "")

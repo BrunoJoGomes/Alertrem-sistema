@@ -73,5 +73,15 @@ namespace sistemaAlertrem
             abrir.Show();
             this.Hide();
         }
+
+        private void txtUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.Enter)
+            {
+                carregaDados(txtUsuario.Text);
+            }
+            
+        }
     }
 }

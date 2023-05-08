@@ -34,7 +34,6 @@ namespace sistemaAlertrem
             this.lblUsuario = new System.Windows.Forms.Label();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.ltbUsuarios = new System.Windows.Forms.ListBox();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.btnVoltar2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -45,7 +44,8 @@ namespace sistemaAlertrem
             this.txtUsuario.Location = new System.Drawing.Point(85, 101);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(506, 29);
-            this.txtUsuario.TabIndex = 8;
+            this.txtUsuario.TabIndex = 1;
+            this.txtUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUsuario_KeyDown);
             // 
             // lblUsuario
             // 
@@ -65,7 +65,7 @@ namespace sistemaAlertrem
             this.btnPesquisar.Location = new System.Drawing.Point(650, 74);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(102, 81);
-            this.btnPesquisar.TabIndex = 10;
+            this.btnPesquisar.TabIndex = 2;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -79,29 +79,18 @@ namespace sistemaAlertrem
             this.ltbUsuarios.Location = new System.Drawing.Point(85, 207);
             this.ltbUsuarios.Name = "ltbUsuarios";
             this.ltbUsuarios.Size = new System.Drawing.Size(506, 212);
-            this.ltbUsuarios.TabIndex = 11;
+            this.ltbUsuarios.TabIndex = 3;
             this.ltbUsuarios.SelectedIndexChanged += new System.EventHandler(this.ltbUsuarios_SelectedIndexChanged);
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(200)))), ((int)(((byte)(120)))));
-            this.groupBox8.Location = new System.Drawing.Point(-13, -1);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(992, 56);
-            this.groupBox8.TabIndex = 11;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Menu";
             // 
             // btnVoltar2
             // 
             this.btnVoltar2.Font = new System.Drawing.Font("Museo 700", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar2.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar2.Image")));
             this.btnVoltar2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnVoltar2.Location = new System.Drawing.Point(650, 338);
+            this.btnVoltar2.Location = new System.Drawing.Point(650, 417);
             this.btnVoltar2.Name = "btnVoltar2";
-            this.btnVoltar2.Size = new System.Drawing.Size(102, 81);
-            this.btnVoltar2.TabIndex = 5;
-            this.btnVoltar2.Text = "&Voltar";
+            this.btnVoltar2.Size = new System.Drawing.Size(102, 39);
+            this.btnVoltar2.TabIndex = 4;
             this.btnVoltar2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnVoltar2.UseVisualStyleBackColor = true;
             this.btnVoltar2.Click += new System.EventHandler(this.btnVoltar2_Click);
@@ -112,7 +101,6 @@ namespace sistemaAlertrem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 485);
             this.Controls.Add(this.btnVoltar2);
-            this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.ltbUsuarios);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.lblUsuario);
@@ -120,9 +108,10 @@ namespace sistemaAlertrem
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.MaximizeBox = false;
             this.Name = "frmPesquisaUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alertrem";
+            this.Text = "Usuários";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,7 +122,6 @@ namespace sistemaAlertrem
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.ListBox ltbUsuarios;
-        private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Button btnVoltar2;
     }
 }
