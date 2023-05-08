@@ -42,6 +42,7 @@ namespace sistemaAlertrem
             this.txtUsuario.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(85, 101);
+            this.txtUsuario.MaxLength = 100;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(506, 29);
             this.txtUsuario.TabIndex = 1;
@@ -51,11 +52,11 @@ namespace sistemaAlertrem
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Museo 700", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(15, 107);
+            this.lblUsuario.Location = new System.Drawing.Point(6, 106);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(69, 19);
+            this.lblUsuario.Size = new System.Drawing.Size(74, 19);
             this.lblUsuario.TabIndex = 9;
-            this.lblUsuario.Text = "Usuario";
+            this.lblUsuario.Text = "Usuário:";
             // 
             // btnPesquisar
             // 
@@ -66,7 +67,7 @@ namespace sistemaAlertrem
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(102, 81);
             this.btnPesquisar.TabIndex = 2;
-            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.Text = "&Pesquisar";
             this.btnPesquisar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnPesquisar.UseVisualStyleBackColor = false;
@@ -80,6 +81,7 @@ namespace sistemaAlertrem
             this.ltbUsuarios.Name = "ltbUsuarios";
             this.ltbUsuarios.Size = new System.Drawing.Size(506, 212);
             this.ltbUsuarios.TabIndex = 3;
+            this.ltbUsuarios.TabStop = false;
             this.ltbUsuarios.SelectedIndexChanged += new System.EventHandler(this.ltbUsuarios_SelectedIndexChanged);
             // 
             // btnVoltar2
@@ -111,7 +113,8 @@ namespace sistemaAlertrem
             this.MaximizeBox = false;
             this.Name = "frmPesquisaUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Usuários";
+            this.Text = "AlerTrem";
+            this.Load += new System.EventHandler(this.frmPesquisaUsuarios_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

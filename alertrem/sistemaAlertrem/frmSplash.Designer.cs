@@ -96,7 +96,7 @@ namespace sistemaAlertrem
             this.MaximizeBox = false;
             this.Name = "frmSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alertrem";
+            this.Text = "AlerTrem";
             ((System.ComponentModel.ISupportInitialize)(this.pctIcone)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
