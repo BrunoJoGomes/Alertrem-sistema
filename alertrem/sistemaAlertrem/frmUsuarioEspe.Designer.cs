@@ -41,7 +41,6 @@ namespace sistemaAlertrem
             this.lblCampoCPF = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.btnVoltar2 = new System.Windows.Forms.Button();
-            this.gpbMenu = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvcomentUsuEsp)).BeginInit();
             this.gpbDadosUsuario.SuspendLayout();
             this.SuspendLayout();
@@ -159,23 +158,12 @@ namespace sistemaAlertrem
             this.btnVoltar2.UseVisualStyleBackColor = true;
             this.btnVoltar2.Click += new System.EventHandler(this.btnVoltar2_Click);
             // 
-            // gpbMenu
-            // 
-            this.gpbMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(200)))), ((int)(((byte)(120)))));
-            this.gpbMenu.Location = new System.Drawing.Point(-1, -1);
-            this.gpbMenu.Name = "gpbMenu";
-            this.gpbMenu.Size = new System.Drawing.Size(954, 56);
-            this.gpbMenu.TabIndex = 11;
-            this.gpbMenu.TabStop = false;
-            this.gpbMenu.Text = "Menu";
-            // 
             // frmUsuarioEspe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(940, 546);
-            this.Controls.Add(this.gpbMenu);
             this.Controls.Add(this.btnVoltar2);
             this.Controls.Add(this.gpbDadosUsuario);
             this.Controls.Add(this.dgvcomentUsuEsp);
@@ -205,6 +193,5 @@ namespace sistemaAlertrem
         private System.Windows.Forms.Label lblDataCadastro;
         private System.Windows.Forms.Label lblCampoDataCadastro;
         private System.Windows.Forms.Button btnVoltar2;
-        private System.Windows.Forms.GroupBox gpbMenu;
     }
 }

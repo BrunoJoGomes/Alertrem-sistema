@@ -40,7 +40,6 @@ namespace sistemaAlertrem
             this.lblUsuarios = new System.Windows.Forms.Label();
             this.pcbUsuarios = new System.Windows.Forms.PictureBox();
             this.lblBanco = new System.Windows.Forms.Label();
-            this.lblLinha = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.lblStatusBanco = new System.Windows.Forms.Label();
             this.lblStatusLinha = new System.Windows.Forms.Label();
@@ -168,15 +167,6 @@ namespace sistemaAlertrem
             this.lblBanco.TabIndex = 2;
             this.lblBanco.Text = "Status do banco:";
             // 
-            // lblLinha
-            // 
-            this.lblLinha.AutoSize = true;
-            this.lblLinha.Location = new System.Drawing.Point(550, 50);
-            this.lblLinha.Name = "lblLinha";
-            this.lblLinha.Size = new System.Drawing.Size(80, 13);
-            this.lblLinha.TabIndex = 4;
-            this.lblLinha.Text = "Status da linha:";
-            // 
             // btnVoltar
             // 
             this.btnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(200)))), ((int)(((byte)(120)))));
@@ -225,7 +215,6 @@ namespace sistemaAlertrem
             this.Controls.Add(this.lblStatusLinha);
             this.Controls.Add(this.lblStatusBanco);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.lblLinha);
             this.Controls.Add(this.lblBanco);
             this.Controls.Add(this.gpbMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -233,7 +222,8 @@ namespace sistemaAlertrem
             this.MaximizeBox = false;
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menu";
+            this.Text = "AlerTrem";
+            this.Load += new System.EventHandler(this.frmMenu_Load);
             this.gpbMenu.ResumeLayout(false);
             this.gpbMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbFunc)).EndInit();
@@ -255,7 +245,6 @@ namespace sistemaAlertrem
         private System.Windows.Forms.Label lblEstacoes;
         private System.Windows.Forms.PictureBox pcbEstacoes;
         private System.Windows.Forms.Label lblBanco;
-        private System.Windows.Forms.Label lblLinha;
         private System.Windows.Forms.Label lblFunc;
         private System.Windows.Forms.PictureBox pcbFunc;
         private System.Windows.Forms.Button btnVoltar;

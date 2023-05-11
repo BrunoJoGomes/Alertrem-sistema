@@ -11,10 +11,18 @@ using System.Runtime.InteropServices;
 using MySql.Data.MySqlClient;
 
 
+
 namespace sistemaAlertrem
 {
     public partial class frmPesquisaUsuarios : Form
     {
+        const int MF_BYCOMMAND = 0X400;
+        [DllImport("user32")]
+        static extern int RemoveMenu(IntPtr hMenu, int nPosition, int wFlags);
+        [DllImport("user32")]
+        static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
+        [DllImport("user32")]
+        static extern int GetMenuItemCount(IntPtr hWnd);
         Dictionary<string, int> usuarios = new Dictionary<string, int>();
         public frmPesquisaUsuarios()
         {
@@ -82,6 +90,13 @@ namespace sistemaAlertrem
                 carregaDados(txtUsuario.Text);
             }
             
+        }
+
+        private void frmPesquisaUsuarios_Load(object sender, EventArgs e)
+        {
+            IntPtr hMenu = GetSystemMenu(this.Handle, false);
+            int MenuCount = GetMenuItemCount(hMenu) - 1;
+            RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
         }
     }
 }

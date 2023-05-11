@@ -45,8 +45,9 @@ namespace sistemaAlertrem
             this.dgvFuncionarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFuncionarios.Location = new System.Drawing.Point(12, 110);
             this.dgvFuncionarios.Name = "dgvFuncionarios";
-            this.dgvFuncionarios.Size = new System.Drawing.Size(516, 328);
+            this.dgvFuncionarios.Size = new System.Drawing.Size(646, 328);
             this.dgvFuncionarios.TabIndex = 4;
+            this.dgvFuncionarios.TabStop = false;
             this.dgvFuncionarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFuncionarios_CellContentClick);
             // 
             // btnVoltar2
@@ -79,18 +80,20 @@ namespace sistemaAlertrem
             // lblPesquisar
             // 
             this.lblPesquisar.AutoSize = true;
-            this.lblPesquisar.Location = new System.Drawing.Point(12, 83);
+            this.lblPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPesquisar.Location = new System.Drawing.Point(12, 59);
             this.lblPesquisar.Name = "lblPesquisar";
-            this.lblPesquisar.Size = new System.Drawing.Size(56, 13);
+            this.lblPesquisar.Size = new System.Drawing.Size(93, 20);
             this.lblPesquisar.TabIndex = 12;
             this.lblPesquisar.Text = "Pesquisar:";
             // 
             // txtPesquisa
             // 
-            this.txtPesquisa.Location = new System.Drawing.Point(74, 76);
+            this.txtPesquisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPesquisa.Location = new System.Drawing.Point(111, 56);
             this.txtPesquisa.MaxLength = 100;
             this.txtPesquisa.Name = "txtPesquisa";
-            this.txtPesquisa.Size = new System.Drawing.Size(350, 20);
+            this.txtPesquisa.Size = new System.Drawing.Size(350, 26);
             this.txtPesquisa.TabIndex = 0;
             // 
             // btnPesquisar
