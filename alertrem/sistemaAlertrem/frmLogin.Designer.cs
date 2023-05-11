@@ -73,19 +73,21 @@ namespace sistemaAlertrem
             // txtUsuario
             // 
             this.txtUsuario.Location = new System.Drawing.Point(364, 289);
+            this.txtUsuario.MaxLength = 50;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(163, 20);
-            this.txtUsuario.TabIndex = 4;
+            this.txtUsuario.TabIndex = 1;
             this.txtUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUsuario_KeyDown);
             // 
             // txtSenha
             // 
             this.txtSenha.Font = new System.Drawing.Font("Wingdings", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.txtSenha.Location = new System.Drawing.Point(364, 319);
+            this.txtSenha.MaxLength = 50;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = 'l';
             this.txtSenha.Size = new System.Drawing.Size(163, 20);
-            this.txtSenha.TabIndex = 5;
+            this.txtSenha.TabIndex = 2;
             this.txtSenha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSenha_KeyDown);
             // 
             // btnEntrar
@@ -94,8 +96,8 @@ namespace sistemaAlertrem
             this.btnEntrar.Location = new System.Drawing.Point(272, 358);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(105, 41);
-            this.btnEntrar.TabIndex = 7;
-            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.TabIndex = 3;
+            this.btnEntrar.Text = "&Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
@@ -105,8 +107,8 @@ namespace sistemaAlertrem
             this.btnSair.Location = new System.Drawing.Point(422, 358);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(105, 41);
-            this.btnSair.TabIndex = 8;
-            this.btnSair.Text = "Sair";
+            this.btnSair.TabIndex = 4;
+            this.btnSair.Text = "&Sair";
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
@@ -127,7 +129,8 @@ namespace sistemaAlertrem
             this.MaximizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "AlerTrem";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctIcone)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
