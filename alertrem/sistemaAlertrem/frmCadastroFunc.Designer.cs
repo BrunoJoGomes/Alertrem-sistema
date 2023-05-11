@@ -62,11 +62,11 @@ namespace sistemaAlertrem
             // 
             this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
             this.btnCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.Image")));
-            this.btnCadastrar.Location = new System.Drawing.Point(352, 103);
+            this.btnCadastrar.Location = new System.Drawing.Point(343, 103);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(109, 36);
+            this.btnCadastrar.Size = new System.Drawing.Size(118, 36);
             this.btnCadastrar.TabIndex = 4;
-            this.btnCadastrar.Text = "Cadastar";
+            this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnCadastrar.UseVisualStyleBackColor = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
@@ -75,7 +75,7 @@ namespace sistemaAlertrem
             // 
             this.txtSenha.Font = new System.Drawing.Font("Wingdings", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.txtSenha.Location = new System.Drawing.Point(89, 113);
-            this.txtSenha.MaxLength = 100;
+            this.txtSenha.MaxLength = 10;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = 'l';
             this.txtSenha.Size = new System.Drawing.Size(173, 25);
@@ -94,7 +94,7 @@ namespace sistemaAlertrem
             // 
             this.txtUsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsu.Location = new System.Drawing.Point(89, 70);
-            this.txtUsu.MaxLength = 50;
+            this.txtUsu.MaxLength = 15;
             this.txtUsu.Name = "txtUsu";
             this.txtUsu.Size = new System.Drawing.Size(213, 26);
             this.txtUsu.TabIndex = 2;
@@ -111,13 +111,15 @@ namespace sistemaAlertrem
             // txtNomeFunc
             // 
             this.txtNomeFunc.Location = new System.Drawing.Point(89, 31);
-            this.txtNomeFunc.MaxLength = 50;
+            this.txtNomeFunc.MaxLength = 20;
             this.txtNomeFunc.Name = "txtNomeFunc";
             this.txtNomeFunc.Size = new System.Drawing.Size(372, 26);
             this.txtNomeFunc.TabIndex = 1;
+            this.txtNomeFunc.TextChanged += new System.EventHandler(this.txtNomeFunc_TextChanged);
             // 
             // lblNomeFunc
             // 
+            this.lblNomeFunc.AllowDrop = true;
             this.lblNomeFunc.AutoSize = true;
             this.lblNomeFunc.Location = new System.Drawing.Point(14, 37);
             this.lblNomeFunc.Name = "lblNomeFunc";
