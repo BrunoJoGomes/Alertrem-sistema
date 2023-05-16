@@ -41,7 +41,7 @@ namespace sistemaAlertrem
             // 
             this.txtUsuario.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(85, 101);
+            this.txtUsuario.Location = new System.Drawing.Point(109, 102);
             this.txtUsuario.MaxLength = 100;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(506, 29);
@@ -51,21 +51,21 @@ namespace sistemaAlertrem
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Museo 700", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(6, 106);
+            this.lblUsuario.Font = new System.Drawing.Font("Museo 700", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(6, 104);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(74, 19);
+            this.lblUsuario.Size = new System.Drawing.Size(97, 25);
             this.lblUsuario.TabIndex = 9;
             this.lblUsuario.Text = "Usuário:";
             // 
             // btnPesquisar
             // 
             this.btnPesquisar.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnPesquisar.Font = new System.Drawing.Font("Museo 700", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisar.Font = new System.Drawing.Font("Museo 700", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
             this.btnPesquisar.Location = new System.Drawing.Point(650, 74);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(102, 81);
+            this.btnPesquisar.Size = new System.Drawing.Size(120, 81);
             this.btnPesquisar.TabIndex = 2;
             this.btnPesquisar.Text = "&Pesquisar";
             this.btnPesquisar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -75,11 +75,12 @@ namespace sistemaAlertrem
             // 
             // ltbUsuarios
             // 
-            this.ltbUsuarios.Font = new System.Drawing.Font("Museo 700", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltbUsuarios.Font = new System.Drawing.Font("Museo 700", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltbUsuarios.FormattingEnabled = true;
+            this.ltbUsuarios.ItemHeight = 25;
             this.ltbUsuarios.Location = new System.Drawing.Point(85, 207);
             this.ltbUsuarios.Name = "ltbUsuarios";
-            this.ltbUsuarios.Size = new System.Drawing.Size(506, 212);
+            this.ltbUsuarios.Size = new System.Drawing.Size(506, 204);
             this.ltbUsuarios.TabIndex = 3;
             this.ltbUsuarios.TabStop = false;
             this.ltbUsuarios.SelectedIndexChanged += new System.EventHandler(this.ltbUsuarios_SelectedIndexChanged);

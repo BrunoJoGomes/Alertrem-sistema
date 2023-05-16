@@ -69,7 +69,7 @@ namespace sistemaAlertrem
             this.gpbInfoEstacao.Controls.Add(this.lblCampoLocalizacao);
             this.gpbInfoEstacao.Controls.Add(this.lblCampoNome);
             this.gpbInfoEstacao.Controls.Add(this.lblSelecionar);
-            this.gpbInfoEstacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbInfoEstacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpbInfoEstacao.Location = new System.Drawing.Point(12, 12);
             this.gpbInfoEstacao.Name = "gpbInfoEstacao";
             this.gpbInfoEstacao.Size = new System.Drawing.Size(1057, 145);
@@ -80,9 +80,9 @@ namespace sistemaAlertrem
             // cbbEstacao
             // 
             this.cbbEstacao.FormattingEnabled = true;
-            this.cbbEstacao.Location = new System.Drawing.Point(213, 35);
+            this.cbbEstacao.Location = new System.Drawing.Point(276, 35);
             this.cbbEstacao.Name = "cbbEstacao";
-            this.cbbEstacao.Size = new System.Drawing.Size(230, 28);
+            this.cbbEstacao.Size = new System.Drawing.Size(230, 33);
             this.cbbEstacao.TabIndex = 0;
             this.cbbEstacao.Text = "Selecione";
             this.cbbEstacao.SelectedIndexChanged += new System.EventHandler(this.cbbEstacao_SelectedValueChanged);
@@ -92,7 +92,7 @@ namespace sistemaAlertrem
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Location = new System.Drawing.Point(582, 38);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(0, 20);
+            this.lblCodigo.Size = new System.Drawing.Size(0, 25);
             this.lblCodigo.TabIndex = 6;
             // 
             // lblCampoCodigo
@@ -100,7 +100,7 @@ namespace sistemaAlertrem
             this.lblCampoCodigo.AutoSize = true;
             this.lblCampoCodigo.Location = new System.Drawing.Point(506, 38);
             this.lblCampoCodigo.Name = "lblCampoCodigo";
-            this.lblCampoCodigo.Size = new System.Drawing.Size(70, 20);
+            this.lblCampoCodigo.Size = new System.Drawing.Size(86, 25);
             this.lblCampoCodigo.TabIndex = 5;
             this.lblCampoCodigo.Text = "Código:";
             // 
@@ -109,7 +109,7 @@ namespace sistemaAlertrem
             this.lblLocalizacao.AutoSize = true;
             this.lblLocalizacao.Location = new System.Drawing.Point(121, 109);
             this.lblLocalizacao.Name = "lblLocalizacao";
-            this.lblLocalizacao.Size = new System.Drawing.Size(0, 20);
+            this.lblLocalizacao.Size = new System.Drawing.Size(0, 25);
             this.lblLocalizacao.TabIndex = 4;
             // 
             // lblNome
@@ -117,7 +117,7 @@ namespace sistemaAlertrem
             this.lblNome.AutoSize = true;
             this.lblNome.Location = new System.Drawing.Point(72, 70);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(0, 20);
+            this.lblNome.Size = new System.Drawing.Size(0, 25);
             this.lblNome.TabIndex = 3;
             // 
             // lblCampoLocalizacao
@@ -125,7 +125,7 @@ namespace sistemaAlertrem
             this.lblCampoLocalizacao.AutoSize = true;
             this.lblCampoLocalizacao.Location = new System.Drawing.Point(6, 109);
             this.lblCampoLocalizacao.Name = "lblCampoLocalizacao";
-            this.lblCampoLocalizacao.Size = new System.Drawing.Size(109, 20);
+            this.lblCampoLocalizacao.Size = new System.Drawing.Size(133, 25);
             this.lblCampoLocalizacao.TabIndex = 2;
             this.lblCampoLocalizacao.Text = "Localização:";
             // 
@@ -134,7 +134,7 @@ namespace sistemaAlertrem
             this.lblCampoNome.AutoSize = true;
             this.lblCampoNome.Location = new System.Drawing.Point(6, 70);
             this.lblCampoNome.Name = "lblCampoNome";
-            this.lblCampoNome.Size = new System.Drawing.Size(60, 20);
+            this.lblCampoNome.Size = new System.Drawing.Size(74, 25);
             this.lblCampoNome.TabIndex = 1;
             this.lblCampoNome.Text = "Nome:";
             // 
@@ -143,7 +143,7 @@ namespace sistemaAlertrem
             this.lblSelecionar.AutoSize = true;
             this.lblSelecionar.Location = new System.Drawing.Point(6, 38);
             this.lblSelecionar.Name = "lblSelecionar";
-            this.lblSelecionar.Size = new System.Drawing.Size(201, 20);
+            this.lblSelecionar.Size = new System.Drawing.Size(242, 25);
             this.lblSelecionar.TabIndex = 0;
             this.lblSelecionar.Text = "Selecione uma estação:";
             // 
@@ -153,8 +153,8 @@ namespace sistemaAlertrem
             this.gpbCaracteristicas.Controls.Add(this.cbbCaracteristica);
             this.gpbCaracteristicas.Controls.Add(this.lblEstado);
             this.gpbCaracteristicas.Controls.Add(this.lblCaracteristicas);
-            this.gpbCaracteristicas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbCaracteristicas.Location = new System.Drawing.Point(12, 309);
+            this.gpbCaracteristicas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbCaracteristicas.Location = new System.Drawing.Point(10, 309);
             this.gpbCaracteristicas.Name = "gpbCaracteristicas";
             this.gpbCaracteristicas.Size = new System.Drawing.Size(576, 130);
             this.gpbCaracteristicas.TabIndex = 1;
@@ -164,9 +164,9 @@ namespace sistemaAlertrem
             // cbbEstadoOperacional
             // 
             this.cbbEstadoOperacional.FormattingEnabled = true;
-            this.cbbEstadoOperacional.Location = new System.Drawing.Point(281, 81);
+            this.cbbEstadoOperacional.Location = new System.Drawing.Point(346, 81);
             this.cbbEstadoOperacional.Name = "cbbEstadoOperacional";
-            this.cbbEstadoOperacional.Size = new System.Drawing.Size(289, 28);
+            this.cbbEstadoOperacional.Size = new System.Drawing.Size(224, 33);
             this.cbbEstadoOperacional.TabIndex = 3;
             this.cbbEstadoOperacional.Text = "Selecione";
             // 
@@ -197,27 +197,27 @@ namespace sistemaAlertrem
             "Farmacia",
             "Rota_acesssvel",
             "Achados_e_perdidos"});
-            this.cbbCaracteristica.Location = new System.Drawing.Point(257, 45);
+            this.cbbCaracteristica.Location = new System.Drawing.Point(324, 45);
             this.cbbCaracteristica.Name = "cbbCaracteristica";
-            this.cbbCaracteristica.Size = new System.Drawing.Size(313, 28);
+            this.cbbCaracteristica.Size = new System.Drawing.Size(246, 33);
             this.cbbCaracteristica.TabIndex = 2;
             this.cbbCaracteristica.Text = "Selecione";
             // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(9, 84);
+            this.lblEstado.Location = new System.Drawing.Point(-1, 84);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(266, 20);
+            this.lblEstado.Size = new System.Drawing.Size(320, 25);
             this.lblEstado.TabIndex = 1;
             this.lblEstado.Text = "Selecione o estado operacional:";
             // 
             // lblCaracteristicas
             // 
             this.lblCaracteristicas.AutoSize = true;
-            this.lblCaracteristicas.Location = new System.Drawing.Point(6, 48);
+            this.lblCaracteristicas.Location = new System.Drawing.Point(-1, 48);
             this.lblCaracteristicas.Name = "lblCaracteristicas";
-            this.lblCaracteristicas.Size = new System.Drawing.Size(245, 20);
+            this.lblCaracteristicas.Size = new System.Drawing.Size(294, 25);
             this.lblCaracteristicas.TabIndex = 0;
             this.lblCaracteristicas.Text = "Selecione uma característica:";
             // 
@@ -263,7 +263,7 @@ namespace sistemaAlertrem
             // 
             // btnAdicionar
             // 
-            this.btnAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdicionar.Location = new System.Drawing.Point(610, 331);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(138, 46);
@@ -274,7 +274,7 @@ namespace sistemaAlertrem
             // 
             // btnAtualizar
             // 
-            this.btnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtualizar.Location = new System.Drawing.Point(610, 383);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(138, 46);
@@ -285,7 +285,7 @@ namespace sistemaAlertrem
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
             this.btnVoltar.Location = new System.Drawing.Point(931, 354);
             this.btnVoltar.Name = "btnVoltar";
@@ -296,7 +296,7 @@ namespace sistemaAlertrem
             // 
             // btnRemover
             // 
-            this.btnRemover.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemover.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemover.Location = new System.Drawing.Point(771, 331);
             this.btnRemover.Name = "btnRemover";
             this.btnRemover.Size = new System.Drawing.Size(138, 46);
@@ -307,7 +307,7 @@ namespace sistemaAlertrem
             // 
             // btnRemoverTodos
             // 
-            this.btnRemoverTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoverTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoverTodos.Location = new System.Drawing.Point(771, 383);
             this.btnRemoverTodos.Name = "btnRemoverTodos";
             this.btnRemoverTodos.Size = new System.Drawing.Size(138, 46);

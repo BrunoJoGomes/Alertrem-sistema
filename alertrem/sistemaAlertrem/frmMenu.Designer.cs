@@ -32,37 +32,32 @@ namespace sistemaAlertrem
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.gpbMenu = new System.Windows.Forms.GroupBox();
             this.lblFunc = new System.Windows.Forms.Label();
-            this.pcbFunc = new System.Windows.Forms.PictureBox();
             this.lblReclamacoes = new System.Windows.Forms.Label();
-            this.pcbComentarios = new System.Windows.Forms.PictureBox();
             this.lblEstacoes = new System.Windows.Forms.Label();
-            this.pcbEstacoes = new System.Windows.Forms.PictureBox();
             this.lblUsuarios = new System.Windows.Forms.Label();
-            this.pcbUsuarios = new System.Windows.Forms.PictureBox();
-            this.lblBanco = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.lblStatusBanco = new System.Windows.Forms.Label();
             this.lblStatusLinha = new System.Windows.Forms.Label();
             this.pcbLogo = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.gpbMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbFunc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbComentarios)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbEstacoes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // gpbMenu
             // 
-            this.gpbMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(200)))), ((int)(((byte)(120)))));
+            this.gpbMenu.BackColor = System.Drawing.Color.Transparent;
+            this.gpbMenu.Controls.Add(this.button4);
+            this.gpbMenu.Controls.Add(this.button3);
+            this.gpbMenu.Controls.Add(this.button2);
+            this.gpbMenu.Controls.Add(this.button1);
             this.gpbMenu.Controls.Add(this.lblFunc);
-            this.gpbMenu.Controls.Add(this.pcbFunc);
             this.gpbMenu.Controls.Add(this.lblReclamacoes);
-            this.gpbMenu.Controls.Add(this.pcbComentarios);
             this.gpbMenu.Controls.Add(this.lblEstacoes);
-            this.gpbMenu.Controls.Add(this.pcbEstacoes);
             this.gpbMenu.Controls.Add(this.lblUsuarios);
-            this.gpbMenu.Controls.Add(this.pcbUsuarios);
             this.gpbMenu.Location = new System.Drawing.Point(-5, 104);
             this.gpbMenu.Name = "gpbMenu";
             this.gpbMenu.Size = new System.Drawing.Size(816, 254);
@@ -74,102 +69,49 @@ namespace sistemaAlertrem
             // 
             this.lblFunc.AutoSize = true;
             this.lblFunc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblFunc.Location = new System.Drawing.Point(476, 223);
+            this.lblFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFunc.Location = new System.Drawing.Point(460, 223);
             this.lblFunc.Name = "lblFunc";
-            this.lblFunc.Size = new System.Drawing.Size(67, 13);
+            this.lblFunc.Size = new System.Drawing.Size(100, 20);
             this.lblFunc.TabIndex = 9;
             this.lblFunc.Text = "Funcionários";
-            // 
-            // pcbFunc
-            // 
-            this.pcbFunc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pcbFunc.Image = ((System.Drawing.Image)(resources.GetObject("pcbFunc.Image")));
-            this.pcbFunc.Location = new System.Drawing.Point(417, 139);
-            this.pcbFunc.Name = "pcbFunc";
-            this.pcbFunc.Size = new System.Drawing.Size(185, 81);
-            this.pcbFunc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbFunc.TabIndex = 8;
-            this.pcbFunc.TabStop = false;
-            this.pcbFunc.Click += new System.EventHandler(this.pcbFunc_Click);
             // 
             // lblReclamacoes
             // 
             this.lblReclamacoes.AutoSize = true;
             this.lblReclamacoes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblReclamacoes.Location = new System.Drawing.Point(285, 223);
+            this.lblReclamacoes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReclamacoes.Location = new System.Drawing.Point(266, 223);
             this.lblReclamacoes.Name = "lblReclamacoes";
-            this.lblReclamacoes.Size = new System.Drawing.Size(65, 13);
+            this.lblReclamacoes.Size = new System.Drawing.Size(99, 20);
             this.lblReclamacoes.TabIndex = 7;
             this.lblReclamacoes.Text = "Comentários";
-            // 
-            // pcbComentarios
-            // 
-            this.pcbComentarios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pcbComentarios.Image = ((System.Drawing.Image)(resources.GetObject("pcbComentarios.Image")));
-            this.pcbComentarios.Location = new System.Drawing.Point(225, 139);
-            this.pcbComentarios.Name = "pcbComentarios";
-            this.pcbComentarios.Size = new System.Drawing.Size(185, 81);
-            this.pcbComentarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pcbComentarios.TabIndex = 6;
-            this.pcbComentarios.TabStop = false;
-            this.pcbComentarios.Click += new System.EventHandler(this.pcbComentarios_Click);
             // 
             // lblEstacoes
             // 
             this.lblEstacoes.AutoSize = true;
             this.lblEstacoes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblEstacoes.Location = new System.Drawing.Point(484, 102);
+            this.lblEstacoes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstacoes.Location = new System.Drawing.Point(473, 102);
             this.lblEstacoes.Name = "lblEstacoes";
-            this.lblEstacoes.Size = new System.Drawing.Size(51, 13);
+            this.lblEstacoes.Size = new System.Drawing.Size(76, 20);
             this.lblEstacoes.TabIndex = 5;
             this.lblEstacoes.Text = "Estações";
-            // 
-            // pcbEstacoes
-            // 
-            this.pcbEstacoes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pcbEstacoes.Image = ((System.Drawing.Image)(resources.GetObject("pcbEstacoes.Image")));
-            this.pcbEstacoes.Location = new System.Drawing.Point(417, 18);
-            this.pcbEstacoes.Name = "pcbEstacoes";
-            this.pcbEstacoes.Size = new System.Drawing.Size(185, 81);
-            this.pcbEstacoes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pcbEstacoes.TabIndex = 4;
-            this.pcbEstacoes.TabStop = false;
-            this.pcbEstacoes.Click += new System.EventHandler(this.pcbEstacoes_Click);
             // 
             // lblUsuarios
             // 
             this.lblUsuarios.AutoSize = true;
             this.lblUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblUsuarios.Location = new System.Drawing.Point(293, 102);
+            this.lblUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuarios.Location = new System.Drawing.Point(281, 102);
             this.lblUsuarios.Name = "lblUsuarios";
-            this.lblUsuarios.Size = new System.Drawing.Size(48, 13);
+            this.lblUsuarios.Size = new System.Drawing.Size(72, 20);
             this.lblUsuarios.TabIndex = 3;
             this.lblUsuarios.Text = "Usuários";
             // 
-            // pcbUsuarios
-            // 
-            this.pcbUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pcbUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("pcbUsuarios.Image")));
-            this.pcbUsuarios.Location = new System.Drawing.Point(225, 18);
-            this.pcbUsuarios.Name = "pcbUsuarios";
-            this.pcbUsuarios.Size = new System.Drawing.Size(185, 81);
-            this.pcbUsuarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pcbUsuarios.TabIndex = 2;
-            this.pcbUsuarios.TabStop = false;
-            this.pcbUsuarios.Click += new System.EventHandler(this.pcbUsuarios_Click);
-            // 
-            // lblBanco
-            // 
-            this.lblBanco.AutoSize = true;
-            this.lblBanco.Location = new System.Drawing.Point(50, 50);
-            this.lblBanco.Name = "lblBanco";
-            this.lblBanco.Size = new System.Drawing.Size(88, 13);
-            this.lblBanco.TabIndex = 2;
-            this.lblBanco.Text = "Status do banco:";
-            // 
             // btnVoltar
             // 
-            this.btnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(200)))), ((int)(((byte)(120)))));
+            this.btnVoltar.BackColor = System.Drawing.Color.White;
             this.btnVoltar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
             this.btnVoltar.Location = new System.Drawing.Point(11, 383);
@@ -206,6 +148,46 @@ namespace sistemaAlertrem
             this.pcbLogo.TabIndex = 8;
             this.pcbLogo.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(258, 14);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(127, 85);
+            this.button1.TabIndex = 10;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(453, 14);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(127, 85);
+            this.button2.TabIndex = 11;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(258, 135);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(127, 85);
+            this.button3.TabIndex = 12;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(453, 136);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(127, 84);
+            this.button4.TabIndex = 13;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,7 +197,6 @@ namespace sistemaAlertrem
             this.Controls.Add(this.lblStatusLinha);
             this.Controls.Add(this.lblStatusBanco);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.lblBanco);
             this.Controls.Add(this.gpbMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -226,10 +207,6 @@ namespace sistemaAlertrem
             this.Load += new System.EventHandler(this.frmMenu_Load);
             this.gpbMenu.ResumeLayout(false);
             this.gpbMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbFunc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbComentarios)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbEstacoes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbUsuarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -239,17 +216,16 @@ namespace sistemaAlertrem
         #endregion
         private System.Windows.Forms.GroupBox gpbMenu;
         private System.Windows.Forms.Label lblUsuarios;
-        private System.Windows.Forms.PictureBox pcbUsuarios;
         private System.Windows.Forms.Label lblReclamacoes;
-        private System.Windows.Forms.PictureBox pcbComentarios;
         private System.Windows.Forms.Label lblEstacoes;
-        private System.Windows.Forms.PictureBox pcbEstacoes;
-        private System.Windows.Forms.Label lblBanco;
         private System.Windows.Forms.Label lblFunc;
-        private System.Windows.Forms.PictureBox pcbFunc;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Label lblStatusBanco;
         private System.Windows.Forms.Label lblStatusLinha;
         private System.Windows.Forms.PictureBox pcbLogo;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button4;
     }
 }

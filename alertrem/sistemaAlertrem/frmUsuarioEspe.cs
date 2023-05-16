@@ -146,5 +146,11 @@ namespace sistemaAlertrem
             FrmResultadoPesquisa abrir = new FrmResultadoPesquisa();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmResultadoPesquisa abrir = new FrmResultadoPesquisa();
+            this.Hide();
+        }
     }
 }

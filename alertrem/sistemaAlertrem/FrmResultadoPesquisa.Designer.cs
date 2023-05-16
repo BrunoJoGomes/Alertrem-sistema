@@ -47,7 +47,7 @@ namespace sistemaAlertrem
             // 
             // gpbMenu
             // 
-            this.gpbMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(200)))), ((int)(((byte)(120)))));
+            this.gpbMenu.BackColor = System.Drawing.Color.White;
             this.gpbMenu.Location = new System.Drawing.Point(-6, -1);
             this.gpbMenu.Name = "gpbMenu";
             this.gpbMenu.Size = new System.Drawing.Size(820, 56);

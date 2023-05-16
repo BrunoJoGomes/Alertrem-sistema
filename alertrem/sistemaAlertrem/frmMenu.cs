@@ -25,22 +25,8 @@ namespace sistemaAlertrem
         public frmMenu()
         {
             InitializeComponent();
-            testarConexao();
         }
 
-        public void testarConexao()
-        {
-            if (Conexao.testarConexao())
-            {
-                lblStatusBanco.Text = "Conectado";
-                lblStatusBanco.ForeColor = Color.Green;
-            }
-            else
-            {
-                lblStatusBanco.Text = "Desconectado";
-                lblStatusBanco.ForeColor = Color.Red;
-            }
-        }
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
@@ -63,13 +49,6 @@ namespace sistemaAlertrem
             this.Hide();
         }
 
-        private void pcbUsuarios_Click(object sender, EventArgs e)
-        {
-            frmPesquisaUsuarios usuarios = new frmPesquisaUsuarios();
-            usuarios.Show();
-            this.Hide();
-        }
-
         private void pcbFunc_Click(object sender, EventArgs e)
         {
             frmFuncionarios funcionarios = new frmFuncionarios();
@@ -82,6 +61,34 @@ namespace sistemaAlertrem
             IntPtr hMenu = GetSystemMenu(this.Handle, false);
             int MenuCount = GetMenuItemCount(hMenu) - 1;
             RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmPesquisaUsuarios usuarios = new frmPesquisaUsuarios();
+            usuarios.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmEstacao estacao = new frmEstacao();
+            estacao.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmComentarios reclamacoes = new frmComentarios();
+            reclamacoes.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmFuncionarios funcionarios = new frmFuncionarios();
+            funcionarios.Show();
+            this.Hide();
         }
     }
 }

@@ -114,5 +114,10 @@ namespace sistemaAlertrem
             menu.Show();
             this.Hide();
         }
+
+        private void gpbComentarios_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

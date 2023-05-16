@@ -50,7 +50,7 @@ namespace sistemaAlertrem
             this.gpbCadastroUsuFunc.Controls.Add(this.lblUsuario);
             this.gpbCadastroUsuFunc.Controls.Add(this.txtNomeFunc);
             this.gpbCadastroUsuFunc.Controls.Add(this.lblNomeFunc);
-            this.gpbCadastroUsuFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbCadastroUsuFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpbCadastroUsuFunc.Location = new System.Drawing.Point(79, 36);
             this.gpbCadastroUsuFunc.Name = "gpbCadastroUsuFunc";
             this.gpbCadastroUsuFunc.Size = new System.Drawing.Size(467, 160);
@@ -62,9 +62,9 @@ namespace sistemaAlertrem
             // 
             this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
             this.btnCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.Image")));
-            this.btnCadastrar.Location = new System.Drawing.Point(343, 103);
+            this.btnCadastrar.Location = new System.Drawing.Point(322, 104);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(118, 36);
+            this.btnCadastrar.Size = new System.Drawing.Size(139, 48);
             this.btnCadastrar.TabIndex = 4;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -74,7 +74,7 @@ namespace sistemaAlertrem
             // txtSenha
             // 
             this.txtSenha.Font = new System.Drawing.Font("Wingdings", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.txtSenha.Location = new System.Drawing.Point(89, 113);
+            this.txtSenha.Location = new System.Drawing.Point(100, 116);
             this.txtSenha.MaxLength = 10;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = 'l';
@@ -86,14 +86,14 @@ namespace sistemaAlertrem
             this.lblSenhaUsu.AutoSize = true;
             this.lblSenhaUsu.Location = new System.Drawing.Point(14, 116);
             this.lblSenhaUsu.Name = "lblSenhaUsu";
-            this.lblSenhaUsu.Size = new System.Drawing.Size(60, 20);
+            this.lblSenhaUsu.Size = new System.Drawing.Size(80, 25);
             this.lblSenhaUsu.TabIndex = 4;
             this.lblSenhaUsu.Text = "Senha:";
             // 
             // txtUsu
             // 
             this.txtUsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsu.Location = new System.Drawing.Point(89, 70);
+            this.txtUsu.Location = new System.Drawing.Point(103, 76);
             this.txtUsu.MaxLength = 15;
             this.txtUsu.Name = "txtUsu";
             this.txtUsu.Size = new System.Drawing.Size(213, 26);
@@ -104,16 +104,16 @@ namespace sistemaAlertrem
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Location = new System.Drawing.Point(14, 77);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(68, 20);
+            this.lblUsuario.Size = new System.Drawing.Size(92, 25);
             this.lblUsuario.TabIndex = 2;
             this.lblUsuario.Text = "Usuário:";
             // 
             // txtNomeFunc
             // 
-            this.txtNomeFunc.Location = new System.Drawing.Point(89, 31);
+            this.txtNomeFunc.Location = new System.Drawing.Point(89, 33);
             this.txtNomeFunc.MaxLength = 20;
             this.txtNomeFunc.Name = "txtNomeFunc";
-            this.txtNomeFunc.Size = new System.Drawing.Size(372, 26);
+            this.txtNomeFunc.Size = new System.Drawing.Size(372, 31);
             this.txtNomeFunc.TabIndex = 1;
             this.txtNomeFunc.TextChanged += new System.EventHandler(this.txtNomeFunc_TextChanged);
             // 
@@ -123,7 +123,7 @@ namespace sistemaAlertrem
             this.lblNomeFunc.AutoSize = true;
             this.lblNomeFunc.Location = new System.Drawing.Point(14, 37);
             this.lblNomeFunc.Name = "lblNomeFunc";
-            this.lblNomeFunc.Size = new System.Drawing.Size(55, 20);
+            this.lblNomeFunc.Size = new System.Drawing.Size(74, 25);
             this.lblNomeFunc.TabIndex = 0;
             this.lblNomeFunc.Text = "Nome:";
             // 

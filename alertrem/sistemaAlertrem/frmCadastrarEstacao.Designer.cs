@@ -53,7 +53,7 @@ namespace sistemaAlertrem
             this.gpbEstacao.Controls.Add(this.lblCodigo);
             this.gpbEstacao.Controls.Add(this.btnCadastrar);
             this.gpbEstacao.Controls.Add(this.btnLimpar);
-            this.gpbEstacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbEstacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpbEstacao.Location = new System.Drawing.Point(12, 12);
             this.gpbEstacao.Name = "gpbEstacao";
             this.gpbEstacao.Size = new System.Drawing.Size(723, 247);
@@ -91,7 +91,7 @@ namespace sistemaAlertrem
             this.lblNome.AutoSize = true;
             this.lblNome.Location = new System.Drawing.Point(239, 50);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(72, 24);
+            this.lblNome.Size = new System.Drawing.Size(67, 24);
             this.lblNome.TabIndex = 4;
             this.lblNome.Text = "Nome:";
             // 
@@ -100,7 +100,7 @@ namespace sistemaAlertrem
             this.lblLocalizacao.AutoSize = true;
             this.lblLocalizacao.Location = new System.Drawing.Point(6, 117);
             this.lblLocalizacao.Name = "lblLocalizacao";
-            this.lblLocalizacao.Size = new System.Drawing.Size(126, 24);
+            this.lblLocalizacao.Size = new System.Drawing.Size(114, 24);
             this.lblLocalizacao.TabIndex = 3;
             this.lblLocalizacao.Text = "Localização:";
             // 
@@ -109,7 +109,7 @@ namespace sistemaAlertrem
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Location = new System.Drawing.Point(6, 47);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(83, 24);
+            this.lblCodigo.Size = new System.Drawing.Size(76, 24);
             this.lblCodigo.TabIndex = 2;
             this.lblCodigo.Text = "Código:";
             // 
