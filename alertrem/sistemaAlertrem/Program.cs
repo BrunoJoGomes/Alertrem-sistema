@@ -16,7 +16,7 @@ namespace sistemaAlertrem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCadastroFunc()); 
+            Application.Run(new frmMenu()); 
         }
     }
 }
