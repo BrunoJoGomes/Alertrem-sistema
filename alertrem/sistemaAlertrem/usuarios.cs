@@ -40,7 +40,7 @@ namespace sistemaAlertrem
 
         public void carregaDados(string nome)
         {
-            string commandString = $"select * from tb_usuarios where nome like '%{nome}%'";
+            string commandString = $"select * from tb_perfis where nome like '%{nome}%'";
 
             MySqlCommand comm = new MySqlCommand
             {
