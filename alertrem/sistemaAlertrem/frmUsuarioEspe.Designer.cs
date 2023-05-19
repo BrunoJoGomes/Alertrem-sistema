@@ -62,11 +62,11 @@ namespace sistemaAlertrem
             // 
             this.lblCampoNome.AutoSize = true;
             this.lblCampoNome.Font = new System.Drawing.Font("Museo 700", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCampoNome.Location = new System.Drawing.Point(23, 32);
+            this.lblCampoNome.Location = new System.Drawing.Point(20, 32);
             this.lblCampoNome.Name = "lblCampoNome";
             this.lblCampoNome.Size = new System.Drawing.Size(101, 32);
             this.lblCampoNome.TabIndex = 3;
-            this.lblCampoNome.Text = "Nome:";
+            this.lblCampoNome.Text = "&Nome:";
             // 
             // gpbDadosUsuario
             // 
@@ -85,7 +85,7 @@ namespace sistemaAlertrem
             this.gpbDadosUsuario.Size = new System.Drawing.Size(916, 100);
             this.gpbDadosUsuario.TabIndex = 0;
             this.gpbDadosUsuario.TabStop = false;
-            this.gpbDadosUsuario.Text = "Dados do usuário";
+            this.gpbDadosUsuario.Text = "&Dados do usuário";
             // 
             // lblDataCadastro
             // 
@@ -102,7 +102,7 @@ namespace sistemaAlertrem
             this.lblCampoDataCadastro.Name = "lblCampoDataCadastro";
             this.lblCampoDataCadastro.Size = new System.Drawing.Size(247, 32);
             this.lblCampoDataCadastro.TabIndex = 9;
-            this.lblCampoDataCadastro.Text = "Data de cadastro: ";
+            this.lblCampoDataCadastro.Text = "&Data de cadastro: ";
             // 
             // lblEmail
             // 
@@ -119,7 +119,7 @@ namespace sistemaAlertrem
             this.lblCampoEmail.Name = "lblCampoEmail";
             this.lblCampoEmail.Size = new System.Drawing.Size(114, 32);
             this.lblCampoEmail.TabIndex = 7;
-            this.lblCampoEmail.Text = "E-mail: ";
+            this.lblCampoEmail.Text = "&E-mail: ";
             // 
             // lblCPF
             // 
@@ -136,7 +136,7 @@ namespace sistemaAlertrem
             this.lblCampoCPF.Name = "lblCampoCPF";
             this.lblCampoCPF.Size = new System.Drawing.Size(72, 32);
             this.lblCampoCPF.TabIndex = 5;
-            this.lblCampoCPF.Text = "CPF:";
+            this.lblCampoCPF.Text = "&CPF:";
             // 
             // lblNome
             // 
@@ -173,6 +173,7 @@ namespace sistemaAlertrem
             this.Name = "frmUsuarioEspe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuário";
+            this.Load += new System.EventHandler(this.frmUsuarioEspe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvcomentUsuEsp)).EndInit();
             this.gpbDadosUsuario.ResumeLayout(false);
             this.gpbDadosUsuario.PerformLayout();

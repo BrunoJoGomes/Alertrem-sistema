@@ -29,6 +29,8 @@ namespace sistemaAlertrem
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastrarCaracteristica));
             this.gpbInfoEstacao = new System.Windows.Forms.GroupBox();
             this.cbbEstacao = new System.Windows.Forms.ComboBox();
@@ -54,10 +56,6 @@ namespace sistemaAlertrem
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnRemover = new System.Windows.Forms.Button();
             this.btnRemoverTodos = new System.Windows.Forms.Button();
-            this.lblOutraCaracteristica = new System.Windows.Forms.Label();
-            this.txtOutraCaracteristica = new System.Windows.Forms.TextBox();
-            this.lblOutroEstado = new System.Windows.Forms.Label();
-            this.txtOutroEstadoOperacional = new System.Windows.Forms.TextBox();
             this.gpbInfoEstacao.SuspendLayout();
             this.gpbCaracteristicas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCaracteristicas)).BeginInit();
@@ -79,7 +77,8 @@ namespace sistemaAlertrem
             this.gpbInfoEstacao.Size = new System.Drawing.Size(1057, 145);
             this.gpbInfoEstacao.TabIndex = 0;
             this.gpbInfoEstacao.TabStop = false;
-            this.gpbInfoEstacao.Text = "Informações sobre a estação";
+            this.gpbInfoEstacao.Text = "&Informações sobre a estação";
+            this.gpbInfoEstacao.Enter += new System.EventHandler(this.gpbInfoEstacao_Enter);
             // 
             // cbbEstacao
             // 
@@ -102,11 +101,11 @@ namespace sistemaAlertrem
             // lblCampoCodigo
             // 
             this.lblCampoCodigo.AutoSize = true;
-            this.lblCampoCodigo.Location = new System.Drawing.Point(506, 38);
+            this.lblCampoCodigo.Location = new System.Drawing.Point(535, 38);
             this.lblCampoCodigo.Name = "lblCampoCodigo";
             this.lblCampoCodigo.Size = new System.Drawing.Size(86, 25);
             this.lblCampoCodigo.TabIndex = 5;
-            this.lblCampoCodigo.Text = "Código:";
+            this.lblCampoCodigo.Text = "&Código:";
             // 
             // lblLocalizacao
             // 
@@ -131,7 +130,7 @@ namespace sistemaAlertrem
             this.lblCampoLocalizacao.Name = "lblCampoLocalizacao";
             this.lblCampoLocalizacao.Size = new System.Drawing.Size(133, 25);
             this.lblCampoLocalizacao.TabIndex = 2;
-            this.lblCampoLocalizacao.Text = "Localização:";
+            this.lblCampoLocalizacao.Text = "&Localização:";
             // 
             // lblCampoNome
             // 
@@ -140,7 +139,7 @@ namespace sistemaAlertrem
             this.lblCampoNome.Name = "lblCampoNome";
             this.lblCampoNome.Size = new System.Drawing.Size(74, 25);
             this.lblCampoNome.TabIndex = 1;
-            this.lblCampoNome.Text = "Nome:";
+            this.lblCampoNome.Text = "&Nome:";
             // 
             // lblSelecionar
             // 
@@ -149,14 +148,10 @@ namespace sistemaAlertrem
             this.lblSelecionar.Name = "lblSelecionar";
             this.lblSelecionar.Size = new System.Drawing.Size(242, 25);
             this.lblSelecionar.TabIndex = 0;
-            this.lblSelecionar.Text = "Selecione uma estação:";
+            this.lblSelecionar.Text = "&Selecione uma estação:";
             // 
             // gpbCaracteristicas
             // 
-            this.gpbCaracteristicas.Controls.Add(this.txtOutroEstadoOperacional);
-            this.gpbCaracteristicas.Controls.Add(this.lblOutroEstado);
-            this.gpbCaracteristicas.Controls.Add(this.txtOutraCaracteristica);
-            this.gpbCaracteristicas.Controls.Add(this.lblOutraCaracteristica);
             this.gpbCaracteristicas.Controls.Add(this.cbbEstadoOperacional);
             this.gpbCaracteristicas.Controls.Add(this.cbbCaracteristica);
             this.gpbCaracteristicas.Controls.Add(this.lblEstado);
@@ -164,20 +159,19 @@ namespace sistemaAlertrem
             this.gpbCaracteristicas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpbCaracteristicas.Location = new System.Drawing.Point(10, 309);
             this.gpbCaracteristicas.Name = "gpbCaracteristicas";
-            this.gpbCaracteristicas.Size = new System.Drawing.Size(683, 221);
+            this.gpbCaracteristicas.Size = new System.Drawing.Size(576, 130);
             this.gpbCaracteristicas.TabIndex = 1;
             this.gpbCaracteristicas.TabStop = false;
-            this.gpbCaracteristicas.Text = "Características";
+            this.gpbCaracteristicas.Text = "&Características";
             // 
             // cbbEstadoOperacional
             // 
             this.cbbEstadoOperacional.FormattingEnabled = true;
-            this.cbbEstadoOperacional.Location = new System.Drawing.Point(344, 131);
+            this.cbbEstadoOperacional.Location = new System.Drawing.Point(325, 81);
             this.cbbEstadoOperacional.Name = "cbbEstadoOperacional";
-            this.cbbEstadoOperacional.Size = new System.Drawing.Size(322, 33);
+            this.cbbEstadoOperacional.Size = new System.Drawing.Size(245, 33);
             this.cbbEstadoOperacional.TabIndex = 3;
             this.cbbEstadoOperacional.Text = "Selecione";
-            this.cbbEstadoOperacional.SelectedIndexChanged += new System.EventHandler(this.cbbEstadoOperacional_SelectedIndexChanged);
             // 
             // cbbCaracteristica
             // 
@@ -204,24 +198,22 @@ namespace sistemaAlertrem
             "Transferencia_gratuita_cptm_metro",
             "Acessorios",
             "Farmacia",
-            "Rota_acessivel",
-            "Achados_e_perdidos",
-            "Outra"});
+            "Rota_acesssvel",
+            "Achados_e_perdidos"});
             this.cbbCaracteristica.Location = new System.Drawing.Point(324, 45);
             this.cbbCaracteristica.Name = "cbbCaracteristica";
-            this.cbbCaracteristica.Size = new System.Drawing.Size(344, 33);
+            this.cbbCaracteristica.Size = new System.Drawing.Size(246, 33);
             this.cbbCaracteristica.TabIndex = 2;
             this.cbbCaracteristica.Text = "Selecione";
-            this.cbbCaracteristica.SelectedIndexChanged += new System.EventHandler(this.cbbCaracteristica_SelectedIndexChanged);
             // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(-3, 134);
+            this.lblEstado.Location = new System.Drawing.Point(-1, 84);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(320, 25);
             this.lblEstado.TabIndex = 1;
-            this.lblEstado.Text = "Selecione o estado operacional:";
+            this.lblEstado.Text = "&Selecione o estado operacional:";
             // 
             // lblCaracteristicas
             // 
@@ -230,7 +222,7 @@ namespace sistemaAlertrem
             this.lblCaracteristicas.Name = "lblCaracteristicas";
             this.lblCaracteristicas.Size = new System.Drawing.Size(294, 25);
             this.lblCaracteristicas.TabIndex = 0;
-            this.lblCaracteristicas.Text = "Selecione uma característica:";
+            this.lblCaracteristicas.Text = "&Selecione uma característica:";
             // 
             // dgvCaracteristicas
             // 
@@ -238,7 +230,17 @@ namespace sistemaAlertrem
             this.dgvCaracteristicas.AllowUserToDeleteRows = false;
             this.dgvCaracteristicas.AllowUserToResizeColumns = false;
             this.dgvCaracteristicas.AllowUserToResizeRows = false;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvCaracteristicas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvCaracteristicas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCaracteristicas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvCaracteristicas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCaracteristicas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codigo,
@@ -275,22 +277,22 @@ namespace sistemaAlertrem
             // btnAdicionar
             // 
             this.btnAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdicionar.Location = new System.Drawing.Point(776, 507);
+            this.btnAdicionar.Location = new System.Drawing.Point(610, 331);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(138, 46);
             this.btnAdicionar.TabIndex = 4;
-            this.btnAdicionar.Text = "Adicionar";
+            this.btnAdicionar.Text = "&Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
             this.btnAdicionar.Click += new System.EventHandler(this.btnAdcionar_Click);
             // 
             // btnAtualizar
             // 
             this.btnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtualizar.Location = new System.Drawing.Point(776, 559);
+            this.btnAtualizar.Location = new System.Drawing.Point(610, 383);
             this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(138, 60);
+            this.btnAtualizar.Size = new System.Drawing.Size(138, 46);
             this.btnAtualizar.TabIndex = 5;
-            this.btnAtualizar.Text = "Atualizar";
+            this.btnAtualizar.Text = "&Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
             this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
@@ -298,7 +300,7 @@ namespace sistemaAlertrem
             // 
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
-            this.btnVoltar.Location = new System.Drawing.Point(931, 354);
+            this.btnVoltar.Location = new System.Drawing.Point(931, 383);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(138, 46);
             this.btnVoltar.TabIndex = 8;
@@ -308,66 +310,30 @@ namespace sistemaAlertrem
             // btnRemover
             // 
             this.btnRemover.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemover.Location = new System.Drawing.Point(937, 507);
+            this.btnRemover.Location = new System.Drawing.Point(771, 331);
             this.btnRemover.Name = "btnRemover";
             this.btnRemover.Size = new System.Drawing.Size(138, 46);
             this.btnRemover.TabIndex = 6;
-            this.btnRemover.Text = "Remover";
+            this.btnRemover.Text = "&Remover";
             this.btnRemover.UseVisualStyleBackColor = true;
             this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
             // 
             // btnRemoverTodos
             // 
             this.btnRemoverTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoverTodos.Location = new System.Drawing.Point(937, 559);
+            this.btnRemoverTodos.Location = new System.Drawing.Point(771, 383);
             this.btnRemoverTodos.Name = "btnRemoverTodos";
-            this.btnRemoverTodos.Size = new System.Drawing.Size(138, 60);
+            this.btnRemoverTodos.Size = new System.Drawing.Size(138, 46);
             this.btnRemoverTodos.TabIndex = 7;
-            this.btnRemoverTodos.Text = "Remover todos";
+            this.btnRemoverTodos.Text = "&Remover todos";
             this.btnRemoverTodos.UseVisualStyleBackColor = true;
             this.btnRemoverTodos.Click += new System.EventHandler(this.btnRemoveTodos_Click);
-            // 
-            // lblOutraCaracteristica
-            // 
-            this.lblOutraCaracteristica.AutoSize = true;
-            this.lblOutraCaracteristica.Location = new System.Drawing.Point(-1, 91);
-            this.lblOutraCaracteristica.Name = "lblOutraCaracteristica";
-            this.lblOutraCaracteristica.Size = new System.Drawing.Size(222, 25);
-            this.lblOutraCaracteristica.TabIndex = 4;
-            this.lblOutraCaracteristica.Text = "Insira a característica:";
-            this.lblOutraCaracteristica.Visible = false;
-            // 
-            // txtOutraCaracteristica
-            // 
-            this.txtOutraCaracteristica.Location = new System.Drawing.Point(262, 91);
-            this.txtOutraCaracteristica.Name = "txtOutraCaracteristica";
-            this.txtOutraCaracteristica.Size = new System.Drawing.Size(404, 31);
-            this.txtOutraCaracteristica.TabIndex = 5;
-            this.txtOutraCaracteristica.Visible = false;
-            // 
-            // lblOutroEstado
-            // 
-            this.lblOutroEstado.AutoSize = true;
-            this.lblOutroEstado.Location = new System.Drawing.Point(-1, 179);
-            this.lblOutroEstado.Name = "lblOutroEstado";
-            this.lblOutroEstado.Size = new System.Drawing.Size(214, 25);
-            this.lblOutroEstado.TabIndex = 6;
-            this.lblOutroEstado.Text = "Insira o outro estado:";
-            this.lblOutroEstado.Visible = false;
-            // 
-            // txtOutroEstadoOperacional
-            // 
-            this.txtOutroEstadoOperacional.Location = new System.Drawing.Point(262, 176);
-            this.txtOutroEstadoOperacional.Name = "txtOutroEstadoOperacional";
-            this.txtOutroEstadoOperacional.Size = new System.Drawing.Size(404, 31);
-            this.txtOutroEstadoOperacional.TabIndex = 7;
-            this.txtOutroEstadoOperacional.Visible = false;
             // 
             // frmCadastrarCaracteristica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1081, 627);
+            this.ClientSize = new System.Drawing.Size(1081, 451);
             this.Controls.Add(this.btnRemoverTodos);
             this.Controls.Add(this.btnRemover);
             this.Controls.Add(this.btnVoltar);
@@ -383,6 +349,7 @@ namespace sistemaAlertrem
             this.Name = "frmCadastrarCaracteristica";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Características da Estação";
+            this.Load += new System.EventHandler(this.frmCadastrarCaracteristica_Load);
             this.gpbInfoEstacao.ResumeLayout(false);
             this.gpbInfoEstacao.PerformLayout();
             this.gpbCaracteristicas.ResumeLayout(false);
@@ -418,9 +385,5 @@ namespace sistemaAlertrem
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnRemover;
         private System.Windows.Forms.Button btnRemoverTodos;
-        private System.Windows.Forms.TextBox txtOutroEstadoOperacional;
-        private System.Windows.Forms.Label lblOutroEstado;
-        private System.Windows.Forms.TextBox txtOutraCaracteristica;
-        private System.Windows.Forms.Label lblOutraCaracteristica;
     }
 }

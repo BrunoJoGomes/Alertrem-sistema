@@ -85,7 +85,7 @@ namespace sistemaAlertrem
             this.lblPesquisar.Name = "lblPesquisar";
             this.lblPesquisar.Size = new System.Drawing.Size(114, 25);
             this.lblPesquisar.TabIndex = 12;
-            this.lblPesquisar.Text = "Pesquisar:";
+            this.lblPesquisar.Text = "&Pesquisar:";
             // 
             // txtPesquisa
             // 
@@ -127,6 +127,7 @@ namespace sistemaAlertrem
             this.Name = "frmFuncionarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Funcionários";
+            this.Load += new System.EventHandler(this.frmFuncionarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

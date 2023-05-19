@@ -56,7 +56,7 @@ namespace sistemaAlertrem
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(97, 25);
             this.lblUsuario.TabIndex = 9;
-            this.lblUsuario.Text = "Usuário:";
+            this.lblUsuario.Text = "&Usuário:";
             // 
             // btnPesquisar
             // 
@@ -90,9 +90,9 @@ namespace sistemaAlertrem
             this.btnVoltar2.Font = new System.Drawing.Font("Museo 700", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar2.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar2.Image")));
             this.btnVoltar2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnVoltar2.Location = new System.Drawing.Point(650, 417);
+            this.btnVoltar2.Location = new System.Drawing.Point(650, 413);
             this.btnVoltar2.Name = "btnVoltar2";
-            this.btnVoltar2.Size = new System.Drawing.Size(102, 39);
+            this.btnVoltar2.Size = new System.Drawing.Size(108, 43);
             this.btnVoltar2.TabIndex = 4;
             this.btnVoltar2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnVoltar2.UseVisualStyleBackColor = true;

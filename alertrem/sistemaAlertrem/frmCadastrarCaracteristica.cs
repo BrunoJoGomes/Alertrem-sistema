@@ -8,17 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Runtime.InteropServices;
 
 namespace sistemaAlertrem
 {
     public partial class frmCadastrarCaracteristica : Form
     {
+        const int MF_BYCOMMAND = 0X400;
+        [DllImport("user32")]
+        static extern int RemoveMenu(IntPtr hMenu, int nPosition, int wFlags);
+        [DllImport("user32")]
+        static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
+        [DllImport("user32")]
+        static extern int GetMenuItemCount(IntPtr hWnd);
         public frmCadastrarCaracteristica()
         {
             InitializeComponent();
             carregaComboEstacao();
             carregaComboValores();
-            carregaComboCaracteristicas();
         }
 
         public MySqlDataReader select(string campo, string tabela, string where = "")
@@ -73,19 +80,6 @@ namespace sistemaAlertrem
             {
                 cbbEstadoOperacional.Items.Add(DR.GetString(0));
             }
-            cbbEstadoOperacional.Items.Add("Outro");
-            Conexao.fecharConexao();
-        }
-
-        public void carregaComboCaracteristicas()
-        {
-            MySqlDataReader DR = select("nome", "tb_caracteristicas");
-
-            while (DR.Read())
-            {
-                cbbCaracteristica.Items.Add(DR.GetString(0));
-            }
-            cbbCaracteristica.Items.Add("Outra");
             Conexao.fecharConexao();
         }
 
@@ -192,7 +186,7 @@ namespace sistemaAlertrem
             cbbCaracteristica.Text = "Selecione";
             cbbEstadoOperacional.Text = "Selecione";
 
-            MySqlDataReader DR = select("*", "tb_estacao_caracteristica_estado_operacional", $"cod_estacao = {lblCodigo.Text}");
+            MySqlDataReader DR = select("*", "tb_caracteristicas", $"cod_estacao = {lblCodigo.Text}");
             while (DR.Read())
             {
                 MySqlDataReader DR_estado = select("estado", "tb_estados_operacionais", $"codigo = '{DR.GetString(2)}'");
@@ -383,38 +377,16 @@ namespace sistemaAlertrem
             deletaCaracteristica(true);
         }
 
-        private void cbbCaracteristica_SelectedIndexChanged(object sender, EventArgs e)
+        private void gpbInfoEstacao_Enter(object sender, EventArgs e)
         {
-            if (cbbCaracteristica.SelectedItem.ToString() == "Outra")
-            {
-                lblOutraCaracteristica.Visible = true;
-                txtOutraCaracteristica.Visible = true;
-                btnAtualizar.Enabled = false;
-                txtOutraCaracteristica.Focus();
-            }
-            else
-            {
-                lblOutraCaracteristica.Visible = false;
-                txtOutraCaracteristica.Visible = false;
-                btnAtualizar.Enabled = true;
-            }
+
         }
 
-        private void cbbEstadoOperacional_SelectedIndexChanged(object sender, EventArgs e)
+        private void frmCadastrarCaracteristica_Load(object sender, EventArgs e)
         {
-            if (cbbEstadoOperacional.SelectedItem.ToString() == "Outro")
-            {
-                lblOutroEstado.Visible = true;
-                txtOutroEstadoOperacional.Visible = true;
-                btnAtualizar.Enabled = false;
-                txtOutroEstadoOperacional.Focus();
-            }
-            else
-            {
-                lblOutroEstado.Visible = false;
-                txtOutroEstadoOperacional.Visible = false;
-                btnAtualizar.Enabled = true;
-            }
+            IntPtr hMenu = GetSystemMenu(this.Handle, false);
+            int MenuCount = GetMenuItemCount(hMenu) - 1;
+            RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
         }
     }
 }

@@ -75,7 +75,7 @@ namespace sistemaAlertrem
             this.gpbComentarios.Size = new System.Drawing.Size(798, 387);
             this.gpbComentarios.TabIndex = 1;
             this.gpbComentarios.TabStop = false;
-            this.gpbComentarios.Text = "Comentários";
+            this.gpbComentarios.Text = "&Comentários";
             this.gpbComentarios.Enter += new System.EventHandler(this.gpbComentarios_Enter);
             // 
             // btnVoltar2
@@ -103,6 +103,7 @@ namespace sistemaAlertrem
             this.Name = "frmComentarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Comentários";
+            this.Load += new System.EventHandler(this.frmComentarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvComentarios)).EndInit();
             this.gpbComentarios.ResumeLayout(false);
             this.ResumeLayout(false);
