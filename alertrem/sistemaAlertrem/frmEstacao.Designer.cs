@@ -66,6 +66,7 @@ namespace sistemaAlertrem
             this.gpbPesquisaEstacao.TabIndex = 0;
             this.gpbPesquisaEstacao.TabStop = false;
             this.gpbPesquisaEstacao.Text = "Pesquisar Estação";
+            this.gpbPesquisaEstacao.Enter += new System.EventHandler(this.gpbPesquisaEstacao_Enter);
             // 
             // cbbEstacao
             // 
@@ -86,6 +87,7 @@ namespace sistemaAlertrem
             this.txtLocalizacao.Name = "txtLocalizacao";
             this.txtLocalizacao.Size = new System.Drawing.Size(345, 71);
             this.txtLocalizacao.TabIndex = 4;
+            this.txtLocalizacao.Visible = false;
             // 
             // txtNome
             // 
@@ -210,6 +212,7 @@ namespace sistemaAlertrem
             this.Name = "frmEstacao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estação";
+            this.Load += new System.EventHandler(this.frmEstacao_Load);
             this.gpbPesquisaEstacao.ResumeLayout(false);
             this.gpbPesquisaEstacao.PerformLayout();
             this.ResumeLayout(false);
