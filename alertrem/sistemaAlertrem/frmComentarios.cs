@@ -78,11 +78,11 @@ namespace sistemaAlertrem
             int res = comm.ExecuteNonQuery();
             if (res == 1)
             {
-                MessageBox.Show("Registro Excluido com Sucesso!", "Mensagem do Sistema", MessageBoxButtons.OK);
+                MessageBox.Show("Registro Excluido com Sucesso!", "Aviso do Sistema", MessageBoxButtons.OK);
             }
             else
             {
-                MessageBox.Show("Erro ao excluir o registro", "Mensagem do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao excluir o registro", "Aviso do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             Conexao.fecharConexao();

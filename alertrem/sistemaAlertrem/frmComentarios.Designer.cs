@@ -53,6 +53,7 @@ namespace sistemaAlertrem
             this.dgvComentarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvComentarios.Location = new System.Drawing.Point(6, 39);
             this.dgvComentarios.Name = "dgvComentarios";
+            this.dgvComentarios.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Museo 700", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -64,6 +65,7 @@ namespace sistemaAlertrem
             this.dgvComentarios.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvComentarios.Size = new System.Drawing.Size(776, 330);
             this.dgvComentarios.TabIndex = 1;
+            this.dgvComentarios.TabStop = false;
             this.dgvComentarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvComentarios_CellContentClick);
             // 
             // gpbComentarios
