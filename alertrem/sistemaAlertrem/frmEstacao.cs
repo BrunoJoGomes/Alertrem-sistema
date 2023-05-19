@@ -21,6 +21,7 @@ namespace sistemaAlertrem
         static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
         [DllImport("user32")]
         static extern int GetMenuItemCount(IntPtr hWnd);
+
         public frmEstacao()
         {
             InitializeComponent();
@@ -28,6 +29,7 @@ namespace sistemaAlertrem
             desabilitaCampos();
             btnDeletar.Enabled = false;
         }
+
 
         public MySqlDataReader select(string campo, string tabela, string where = "")
         {
@@ -250,6 +252,11 @@ namespace sistemaAlertrem
             IntPtr hMenu = GetSystemMenu(this.Handle, false);
             int MenuCount = GetMenuItemCount(hMenu) - 1;
             RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
+        }
+
+        private void gpbPesquisaEstacao_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

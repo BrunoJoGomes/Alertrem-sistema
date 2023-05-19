@@ -65,7 +65,8 @@ namespace sistemaAlertrem
             this.gpbPesquisaEstacao.Size = new System.Drawing.Size(779, 289);
             this.gpbPesquisaEstacao.TabIndex = 0;
             this.gpbPesquisaEstacao.TabStop = false;
-            this.gpbPesquisaEstacao.Text = "&Pesquisar Estação";
+            this.gpbPesquisaEstacao.Text = "Pesquisar Estação";
+            this.gpbPesquisaEstacao.Enter += new System.EventHandler(this.gpbPesquisaEstacao_Enter);
             // 
             // cbbEstacao
             // 
@@ -86,11 +87,12 @@ namespace sistemaAlertrem
             this.txtLocalizacao.Name = "txtLocalizacao";
             this.txtLocalizacao.Size = new System.Drawing.Size(345, 71);
             this.txtLocalizacao.TabIndex = 4;
+            this.txtLocalizacao.Visible = false;
             // 
             // txtNome
             // 
             this.txtNome.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtNome.Location = new System.Drawing.Point(122, 151);
+            this.txtNome.Location = new System.Drawing.Point(108, 151);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(382, 31);
             this.txtNome.TabIndex = 3;
@@ -112,7 +114,7 @@ namespace sistemaAlertrem
             this.lblLocalizacao.Name = "lblLocalizacao";
             this.lblLocalizacao.Size = new System.Drawing.Size(133, 25);
             this.lblLocalizacao.TabIndex = 5;
-            this.lblLocalizacao.Text = "&Localização:";
+            this.lblLocalizacao.Text = "Localização:";
             // 
             // lblNome
             // 
@@ -121,7 +123,7 @@ namespace sistemaAlertrem
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(74, 25);
             this.lblNome.TabIndex = 4;
-            this.lblNome.Text = "&Nome:";
+            this.lblNome.Text = "Nome:";
             // 
             // lblCodigo
             // 
@@ -130,7 +132,7 @@ namespace sistemaAlertrem
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(86, 25);
             this.lblCodigo.TabIndex = 3;
-            this.lblCodigo.Text = "&Código:";
+            this.lblCodigo.Text = "Código:";
             // 
             // btnSalvar
             // 
@@ -169,7 +171,7 @@ namespace sistemaAlertrem
             this.btnEstacao.Name = "btnEstacao";
             this.btnEstacao.Size = new System.Drawing.Size(213, 36);
             this.btnEstacao.TabIndex = 8;
-            this.btnEstacao.Text = "&Cadastrar Estação";
+            this.btnEstacao.Text = "Cadastrar Estação";
             this.btnEstacao.UseVisualStyleBackColor = true;
             this.btnEstacao.Click += new System.EventHandler(this.btnEstacao_Click);
             // 
@@ -180,7 +182,7 @@ namespace sistemaAlertrem
             this.btnCaracteristica.Name = "btnCaracteristica";
             this.btnCaracteristica.Size = new System.Drawing.Size(253, 36);
             this.btnCaracteristica.TabIndex = 9;
-            this.btnCaracteristica.Text = "&Cadastrar Características";
+            this.btnCaracteristica.Text = "Cadastrar Características";
             this.btnCaracteristica.UseVisualStyleBackColor = true;
             this.btnCaracteristica.Click += new System.EventHandler(this.btnCaracteristica_Click);
             // 
