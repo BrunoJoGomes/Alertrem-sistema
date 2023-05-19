@@ -8,11 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Runtime.InteropServices;
 
 namespace sistemaAlertrem
 {
     public partial class frmComentarios : Form
     {
+        const int MF_BYCOMMAND = 0X400;
+        [DllImport("user32")]
+        static extern int RemoveMenu(IntPtr hMenu, int nPosition, int wFlags);
+        [DllImport("user32")]
+        static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
+        [DllImport("user32")]
+        static extern int GetMenuItemCount(IntPtr hWnd);
         public frmComentarios()
         {
             InitializeComponent();
@@ -113,6 +121,18 @@ namespace sistemaAlertrem
             frmMenu menu = new frmMenu();
             menu.Show();
             this.Hide();
+        }
+
+        private void gpbComentarios_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmComentarios_Load(object sender, EventArgs e)
+        {
+            IntPtr hMenu = GetSystemMenu(this.Handle, false);
+            int MenuCount = GetMenuItemCount(hMenu) - 1;
+            RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
         }
     }
 }

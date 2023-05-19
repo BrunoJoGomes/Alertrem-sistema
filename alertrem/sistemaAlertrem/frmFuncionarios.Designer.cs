@@ -52,12 +52,12 @@ namespace sistemaAlertrem
             // 
             // btnVoltar2
             // 
-            this.btnVoltar2.Font = new System.Drawing.Font("Museo 700", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar2.Font = new System.Drawing.Font("Museo 700", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar2.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar2.Image")));
             this.btnVoltar2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnVoltar2.Location = new System.Drawing.Point(686, 388);
+            this.btnVoltar2.Location = new System.Drawing.Point(677, 356);
             this.btnVoltar2.Name = "btnVoltar2";
-            this.btnVoltar2.Size = new System.Drawing.Size(102, 38);
+            this.btnVoltar2.Size = new System.Drawing.Size(124, 82);
             this.btnVoltar2.TabIndex = 3;
             this.btnVoltar2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnVoltar2.UseVisualStyleBackColor = true;
@@ -65,12 +65,12 @@ namespace sistemaAlertrem
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Font = new System.Drawing.Font("Museo 700", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.Font = new System.Drawing.Font("Museo 700", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.Image")));
             this.btnCadastrar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnCadastrar.Location = new System.Drawing.Point(686, 270);
+            this.btnCadastrar.Location = new System.Drawing.Point(677, 270);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(102, 81);
+            this.btnCadastrar.Size = new System.Drawing.Size(124, 81);
             this.btnCadastrar.TabIndex = 2;
             this.btnCadastrar.Text = "&Cadastrar";
             this.btnCadastrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -80,17 +80,17 @@ namespace sistemaAlertrem
             // lblPesquisar
             // 
             this.lblPesquisar.AutoSize = true;
-            this.lblPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPesquisar.Location = new System.Drawing.Point(12, 59);
             this.lblPesquisar.Name = "lblPesquisar";
-            this.lblPesquisar.Size = new System.Drawing.Size(93, 20);
+            this.lblPesquisar.Size = new System.Drawing.Size(114, 25);
             this.lblPesquisar.TabIndex = 12;
-            this.lblPesquisar.Text = "Pesquisar:";
+            this.lblPesquisar.Text = "&Pesquisar:";
             // 
             // txtPesquisa
             // 
             this.txtPesquisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPesquisa.Location = new System.Drawing.Point(111, 56);
+            this.txtPesquisa.Location = new System.Drawing.Point(142, 59);
             this.txtPesquisa.MaxLength = 100;
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(350, 26);
@@ -98,12 +98,12 @@ namespace sistemaAlertrem
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Font = new System.Drawing.Font("Museo 700", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisar.Font = new System.Drawing.Font("Museo 700", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
             this.btnPesquisar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnPesquisar.Location = new System.Drawing.Point(686, 183);
+            this.btnPesquisar.Location = new System.Drawing.Point(677, 183);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(102, 81);
+            this.btnPesquisar.Size = new System.Drawing.Size(124, 81);
             this.btnPesquisar.TabIndex = 1;
             this.btnPesquisar.Text = "&Pesquisar";
             this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -127,6 +127,7 @@ namespace sistemaAlertrem
             this.Name = "frmFuncionarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Funcionários";
+            this.Load += new System.EventHandler(this.frmFuncionarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -59,13 +59,14 @@ namespace sistemaAlertrem
             this.gpbPesquisaEstacao.Controls.Add(this.btnSalvar);
             this.gpbPesquisaEstacao.Controls.Add(this.btnDeletar);
             this.gpbPesquisaEstacao.Controls.Add(this.btnEditar);
-            this.gpbPesquisaEstacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbPesquisaEstacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpbPesquisaEstacao.Location = new System.Drawing.Point(12, 12);
             this.gpbPesquisaEstacao.Name = "gpbPesquisaEstacao";
             this.gpbPesquisaEstacao.Size = new System.Drawing.Size(779, 289);
             this.gpbPesquisaEstacao.TabIndex = 0;
             this.gpbPesquisaEstacao.TabStop = false;
             this.gpbPesquisaEstacao.Text = "Pesquisar Estação";
+            this.gpbPesquisaEstacao.Enter += new System.EventHandler(this.gpbPesquisaEstacao_Enter);
             // 
             // cbbEstacao
             // 
@@ -73,7 +74,7 @@ namespace sistemaAlertrem
             this.cbbEstacao.FormattingEnabled = true;
             this.cbbEstacao.Location = new System.Drawing.Point(26, 42);
             this.cbbEstacao.Name = "cbbEstacao";
-            this.cbbEstacao.Size = new System.Drawing.Size(452, 26);
+            this.cbbEstacao.Size = new System.Drawing.Size(493, 33);
             this.cbbEstacao.TabIndex = 1;
             this.cbbEstacao.Text = "Selecione";
             this.cbbEstacao.SelectedValueChanged += new System.EventHandler(this.cbbEstacao_SelectedValueChanged);
@@ -81,27 +82,29 @@ namespace sistemaAlertrem
             // txtLocalizacao
             // 
             this.txtLocalizacao.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtLocalizacao.Location = new System.Drawing.Point(133, 198);
+            this.txtLocalizacao.Location = new System.Drawing.Point(174, 198);
             this.txtLocalizacao.Multiline = true;
             this.txtLocalizacao.Name = "txtLocalizacao";
             this.txtLocalizacao.Size = new System.Drawing.Size(345, 71);
             this.txtLocalizacao.TabIndex = 4;
+            this.txtLocalizacao.Visible = false;
             // 
             // txtNome
             // 
             this.txtNome.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtNome.Location = new System.Drawing.Point(96, 151);
+            this.txtNome.Location = new System.Drawing.Point(108, 151);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(382, 24);
+            this.txtNome.Size = new System.Drawing.Size(411, 31);
             this.txtNome.TabIndex = 3;
+            this.txtNome.TextChanged += new System.EventHandler(this.cbbEstacao_SelectedValueChanged);
             // 
             // txtCodigo
             // 
             this.txtCodigo.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(96, 103);
+            this.txtCodigo.Location = new System.Drawing.Point(122, 103);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(382, 24);
+            this.txtCodigo.Size = new System.Drawing.Size(397, 31);
             this.txtCodigo.TabIndex = 2;
             // 
             // lblLocalizacao
@@ -109,7 +112,7 @@ namespace sistemaAlertrem
             this.lblLocalizacao.AutoSize = true;
             this.lblLocalizacao.Location = new System.Drawing.Point(23, 223);
             this.lblLocalizacao.Name = "lblLocalizacao";
-            this.lblLocalizacao.Size = new System.Drawing.Size(104, 18);
+            this.lblLocalizacao.Size = new System.Drawing.Size(133, 25);
             this.lblLocalizacao.TabIndex = 5;
             this.lblLocalizacao.Text = "Localização:";
             // 
@@ -118,7 +121,7 @@ namespace sistemaAlertrem
             this.lblNome.AutoSize = true;
             this.lblNome.Location = new System.Drawing.Point(23, 154);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(58, 18);
+            this.lblNome.Size = new System.Drawing.Size(74, 25);
             this.lblNome.TabIndex = 4;
             this.lblNome.Text = "Nome:";
             // 
@@ -127,7 +130,7 @@ namespace sistemaAlertrem
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Location = new System.Drawing.Point(23, 106);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(67, 18);
+            this.lblCodigo.Size = new System.Drawing.Size(86, 25);
             this.lblCodigo.TabIndex = 3;
             this.lblCodigo.Text = "Código:";
             // 
@@ -163,7 +166,7 @@ namespace sistemaAlertrem
             // 
             // btnEstacao
             // 
-            this.btnEstacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstacao.Location = new System.Drawing.Point(12, 322);
             this.btnEstacao.Name = "btnEstacao";
             this.btnEstacao.Size = new System.Drawing.Size(213, 36);
@@ -174,10 +177,10 @@ namespace sistemaAlertrem
             // 
             // btnCaracteristica
             // 
-            this.btnCaracteristica.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCaracteristica.Location = new System.Drawing.Point(295, 322);
+            this.btnCaracteristica.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCaracteristica.Location = new System.Drawing.Point(296, 311);
             this.btnCaracteristica.Name = "btnCaracteristica";
-            this.btnCaracteristica.Size = new System.Drawing.Size(253, 36);
+            this.btnCaracteristica.Size = new System.Drawing.Size(253, 63);
             this.btnCaracteristica.TabIndex = 9;
             this.btnCaracteristica.Text = "Cadastrar Características";
             this.btnCaracteristica.UseVisualStyleBackColor = true;
@@ -185,7 +188,7 @@ namespace sistemaAlertrem
             // 
             // btnSair
             // 
-            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
             this.btnSair.Location = new System.Drawing.Point(625, 322);
             this.btnSair.Name = "btnSair";
@@ -209,6 +212,7 @@ namespace sistemaAlertrem
             this.Name = "frmEstacao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estação";
+            this.Load += new System.EventHandler(this.frmEstacao_Load);
             this.gpbPesquisaEstacao.ResumeLayout(false);
             this.gpbPesquisaEstacao.PerformLayout();
             this.ResumeLayout(false);

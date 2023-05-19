@@ -47,19 +47,20 @@ namespace sistemaAlertrem
             // 
             // gpbMenu
             // 
-            this.gpbMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(200)))), ((int)(((byte)(120)))));
-            this.gpbMenu.Location = new System.Drawing.Point(-6, -1);
+            this.gpbMenu.BackColor = System.Drawing.Color.White;
+            this.gpbMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbMenu.Location = new System.Drawing.Point(6, 10);
             this.gpbMenu.Name = "gpbMenu";
             this.gpbMenu.Size = new System.Drawing.Size(820, 56);
             this.gpbMenu.TabIndex = 10;
             this.gpbMenu.TabStop = false;
-            this.gpbMenu.Text = "Menu";
+            this.gpbMenu.Text = "&Menu";
             // 
             // btnVoltar2
             // 
             this.btnVoltar2.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar2.Image")));
             this.btnVoltar2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnVoltar2.Location = new System.Drawing.Point(726, 411);
+            this.btnVoltar2.Location = new System.Drawing.Point(726, 402);
             this.btnVoltar2.Name = "btnVoltar2";
             this.btnVoltar2.Size = new System.Drawing.Size(102, 81);
             this.btnVoltar2.TabIndex = 11;
@@ -80,6 +81,7 @@ namespace sistemaAlertrem
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmResultadoPesquisa";
             this.Text = "Alertrem";
+            this.Load += new System.EventHandler(this.FrmResultadoPesquisa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGrDados)).EndInit();
             this.ResumeLayout(false);
 

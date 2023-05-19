@@ -9,11 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using Bcrypt = BCrypt.Net.BCrypt;
+using System.Runtime.InteropServices;
 
 namespace sistemaAlertrem
 {
     public partial class frmCadastroFunc : Form
     {
+        const int MF_BYCOMMAND = 0X400;
+        [DllImport("user32")]
+        static extern int RemoveMenu(IntPtr hMenu, int nPosition, int wFlags);
+        [DllImport("user32")]
+        static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
+        [DllImport("user32")]
+        static extern int GetMenuItemCount(IntPtr hWnd);
         public frmCadastroFunc()
         {
             InitializeComponent();
@@ -23,12 +31,13 @@ namespace sistemaAlertrem
         {
             if (txtNomeFunc.Text == "" || txtUsu.Text == "" || txtSenha.Text == "")
             {
-                MessageBox.Show("Favor preencher todos os campos");
+                MessageBox.Show("Por Favor Preencher Todos os Campos");
                 return false;
             }
             return true;
         }
 
+        
 
 
         public void CadastrarUsuarios()
@@ -90,6 +99,18 @@ namespace sistemaAlertrem
 
             }
             txtNomeFunc.Focus();
+        }
+
+        private void txtNomeFunc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmCadastroFunc_Load(object sender, EventArgs e)
+        {
+            IntPtr hMenu = GetSystemMenu(this.Handle, false);
+            int MenuCount = GetMenuItemCount(hMenu) - 1;
+            RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
         }
     }
 }

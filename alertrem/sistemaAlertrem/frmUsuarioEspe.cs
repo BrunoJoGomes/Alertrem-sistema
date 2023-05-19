@@ -8,11 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Runtime.InteropServices;
 
 namespace sistemaAlertrem
 {
     public partial class frmUsuarioEspe : Form
     {
+        const int MF_BYCOMMAND = 0X400;
+        [DllImport("user32")]
+        static extern int RemoveMenu(IntPtr hMenu, int nPosition, int wFlags);
+        [DllImport("user32")]
+        static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
+        [DllImport("user32")]
+        static extern int GetMenuItemCount(IntPtr hWnd);
         public frmUsuarioEspe(int cod_usuario)
         {
             InitializeComponent();
@@ -51,13 +59,16 @@ namespace sistemaAlertrem
             DR.Read();
             lblNome.Text = DR.GetString(1);
             lblEmail.Text = DR.GetString(4);
-            lblCPF.Text = DR.GetString(5);
-            lblDataCadastro.Text = DR.GetString(7);
+            string cpf = DR.GetString(5);
+            lblCPF.Text = cpf;
+            lblDataCadastro.Text = DR.GetString(7).Split()[0];
         }
 
         public void carregaGrid(int id)
         {
-            string commandString = $"select * from tb_reclamacoes where cod_usu = {id}";
+            string commandString = $"select codigo as 'Código', data_hora as 'Data e hora do comentário', tipo as 'Tipo', descricao as 'Descrição', " +
+                $"motivo as 'Motivo', numero_carro as 'Número do carro', cod_estacao as 'Código da estação'" +
+                $" from tb_reclamacoes where cod_usu = {id}";
 
             MySqlCommand comm = new MySqlCommand
             {
@@ -75,7 +86,7 @@ namespace sistemaAlertrem
 
             dgvcomentUsuEsp.DataSource = tabela;
 
-            dgvcomentUsuEsp.Columns["descricao"].Width = 300;
+            dgvcomentUsuEsp.Columns["Descrição"].Width = 300;
 
             DataGridViewButtonColumn btnExcluir = new DataGridViewButtonColumn();
             btnExcluir.Name = "Excluir";
@@ -107,11 +118,11 @@ namespace sistemaAlertrem
             int res = comm.ExecuteNonQuery();
             if (res == 1)
             {
-                MessageBox.Show("Registro Excluido com Sucesso!", "Mensagem do Sistema", MessageBoxButtons.OK);
+                MessageBox.Show("Registro excluido com sucesso!", "Aviso do Sistema", MessageBoxButtons.OK);
             }
             else
             {
-                MessageBox.Show("Erro ao excluir o registro", "Mensagem do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao excluir o registro", "Aviso do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             Conexao.fecharConexao();
@@ -142,6 +153,19 @@ namespace sistemaAlertrem
         {
             FrmResultadoPesquisa abrir = new FrmResultadoPesquisa();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmResultadoPesquisa abrir = new FrmResultadoPesquisa();
+            this.Hide();
+        }
+
+        private void frmUsuarioEspe_Load(object sender, EventArgs e)
+        {
+            IntPtr hMenu = GetSystemMenu(this.Handle, false);
+            int MenuCount = GetMenuItemCount(hMenu) - 1;
+            RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
         }
     }
 }

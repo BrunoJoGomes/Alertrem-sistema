@@ -40,17 +40,20 @@ namespace sistemaAlertrem
             this.lblCPF = new System.Windows.Forms.Label();
             this.lblCampoCPF = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
-            this.btnVoltar2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvcomentUsuEsp)).BeginInit();
             this.gpbDadosUsuario.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvcomentUsuEsp
             // 
+            this.dgvcomentUsuEsp.AllowUserToAddRows = false;
+            this.dgvcomentUsuEsp.AllowUserToDeleteRows = false;
             this.dgvcomentUsuEsp.BackgroundColor = System.Drawing.SystemColors.ControlDark;
             this.dgvcomentUsuEsp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvcomentUsuEsp.Location = new System.Drawing.Point(12, 218);
+            this.dgvcomentUsuEsp.Location = new System.Drawing.Point(12, 172);
             this.dgvcomentUsuEsp.Name = "dgvcomentUsuEsp";
+            this.dgvcomentUsuEsp.ReadOnly = true;
             this.dgvcomentUsuEsp.Size = new System.Drawing.Size(916, 237);
             this.dgvcomentUsuEsp.TabIndex = 1;
             this.dgvcomentUsuEsp.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcomentUsuEsp_CellClick);
@@ -58,12 +61,12 @@ namespace sistemaAlertrem
             // lblCampoNome
             // 
             this.lblCampoNome.AutoSize = true;
-            this.lblCampoNome.Font = new System.Drawing.Font("Museo 700", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCampoNome.Location = new System.Drawing.Point(23, 22);
+            this.lblCampoNome.Font = new System.Drawing.Font("Museo 700", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCampoNome.Location = new System.Drawing.Point(20, 32);
             this.lblCampoNome.Name = "lblCampoNome";
-            this.lblCampoNome.Size = new System.Drawing.Size(60, 19);
+            this.lblCampoNome.Size = new System.Drawing.Size(101, 32);
             this.lblCampoNome.TabIndex = 3;
-            this.lblCampoNome.Text = "Nome:";
+            this.lblCampoNome.Text = "&Nome:";
             // 
             // gpbDadosUsuario
             // 
@@ -76,20 +79,20 @@ namespace sistemaAlertrem
             this.gpbDadosUsuario.Controls.Add(this.lblCampoCPF);
             this.gpbDadosUsuario.Controls.Add(this.lblNome);
             this.gpbDadosUsuario.Controls.Add(this.lblCampoNome);
-            this.gpbDadosUsuario.Font = new System.Drawing.Font("Museo 700", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbDadosUsuario.Location = new System.Drawing.Point(12, 97);
+            this.gpbDadosUsuario.Font = new System.Drawing.Font("Museo 700", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbDadosUsuario.Location = new System.Drawing.Point(12, 34);
             this.gpbDadosUsuario.Name = "gpbDadosUsuario";
             this.gpbDadosUsuario.Size = new System.Drawing.Size(916, 100);
             this.gpbDadosUsuario.TabIndex = 0;
             this.gpbDadosUsuario.TabStop = false;
-            this.gpbDadosUsuario.Text = "Dados do usuário";
+            this.gpbDadosUsuario.Text = "&Dados do usuário";
             // 
             // lblDataCadastro
             // 
             this.lblDataCadastro.AutoSize = true;
             this.lblDataCadastro.Location = new System.Drawing.Point(703, 66);
             this.lblDataCadastro.Name = "lblDataCadastro";
-            this.lblDataCadastro.Size = new System.Drawing.Size(0, 19);
+            this.lblDataCadastro.Size = new System.Drawing.Size(0, 32);
             this.lblDataCadastro.TabIndex = 10;
             // 
             // lblCampoDataCadastro
@@ -97,16 +100,16 @@ namespace sistemaAlertrem
             this.lblCampoDataCadastro.AutoSize = true;
             this.lblCampoDataCadastro.Location = new System.Drawing.Point(542, 66);
             this.lblCampoDataCadastro.Name = "lblCampoDataCadastro";
-            this.lblCampoDataCadastro.Size = new System.Drawing.Size(149, 19);
+            this.lblCampoDataCadastro.Size = new System.Drawing.Size(247, 32);
             this.lblCampoDataCadastro.TabIndex = 9;
-            this.lblCampoDataCadastro.Text = "Data de Cadastro: ";
+            this.lblCampoDataCadastro.Text = "&Data de cadastro: ";
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Location = new System.Drawing.Point(83, 66);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(0, 19);
+            this.lblEmail.Size = new System.Drawing.Size(0, 32);
             this.lblEmail.TabIndex = 8;
             // 
             // lblCampoEmail
@@ -114,16 +117,16 @@ namespace sistemaAlertrem
             this.lblCampoEmail.AutoSize = true;
             this.lblCampoEmail.Location = new System.Drawing.Point(20, 66);
             this.lblCampoEmail.Name = "lblCampoEmail";
-            this.lblCampoEmail.Size = new System.Drawing.Size(61, 19);
+            this.lblCampoEmail.Size = new System.Drawing.Size(114, 32);
             this.lblCampoEmail.TabIndex = 7;
-            this.lblCampoEmail.Text = "Email: ";
+            this.lblCampoEmail.Text = "&E-mail: ";
             // 
             // lblCPF
             // 
             this.lblCPF.AutoSize = true;
             this.lblCPF.Location = new System.Drawing.Point(356, 66);
             this.lblCPF.Name = "lblCPF";
-            this.lblCPF.Size = new System.Drawing.Size(0, 19);
+            this.lblCPF.Size = new System.Drawing.Size(0, 32);
             this.lblCPF.TabIndex = 6;
             // 
             // lblCampoCPF
@@ -131,9 +134,9 @@ namespace sistemaAlertrem
             this.lblCampoCPF.AutoSize = true;
             this.lblCampoCPF.Location = new System.Drawing.Point(308, 66);
             this.lblCampoCPF.Name = "lblCampoCPF";
-            this.lblCampoCPF.Size = new System.Drawing.Size(43, 19);
+            this.lblCampoCPF.Size = new System.Drawing.Size(72, 32);
             this.lblCampoCPF.TabIndex = 5;
-            this.lblCampoCPF.Text = "CPF:";
+            this.lblCampoCPF.Text = "&CPF:";
             // 
             // lblNome
             // 
@@ -144,27 +147,24 @@ namespace sistemaAlertrem
             this.lblNome.Size = new System.Drawing.Size(0, 20);
             this.lblNome.TabIndex = 4;
             // 
-            // btnVoltar2
+            // button1
             // 
-            this.btnVoltar2.Font = new System.Drawing.Font("Museo 700", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar2.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar2.Image")));
-            this.btnVoltar2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnVoltar2.Location = new System.Drawing.Point(826, 461);
-            this.btnVoltar2.Name = "btnVoltar2";
-            this.btnVoltar2.Size = new System.Drawing.Size(102, 81);
-            this.btnVoltar2.TabIndex = 2;
-            this.btnVoltar2.Text = "&Voltar";
-            this.btnVoltar2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnVoltar2.UseVisualStyleBackColor = true;
-            this.btnVoltar2.Click += new System.EventHandler(this.btnVoltar2_Click);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(808, 442);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 63);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmUsuarioEspe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(940, 546);
-            this.Controls.Add(this.btnVoltar2);
+            this.ClientSize = new System.Drawing.Size(940, 529);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.gpbDadosUsuario);
             this.Controls.Add(this.dgvcomentUsuEsp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -172,7 +172,8 @@ namespace sistemaAlertrem
             this.MaximizeBox = false;
             this.Name = "frmUsuarioEspe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Usuários";
+            this.Text = "Usuário";
+            this.Load += new System.EventHandler(this.frmUsuarioEspe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvcomentUsuEsp)).EndInit();
             this.gpbDadosUsuario.ResumeLayout(false);
             this.gpbDadosUsuario.PerformLayout();
@@ -192,6 +193,6 @@ namespace sistemaAlertrem
         private System.Windows.Forms.Label lblCampoEmail;
         private System.Windows.Forms.Label lblDataCadastro;
         private System.Windows.Forms.Label lblCampoDataCadastro;
-        private System.Windows.Forms.Button btnVoltar2;
+        private System.Windows.Forms.Button button1;
     }
 }
