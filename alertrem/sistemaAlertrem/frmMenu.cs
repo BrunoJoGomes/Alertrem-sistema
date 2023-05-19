@@ -90,5 +90,10 @@ namespace sistemaAlertrem
             funcionarios.Show();
             this.Hide();
         }
+
+        private void gpbMenu_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
