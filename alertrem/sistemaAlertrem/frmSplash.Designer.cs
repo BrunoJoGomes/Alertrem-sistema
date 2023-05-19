@@ -75,7 +75,7 @@ namespace sistemaAlertrem
             this.lblLoading.Name = "lblLoading";
             this.lblLoading.Size = new System.Drawing.Size(135, 23);
             this.lblLoading.TabIndex = 3;
-            this.lblLoading.Text = "Carregando...";
+            this.lblLoading.Text = "&Carregando...";
             // 
             // tmrTime
             // 
@@ -97,6 +97,7 @@ namespace sistemaAlertrem
             this.Name = "frmSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AlerTrem";
+            this.Load += new System.EventHandler(this.frmSplash_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctIcone)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

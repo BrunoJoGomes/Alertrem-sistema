@@ -58,7 +58,7 @@ namespace sistemaAlertrem
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(97, 25);
             this.lblUsuario.TabIndex = 2;
-            this.lblUsuario.Text = "Usuário:";
+            this.lblUsuario.Text = "&Usuário:";
             // 
             // lblSenha
             // 
@@ -68,7 +68,7 @@ namespace sistemaAlertrem
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(81, 25);
             this.lblSenha.TabIndex = 3;
-            this.lblSenha.Text = "Senha:";
+            this.lblSenha.Text = "&Senha:";
             // 
             // txtUsuario
             // 

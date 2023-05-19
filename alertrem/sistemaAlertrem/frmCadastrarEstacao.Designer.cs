@@ -59,28 +59,28 @@ namespace sistemaAlertrem
             this.gpbEstacao.Size = new System.Drawing.Size(723, 247);
             this.gpbEstacao.TabIndex = 0;
             this.gpbEstacao.TabStop = false;
-            this.gpbEstacao.Text = "Dados sobre a estação";
+            this.gpbEstacao.Text = "&Dados sobre a estação";
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(317, 47);
+            this.txtNome.Location = new System.Drawing.Point(319, 47);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(395, 29);
+            this.txtNome.Size = new System.Drawing.Size(393, 29);
             this.txtNome.TabIndex = 1;
             this.txtNome.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNome_KeyDown);
             // 
             // txtLocalizacao
             // 
-            this.txtLocalizacao.Location = new System.Drawing.Point(138, 102);
+            this.txtLocalizacao.Location = new System.Drawing.Point(166, 102);
             this.txtLocalizacao.Multiline = true;
             this.txtLocalizacao.Name = "txtLocalizacao";
-            this.txtLocalizacao.Size = new System.Drawing.Size(574, 62);
+            this.txtLocalizacao.Size = new System.Drawing.Size(546, 62);
             this.txtLocalizacao.TabIndex = 2;
             this.txtLocalizacao.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLocalizacao_KeyDown);
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(95, 47);
+            this.txtCodigo.Location = new System.Drawing.Point(101, 46);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(101, 29);
             this.txtCodigo.TabIndex = 0;
@@ -89,29 +89,32 @@ namespace sistemaAlertrem
             // lblNome
             // 
             this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.Location = new System.Drawing.Point(239, 50);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(67, 24);
+            this.lblNome.Size = new System.Drawing.Size(74, 25);
             this.lblNome.TabIndex = 4;
-            this.lblNome.Text = "Nome:";
+            this.lblNome.Text = "&Nome:";
             // 
             // lblLocalizacao
             // 
             this.lblLocalizacao.AutoSize = true;
+            this.lblLocalizacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLocalizacao.Location = new System.Drawing.Point(6, 117);
             this.lblLocalizacao.Name = "lblLocalizacao";
-            this.lblLocalizacao.Size = new System.Drawing.Size(114, 24);
+            this.lblLocalizacao.Size = new System.Drawing.Size(133, 25);
             this.lblLocalizacao.TabIndex = 3;
-            this.lblLocalizacao.Text = "Localização:";
+            this.lblLocalizacao.Text = "&Localização:";
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigo.Location = new System.Drawing.Point(6, 47);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(76, 24);
+            this.lblCodigo.Size = new System.Drawing.Size(86, 25);
             this.lblCodigo.TabIndex = 2;
-            this.lblCodigo.Text = "Código:";
+            this.lblCodigo.Text = "&Código:";
             // 
             // btnCadastrar
             // 
@@ -119,7 +122,7 @@ namespace sistemaAlertrem
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(142, 40);
             this.btnCadastrar.TabIndex = 4;
-            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.Text = "&Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
@@ -129,7 +132,7 @@ namespace sistemaAlertrem
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(142, 40);
             this.btnLimpar.TabIndex = 3;
-            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.Text = "&Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
@@ -158,6 +161,7 @@ namespace sistemaAlertrem
             this.Name = "frmCadastrarEstacao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrar estaçao";
+            this.Load += new System.EventHandler(this.frmCadastrarEstacao_Load);
             this.gpbEstacao.ResumeLayout(false);
             this.gpbEstacao.PerformLayout();
             this.ResumeLayout(false);
