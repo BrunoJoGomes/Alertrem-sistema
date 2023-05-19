@@ -73,7 +73,7 @@ namespace sistemaAlertrem
             this.cbbEstacao.FormattingEnabled = true;
             this.cbbEstacao.Location = new System.Drawing.Point(26, 42);
             this.cbbEstacao.Name = "cbbEstacao";
-            this.cbbEstacao.Size = new System.Drawing.Size(452, 33);
+            this.cbbEstacao.Size = new System.Drawing.Size(493, 33);
             this.cbbEstacao.TabIndex = 1;
             this.cbbEstacao.Text = "Selecione";
             this.cbbEstacao.SelectedValueChanged += new System.EventHandler(this.cbbEstacao_SelectedValueChanged);
@@ -92,7 +92,7 @@ namespace sistemaAlertrem
             this.txtNome.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtNome.Location = new System.Drawing.Point(108, 151);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(382, 31);
+            this.txtNome.Size = new System.Drawing.Size(411, 31);
             this.txtNome.TabIndex = 3;
             this.txtNome.TextChanged += new System.EventHandler(this.cbbEstacao_SelectedValueChanged);
             // 
@@ -102,7 +102,7 @@ namespace sistemaAlertrem
             this.txtCodigo.Enabled = false;
             this.txtCodigo.Location = new System.Drawing.Point(122, 103);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(382, 31);
+            this.txtCodigo.Size = new System.Drawing.Size(397, 31);
             this.txtCodigo.TabIndex = 2;
             // 
             // lblLocalizacao
@@ -176,9 +176,9 @@ namespace sistemaAlertrem
             // btnCaracteristica
             // 
             this.btnCaracteristica.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCaracteristica.Location = new System.Drawing.Point(295, 322);
+            this.btnCaracteristica.Location = new System.Drawing.Point(296, 311);
             this.btnCaracteristica.Name = "btnCaracteristica";
-            this.btnCaracteristica.Size = new System.Drawing.Size(253, 36);
+            this.btnCaracteristica.Size = new System.Drawing.Size(253, 63);
             this.btnCaracteristica.TabIndex = 9;
             this.btnCaracteristica.Text = "Cadastrar Características";
             this.btnCaracteristica.UseVisualStyleBackColor = true;

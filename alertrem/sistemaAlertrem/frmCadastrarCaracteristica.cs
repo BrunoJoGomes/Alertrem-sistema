@@ -18,6 +18,7 @@ namespace sistemaAlertrem
             InitializeComponent();
             carregaComboEstacao();
             carregaComboValores();
+            carregaComboCaracteristicas();
         }
 
         public MySqlDataReader select(string campo, string tabela, string where = "")
@@ -72,6 +73,19 @@ namespace sistemaAlertrem
             {
                 cbbEstadoOperacional.Items.Add(DR.GetString(0));
             }
+            cbbEstadoOperacional.Items.Add("Outro");
+            Conexao.fecharConexao();
+        }
+
+        public void carregaComboCaracteristicas()
+        {
+            MySqlDataReader DR = select("nome", "tb_caracteristicas");
+
+            while (DR.Read())
+            {
+                cbbCaracteristica.Items.Add(DR.GetString(0));
+            }
+            cbbCaracteristica.Items.Add("Outra");
             Conexao.fecharConexao();
         }
 
@@ -178,7 +192,7 @@ namespace sistemaAlertrem
             cbbCaracteristica.Text = "Selecione";
             cbbEstadoOperacional.Text = "Selecione";
 
-            MySqlDataReader DR = select("*", "tb_caracteristicas", $"cod_estacao = {lblCodigo.Text}");
+            MySqlDataReader DR = select("*", "tb_estacao_caracteristica_estado_operacional", $"cod_estacao = {lblCodigo.Text}");
             while (DR.Read())
             {
                 MySqlDataReader DR_estado = select("estado", "tb_estados_operacionais", $"codigo = '{DR.GetString(2)}'");
@@ -367,6 +381,40 @@ namespace sistemaAlertrem
         private void btnRemoveTodos_Click(object sender, EventArgs e)
         {
             deletaCaracteristica(true);
+        }
+
+        private void cbbCaracteristica_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbbCaracteristica.SelectedItem.ToString() == "Outra")
+            {
+                lblOutraCaracteristica.Visible = true;
+                txtOutraCaracteristica.Visible = true;
+                btnAtualizar.Enabled = false;
+                txtOutraCaracteristica.Focus();
+            }
+            else
+            {
+                lblOutraCaracteristica.Visible = false;
+                txtOutraCaracteristica.Visible = false;
+                btnAtualizar.Enabled = true;
+            }
+        }
+
+        private void cbbEstadoOperacional_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbbEstadoOperacional.SelectedItem.ToString() == "Outro")
+            {
+                lblOutroEstado.Visible = true;
+                txtOutroEstadoOperacional.Visible = true;
+                btnAtualizar.Enabled = false;
+                txtOutroEstadoOperacional.Focus();
+            }
+            else
+            {
+                lblOutroEstado.Visible = false;
+                txtOutroEstadoOperacional.Visible = false;
+                btnAtualizar.Enabled = true;
+            }
         }
     }
 }

@@ -54,6 +54,10 @@ namespace sistemaAlertrem
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnRemover = new System.Windows.Forms.Button();
             this.btnRemoverTodos = new System.Windows.Forms.Button();
+            this.lblOutraCaracteristica = new System.Windows.Forms.Label();
+            this.txtOutraCaracteristica = new System.Windows.Forms.TextBox();
+            this.lblOutroEstado = new System.Windows.Forms.Label();
+            this.txtOutroEstadoOperacional = new System.Windows.Forms.TextBox();
             this.gpbInfoEstacao.SuspendLayout();
             this.gpbCaracteristicas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCaracteristicas)).BeginInit();
@@ -149,6 +153,10 @@ namespace sistemaAlertrem
             // 
             // gpbCaracteristicas
             // 
+            this.gpbCaracteristicas.Controls.Add(this.txtOutroEstadoOperacional);
+            this.gpbCaracteristicas.Controls.Add(this.lblOutroEstado);
+            this.gpbCaracteristicas.Controls.Add(this.txtOutraCaracteristica);
+            this.gpbCaracteristicas.Controls.Add(this.lblOutraCaracteristica);
             this.gpbCaracteristicas.Controls.Add(this.cbbEstadoOperacional);
             this.gpbCaracteristicas.Controls.Add(this.cbbCaracteristica);
             this.gpbCaracteristicas.Controls.Add(this.lblEstado);
@@ -156,7 +164,7 @@ namespace sistemaAlertrem
             this.gpbCaracteristicas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpbCaracteristicas.Location = new System.Drawing.Point(10, 309);
             this.gpbCaracteristicas.Name = "gpbCaracteristicas";
-            this.gpbCaracteristicas.Size = new System.Drawing.Size(576, 130);
+            this.gpbCaracteristicas.Size = new System.Drawing.Size(683, 221);
             this.gpbCaracteristicas.TabIndex = 1;
             this.gpbCaracteristicas.TabStop = false;
             this.gpbCaracteristicas.Text = "Características";
@@ -164,11 +172,12 @@ namespace sistemaAlertrem
             // cbbEstadoOperacional
             // 
             this.cbbEstadoOperacional.FormattingEnabled = true;
-            this.cbbEstadoOperacional.Location = new System.Drawing.Point(346, 81);
+            this.cbbEstadoOperacional.Location = new System.Drawing.Point(344, 131);
             this.cbbEstadoOperacional.Name = "cbbEstadoOperacional";
-            this.cbbEstadoOperacional.Size = new System.Drawing.Size(224, 33);
+            this.cbbEstadoOperacional.Size = new System.Drawing.Size(322, 33);
             this.cbbEstadoOperacional.TabIndex = 3;
             this.cbbEstadoOperacional.Text = "Selecione";
+            this.cbbEstadoOperacional.SelectedIndexChanged += new System.EventHandler(this.cbbEstadoOperacional_SelectedIndexChanged);
             // 
             // cbbCaracteristica
             // 
@@ -195,18 +204,20 @@ namespace sistemaAlertrem
             "Transferencia_gratuita_cptm_metro",
             "Acessorios",
             "Farmacia",
-            "Rota_acesssvel",
-            "Achados_e_perdidos"});
+            "Rota_acessivel",
+            "Achados_e_perdidos",
+            "Outra"});
             this.cbbCaracteristica.Location = new System.Drawing.Point(324, 45);
             this.cbbCaracteristica.Name = "cbbCaracteristica";
-            this.cbbCaracteristica.Size = new System.Drawing.Size(246, 33);
+            this.cbbCaracteristica.Size = new System.Drawing.Size(344, 33);
             this.cbbCaracteristica.TabIndex = 2;
             this.cbbCaracteristica.Text = "Selecione";
+            this.cbbCaracteristica.SelectedIndexChanged += new System.EventHandler(this.cbbCaracteristica_SelectedIndexChanged);
             // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(-1, 84);
+            this.lblEstado.Location = new System.Drawing.Point(-3, 134);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(320, 25);
             this.lblEstado.TabIndex = 1;
@@ -264,7 +275,7 @@ namespace sistemaAlertrem
             // btnAdicionar
             // 
             this.btnAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdicionar.Location = new System.Drawing.Point(610, 331);
+            this.btnAdicionar.Location = new System.Drawing.Point(776, 507);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(138, 46);
             this.btnAdicionar.TabIndex = 4;
@@ -275,9 +286,9 @@ namespace sistemaAlertrem
             // btnAtualizar
             // 
             this.btnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtualizar.Location = new System.Drawing.Point(610, 383);
+            this.btnAtualizar.Location = new System.Drawing.Point(776, 559);
             this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(138, 46);
+            this.btnAtualizar.Size = new System.Drawing.Size(138, 60);
             this.btnAtualizar.TabIndex = 5;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
@@ -297,7 +308,7 @@ namespace sistemaAlertrem
             // btnRemover
             // 
             this.btnRemover.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemover.Location = new System.Drawing.Point(771, 331);
+            this.btnRemover.Location = new System.Drawing.Point(937, 507);
             this.btnRemover.Name = "btnRemover";
             this.btnRemover.Size = new System.Drawing.Size(138, 46);
             this.btnRemover.TabIndex = 6;
@@ -308,19 +319,55 @@ namespace sistemaAlertrem
             // btnRemoverTodos
             // 
             this.btnRemoverTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoverTodos.Location = new System.Drawing.Point(771, 383);
+            this.btnRemoverTodos.Location = new System.Drawing.Point(937, 559);
             this.btnRemoverTodos.Name = "btnRemoverTodos";
-            this.btnRemoverTodos.Size = new System.Drawing.Size(138, 46);
+            this.btnRemoverTodos.Size = new System.Drawing.Size(138, 60);
             this.btnRemoverTodos.TabIndex = 7;
             this.btnRemoverTodos.Text = "Remover todos";
             this.btnRemoverTodos.UseVisualStyleBackColor = true;
             this.btnRemoverTodos.Click += new System.EventHandler(this.btnRemoveTodos_Click);
             // 
+            // lblOutraCaracteristica
+            // 
+            this.lblOutraCaracteristica.AutoSize = true;
+            this.lblOutraCaracteristica.Location = new System.Drawing.Point(-1, 91);
+            this.lblOutraCaracteristica.Name = "lblOutraCaracteristica";
+            this.lblOutraCaracteristica.Size = new System.Drawing.Size(222, 25);
+            this.lblOutraCaracteristica.TabIndex = 4;
+            this.lblOutraCaracteristica.Text = "Insira a característica:";
+            this.lblOutraCaracteristica.Visible = false;
+            // 
+            // txtOutraCaracteristica
+            // 
+            this.txtOutraCaracteristica.Location = new System.Drawing.Point(262, 91);
+            this.txtOutraCaracteristica.Name = "txtOutraCaracteristica";
+            this.txtOutraCaracteristica.Size = new System.Drawing.Size(404, 31);
+            this.txtOutraCaracteristica.TabIndex = 5;
+            this.txtOutraCaracteristica.Visible = false;
+            // 
+            // lblOutroEstado
+            // 
+            this.lblOutroEstado.AutoSize = true;
+            this.lblOutroEstado.Location = new System.Drawing.Point(-1, 179);
+            this.lblOutroEstado.Name = "lblOutroEstado";
+            this.lblOutroEstado.Size = new System.Drawing.Size(214, 25);
+            this.lblOutroEstado.TabIndex = 6;
+            this.lblOutroEstado.Text = "Insira o outro estado:";
+            this.lblOutroEstado.Visible = false;
+            // 
+            // txtOutroEstadoOperacional
+            // 
+            this.txtOutroEstadoOperacional.Location = new System.Drawing.Point(262, 176);
+            this.txtOutroEstadoOperacional.Name = "txtOutroEstadoOperacional";
+            this.txtOutroEstadoOperacional.Size = new System.Drawing.Size(404, 31);
+            this.txtOutroEstadoOperacional.TabIndex = 7;
+            this.txtOutroEstadoOperacional.Visible = false;
+            // 
             // frmCadastrarCaracteristica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1081, 451);
+            this.ClientSize = new System.Drawing.Size(1081, 627);
             this.Controls.Add(this.btnRemoverTodos);
             this.Controls.Add(this.btnRemover);
             this.Controls.Add(this.btnVoltar);
@@ -371,5 +418,9 @@ namespace sistemaAlertrem
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnRemover;
         private System.Windows.Forms.Button btnRemoverTodos;
+        private System.Windows.Forms.TextBox txtOutroEstadoOperacional;
+        private System.Windows.Forms.Label lblOutroEstado;
+        private System.Windows.Forms.TextBox txtOutraCaracteristica;
+        private System.Windows.Forms.Label lblOutraCaracteristica;
     }
 }
