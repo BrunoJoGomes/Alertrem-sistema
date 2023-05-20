@@ -9,11 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using Bcrypt = BCrypt.Net.BCrypt;
+using System.Runtime.InteropServices;
 
 namespace sistemaAlertrem
 {
     public partial class frmLogin : Form
     {
+        const int MF_BYCOMMAND = 0X400;
+        [DllImport("user32")]
+        static extern int RemoveMenu(IntPtr hMenu, int nPosition, int wFlags);
+        [DllImport("user32")]
+        static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
+        [DllImport("user32")]
+        static extern int GetMenuItemCount(IntPtr hWnd);
         public frmLogin()
         {
             InitializeComponent();
@@ -56,7 +64,7 @@ namespace sistemaAlertrem
             {
                 if (DR.GetString(4) == Bcrypt.HashPassword(senha, DR.GetString(3) ))
                 {
-                    frmMenu abrir = new frmMenu();
+                    frmMenu abrir = new frmMenu(); //  mandar usuário que está autenticado.
                     abrir.Show();
                     this.Hide();
                 }
@@ -93,6 +101,29 @@ namespace sistemaAlertrem
             {
                 Application.Exit();
             }
+        }
+
+        private void txtUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtSenha.Focus();
+            }
+        }
+
+        private void txtSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnEntrar.Focus();
+            }
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            IntPtr hMenu = GetSystemMenu(this.Handle, false);
+            int MenuCount = GetMenuItemCount(hMenu) - 1;
+            RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
         }
     }
 }

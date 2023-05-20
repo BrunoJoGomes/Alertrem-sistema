@@ -11,21 +11,22 @@ using System.Runtime.InteropServices;
 using MySql.Data.MySqlClient;
 
 
+
 namespace sistemaAlertrem
 {
     public partial class frmPesquisaUsuarios : Form
     {
+        const int MF_BYCOMMAND = 0X400;
+        [DllImport("user32")]
+        static extern int RemoveMenu(IntPtr hMenu, int nPosition, int wFlags);
+        [DllImport("user32")]
+        static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
+        [DllImport("user32")]
+        static extern int GetMenuItemCount(IntPtr hWnd);
         Dictionary<string, int> usuarios = new Dictionary<string, int>();
         public frmPesquisaUsuarios()
         {
             InitializeComponent();
-        }
-
-        private void btnVoltar_Click(object sender, EventArgs e)
-        {
-            frmMenu abrir = new frmMenu();
-            abrir.Show();
-            this.Hide();
         }
 
         private void btnPesquisar_Click_1(object sender, EventArgs e)
@@ -39,7 +40,7 @@ namespace sistemaAlertrem
 
         public void carregaDados(string nome)
         {
-            string commandString = $"select * from tb_usuarios where nome like '%{nome}%'";
+            string commandString = $"select * from tb_perfis where nome like '%{nome}%'";
 
             MySqlCommand comm = new MySqlCommand
             {
@@ -72,6 +73,30 @@ namespace sistemaAlertrem
             int id = usuarios[ltbUsuarios.SelectedItem.ToString()];
             frmUsuarioEspe abrir = new frmUsuarioEspe(id);
             abrir.ShowDialog();
+        }
+
+        private void btnVoltar2_Click(object sender, EventArgs e)
+        {
+            frmMenu abrir = new frmMenu();
+            abrir.Show();
+            this.Hide();
+        }
+
+        private void txtUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.Enter)
+            {
+                carregaDados(txtUsuario.Text);
+            }
+            
+        }
+
+        private void frmPesquisaUsuarios_Load(object sender, EventArgs e)
+        {
+            IntPtr hMenu = GetSystemMenu(this.Handle, false);
+            int MenuCount = GetMenuItemCount(hMenu) - 1;
+            RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
         }
     }
 }

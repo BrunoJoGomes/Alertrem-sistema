@@ -8,11 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Runtime.InteropServices;
 
 namespace sistemaAlertrem
 {
     public partial class frmComentarios : Form
     {
+        const int MF_BYCOMMAND = 0X400;
+        [DllImport("user32")]
+        static extern int RemoveMenu(IntPtr hMenu, int nPosition, int wFlags);
+        [DllImport("user32")]
+        static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
+        [DllImport("user32")]
+        static extern int GetMenuItemCount(IntPtr hWnd);
         public frmComentarios()
         {
             InitializeComponent();
@@ -27,7 +35,7 @@ namespace sistemaAlertrem
 
         public void carregaDados(int id = 0)
         {
-            string commandString = id != 0 ? $"select * from tb_comentarios where cod_usuario = {id}" : "select * from tb_reclamacoes";
+            string commandString = id != 0 ? $"select * from tb_reclamacoes where cod_usuario = {id}" : "select * from tb_reclamacoes";
 
             MySqlCommand comm = new MySqlCommand
             {
@@ -44,7 +52,7 @@ namespace sistemaAlertrem
 
             dgvComentarios.DataSource = tabela;
 
-            dgvComentarios.Columns["descricao"].Width = 300;
+            //dgvComentarios.Columns["descricao"].Width = 300;
 
             DataGridViewButtonColumn btnExcluir = new DataGridViewButtonColumn();
             btnExcluir.Name = "Excluir";
@@ -78,11 +86,11 @@ namespace sistemaAlertrem
             int res = comm.ExecuteNonQuery();
             if (res == 1)
             {
-                MessageBox.Show("Registro Excluido com Sucesso!", "Mensagem do Sistema", MessageBoxButtons.OK);
+                MessageBox.Show("Registro Excluido com Sucesso!", "Aviso do Sistema", MessageBoxButtons.OK);
             }
             else
             {
-                MessageBox.Show("Erro ao excluir o registro", "Mensagem do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao excluir o registro", "Aviso do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             Conexao.fecharConexao();
@@ -106,6 +114,25 @@ namespace sistemaAlertrem
                 }
 
             }
+        }
+
+        private void btnVoltar2_Click(object sender, EventArgs e)
+        {
+            frmMenu menu = new frmMenu();
+            menu.Show();
+            this.Hide();
+        }
+
+        private void gpbComentarios_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmComentarios_Load(object sender, EventArgs e)
+        {
+            IntPtr hMenu = GetSystemMenu(this.Handle, false);
+            int MenuCount = GetMenuItemCount(hMenu) - 1;
+            RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
         }
     }
 }

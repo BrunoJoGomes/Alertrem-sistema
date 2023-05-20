@@ -30,63 +30,66 @@ namespace sistemaAlertrem
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmResultadoPesquisa));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGrDados = new System.Windows.Forms.DataGridView();
-            this.btnVoltarPesq = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.gpbMenu = new System.Windows.Forms.GroupBox();
+            this.btnVoltar2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrDados)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.SpringGreen;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(799, 80);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // dataGrDados
             // 
             this.dataGrDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGrDados.Location = new System.Drawing.Point(2, 87);
+            this.dataGrDados.Location = new System.Drawing.Point(12, 103);
             this.dataGrDados.Name = "dataGrDados";
-            this.dataGrDados.Size = new System.Drawing.Size(776, 338);
+            this.dataGrDados.Size = new System.Drawing.Size(688, 389);
             this.dataGrDados.TabIndex = 1;
             this.dataGrDados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrDados_CellClick);
             // 
-            // btnVoltarPesq
+            // gpbMenu
             // 
-            this.btnVoltarPesq.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.btnVoltarPesq.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltarPesq.Image")));
-            this.btnVoltarPesq.Location = new System.Drawing.Point(665, 442);
-            this.btnVoltarPesq.Name = "btnVoltarPesq";
-            this.btnVoltarPesq.Size = new System.Drawing.Size(100, 50);
-            this.btnVoltarPesq.TabIndex = 2;
-            this.btnVoltarPesq.UseVisualStyleBackColor = false;
-            this.btnVoltarPesq.Click += new System.EventHandler(this.btnVoltarPesq_Click);
+            this.gpbMenu.BackColor = System.Drawing.Color.White;
+            this.gpbMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbMenu.Location = new System.Drawing.Point(6, 10);
+            this.gpbMenu.Name = "gpbMenu";
+            this.gpbMenu.Size = new System.Drawing.Size(820, 56);
+            this.gpbMenu.TabIndex = 10;
+            this.gpbMenu.TabStop = false;
+            this.gpbMenu.Text = "&Menu";
+            // 
+            // btnVoltar2
+            // 
+            this.btnVoltar2.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar2.Image")));
+            this.btnVoltar2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnVoltar2.Location = new System.Drawing.Point(726, 402);
+            this.btnVoltar2.Name = "btnVoltar2";
+            this.btnVoltar2.Size = new System.Drawing.Size(102, 81);
+            this.btnVoltar2.TabIndex = 11;
+            this.btnVoltar2.Text = "&Voltar";
+            this.btnVoltar2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnVoltar2.UseVisualStyleBackColor = true;
+            this.btnVoltar2.Click += new System.EventHandler(this.btnVoltar2_Click);
             // 
             // FrmResultadoPesquisa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 504);
-            this.Controls.Add(this.btnVoltarPesq);
+            this.ClientSize = new System.Drawing.Size(840, 504);
+            this.Controls.Add(this.btnVoltar2);
+            this.Controls.Add(this.gpbMenu);
             this.Controls.Add(this.dataGrDados);
-            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmResultadoPesquisa";
-            this.Text = "FrmResultadoPesquisa";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Text = "Alertrem";
+            this.Load += new System.EventHandler(this.FrmResultadoPesquisa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGrDados)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView dataGrDados;
-        private System.Windows.Forms.Button btnVoltarPesq;
+        private System.Windows.Forms.GroupBox gpbMenu;
+        private System.Windows.Forms.Button btnVoltar2;
     }
 }
