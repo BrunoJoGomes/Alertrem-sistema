@@ -55,7 +55,6 @@ C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlert
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmMenu.resources
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.FrmResultadoPesquisa.resources
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.Properties.Resources.resources
-C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.usuarios.resources
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.csproj.GenerateResource.cache
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.csproj.CoreCompileInputs.cache
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.csproj.CopyComplete
@@ -135,3 +134,6 @@ C:\Users\nathan.ssantos7\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\
 C:\Users\bruno.jogomes\Documents\Visual Studio 2019\Alertrem-sistema_\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmSplash.resources
 C:\Users\bruno.jogomes\Documents\Visual Studio 2019\Alertrem-sistema_\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmUsuarioEspe.resources
 C:\Users\bruno.jogomes\Documents\Visual Studio 2019\Alertrem-sistema_\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmPesquisaUsuarios.resources
+C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmSplash.resources
+C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmUsuarioEspe.resources
+C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmPesquisaUsuarios.resources
