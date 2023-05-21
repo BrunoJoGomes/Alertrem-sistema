@@ -37,7 +37,7 @@ namespace sistemaAlertrem
 
         public void carregaDados()
         {
-            string commandString = "select codigo as 'Código', nome as 'Nome', usuario as 'Usuário', data_cadastro as 'Data de criação' from tb_funcionarios";
+            string commandString = "select codigo as 'Código', nome as 'Nome', cpf as 'CPF', telefone as 'Telefone', data_cadastro as 'Data de cadastro' from tb_funcionarios";
 
             MySqlCommand comm = new MySqlCommand
             {
@@ -52,6 +52,7 @@ namespace sistemaAlertrem
             adapter.Fill(tabela);
             Conexao.fecharConexao();
 
+            dgvFuncionarios.Columns.Clear();
             dgvFuncionarios.DataSource = tabela;
 
             //dgvComentarios.Columns["descricao"].Width = 300;
@@ -88,7 +89,8 @@ namespace sistemaAlertrem
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             frmCadastroFunc cadastro = new frmCadastroFunc();
-            cadastro.ShowDialog();
+            DialogResult flag = cadastro.ShowDialog();
+            carregaDados();
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
@@ -100,7 +102,7 @@ namespace sistemaAlertrem
             else
                 {
                 MySqlCommand comm = new MySqlCommand();
-                comm.CommandText = $"select codigo as 'Código', nome as 'Nome', usuario as 'Usuário', data_hora as 'Data e hora de criação' from tb_funcionarios where nome like '%{txtPesquisa.Text}%'";
+                comm.CommandText = $"select codigo as 'Código', nome as 'Nome', cpf as 'CPF', telefone as 'Telefone', data_cadastro as 'Data de cadastro' from tb_funcionarios where nome like '%{txtPesquisa.Text}%'";
                 comm.CommandType = CommandType.Text;
 
                 comm.Connection = Conexao.obterConexao();
@@ -119,7 +121,7 @@ namespace sistemaAlertrem
         {
             if (e.ColumnIndex == dgvFuncionarios.Columns["Excluir"].Index && e.RowIndex >= 0)
             {
-                int codigo = (int)dgvFuncionarios.Rows[e.RowIndex].Cells["codigo"].Value;
+                int codigo = (int)dgvFuncionarios.Rows[e.RowIndex].Cells["Código"].Value;
 
                 DialogResult confirma = MessageBox.Show($"Você quer mesmo apagar este funcionário?",
                     "Confirmação de exclusão de registro",
@@ -137,11 +139,12 @@ namespace sistemaAlertrem
 
             else if(e.ColumnIndex == dgvFuncionarios.Columns["Editar"].Index && e.RowIndex >= 0)
             {
-                int codigo = (int)dgvFuncionarios.Rows[e.RowIndex].Cells["codigo"].Value;
-                string nome = dgvFuncionarios.Rows[e.RowIndex].Cells["nome"].Value.ToString();
-                string usuario = dgvFuncionarios.Rows[e.RowIndex].Cells["usuario"].Value.ToString();
+                int codigo = (int)dgvFuncionarios.Rows[e.RowIndex].Cells["Código"].Value;
+                string nome = dgvFuncionarios.Rows[e.RowIndex].Cells["Nome"].Value.ToString();
+                string cpf = dgvFuncionarios.Rows[e.RowIndex].Cells["CPF"].Value.ToString();
+                string telefone = dgvFuncionarios.Rows[e.RowIndex].Cells["Telefone"].Value.ToString();
 
-                editarFunc(codigo, nome, usuario);
+                editarFunc(codigo, nome, cpf, telefone);
             }
         }
 
@@ -156,21 +159,21 @@ namespace sistemaAlertrem
             int res = comm.ExecuteNonQuery();
             if (res == 1)
             {
-                MessageBox.Show("Registro Excluido com Sucesso!", "Aviso do sistema", MessageBoxButtons.OK);
+                MessageBox.Show("Dados do funcionário excluido com sucesso!", "Aviso do sistema", MessageBoxButtons.OK);
             }
             else
             {
-                MessageBox.Show("Erro ao excluir o registro", "Aviso do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao excluir os dados do funcionário", "Aviso do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             Conexao.fecharConexao();
         }
 
-        public void editarFunc(int codigo, string nome, string usuario)
+        public void editarFunc(int codigo, string nome, string cpf, string telefone)
         {
             MySqlCommand comm = new MySqlCommand
             {
-                CommandText = $"update tb_funcionarios set nome ='{nome}', usuario ='{usuario}' where codigo = {codigo};",
+                CommandText = $"update tb_funcionarios set nome ='{nome}', cpf ='{cpf}', telefone = '{telefone}' where codigo = {codigo};",
                 CommandType = CommandType.Text,
                 Connection = Conexao.obterConexao()
             };
@@ -178,11 +181,11 @@ namespace sistemaAlertrem
             int res = comm.ExecuteNonQuery();
             if (res == 1)
             {
-                MessageBox.Show("Registro atualizado com Sucesso!", "Aviso do sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Dados do funcionário atualizado com Sucesso!", "Aviso do sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("Erro ao atualizar registro", "Aviso do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao atualizar os dados do funcionário", "Aviso do sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             Conexao.fecharConexao();
