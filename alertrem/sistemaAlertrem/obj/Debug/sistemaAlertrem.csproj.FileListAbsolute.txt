@@ -47,10 +47,13 @@ C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlert
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.csproj.AssemblyReference.cache
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.Form1.resources
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmComentarios.resources
+C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmEstacao1.resources
+C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmEstacao2.resources
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmLogin.resources
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmMenu.resources
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.FrmResultadoPesquisa.resources
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.Properties.Resources.resources
+C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.usuarios.resources
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.csproj.GenerateResource.cache
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.csproj.CoreCompileInputs.cache
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.csproj.CopyComplete
@@ -176,12 +179,3 @@ C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertre
 C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmFuncionarios.resources
 C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmUsuarioEspe.resources
 C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmPesquisaUsuarios.resources
-C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmCadastrarCaracteristica.resources
-C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmCadastrarEstacao.resources
-C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmCadastroFunc.resources
-C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmEstacao.resources
-C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmFuncionarios.resources
-C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmSplash.resources
-C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmUsuarioEspe.resources
-C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmPesquisaUsuarios.resources
-C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmSobreEstacao.resources
