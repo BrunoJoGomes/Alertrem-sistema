@@ -35,7 +35,7 @@ namespace sistemaAlertrem
 
         public void carregaDados(int id = 0)
         {
-            string commandString = id != 0 ? $"select * from tb_comentarios where cod_usuario = {id}" : "select * from tb_reclamacoes";
+            string commandString = id != 0 ? $"select * from tb_reclamacoes where cod_usuario = {id}" : "select * from tb_reclamacoes";
 
             MySqlCommand comm = new MySqlCommand
             {
@@ -86,11 +86,11 @@ namespace sistemaAlertrem
             int res = comm.ExecuteNonQuery();
             if (res == 1)
             {
-                MessageBox.Show("Registro Excluido com Sucesso!", "Mensagem do Sistema", MessageBoxButtons.OK);
+                MessageBox.Show("Registro Excluido com Sucesso!", "Aviso do Sistema", MessageBoxButtons.OK);
             }
             else
             {
-                MessageBox.Show("Erro ao excluir o registro", "Mensagem do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao excluir o registro", "Aviso do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             Conexao.fecharConexao();
