@@ -8,11 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Runtime.InteropServices;
 
 namespace sistemaAlertrem
 {
     public partial class frmFuncionarios : Form
     {
+        const int MF_BYCOMMAND = 0X400;
+        [DllImport("user32")]
+        static extern int RemoveMenu(IntPtr hMenu, int nPosition, int wFlags);
+        [DllImport("user32")]
+        static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
+        [DllImport("user32")]
+        static extern int GetMenuItemCount(IntPtr hWnd);
         public frmFuncionarios()
         {
             InitializeComponent();
@@ -29,7 +37,7 @@ namespace sistemaAlertrem
 
         public void carregaDados()
         {
-            string commandString = "select codigo as 'Código', nome as 'Nome', usuario as 'Usuário', data_hora as 'Data e hora de criação' from tb_funcionarios";
+            string commandString = "select codigo as 'Código', nome as 'Nome', usuario as 'Usuário', data_cadastro as 'Data de criação' from tb_funcionarios";
 
             MySqlCommand comm = new MySqlCommand
             {
@@ -180,6 +188,13 @@ namespace sistemaAlertrem
             Conexao.fecharConexao();
 
 
+        }
+
+        private void frmFuncionarios_Load(object sender, EventArgs e)
+        {
+            IntPtr hMenu = GetSystemMenu(this.Handle, false);
+            int MenuCount = GetMenuItemCount(hMenu) - 1;
+            RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
         }
     }
 }
