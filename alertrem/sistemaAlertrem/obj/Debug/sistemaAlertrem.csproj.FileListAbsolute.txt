@@ -68,11 +68,8 @@ C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertre
 C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\bin\Debug\BCrypt.Net-Next.xml
 C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\bin\Debug\MySql.Data.xml
 C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmComentarios.resources
-C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmEstacao1.resources
-C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmEstacao2.resources
 C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmMenu.resources
 C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.FrmResultadoPesquisa.resources
-C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.usuarios.resources
 C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.csproj.CopyComplete
 C:\Users\gustavo.ssilva88\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\bin\Debug\sistemaAlertrem.exe.config
 C:\Users\gustavo.ssilva88\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\bin\Debug\sistemaAlertrem.exe
@@ -175,4 +172,10 @@ C:\Users\joao.vldutra\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sis
 C:\Users\joao.vldutra\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.csproj.CopyComplete
 C:\Users\joao.vldutra\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.exe
 C:\Users\joao.vldutra\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.pdb
-C:\Users\bruno.jogomes\Documents\Visual Studio 2019\Alertrem-sistema_\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmPerfilFuncionario.resources
+C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmCadastrarCaracteristica.resources
+C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmCadastrarEstacao.resources
+C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmCadastroFunc.resources
+C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmEstacao.resources
+C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmFuncionarios.resources
+C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmUsuarioEspe.resources
+C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmPesquisaUsuarios.resources

@@ -47,7 +47,7 @@ namespace sistemaAlertrem
 
         public void carregaLabesl(int id)
         {
-            string commandString = $"select * from tb_usuarios where codigo = {id}";
+            string commandString = $"select * from tb_perfis where codigo = {id}";
             MySqlCommand comm = new MySqlCommand
             {
                 CommandText = commandString,
@@ -68,7 +68,7 @@ namespace sistemaAlertrem
         {
             string commandString = $"select codigo as 'Código', data_hora as 'Data e hora do comentário', tipo as 'Tipo', descricao as 'Descrição', " +
                 $"motivo as 'Motivo', numero_carro as 'Número do carro', cod_estacao as 'Código da estação'" +
-                $" from tb_reclamacoes where cod_usu = {id}";
+                $" from tb_reclamacoes where cod_usuario = {id}";
 
             MySqlCommand comm = new MySqlCommand
             {
