@@ -53,7 +53,7 @@ namespace sistemaAlertrem
         {
             MySqlCommand comm = new MySqlCommand
             {
-                CommandText = $"select * from tb_funcionarios where usuario like '{usuario}'",
+                CommandText = $"select * from tb_usuarios where usuario like '{usuario}'",
                 CommandType = CommandType.Text,
                 Connection = Conexao.obterConexao()
             };
@@ -83,7 +83,7 @@ namespace sistemaAlertrem
             }
             else
             {
-                MessageBox.Show("Usuário não existe no banco!",
+                MessageBox.Show("Usuário ou senha inválidos!",
                     "Aviso do sistema",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error,
