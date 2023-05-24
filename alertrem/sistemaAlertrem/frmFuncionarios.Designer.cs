@@ -36,6 +36,7 @@ namespace sistemaAlertrem
             this.lblPesquisar = new System.Windows.Forms.Label();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.btnPesquisar = new System.Windows.Forms.Button();
+            this.btnCadastroUsu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,11 +111,22 @@ namespace sistemaAlertrem
             this.btnPesquisar.UseVisualStyleBackColor = true;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
+            // btnCadastroUsu
+            // 
+            this.btnCadastroUsu.Font = new System.Drawing.Font("Museo 700", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastroUsu.Location = new System.Drawing.Point(677, 96);
+            this.btnCadastroUsu.Name = "btnCadastroUsu";
+            this.btnCadastroUsu.Size = new System.Drawing.Size(121, 81);
+            this.btnCadastroUsu.TabIndex = 13;
+            this.btnCadastroUsu.Text = "&Cadastro Usuário";
+            this.btnCadastroUsu.UseVisualStyleBackColor = true;
+            // 
             // frmFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(810, 450);
+            this.Controls.Add(this.btnCadastroUsu);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.lblPesquisar);
@@ -126,7 +138,7 @@ namespace sistemaAlertrem
             this.MaximizeBox = false;
             this.Name = "frmFuncionarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Funcionários";
+            this.Text = "AlerTrem";
             this.Load += new System.EventHandler(this.frmFuncionarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).EndInit();
             this.ResumeLayout(false);
@@ -142,5 +154,6 @@ namespace sistemaAlertrem
         private System.Windows.Forms.Label lblPesquisar;
         private System.Windows.Forms.TextBox txtPesquisa;
         private System.Windows.Forms.Button btnPesquisar;
+        private System.Windows.Forms.Button btnCadastroUsu;
     }
 }
