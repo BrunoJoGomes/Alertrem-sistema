@@ -179,3 +179,4 @@ C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertre
 C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmFuncionarios.resources
 C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmUsuarioEspe.resources
 C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmPesquisaUsuarios.resources
+C:\Users\bruno.jogomes\Documents\Visual Studio 2019\Alertrem-sistema_\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmPerfilFuncionario.resources

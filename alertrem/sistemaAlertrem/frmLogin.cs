@@ -62,7 +62,7 @@ namespace sistemaAlertrem
 
             if (DR.HasRows)
             {
-                if (DR.GetString(4) == Bcrypt.HashPassword(senha, DR.GetString(3) ))
+                if (DR.GetString(3) == Bcrypt.HashPassword(senha, DR.GetString(2) ))
                 {
                     frmMenu abrir = new frmMenu(); //  mandar usuário que está autenticado.
                     abrir.Show();
