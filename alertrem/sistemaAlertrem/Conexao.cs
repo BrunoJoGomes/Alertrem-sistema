@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,6 +49,39 @@ namespace sistemaAlertrem
             catch (MySqlException)
             {
                 return false;
+            }
+        }
+
+        public static MySqlDataReader select(string campo, string tabela, string where = "")
+        {
+            try
+            {
+                MySqlCommand comm;
+                if (where == "")
+                {
+                    comm = new MySqlCommand
+                    {
+                        CommandText = $"SELECT {campo} FROM {tabela}",
+                        CommandType = CommandType.Text,
+                        Connection = Conexao.obterConexao()
+                    };
+                }
+                else
+                {
+                    comm = new MySqlCommand
+                    {
+                        CommandText = $"SELECT {campo} FROM {tabela} where {where}",
+                        CommandType = CommandType.Text,
+                        Connection = Conexao.obterConexao()
+                    };
+                }
+                Console.WriteLine(comm.CommandText);
+                return comm.ExecuteReader();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Erro no select\n\n{e}\n\n");
+                return null;
             }
         }
     }
