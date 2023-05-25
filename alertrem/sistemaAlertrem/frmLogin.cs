@@ -60,11 +60,26 @@ namespace sistemaAlertrem
             MySqlDataReader DR = comm.ExecuteReader();
             DR.Read();
 
-            if (DR.HasRows && DR.GetString(4) == Bcrypt.HashPassword(senha, DR.GetString(3)))
+            if (DR.HasRows)
             {
-                frmMenu abrir = new frmMenu(); //  mandar usuário que está autenticado.
-                abrir.Show();
-                this.Hide();
+                if (DR.GetString(3) == Bcrypt.HashPassword(senha, DR.GetString(2) ))
+                {
+                    frmMenu abrir = new frmMenu(); //  mandar usuário que está autenticado.
+                    abrir.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Usuário ou senha inválidos!",
+                    "Aviso do sistema",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1);
+
+                    txtUsuario.Clear();
+                    txtSenha.Clear();
+                    txtUsuario.Focus();
+                }
             }
             else
             {

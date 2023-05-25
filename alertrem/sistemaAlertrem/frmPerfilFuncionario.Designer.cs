@@ -39,10 +39,11 @@ namespace sistemaAlertrem
             this.label1 = new System.Windows.Forms.Label();
             this.txtConfirmaSenha = new System.Windows.Forms.TextBox();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.btnCriar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnCriarEditar = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.txtCodFunc = new System.Windows.Forms.TextBox();
+            this.lblCodigoFunc = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblFuncionario
@@ -61,11 +62,12 @@ namespace sistemaAlertrem
             this.cbbFuncionario.Name = "cbbFuncionario";
             this.cbbFuncionario.Size = new System.Drawing.Size(213, 21);
             this.cbbFuncionario.TabIndex = 1;
+            this.cbbFuncionario.SelectedIndexChanged += new System.EventHandler(this.cbbFuncionario_SelectedIndexChanged);
             // 
             // lblNomeDeUsu
             // 
             this.lblNomeDeUsu.AutoSize = true;
-            this.lblNomeDeUsu.Location = new System.Drawing.Point(32, 100);
+            this.lblNomeDeUsu.Location = new System.Drawing.Point(32, 145);
             this.lblNomeDeUsu.Name = "lblNomeDeUsu";
             this.lblNomeDeUsu.Size = new System.Drawing.Size(90, 13);
             this.lblNomeDeUsu.TabIndex = 2;
@@ -74,16 +76,16 @@ namespace sistemaAlertrem
             // txtNomeUsuario
             // 
             this.txtNomeUsuario.Enabled = false;
-            this.txtNomeUsuario.Location = new System.Drawing.Point(153, 92);
+            this.txtNomeUsuario.Location = new System.Drawing.Point(153, 137);
             this.txtNomeUsuario.MaxLength = 50;
             this.txtNomeUsuario.Name = "txtNomeUsuario";
             this.txtNomeUsuario.Size = new System.Drawing.Size(213, 20);
-            this.txtNomeUsuario.TabIndex = 2;
+            this.txtNomeUsuario.TabIndex = 3;
             // 
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(32, 162);
+            this.lblSenha.Location = new System.Drawing.Point(32, 207);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(93, 13);
             this.lblSenha.TabIndex = 4;
@@ -93,17 +95,17 @@ namespace sistemaAlertrem
             // 
             this.txtSenha.Enabled = false;
             this.txtSenha.Font = new System.Drawing.Font("Wingdings", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.txtSenha.Location = new System.Drawing.Point(153, 155);
+            this.txtSenha.Location = new System.Drawing.Point(153, 200);
             this.txtSenha.MaxLength = 50;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = 'l';
             this.txtSenha.Size = new System.Drawing.Size(213, 20);
-            this.txtSenha.TabIndex = 3;
+            this.txtSenha.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 214);
+            this.label1.Location = new System.Drawing.Point(32, 259);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 13);
             this.label1.TabIndex = 5;
@@ -113,77 +115,89 @@ namespace sistemaAlertrem
             // 
             this.txtConfirmaSenha.Enabled = false;
             this.txtConfirmaSenha.Font = new System.Drawing.Font("Wingdings", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.txtConfirmaSenha.Location = new System.Drawing.Point(153, 214);
+            this.txtConfirmaSenha.Location = new System.Drawing.Point(153, 259);
             this.txtConfirmaSenha.MaxLength = 50;
             this.txtConfirmaSenha.Name = "txtConfirmaSenha";
             this.txtConfirmaSenha.PasswordChar = 'l';
             this.txtConfirmaSenha.Size = new System.Drawing.Size(213, 20);
-            this.txtConfirmaSenha.TabIndex = 4;
+            this.txtConfirmaSenha.TabIndex = 5;
             // 
             // btnVoltar
             // 
             this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
             this.btnVoltar.Location = new System.Drawing.Point(32, 317);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(101, 87);
-            this.btnVoltar.TabIndex = 9;
+            this.btnVoltar.Size = new System.Drawing.Size(101, 95);
+            this.btnVoltar.TabIndex = 6;
             this.btnVoltar.Text = "&Voltar";
             this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
-            // btnCriar
+            // btnCriarEditar
             // 
-            this.btnCriar.Image = ((System.Drawing.Image)(resources.GetObject("btnCriar.Image")));
-            this.btnCriar.Location = new System.Drawing.Point(477, 38);
-            this.btnCriar.Name = "btnCriar";
-            this.btnCriar.Size = new System.Drawing.Size(101, 87);
-            this.btnCriar.TabIndex = 5;
-            this.btnCriar.Text = "&Criar";
-            this.btnCriar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnCriar.UseVisualStyleBackColor = true;
+            this.btnCriarEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnCriarEditar.Image")));
+            this.btnCriarEditar.Location = new System.Drawing.Point(442, 26);
+            this.btnCriarEditar.Name = "btnCriarEditar";
+            this.btnCriarEditar.Size = new System.Drawing.Size(101, 95);
+            this.btnCriarEditar.TabIndex = 7;
+            this.btnCriarEditar.Text = "&Criar/Editar usuário";
+            this.btnCriarEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnCriarEditar.UseVisualStyleBackColor = true;
+            this.btnCriarEditar.Click += new System.EventHandler(this.btnCriar_Click);
             // 
-            // btnEditar
+            // btnSalvar
             // 
-            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
-            this.btnEditar.Location = new System.Drawing.Point(480, 224);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(98, 87);
-            this.btnEditar.TabIndex = 7;
-            this.btnEditar.Text = "&Editar";
-            this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnEditar.UseVisualStyleBackColor = true;
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
-            this.btnExcluir.Location = new System.Drawing.Point(480, 317);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(98, 87);
-            this.btnExcluir.TabIndex = 8;
-            this.btnExcluir.Text = "&Excluir";
-            this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
+            this.btnSalvar.Location = new System.Drawing.Point(442, 137);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(101, 95);
+            this.btnSalvar.TabIndex = 8;
+            this.btnSalvar.Text = "&Salvar";
+            this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnLimpar
             // 
             this.btnLimpar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpar.Image")));
-            this.btnLimpar.Location = new System.Drawing.Point(477, 131);
+            this.btnLimpar.Location = new System.Drawing.Point(442, 247);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(101, 87);
-            this.btnLimpar.TabIndex = 6;
+            this.btnLimpar.Size = new System.Drawing.Size(101, 95);
+            this.btnLimpar.TabIndex = 9;
             this.btnLimpar.Text = "&Limpar";
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
+            // txtCodFunc
+            // 
+            this.txtCodFunc.Enabled = false;
+            this.txtCodFunc.Location = new System.Drawing.Point(153, 89);
+            this.txtCodFunc.MaxLength = 50;
+            this.txtCodFunc.Name = "txtCodFunc";
+            this.txtCodFunc.Size = new System.Drawing.Size(213, 20);
+            this.txtCodFunc.TabIndex = 2;
+            // 
+            // lblCodigoFunc
+            // 
+            this.lblCodigoFunc.AutoSize = true;
+            this.lblCodigoFunc.Location = new System.Drawing.Point(32, 97);
+            this.lblCodigoFunc.Name = "lblCodigoFunc";
+            this.lblCodigoFunc.Size = new System.Drawing.Size(113, 13);
+            this.lblCodigoFunc.TabIndex = 11;
+            this.lblCodigoFunc.Text = "Código do funcionário:";
             // 
             // frmPerfilFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(584, 450);
+            this.Controls.Add(this.txtCodFunc);
+            this.Controls.Add(this.lblCodigoFunc);
             this.Controls.Add(this.btnLimpar);
-            this.Controls.Add(this.btnExcluir);
-            this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnCriar);
+            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.btnCriarEditar);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.txtConfirmaSenha);
             this.Controls.Add(this.label1);
@@ -216,9 +230,10 @@ namespace sistemaAlertrem
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtConfirmaSenha;
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.Button btnCriar;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnCriarEditar;
+        private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.TextBox txtCodFunc;
+        private System.Windows.Forms.Label lblCodigoFunc;
     }
 }
