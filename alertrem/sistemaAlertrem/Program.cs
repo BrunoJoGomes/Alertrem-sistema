@@ -16,7 +16,7 @@ namespace sistemaAlertrem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmSobreEstacao(1)); 
+            Application.Run(new frmSobreEstacao(2)); 
         }
     }
 }
