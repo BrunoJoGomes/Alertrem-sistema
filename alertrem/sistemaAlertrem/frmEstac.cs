@@ -60,5 +60,12 @@ namespace sistemaAlertrem
             frmSobreEstacao abrir = new frmSobreEstacao(id);
             abrir.ShowDialog();
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            frmMenu abrir = new frmMenu();
+            abrir.Show();
+            this.Hide();
+        }
     }
 }
