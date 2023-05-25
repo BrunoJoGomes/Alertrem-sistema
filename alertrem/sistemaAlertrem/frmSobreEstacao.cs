@@ -28,19 +28,22 @@ namespace sistemaAlertrem
             txtCodigoEstacao.Text = DR.GetString(0);
             txtNomeEstacao.Text = DR.GetString(1);
 
-            DR = Conexao.select("rua, numero, bairro, cep", "tb_enderecos", $"cod_estacao = {codigo_estacao}");
+            DR = Conexao.select("codigo, rua, numero, bairro, cep", "tb_enderecos", $"cod_estacao = {codigo_estacao}");
             for (int i = 0; i < 3; i++)
             {
                 TextBox logradouro = i == 0 ? txtLogradouroEndereco1 : i == 1 ? txtLogradouroEndereco2 : txtLogradouroEndereco3;
                 TextBox numero = i == 0 ? txtNumeroEndereco1 : i == 1 ? txtNumeroEndereco2 : txtNumeroEndereco3;
                 TextBox bairro = i == 0 ? txtBairroEndereco1 : i == 1 ? txtBairroEndereco2 : txtBairroEndereco3;
+                TextBox codigo = i == 0 ? txtCodigoEndereco1 : i == 1 ? txtCodigoEndereco2 : txtCodigoEndereco3;
                 MaskedTextBox cep = i == 0 ? mskCEPEndereco1 : i == 1 ? mskCEPEndereco2 : mskCEPEndereco3;
+
                 if (DR.Read())
                 {
-                    logradouro.Text = DR.GetString(0);
-                    numero.Text = DR.GetString(1);
-                    bairro.Text = DR.GetString(2);
-                    cep.Text = DR.GetString(3);
+                    logradouro.Text = DR.GetString(1);
+                    numero.Text = DR.GetString(2);
+                    bairro.Text = DR.GetString(3);
+                    cep.Text = DR.GetString(4);
+                    codigo.Text = DR.GetInt32(0).ToString();
 
                     if (i == 1) { mostrarEndereco2Preenchido(); }
                     if (i == 2) { mostrarEndereco3Preenchido(); }
@@ -60,6 +63,19 @@ namespace sistemaAlertrem
                 gpbEndereco3.Enabled = true;
             }
         }
+        private void desabilitaCampos()
+        {
+            txtNomeEstacao.Enabled = false;
+            gpbEndereco1.Enabled = false;
+            if (gpbEndereco2.Visible)
+            {
+                gpbEndereco2.Enabled = false;
+            }
+            if (gpbEndereco3.Visible)
+            {
+                gpbEndereco3.Enabled = false;
+            }
+        }
         private void limpaEndereco1()
         {
             if (gpbEndereco2.Visible && endereco2EstaVazio()) { ocultaEndereco2(); }
@@ -69,6 +85,7 @@ namespace sistemaAlertrem
                 txtNumeroEndereco1.Text = txtNumeroEndereco2.Text;
                 txtBairroEndereco1.Text = txtBairroEndereco2.Text;
                 mskCEPEndereco1.Text = mskCEPEndereco2.Text;
+                txtCodigoEndereco1.Text = txtCodigoEndereco2.Text;
                 ocultaEndereco2();
             }
             else
@@ -77,6 +94,7 @@ namespace sistemaAlertrem
                 txtNumeroEndereco1.Clear();
                 txtBairroEndereco1.Clear();
                 mskCEPEndereco1.Clear();
+                txtCodigoEndereco1.Clear();
             }
         }
         private void limpaEndereco2()
@@ -85,6 +103,7 @@ namespace sistemaAlertrem
             txtNumeroEndereco2.Clear();
             txtBairroEndereco2.Clear();
             mskCEPEndereco2.Clear();
+            txtCodigoEndereco2.Clear();
         }
         private void limpaEndereco3()
         {
@@ -92,6 +111,7 @@ namespace sistemaAlertrem
             txtNumeroEndereco3.Clear();
             txtBairroEndereco3.Clear();
             mskCEPEndereco3.Clear();
+            txtCodigoEndereco3.Clear();
         }
         private void mostrarEndereco2()
         {
@@ -152,6 +172,7 @@ namespace sistemaAlertrem
                 txtNumeroEndereco2.Text = txtNumeroEndereco3.Text;
                 txtBairroEndereco2.Text = txtBairroEndereco3.Text;
                 mskCEPEndereco2.Text = mskCEPEndereco3.Text;
+                txtCodigoEndereco2.Text = txtCodigoEndereco3.Text;
                 ocultaEndereco3();
             }
             else
@@ -220,6 +241,98 @@ namespace sistemaAlertrem
             string[] infos = buscaCEP(CEP.Text);
             (logradouro.Text, bairro.Text) = (infos[0], infos[1]);
         }
+        private int cadastraEndereco(string logradouro, string numero, string bairro, string cep, string codigo_estacao)
+        {
+            MySqlCommand comm = new MySqlCommand 
+            {
+                CommandText = "insert into tb_enderecos (rua, numero, bairro, cep, cod_estacao) values(@rua, @numero, @bairro, @cep, @cod_estacao);",
+                CommandType = CommandType.Text,
+                Connection = Conexao.obterConexao()
+            };
+            comm.Parameters.Clear();
+            comm.Parameters.Add("@rua", MySqlDbType.VarChar, 100).Value = logradouro;
+            comm.Parameters.Add("@numero", MySqlDbType.VarChar, 6).Value = numero;
+            comm.Parameters.Add("@bairro", MySqlDbType.VarChar, 100).Value = bairro;
+            comm.Parameters.Add("@cep", MySqlDbType.VarChar, 9).Value = cep;
+            comm.Parameters.Add("@cod_estacao", MySqlDbType.Int32, 11).Value = codigo_estacao;
+
+            int res = comm.ExecuteNonQuery();
+            Conexao.fecharConexao();
+            return res;
+        }
+        private int atualizaEndereco(string logradouro, string numero, string bairro, string cep, string codigo, string codigo_estacao)
+        {
+            MySqlCommand comm = new MySqlCommand
+            {
+                CommandText = $"UPDATE tb_enderecos SET rua = @rua, numero = @numero, bairro = @bairro, cep = @cep WHERE codigo = @codigo AND cod_estacao = @cod_estacao",
+                CommandType = CommandType.Text,
+                Connection = Conexao.obterConexao()
+            };
+            comm.Parameters.Clear();
+            comm.Parameters.Add("@rua", MySqlDbType.VarChar, 100).Value = logradouro;
+            comm.Parameters.Add("@numero", MySqlDbType.VarChar, 6).Value = numero;
+            comm.Parameters.Add("@bairro", MySqlDbType.VarChar, 100).Value = bairro;
+            comm.Parameters.Add("@cep", MySqlDbType.VarChar, 9).Value = cep;
+            comm.Parameters.Add("@cod_estacao", MySqlDbType.Int32, 11).Value = codigo_estacao;
+            comm.Parameters.Add("@codigo", MySqlDbType.Int32, 11).Value = codigo;
+
+            int res = comm.ExecuteNonQuery();
+            Conexao.fecharConexao();
+            return res;
+        }
+        private void verificarCampos()
+        {
+            int cadastrou = 2, atualizou = 2;
+            for (int i = 0; i < 3; i++)
+            {
+                GroupBox grupo = i == 0 ? gpbEndereco1 : i == 1 ? gpbEndereco2 : gpbEndereco3;
+                string logradouro = i == 0 ? txtLogradouroEndereco1.Text : i == 1 ? txtLogradouroEndereco2.Text : txtLogradouroEndereco3.Text;
+                string numero = i == 0 ? txtNumeroEndereco1.Text : i == 1 ? txtNumeroEndereco2.Text : txtNumeroEndereco3.Text;
+                string bairro = i == 0 ? txtBairroEndereco1.Text : i == 1 ? txtBairroEndereco2.Text : txtBairroEndereco3.Text;
+                string codigo = i == 0 ? txtCodigoEndereco1.Text : i == 1 ? txtCodigoEndereco2.Text : txtCodigoEndereco3.Text;
+                string cep = i == 0 ? mskCEPEndereco1.Text : i == 1 ? mskCEPEndereco2.Text : mskCEPEndereco3.Text;
+                string codigo_estacao = txtCodigoEstacao.Text;
+
+                if (codigo == "" && grupo.Visible)
+                {
+                    cadastrou = cadastraEndereco(logradouro, numero, bairro, cep, codigo_estacao);
+                    if (cadastrou == 0)
+                    {
+                        MessageBox.Show("Erro ao cadastrar endereços.",
+                            "Aviso do sistema",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                        break;
+                    }
+                }
+                else if (grupo.Visible)
+                {
+                    atualizou = atualizaEndereco(logradouro, numero, bairro, cep, codigo, codigo_estacao);
+                    if (atualizou == 0)
+                    {
+                        MessageBox.Show("Erro ao atualizar endereços.",
+                            "Aviso do sistema",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                        break;
+                    }
+                }
+            }
+            if (cadastrou == 1)
+            {
+                MessageBox.Show("Endereços cadastrados com sucesso!",
+                    "Aviso do sistema",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            else if (atualizou == 1)
+            {
+                MessageBox.Show("Endereços aualizados com sucesso!",
+                    "Aviso do sistema",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+        }
 
         private void btnAdicionarEndereco2_Click(object sender, EventArgs e)
         {
@@ -268,6 +381,8 @@ namespace sistemaAlertrem
         private void btnEditar_Click(object sender, EventArgs e)
         {
             habilitaCampos();
+            btnEditar.Enabled = false;
+            btnSalvar.Enabled = true;
         }
         private void mskCEPEndereco1_TextChanged(object sender, EventArgs e)
         {
@@ -292,6 +407,17 @@ namespace sistemaAlertrem
                 preencherEndereco(txtLogradouroEndereco3, txtBairroEndereco3, mskCEPEndereco3);
                 txtNumeroEndereco3.Focus();
             }
+        }
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            verificarCampos();
+            desabilitaCampos();
+            btnEditar.Enabled = true;
+            btnSalvar.Enabled = false;
         }
     }
 }
