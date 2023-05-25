@@ -39,6 +39,7 @@ namespace sistemaAlertrem
             MySqlDataReader DR;
             DR = comm.ExecuteReader();
             ltbEstacao.Items.Clear();
+            estacoes.Clear();
             while (DR.Read())
             {
                 ltbEstacao.Items.Add(DR[1].ToString());
