@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using ViaCep;
 
 namespace sistemaAlertrem
 {
@@ -196,19 +197,28 @@ namespace sistemaAlertrem
         }
         private string[] buscaCEP(string CEP)
         {
-            string[] dados = new string[3];
+            string[] dados = new string[2];
+            try
+            {
+                ViaCepClient endereco = new ViaCepClient();
+                ViaCepResult resultado = endereco.Search(CEP);
 
-            // Implementar uma busca por CEP
-
-            dados[0] = "LOGRADOURO AQUI";
-            dados[1] = "NÚMERO AQUI";
-            dados[2] = "BAIRRO AQUI";
+                dados[0] = resultado.Street;
+                dados[1] = resultado.Neighborhood;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Erro ao buscar por CEP.\nInforme um CEP válido.",
+                    "Aviso do sistema",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+            }
             return dados;
         }
-        private void preencherEndereco(TextBox logradouro, TextBox numero, TextBox bairro, MaskedTextBox CEP)
+        private void preencherEndereco(TextBox logradouro, TextBox bairro, MaskedTextBox CEP)
         {
             string[] infos = buscaCEP(CEP.Text);
-            (logradouro.Text, numero.Text, bairro.Text) = (infos[0], infos[1], infos[2]);
+            (logradouro.Text, bairro.Text) = (infos[0], infos[1]);
         }
 
         private void btnAdicionarEndereco2_Click(object sender, EventArgs e)
@@ -261,23 +271,26 @@ namespace sistemaAlertrem
         }
         private void mskCEPEndereco1_TextChanged(object sender, EventArgs e)
         {
-            if (mskCEPEndereco1.MaskCompleted) 
+            if (mskCEPEndereco1.MaskCompleted && txtLogradouroEndereco1.Text == "") 
             { 
-                preencherEndereco(txtLogradouroEndereco1, txtNumeroEndereco1, txtLogradouroEndereco1, mskCEPEndereco1);
+                preencherEndereco(txtLogradouroEndereco1, txtBairroEndereco1, mskCEPEndereco1);
+                txtNumeroEndereco1.Focus();
             }
         }
         private void mskCEPEndereco2_TextChanged(object sender, EventArgs e)
         {
-            if (mskCEPEndereco2.MaskCompleted)
+            if (mskCEPEndereco2.MaskCompleted && txtLogradouroEndereco2.Text == "")
             {
-                preencherEndereco(txtLogradouroEndereco2, txtNumeroEndereco2, txtLogradouroEndereco2, mskCEPEndereco2);
+                preencherEndereco(txtLogradouroEndereco2, txtBairroEndereco2, mskCEPEndereco2);
+                txtNumeroEndereco2.Focus();
             }
         }
         private void mskCEPEndereco3_TextChanged(object sender, EventArgs e)
         {
-            if (mskCEPEndereco3.MaskCompleted)
+            if (mskCEPEndereco3.MaskCompleted && txtLogradouroEndereco3.Text == "")
             {
-                preencherEndereco(txtLogradouroEndereco3, txtNumeroEndereco3, txtLogradouroEndereco3, mskCEPEndereco3);
+                preencherEndereco(txtLogradouroEndereco3, txtBairroEndereco3, mskCEPEndereco3);
+                txtNumeroEndereco3.Focus();
             }
         }
     }
