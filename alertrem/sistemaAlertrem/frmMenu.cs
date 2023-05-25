@@ -37,7 +37,7 @@ namespace sistemaAlertrem
 
         private void pcbEstacoes_Click(object sender, EventArgs e)
         {
-            frmEstacao estacao = new frmEstacao();
+            frmEstac estacao = new frmEstac();
             estacao.Show();
             this.Hide();
         }
@@ -77,7 +77,7 @@ namespace sistemaAlertrem
 
         private void btnEstacoes_Click(object sender, EventArgs e)
         {
-            frmEstacao estacao = new frmEstacao();
+            frmEstac estacao = new frmEstac();
             estacao.Show();
             this.Hide();
         }
