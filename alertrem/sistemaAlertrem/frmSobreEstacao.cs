@@ -130,8 +130,6 @@ namespace sistemaAlertrem
                 btnAdicionarEndereco3.Visible = true;
                 gpbEndereco2.Enabled = true;
                 mskCEPEndereco2.Focus();
-                btnEditar.Enabled = false;
-                btnSalvar.Enabled = true;
             }
         }
         private void mostrarEndereco3()
@@ -150,8 +148,6 @@ namespace sistemaAlertrem
                 btnRemoverEndereco3.Visible = true;
                 gpbEndereco3.Enabled = true;
                 mskCEPEndereco3.Focus();
-                btnEditar.Enabled = false;
-                btnSalvar.Enabled = true;
             }
         }
         private void mostrarEndereco2Preenchido()
