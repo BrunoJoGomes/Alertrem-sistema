@@ -31,31 +31,35 @@ namespace sistemaAlertrem
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.gpbMenu = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnFuncionarios = new System.Windows.Forms.Button();
+            this.btnComentarios = new System.Windows.Forms.Button();
+            this.btnEstacoes = new System.Windows.Forms.Button();
+            this.btnClientes = new System.Windows.Forms.Button();
             this.lblFunc = new System.Windows.Forms.Label();
             this.lblReclamacoes = new System.Windows.Forms.Label();
             this.lblEstacoes = new System.Windows.Forms.Label();
-            this.lblUsuarios = new System.Windows.Forms.Label();
+            this.lblClientes = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.lblStatusBanco = new System.Windows.Forms.Label();
             this.lblStatusLinha = new System.Windows.Forms.Label();
+            this.btnPerfilFunc = new System.Windows.Forms.Button();
+            this.lblUsuarios = new System.Windows.Forms.Label();
             this.gpbMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // gpbMenu
             // 
             this.gpbMenu.BackColor = System.Drawing.Color.Transparent;
-            this.gpbMenu.Controls.Add(this.button4);
-            this.gpbMenu.Controls.Add(this.button3);
-            this.gpbMenu.Controls.Add(this.button2);
-            this.gpbMenu.Controls.Add(this.button1);
+            this.gpbMenu.Controls.Add(this.lblUsuarios);
+            this.gpbMenu.Controls.Add(this.btnPerfilFunc);
+            this.gpbMenu.Controls.Add(this.btnFuncionarios);
+            this.gpbMenu.Controls.Add(this.btnComentarios);
+            this.gpbMenu.Controls.Add(this.btnEstacoes);
+            this.gpbMenu.Controls.Add(this.btnClientes);
             this.gpbMenu.Controls.Add(this.lblFunc);
             this.gpbMenu.Controls.Add(this.lblReclamacoes);
             this.gpbMenu.Controls.Add(this.lblEstacoes);
-            this.gpbMenu.Controls.Add(this.lblUsuarios);
+            this.gpbMenu.Controls.Add(this.lblClientes);
             this.gpbMenu.Location = new System.Drawing.Point(-5, 104);
             this.gpbMenu.Name = "gpbMenu";
             this.gpbMenu.Size = new System.Drawing.Size(816, 254);
@@ -64,52 +68,53 @@ namespace sistemaAlertrem
             this.gpbMenu.Text = "Menu";
             this.gpbMenu.Enter += new System.EventHandler(this.gpbMenu_Enter);
             // 
-            // button4
+            // btnFuncionarios
             // 
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(453, 136);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(127, 84);
-            this.button4.TabIndex = 13;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnFuncionarios.Image = ((System.Drawing.Image)(resources.GetObject("btnFuncionarios.Image")));
+            this.btnFuncionarios.Location = new System.Drawing.Point(480, 76);
+            this.btnFuncionarios.Name = "btnFuncionarios";
+            this.btnFuncionarios.Size = new System.Drawing.Size(127, 84);
+            this.btnFuncionarios.TabIndex = 4;
+            this.btnFuncionarios.UseVisualStyleBackColor = true;
+            this.btnFuncionarios.Click += new System.EventHandler(this.btnFuncionarios_Click);
             // 
-            // button3
+            // btnComentarios
             // 
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(258, 135);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(127, 85);
-            this.button3.TabIndex = 12;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnComentarios.Image = ((System.Drawing.Image)(resources.GetObject("btnComentarios.Image")));
+            this.btnComentarios.Location = new System.Drawing.Point(335, 76);
+            this.btnComentarios.Name = "btnComentarios";
+            this.btnComentarios.Size = new System.Drawing.Size(127, 85);
+            this.btnComentarios.TabIndex = 3;
+            this.btnComentarios.UseVisualStyleBackColor = true;
+            this.btnComentarios.Click += new System.EventHandler(this.btnComentarios_Click);
             // 
-            // button2
+            // btnEstacoes
             // 
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(453, 14);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(127, 85);
-            this.button2.TabIndex = 11;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnEstacoes.Image = ((System.Drawing.Image)(resources.GetObject("btnEstacoes.Image")));
+            this.btnEstacoes.Location = new System.Drawing.Point(193, 76);
+            this.btnEstacoes.Name = "btnEstacoes";
+            this.btnEstacoes.Size = new System.Drawing.Size(127, 85);
+            this.btnEstacoes.TabIndex = 2;
+            this.btnEstacoes.UseVisualStyleBackColor = true;
+            this.btnEstacoes.Click += new System.EventHandler(this.btnEstacoes_Click);
             // 
-            // button1
+            // btnClientes
             // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(258, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 85);
-            this.button1.TabIndex = 10;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnClientes.Image")));
+            this.btnClientes.Location = new System.Drawing.Point(50, 76);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(127, 85);
+            this.btnClientes.TabIndex = 1;
+            this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // lblFunc
             // 
             this.lblFunc.AutoSize = true;
             this.lblFunc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFunc.Location = new System.Drawing.Point(460, 223);
+            this.lblFunc.Location = new System.Drawing.Point(493, 164);
             this.lblFunc.Name = "lblFunc";
             this.lblFunc.Size = new System.Drawing.Size(100, 20);
             this.lblFunc.TabIndex = 9;
@@ -120,7 +125,7 @@ namespace sistemaAlertrem
             this.lblReclamacoes.AutoSize = true;
             this.lblReclamacoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblReclamacoes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReclamacoes.Location = new System.Drawing.Point(266, 223);
+            this.lblReclamacoes.Location = new System.Drawing.Point(349, 163);
             this.lblReclamacoes.Name = "lblReclamacoes";
             this.lblReclamacoes.Size = new System.Drawing.Size(99, 20);
             this.lblReclamacoes.TabIndex = 7;
@@ -131,33 +136,33 @@ namespace sistemaAlertrem
             this.lblEstacoes.AutoSize = true;
             this.lblEstacoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblEstacoes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstacoes.Location = new System.Drawing.Point(473, 102);
+            this.lblEstacoes.Location = new System.Drawing.Point(218, 163);
             this.lblEstacoes.Name = "lblEstacoes";
             this.lblEstacoes.Size = new System.Drawing.Size(76, 20);
             this.lblEstacoes.TabIndex = 5;
             this.lblEstacoes.Text = "Estações";
             // 
-            // lblUsuarios
+            // lblClientes
             // 
-            this.lblUsuarios.AutoSize = true;
-            this.lblUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuarios.Location = new System.Drawing.Point(281, 102);
-            this.lblUsuarios.Name = "lblUsuarios";
-            this.lblUsuarios.Size = new System.Drawing.Size(72, 20);
-            this.lblUsuarios.TabIndex = 3;
-            this.lblUsuarios.Text = "Usuários";
+            this.lblClientes.AutoSize = true;
+            this.lblClientes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClientes.Location = new System.Drawing.Point(80, 163);
+            this.lblClientes.Name = "lblClientes";
+            this.lblClientes.Size = new System.Drawing.Size(66, 20);
+            this.lblClientes.TabIndex = 3;
+            this.lblClientes.Text = "Clientes";
             // 
             // btnVoltar
             // 
-            this.btnVoltar.BackColor = System.Drawing.Color.White;
-            this.btnVoltar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnVoltar.BackColor = System.Drawing.Color.LightGray;
+            this.btnVoltar.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
             this.btnVoltar.Location = new System.Drawing.Point(11, 383);
             this.btnVoltar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(127, 55);
-            this.btnVoltar.TabIndex = 5;
+            this.btnVoltar.TabIndex = 6;
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
@@ -176,6 +181,26 @@ namespace sistemaAlertrem
             this.lblStatusLinha.Name = "lblStatusLinha";
             this.lblStatusLinha.Size = new System.Drawing.Size(0, 13);
             this.lblStatusLinha.TabIndex = 7;
+            // 
+            // btnPerfilFunc
+            // 
+            this.btnPerfilFunc.Image = ((System.Drawing.Image)(resources.GetObject("btnPerfilFunc.Image")));
+            this.btnPerfilFunc.Location = new System.Drawing.Point(626, 76);
+            this.btnPerfilFunc.Name = "btnPerfilFunc";
+            this.btnPerfilFunc.Size = new System.Drawing.Size(127, 84);
+            this.btnPerfilFunc.TabIndex = 5;
+            this.btnPerfilFunc.UseVisualStyleBackColor = true;
+            this.btnPerfilFunc.Click += new System.EventHandler(this.btnPerfilFunc_Click);
+            // 
+            // lblUsuarios
+            // 
+            this.lblUsuarios.AutoSize = true;
+            this.lblUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuarios.Location = new System.Drawing.Point(653, 164);
+            this.lblUsuarios.Name = "lblUsuarios";
+            this.lblUsuarios.Size = new System.Drawing.Size(72, 20);
+            this.lblUsuarios.TabIndex = 14;
+            this.lblUsuarios.Text = "Usuários";
             // 
             // frmMenu
             // 
@@ -202,16 +227,18 @@ namespace sistemaAlertrem
 
         #endregion
         private System.Windows.Forms.GroupBox gpbMenu;
-        private System.Windows.Forms.Label lblUsuarios;
+        private System.Windows.Forms.Label lblClientes;
         private System.Windows.Forms.Label lblReclamacoes;
         private System.Windows.Forms.Label lblEstacoes;
         private System.Windows.Forms.Label lblFunc;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Label lblStatusBanco;
         private System.Windows.Forms.Label lblStatusLinha;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnComentarios;
+        private System.Windows.Forms.Button btnEstacoes;
+        private System.Windows.Forms.Button btnClientes;
+        private System.Windows.Forms.Button btnFuncionarios;
+        private System.Windows.Forms.Button btnPerfilFunc;
+        private System.Windows.Forms.Label lblUsuarios;
     }
 }

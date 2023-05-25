@@ -192,3 +192,10 @@ C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlert
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\bin\Debug\ViaCep.dll
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\bin\Debug\Newtonsoft.Json.xml
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\bruno.jogomes\Documents\Visual Studio 2019\Alertrem-sistema_\alertrem\sistemaAlertrem\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bruno.jogomes\Documents\Visual Studio 2019\Alertrem-sistema_\alertrem\sistemaAlertrem\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\bruno.jogomes\Documents\Visual Studio 2019\Alertrem-sistema_\alertrem\sistemaAlertrem\bin\Debug\ViaCep.dll
+C:\Users\bruno.jogomes\Documents\Visual Studio 2019\Alertrem-sistema_\alertrem\sistemaAlertrem\bin\Debug\Newtonsoft.Json.xml
+C:\Users\bruno.jogomes\Documents\Visual Studio 2019\Alertrem-sistema_\alertrem\sistemaAlertrem\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\bruno.jogomes\Documents\Visual Studio 2019\Alertrem-sistema_\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmPerfilFuncionario.resources
+C:\Users\bruno.jogomes\Documents\Visual Studio 2019\Alertrem-sistema_\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmSobreEstacao.resources
