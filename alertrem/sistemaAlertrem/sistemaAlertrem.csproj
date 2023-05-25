@@ -112,11 +112,23 @@
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPerfilFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPerfilFuncionario.Designer.cs">
+      <DependentUpon>frmPerfilFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmResultadoPesquisa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmResultadoPesquisa.Designer.cs">
       <DependentUpon>FrmResultadoPesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSobreEstacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSobreEstacao.Designer.cs">
+      <DependentUpon>frmSobreEstacao.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSplash.cs">
       <SubType>Form</SubType>
@@ -171,8 +183,14 @@
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPerfilFuncionario.resx">
+      <DependentUpon>frmPerfilFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmResultadoPesquisa.resx">
       <DependentUpon>FrmResultadoPesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSobreEstacao.resx">
+      <DependentUpon>frmSobreEstacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>

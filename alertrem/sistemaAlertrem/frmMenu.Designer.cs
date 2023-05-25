@@ -42,9 +42,7 @@ namespace sistemaAlertrem
             this.btnVoltar = new System.Windows.Forms.Button();
             this.lblStatusBanco = new System.Windows.Forms.Label();
             this.lblStatusLinha = new System.Windows.Forms.Label();
-            this.pcbLogo = new System.Windows.Forms.PictureBox();
             this.gpbMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // gpbMenu
@@ -179,22 +177,11 @@ namespace sistemaAlertrem
             this.lblStatusLinha.Size = new System.Drawing.Size(0, 13);
             this.lblStatusLinha.TabIndex = 7;
             // 
-            // pcbLogo
-            // 
-            this.pcbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pcbLogo.Image")));
-            this.pcbLogo.Location = new System.Drawing.Point(700, 364);
-            this.pcbLogo.Name = "pcbLogo";
-            this.pcbLogo.Size = new System.Drawing.Size(100, 90);
-            this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbLogo.TabIndex = 8;
-            this.pcbLogo.TabStop = false;
-            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pcbLogo);
             this.Controls.Add(this.lblStatusLinha);
             this.Controls.Add(this.lblStatusBanco);
             this.Controls.Add(this.btnVoltar);
@@ -208,7 +195,6 @@ namespace sistemaAlertrem
             this.Load += new System.EventHandler(this.frmMenu_Load);
             this.gpbMenu.ResumeLayout(false);
             this.gpbMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,7 +209,6 @@ namespace sistemaAlertrem
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Label lblStatusBanco;
         private System.Windows.Forms.Label lblStatusLinha;
-        private System.Windows.Forms.PictureBox pcbLogo;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;

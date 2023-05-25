@@ -37,7 +37,7 @@ namespace sistemaAlertrem
 
         public void carregaDados()
         {
-            string commandString = "select codigo as 'Código', nome as 'Nome', usuario as 'Usuário', data_cadastro as 'Data de criação' from tb_funcionarios";
+            string commandString = "select codigo as 'Código', usuario as 'Usuário' from tb_usuarios";
 
             MySqlCommand comm = new MySqlCommand
             {
