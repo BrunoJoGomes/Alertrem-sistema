@@ -83,7 +83,8 @@ namespace sistemaAlertrem
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             frmCadastroFunc cadastro = new frmCadastroFunc();
-            cadastro.ShowDialog();
+            DialogResult retorno = cadastro.ShowDialog();
+            carregaDados();
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
