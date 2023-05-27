@@ -159,6 +159,7 @@
     <Compile Include="teste.Designer.cs">
       <DependentUpon>teste.cs</DependentUpon>
     </Compile>
+    <Compile Include="UsuarioAutenticado.cs" />
     <Compile Include="usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
