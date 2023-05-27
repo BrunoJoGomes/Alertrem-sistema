@@ -61,6 +61,10 @@ namespace sistemaAlertrem
             IntPtr hMenu = GetSystemMenu(this.Handle, false);
             int MenuCount = GetMenuItemCount(hMenu) - 1;
             RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
+            if (UsuarioAutenticado.NomeUsuarioAutenticado != null)
+            {
+                lblNomeUsuario.Text = UsuarioAutenticado.NomeUsuarioAutenticado;
+            }
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
