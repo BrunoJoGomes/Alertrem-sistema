@@ -1,6 +1,6 @@
-.vs/
-bin/
-obj/
+alertrem/.vs
+alertrem/sistemaAlertrem/bin
+alertrem/sistemaAlertrem/obj
 .suo
 *.cache
 *.exe
