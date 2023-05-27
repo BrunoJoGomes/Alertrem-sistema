@@ -21,21 +21,16 @@ namespace sistemaAlertrem
         static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
         [DllImport("user32")]
         static extern int GetMenuItemCount(IntPtr hWnd);
+
         public frmComentarios()
         {
             InitializeComponent();
             carregaDados();
         }
-
-        public frmComentarios(int user_id)
+        public void carregaDados()
         {
-            InitializeComponent();
-            carregaDados(user_id);
-        }
-
-        public void carregaDados(int id = 0)
-        {
-            string commandString = id != 0 ? $"select * from tb_reclamacoes where cod_usuario = {id}" : "select * from tb_reclamacoes";
+            string commandString = "select codigo as 'Código', data_hora as 'Postado em', descricao as 'Reclamação'," +
+                "motivo as 'Motivo', numero_carro as 'Carro', cod_usuario as 'Usuário', cod_estacao as 'Estação' from tb_reclamacoes";
 
             MySqlCommand comm = new MySqlCommand
             {
@@ -52,27 +47,14 @@ namespace sistemaAlertrem
 
             dgvComentarios.DataSource = tabela;
 
-            //dgvComentarios.Columns["descricao"].Width = 300;
+            dgvComentarios.Columns["Reclamação"].Width = 300;
 
             DataGridViewButtonColumn btnExcluir = new DataGridViewButtonColumn();
             btnExcluir.Name = "Excluir";
             btnExcluir.HeaderText = "Excluir";
             btnExcluir.Text = "Excluir";
             btnExcluir.UseColumnTextForButtonValue = true;
-            dgvComentarios.Columns.Add(btnExcluir);
-
-            // Impede que o usuário redimensione as colunas e linhas do DataGridView
-            dgvComentarios.AllowUserToResizeColumns = false;
-            dgvComentarios.AllowUserToResizeRows = false;
-
-            // Define o modo de ajuste da altura das linhas para exibir o conteúdo completo
-            dgvComentarios.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-
-            // Define a propriedade de ajuste de altura das linhas para que o conteúdo completo seja exibido
-            dgvComentarios.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-
-            // Faz com que o DataGridView ocupe 100% do espaço disponível
-            dgvComentarios.Dock = DockStyle.Fill;            
+            dgvComentarios.Columns.Add(btnExcluir);         
         }
 
         public void apagaRegistro(int id_comentario)
@@ -100,7 +82,7 @@ namespace sistemaAlertrem
         {
             if (e.ColumnIndex == dgvComentarios.Columns["Excluir"].Index && e.RowIndex >= 0)
             {
-                int codigo = (int)dgvComentarios.Rows[e.RowIndex].Cells["codigo"].Value;
+                int codigo = (int)dgvComentarios.Rows[e.RowIndex].Cells["Código"].Value;
 
                 DialogResult confirma = MessageBox.Show($"Você quer mesmo apagar o comentário com id {codigo}?",
                     "Confirmação de exclusão de registro",
@@ -121,11 +103,6 @@ namespace sistemaAlertrem
             frmMenu menu = new frmMenu();
             menu.Show();
             this.Hide();
-        }
-
-        private void gpbComentarios_Enter(object sender, EventArgs e)
-        {
-
         }
 
         private void frmComentarios_Load(object sender, EventArgs e)
