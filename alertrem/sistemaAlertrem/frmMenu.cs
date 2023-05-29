@@ -37,7 +37,7 @@ namespace sistemaAlertrem
 
         private void pcbEstacoes_Click(object sender, EventArgs e)
         {
-            frmEstacao estacao = new frmEstacao();
+            frmEstac estacao = new frmEstac();
             estacao.Show();
             this.Hide();
         }
@@ -61,6 +61,10 @@ namespace sistemaAlertrem
             IntPtr hMenu = GetSystemMenu(this.Handle, false);
             int MenuCount = GetMenuItemCount(hMenu) - 1;
             RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
+            if (UsuarioAutenticado.NomeUsuarioAutenticado != null)
+            {
+                lblNomeUsuario.Text = UsuarioAutenticado.NomeUsuarioAutenticado;
+            }
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
@@ -77,7 +81,7 @@ namespace sistemaAlertrem
 
         private void btnEstacoes_Click(object sender, EventArgs e)
         {
-            frmEstacao estacao = new frmEstacao();
+            frmEstac estacao = new frmEstac();
             estacao.Show();
             this.Hide();
         }

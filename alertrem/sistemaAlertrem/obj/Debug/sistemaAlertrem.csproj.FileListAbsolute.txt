@@ -45,7 +45,6 @@ C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlert
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\bin\Debug\BCrypt.Net-Next.xml
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\bin\Debug\MySql.Data.xml
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.csproj.AssemblyReference.cache
-C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.Form1.resources
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmComentarios.resources
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmLogin.resources
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmMenu.resources
@@ -177,10 +176,8 @@ C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertre
 C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmUsuarioEspe.resources
 C:\Users\leonardo.csilva58\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmPesquisaUsuarios.resources
 C:\Users\nathan.ssantos7\Documents\Visual Studio 2019\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmSobreEstacao.resources
-C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmCadastrarCaracteristica.resources
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmCadastrarEstacao.resources
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmCadastroFunc.resources
-C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmEstacao.resources
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmFuncionarios.resources
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmPerfilFuncionario.resources
 C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmSobreEstacao.resources
@@ -199,3 +196,4 @@ C:\Users\bruno.jogomes\Documents\Visual Studio 2019\Alertrem-sistema_\alertrem\s
 C:\Users\bruno.jogomes\Documents\Visual Studio 2019\Alertrem-sistema_\alertrem\sistemaAlertrem\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\bruno.jogomes\Documents\Visual Studio 2019\Alertrem-sistema_\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmPerfilFuncionario.resources
 C:\Users\bruno.jogomes\Documents\Visual Studio 2019\Alertrem-sistema_\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmSobreEstacao.resources
+C:\Users\natan\OneDrive\Área de Trabalho\Alertrem-sistema\alertrem\sistemaAlertrem\obj\Debug\sistemaAlertrem.frmEstac.resources

@@ -35,9 +35,10 @@ namespace sistemaAlertrem
             this.Hide();
         }
 
-        public void carregaDados()
+        public void carregaDados(string nome = "")
         {
-            string commandString = "select codigo as 'Código', usuario as 'Usuário' from tb_usuarios";
+            string commandString = $"select codigo as 'Código', nome as 'Nome', telefone as 'Telefone', cpf as 'CPF'" +
+                $" from tb_funcionarios where nome like '%{nome}%'";
 
             MySqlCommand comm = new MySqlCommand
             {
@@ -46,15 +47,12 @@ namespace sistemaAlertrem
                 Connection = Conexao.obterConexao()
             };
 
-
             MySqlDataAdapter adapter = new MySqlDataAdapter(comm);
             DataTable tabela = new DataTable();
             adapter.Fill(tabela);
             Conexao.fecharConexao();
 
             dgvFuncionarios.DataSource = tabela;
-
-            //dgvComentarios.Columns["descricao"].Width = 300;
 
             DataGridViewButtonColumn btnExcluir = new DataGridViewButtonColumn();
             btnExcluir.Name = "Excluir";
@@ -80,15 +78,13 @@ namespace sistemaAlertrem
 
             // Define a propriedade de ajuste de altura das linhas para que o conteúdo completo seja exibido
             dgvFuncionarios.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-
-            // Faz com que o DataGridView ocupe 100% do espaço disponível
-            // dgvFuncionarios.Dock = DockStyle.Fill;
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             frmCadastroFunc cadastro = new frmCadastroFunc();
-            cadastro.ShowDialog();
+            DialogResult retorno = cadastro.ShowDialog();
+            carregaDados();
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
@@ -98,19 +94,8 @@ namespace sistemaAlertrem
                 MessageBox.Show("Escreva algo na caixa de texto para ser pesquisado.", "Aviso do sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
-                {
-                MySqlCommand comm = new MySqlCommand();
-                comm.CommandText = $"select codigo as 'Código', nome as 'Nome', usuario as 'Usuário', data_hora as 'Data e hora de criação' from tb_funcionarios where nome like '%{txtPesquisa.Text}%'";
-                comm.CommandType = CommandType.Text;
-
-                comm.Connection = Conexao.obterConexao();
-
-                MySqlDataAdapter adapter = new MySqlDataAdapter(comm);
-                DataTable tabela = new DataTable();
-                adapter.Fill(tabela);
-                Conexao.fecharConexao();
-
-                dgvFuncionarios.DataSource = tabela;
+            {
+                carregaDados(txtPesquisa.Text);
                 txtPesquisa.Focus();
             }
         }
@@ -119,7 +104,7 @@ namespace sistemaAlertrem
         {
             if (e.ColumnIndex == dgvFuncionarios.Columns["Excluir"].Index && e.RowIndex >= 0)
             {
-                int codigo = (int)dgvFuncionarios.Rows[e.RowIndex].Cells["codigo"].Value;
+                int codigo = (int)dgvFuncionarios.Rows[e.RowIndex].Cells["Código"].Value;
 
                 DialogResult confirma = MessageBox.Show($"Você quer mesmo apagar este funcionário?",
                     "Confirmação de exclusão de registro",
@@ -137,11 +122,12 @@ namespace sistemaAlertrem
 
             else if(e.ColumnIndex == dgvFuncionarios.Columns["Editar"].Index && e.RowIndex >= 0)
             {
-                int codigo = (int)dgvFuncionarios.Rows[e.RowIndex].Cells["codigo"].Value;
-                string nome = dgvFuncionarios.Rows[e.RowIndex].Cells["nome"].Value.ToString();
-                string usuario = dgvFuncionarios.Rows[e.RowIndex].Cells["usuario"].Value.ToString();
+                int codigo = (int)dgvFuncionarios.Rows[e.RowIndex].Cells["Código"].Value;
+                string nome = dgvFuncionarios.Rows[e.RowIndex].Cells["Nome"].Value.ToString();
+                string telefone = dgvFuncionarios.Rows[e.RowIndex].Cells["Telefone"].Value.ToString();
+                string cpf = dgvFuncionarios.Rows[e.RowIndex].Cells["CPF"].Value.ToString();
 
-                editarFunc(codigo, nome, usuario);
+                editarFunc(codigo, nome, telefone, cpf);
             }
         }
 
@@ -166,11 +152,11 @@ namespace sistemaAlertrem
             Conexao.fecharConexao();
         }
 
-        public void editarFunc(int codigo, string nome, string usuario)
+        public void editarFunc(int codigo, string nome, string telefone, string cpf)
         {
             MySqlCommand comm = new MySqlCommand
             {
-                CommandText = $"update tb_funcionarios set nome ='{nome}', usuario ='{usuario}' where codigo = {codigo};",
+                CommandText = $"update tb_funcionarios set nome ='{nome}', telefone ='{telefone}', cpf = '{cpf}' where codigo = {codigo};",
                 CommandType = CommandType.Text,
                 Connection = Conexao.obterConexao()
             };
@@ -198,4 +184,3 @@ namespace sistemaAlertrem
         }
     }
 }
-

@@ -39,7 +39,6 @@ namespace sistemaAlertrem
             MySqlDataReader DR;
             DR = comm.ExecuteReader();
             ltbEstacao.Items.Clear();
-            estacoes.Clear();
             while (DR.Read())
             {
                 ltbEstacao.Items.Add(DR[1].ToString());
@@ -61,11 +60,20 @@ namespace sistemaAlertrem
             abrir.ShowDialog();
         }
 
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            frmCadastrarEstacao abrir = new frmCadastrarEstacao();
+            abrir.Show();
+            //this.Hide();
+            this.Close();
+        }
+
         private void btnVoltar_Click(object sender, EventArgs e)
         {
             frmMenu abrir = new frmMenu();
             abrir.Show();
-            this.Hide();
+            //this.Hide();
+            this.Close();
         }
     }
 }
