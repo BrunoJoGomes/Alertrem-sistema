@@ -56,7 +56,7 @@ namespace sistemaAlertrem
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(97, 25);
             this.lblUsuario.TabIndex = 9;
-            this.lblUsuario.Text = "&Usuário:";
+            this.lblUsuario.Text = "Usuário:";
             // 
             // btnPesquisar
             // 
