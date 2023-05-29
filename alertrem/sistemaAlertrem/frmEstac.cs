@@ -42,7 +42,10 @@ namespace sistemaAlertrem
             while (DR.Read())
             {
                 ltbEstacao.Items.Add(DR[1].ToString());
-                estacoes.Add(DR[1].ToString(), int.Parse(DR[0].ToString()));
+                if (!estacoes.ContainsKey(DR[1].ToString()))
+                {
+                    estacoes.Add(DR[1].ToString(), int.Parse(DR[0].ToString()));
+                }
             }
 
             Conexao.fecharConexao();
