@@ -39,8 +39,7 @@ namespace sistemaAlertrem
             this.label1 = new System.Windows.Forms.Label();
             this.txtConfirmaSenha = new System.Windows.Forms.TextBox();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.btnCriar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnCriarEditar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.txtCodFunc = new System.Windows.Forms.TextBox();
@@ -128,53 +127,44 @@ namespace sistemaAlertrem
             this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
             this.btnVoltar.Location = new System.Drawing.Point(32, 317);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(101, 87);
+            this.btnVoltar.Size = new System.Drawing.Size(101, 95);
             this.btnVoltar.TabIndex = 6;
             this.btnVoltar.Text = "&Voltar";
             this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
-            // btnCriar
+            // btnCriarEditar
             // 
-            this.btnCriar.Image = ((System.Drawing.Image)(resources.GetObject("btnCriar.Image")));
-            this.btnCriar.Location = new System.Drawing.Point(477, 38);
-            this.btnCriar.Name = "btnCriar";
-            this.btnCriar.Size = new System.Drawing.Size(101, 87);
-            this.btnCriar.TabIndex = 7;
-            this.btnCriar.Text = "&Criar";
-            this.btnCriar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnCriar.UseVisualStyleBackColor = true;
-            this.btnCriar.Click += new System.EventHandler(this.btnCriar_Click);
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
-            this.btnEditar.Location = new System.Drawing.Point(480, 224);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(98, 87);
-            this.btnEditar.TabIndex = 9;
-            this.btnEditar.Text = "&Editar";
-            this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnCriarEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnCriarEditar.Image")));
+            this.btnCriarEditar.Location = new System.Drawing.Point(442, 26);
+            this.btnCriarEditar.Name = "btnCriarEditar";
+            this.btnCriarEditar.Size = new System.Drawing.Size(101, 95);
+            this.btnCriarEditar.TabIndex = 7;
+            this.btnCriarEditar.Text = "&Criar/Editar usuário";
+            this.btnCriarEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnCriarEditar.UseVisualStyleBackColor = true;
+            this.btnCriarEditar.Click += new System.EventHandler(this.btnCriar_Click);
             // 
             // btnSalvar
             // 
             this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
-            this.btnSalvar.Location = new System.Drawing.Point(480, 317);
+            this.btnSalvar.Location = new System.Drawing.Point(442, 137);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(98, 87);
-            this.btnSalvar.TabIndex = 10;
+            this.btnSalvar.Size = new System.Drawing.Size(101, 95);
+            this.btnSalvar.TabIndex = 8;
             this.btnSalvar.Text = "&Salvar";
             this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnLimpar
             // 
             this.btnLimpar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpar.Image")));
-            this.btnLimpar.Location = new System.Drawing.Point(477, 131);
+            this.btnLimpar.Location = new System.Drawing.Point(442, 247);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(101, 87);
-            this.btnLimpar.TabIndex = 8;
+            this.btnLimpar.Size = new System.Drawing.Size(101, 95);
+            this.btnLimpar.TabIndex = 9;
             this.btnLimpar.Text = "&Limpar";
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnLimpar.UseVisualStyleBackColor = true;
@@ -202,13 +192,12 @@ namespace sistemaAlertrem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(584, 450);
             this.Controls.Add(this.txtCodFunc);
             this.Controls.Add(this.lblCodigoFunc);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnCriar);
+            this.Controls.Add(this.btnCriarEditar);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.txtConfirmaSenha);
             this.Controls.Add(this.label1);
@@ -241,8 +230,7 @@ namespace sistemaAlertrem
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtConfirmaSenha;
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.Button btnCriar;
-        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnCriarEditar;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.TextBox txtCodFunc;

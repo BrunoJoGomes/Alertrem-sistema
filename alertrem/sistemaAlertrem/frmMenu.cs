@@ -37,7 +37,7 @@ namespace sistemaAlertrem
 
         private void pcbEstacoes_Click(object sender, EventArgs e)
         {
-            frmEstac estacao = new frmEstac();
+            frmEstacao estacao = new frmEstacao();
             estacao.Show();
             this.Hide();
         }
@@ -63,37 +63,44 @@ namespace sistemaAlertrem
             RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnClientes_Click(object sender, EventArgs e)
         {
             frmPesquisaUsuarios usuarios = new frmPesquisaUsuarios();
             usuarios.Show();
             this.Hide();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void gpbMenu_Enter(object sender, EventArgs e)
         {
-            frmEstac estacao = new frmEstac();
+
+        }
+
+        private void btnEstacoes_Click(object sender, EventArgs e)
+        {
+            frmEstacao estacao = new frmEstacao();
             estacao.Show();
             this.Hide();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnComentarios_Click(object sender, EventArgs e)
         {
             frmComentarios reclamacoes = new frmComentarios();
             reclamacoes.Show();
             this.Hide();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnFuncionarios_Click(object sender, EventArgs e)
         {
             frmFuncionarios funcionarios = new frmFuncionarios();
             funcionarios.Show();
             this.Hide();
         }
 
-        private void gpbMenu_Enter(object sender, EventArgs e)
+        private void btnPerfilFunc_Click(object sender, EventArgs e)
         {
-
+            frmPerfilFuncionario perfil = new frmPerfilFuncionario();
+            perfil.Show();
+            this.Hide();
         }
     }
 }
