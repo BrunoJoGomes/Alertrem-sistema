@@ -49,11 +49,9 @@ namespace sistemaAlertrem
             this.gpbPesquisaEstacao.Controls.Add(this.btnCadastrar);
             this.gpbPesquisaEstacao.Controls.Add(this.btnPesquisar);
             this.gpbPesquisaEstacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbPesquisaEstacao.Location = new System.Drawing.Point(15, 26);
-            this.gpbPesquisaEstacao.Margin = new System.Windows.Forms.Padding(4);
+            this.gpbPesquisaEstacao.Location = new System.Drawing.Point(11, 21);
             this.gpbPesquisaEstacao.Name = "gpbPesquisaEstacao";
-            this.gpbPesquisaEstacao.Padding = new System.Windows.Forms.Padding(4);
-            this.gpbPesquisaEstacao.Size = new System.Drawing.Size(1039, 513);
+            this.gpbPesquisaEstacao.Size = new System.Drawing.Size(779, 417);
             this.gpbPesquisaEstacao.TabIndex = 1;
             this.gpbPesquisaEstacao.TabStop = false;
             this.gpbPesquisaEstacao.Enter += new System.EventHandler(this.gpbPesquisaEstacao_Enter);
@@ -61,38 +59,34 @@ namespace sistemaAlertrem
             // ltbEstacao
             // 
             this.ltbEstacao.FormattingEnabled = true;
-            this.ltbEstacao.ItemHeight = 30;
-            this.ltbEstacao.Location = new System.Drawing.Point(41, 132);
-            this.ltbEstacao.Margin = new System.Windows.Forms.Padding(4);
+            this.ltbEstacao.ItemHeight = 25;
+            this.ltbEstacao.Location = new System.Drawing.Point(31, 107);
             this.ltbEstacao.Name = "ltbEstacao";
-            this.ltbEstacao.Size = new System.Drawing.Size(688, 334);
+            this.ltbEstacao.Size = new System.Drawing.Size(517, 254);
             this.ltbEstacao.TabIndex = 16;
             this.ltbEstacao.SelectedIndexChanged += new System.EventHandler(this.ltbEstacao_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 37);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(26, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(241, 31);
+            this.label1.Size = new System.Drawing.Size(192, 25);
             this.label1.TabIndex = 15;
             this.label1.Text = "Pesquisar Estação";
             // 
             // txtPesquisar
             // 
-            this.txtPesquisar.Location = new System.Drawing.Point(299, 37);
-            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPesquisar.Location = new System.Drawing.Point(224, 30);
             this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.Size = new System.Drawing.Size(431, 37);
+            this.txtPesquisar.Size = new System.Drawing.Size(324, 31);
             this.txtPesquisar.TabIndex = 14;
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(803, 396);
-            this.btnVoltar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVoltar.Location = new System.Drawing.Point(602, 322);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(165, 75);
+            this.btnVoltar.Size = new System.Drawing.Size(124, 61);
             this.btnVoltar.TabIndex = 12;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
@@ -100,10 +94,9 @@ namespace sistemaAlertrem
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(803, 258);
-            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCadastrar.Location = new System.Drawing.Point(602, 210);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(165, 75);
+            this.btnCadastrar.Size = new System.Drawing.Size(124, 61);
             this.btnCadastrar.TabIndex = 11;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
@@ -111,10 +104,9 @@ namespace sistemaAlertrem
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(803, 132);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPesquisar.Location = new System.Drawing.Point(602, 107);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(165, 75);
+            this.btnPesquisar.Size = new System.Drawing.Size(124, 61);
             this.btnPesquisar.TabIndex = 10;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
@@ -122,17 +114,17 @@ namespace sistemaAlertrem
             // 
             // frmEstac
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.gpbPesquisaEstacao);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frmEstac";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEstac";
+            this.Load += new System.EventHandler(this.frmEstac_Load);
             this.gpbPesquisaEstacao.ResumeLayout(false);
             this.gpbPesquisaEstacao.PerformLayout();
             this.ResumeLayout(false);
